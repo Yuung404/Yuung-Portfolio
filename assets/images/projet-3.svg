@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      .bg         { fill: #020d02; }
+      .grid-line  { stroke: #003a0a; stroke-width: 0.5; }
+      .title-text { font-family: 'Share Tech Mono', monospace; fill: #00cc44; font-size: 12px; letter-spacing: 2px; }
+      .label-text { font-family: 'Share Tech Mono', monospace; fill: #00aa33; font-size: 11px; letter-spacing: 1px; }
+      .small-text { font-family: 'Share Tech Mono', monospace; fill: #008020; font-size: 9px; letter-spacing: 1px; }
+      .tag-text   { font-family: 'Share Tech Mono', monospace; fill: #33bb55; font-size: 10px; letter-spacing: 1px; }
+      .dim-text   { font-family: 'Share Tech Mono', monospace; fill: #005c10; font-size: 9px; }
+      .domain-box { fill: none; stroke: #005c10; stroke-width: 1; stroke-dasharray: 4,3; }
+      .line-flow  { stroke: #00aa33; stroke-width: 1.2; fill: none; marker-end: url(#arrow); }
+      .line-dashed{ stroke: #008020; stroke-width: 0.9; fill: none; stroke-dasharray: 4,2; }
+    </style>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <polygon points="0 0, 7 3.5, 0 7" fill="#00aa33" opacity="0.8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="500"/>
+
+  <!-- Grid -->
+  <g opacity="0.3">
+    <line class="grid-line" x1="0" y1="25" x2="800" y2="25"/><line class="grid-line" x1="0" y1="50" x2="800" y2="50"/>
+    <line class="grid-line" x1="0" y1="75" x2="800" y2="75"/><line class="grid-line" x1="0" y1="100" x2="800" y2="100"/>
+    <line class="grid-line" x1="0" y1="125" x2="800" y2="125"/><line class="grid-line" x1="0" y1="150" x2="800" y2="150"/>
+    <line class="grid-line" x1="0" y1="175" x2="800" y2="175"/><line class="grid-line" x1="0" y1="200" x2="800" y2="200"/>
+    <line class="grid-line" x1="0" y1="225" x2="800" y2="225"/><line class="grid-line" x1="0" y1="250" x2="800" y2="250"/>
+    <line class="grid-line" x1="0" y1="275" x2="800" y2="275"/><line class="grid-line" x1="0" y1="300" x2="800" y2="300"/>
+    <line class="grid-line" x1="0" y1="325" x2="800" y2="325"/><line class="grid-line" x1="0" y1="350" x2="800" y2="350"/>
+    <line class="grid-line" x1="0" y1="375" x2="800" y2="375"/><line class="grid-line" x1="0" y1="400" x2="800" y2="400"/>
+    <line class="grid-line" x1="0" y1="425" x2="800" y2="425"/><line class="grid-line" x1="0" y1="450" x2="800" y2="450"/>
+    <line class="grid-line" x1="0" y1="475" x2="800" y2="475"/>
+    <line class="grid-line" x1="25" y1="0" x2="25" y2="500"/><line class="grid-line" x1="50" y1="0" x2="50" y2="500"/>
+    <line class="grid-line" x1="75" y1="0" x2="75" y2="500"/><line class="grid-line" x1="100" y1="0" x2="100" y2="500"/>
+    <line class="grid-line" x1="125" y1="0" x2="125" y2="500"/><line class="grid-line" x1="150" y1="0" x2="150" y2="500"/>
+    <line class="grid-line" x1="175" y1="0" x2="175" y2="500"/><line class="grid-line" x1="200" y1="0" x2="200" y2="500"/>
+    <line class="grid-line" x1="225" y1="0" x2="225" y2="500"/><line class="grid-line" x1="250" y1="0" x2="250" y2="500"/>
+    <line class="grid-line" x1="275" y1="0" x2="275" y2="500"/><line class="grid-line" x1="300" y1="0" x2="300" y2="500"/>
+    <line class="grid-line" x1="325" y1="0" x2="325" y2="500"/><line class="grid-line" x1="350" y1="0" x2="350" y2="500"/>
+    <line class="grid-line" x1="375" y1="0" x2="375" y2="500"/><line class="grid-line" x1="400" y1="0" x2="400" y2="500"/>
+    <line class="grid-line" x1="425" y1="0" x2="425" y2="500"/><line class="grid-line" x1="450" y1="0" x2="450" y2="500"/>
+    <line class="grid-line" x1="475" y1="0" x2="475" y2="500"/><line class="grid-line" x1="500" y1="0" x2="500" y2="500"/>
+    <line class="grid-line" x1="525" y1="0" x2="525" y2="500"/><line class="grid-line" x1="550" y1="0" x2="550" y2="500"/>
+    <line class="grid-line" x1="575" y1="0" x2="575" y2="500"/><line class="grid-line" x1="600" y1="0" x2="600" y2="500"/>
+    <line class="grid-line" x1="625" y1="0" x2="625" y2="500"/><line class="grid-line" x1="650" y1="0" x2="650" y2="500"/>
+    <line class="grid-line" x1="675" y1="0" x2="675" y2="500"/><line class="grid-line" x1="700" y1="0" x2="700" y2="500"/>
+    <line class="grid-line" x1="725" y1="0" x2="725" y2="500"/><line class="grid-line" x1="750" y1="0" x2="750" y2="500"/>
+    <line class="grid-line" x1="775" y1="0" x2="775" y2="500"/>
+  </g>
+
+  <!-- HUD corners -->
+  <text class="dim-text" x="10" y="14">SYS::VERSAILLES</text>
+  <text class="dim-text" x="598" y="14">GLPI::OPEN_SOURCE</text>
+  <text class="dim-text" x="10" y="492">DEBIAN_13::TRIXIE — LAMP::STACK</text>
+  <text class="dim-text" x="540" y="492">HELPDESK::TTO·TTR — SLA::OK</text>
+
+  <!-- Outer boundary -->
+  <rect class="domain-box" x="30" y="28" width="740" height="440" rx="3"/>
+
+  <!-- Title -->
+  <text class="tag-text" x="400" y="46" text-anchor="middle" filter="url(#glow)">// MAIRIE DE VERSAILLES — DÉPLOIEMENT GLPI</text>
+  <line stroke="#005c10" stroke-width="0.8" x1="175" y1="50" x2="625" y2="50"/>
+
+  <!-- ═══ MAIRIE ICON (city hall silhouette — stylized columns) ═══ -->
+  <g transform="translate(320,58)">
+    <!-- Pediment triangle -->
+    <polygon points="80,0 160,32 0,32" fill="#001500" stroke="#00aa33" stroke-width="1"/>
+    <!-- Columns x5 -->
+    <rect x="10"  y="32" width="12" height="40" rx="1" fill="#001200" stroke="#008020" stroke-width="0.8"/>
+    <rect x="34"  y="32" width="12" height="40" rx="1" fill="#001200" stroke="#008020" stroke-width="0.8"/>
+    <rect x="58"  y="32" width="12" height="40" rx="1" fill="#001200" stroke="#008020" stroke-width="0.8"/>
+    <rect x="82"  y="32" width="12" height="40" rx="1" fill="#001200" stroke="#008020" stroke-width="0.8"/>
+    <rect x="106" y="32" width="12" height="40" rx="1" fill="#001200" stroke="#008020" stroke-width="0.8"/>
+    <rect x="134" y="32" width="12" height="40" rx="1" fill="#001200" stroke="#008020" stroke-width="0.8"/>
+    <!-- Base -->
+    <rect x="0"   y="72" width="160" height="8" rx="1" fill="#001800" stroke="#00aa33" stroke-width="1"/>
+    <!-- Flag pole -->
+    <line stroke="#005c10" stroke-width="1" x1="80" y1="0" x2="80" y2="-16"/>
+    <rect x="80" y="-16" width="20" height="10" rx="1" fill="#003a0a" stroke="#005c10" stroke-width="0.5"/>
+  </g>
+  <text class="title-text" x="400" y="162" text-anchor="middle" filter="url(#glow)">MAIRIE DE VERSAILLES</text>
+  <text class="dim-text"   x="400" y="173" text-anchor="middle">DSI — Direction des Systèmes d'Information</text>
+
+  <!-- ═══ LEFT: AGENTS MUNICIPAUX ═══ -->
+  <rect x="42" y="195" width="148" height="110" rx="3" fill="#001000" stroke="#005c10" stroke-width="1" stroke-dasharray="3,2"/>
+  <text class="dim-text" x="116" y="210" text-anchor="middle">// AGENTS</text>
+  <!-- Agent icons (simplified person shapes) -->
+  <g transform="translate(60,218)">
+    <circle cx="12" cy="8" r="6" fill="none" stroke="#008020" stroke-width="0.9"/>
+    <line stroke="#008020" stroke-width="0.9" x1="12" y1="14" x2="12" y2="28"/>
+    <line stroke="#008020" stroke-width="0.9" x1="6"  y1="20" x2="18" y2="20"/>
+    <line stroke="#008020" stroke-width="0.9" x1="12" y1="28" x2="6"  y2="36"/>
+    <line stroke="#008020" stroke-width="0.9" x1="12" y1="28" x2="18" y2="36"/>
+    <text class="dim-text" x="12" y="48" text-anchor="middle">Service A</text>
+  </g>
+  <g transform="translate(104,218)">
+    <circle cx="12" cy="8" r="6" fill="none" stroke="#008020" stroke-width="0.9"/>
+    <line stroke="#008020" stroke-width="0.9" x1="12" y1="14" x2="12" y2="28"/>
+    <line stroke="#008020" stroke-width="0.9" x1="6"  y1="20" x2="18" y2="20"/>
+    <line stroke="#008020" stroke-width="0.9" x1="12" y1="28" x2="6"  y2="36"/>
+    <line stroke="#008020" stroke-width="0.9" x1="12" y1="28" x2="18" y2="36"/>
+    <text class="dim-text" x="12" y="48" text-anchor="middle">Service B</text>
+  </g>
+  <!-- Ticket bubble -->
+  <rect x="52" y="285" width="120" height="16" rx="2" fill="#001800" stroke="#00aa33" stroke-width="0.8"/>
+  <text x="112" y="297" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="8" fill="#00aa33">📨 Création ticket</text>
+
+  <!-- ═══ CENTER: GLPI DASHBOARD ═══ -->
+  <rect x="240" y="185" width="320" height="200" rx="4" fill="#001500" stroke="#00cc44" stroke-width="1.6" filter="url(#glow)"/>
+  <!-- Window bar -->
+  <rect x="240" y="185" width="320" height="22" rx="4" fill="#001800"/>
+  <rect x="240" y="199" width="320" height="8" rx="0" fill="#001800"/>
+  <circle cx="254" cy="196" r="4" fill="#3a0000" stroke="#300000" stroke-width="0.5"/>
+  <circle cx="266" cy="196" r="4" fill="#3a3000" stroke="#303000" stroke-width="0.5"/>
+  <circle cx="278" cy="196" r="4" fill="#003a00" stroke="#003000" stroke-width="0.5"/>
+  <text x="400" y="198" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="8" fill="#005c10">GLPI — Gestionnaire Libre de Parc Informatique</text>
+
+  <!-- GLPI nav sidebar -->
+  <rect x="240" y="207" width="60" height="178" rx="0" fill="#001200" stroke="#003a0a" stroke-width="0.5"/>
+  <text x="270" y="226" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">ACCUEIL</text>
+  <text x="270" y="242" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#00cc44">TICKETS</text>
+  <text x="270" y="258" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">PARC</text>
+  <text x="270" y="274" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">LOGICIELS</text>
+  <text x="270" y="290" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">RÉSEAU</text>
+  <text x="270" y="306" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">UTILISATEURS</text>
+  <text x="270" y="322" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">RAPPORTS</text>
+  <text x="270" y="338" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">CONFIG</text>
+
+  <!-- GLPI main content area -->
+  <!-- Stats row -->
+  <rect x="308" y="212" width="58" height="36" rx="2" fill="#001800" stroke="#00aa33" stroke-width="0.8"/>
+  <text x="337" y="226" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#00cc44">12</text>
+  <text x="337" y="244" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008020">OUVERTS</text>
+
+  <rect x="372" y="212" width="58" height="36" rx="2" fill="#001800" stroke="#00aa33" stroke-width="0.8"/>
+  <text x="401" y="226" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#00cc44">47</text>
+  <text x="401" y="244" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008020">RÉSOLUS</text>
+
+  <rect x="436" y="212" width="58" height="36" rx="2" fill="#001800" stroke="#ffaa00" stroke-width="0.8"/>
+  <text x="465" y="226" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#ffaa00">3</text>
+  <text x="465" y="244" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#aa7700">EN ATTENTE</text>
+
+  <rect x="500" y="212" width="54" height="36" rx="2" fill="#001800" stroke="#005c10" stroke-width="0.8"/>
+  <text x="527" y="226" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="14" fill="#008020">86%</text>
+  <text x="527" y="244" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">SLA OK</text>
+
+  <!-- Ticket list -->
+  <rect x="308" y="255" width="246" height="14" rx="1" fill="#001a00" stroke="#003a0a" stroke-width="0.5"/>
+  <text x="316" y="265" font-family="'Share Tech Mono',monospace" font-size="7" fill="#00cc44">#0042</text>
+  <text x="346" y="265" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008020">Imprimante HS — Service RH</text>
+  <text x="510" y="265" font-family="'Share Tech Mono',monospace" font-size="7" fill="#00aa33">OUVERT</text>
+
+  <rect x="308" y="272" width="246" height="14" rx="1" fill="#001500" stroke="#003a0a" stroke-width="0.5"/>
+  <text x="316" y="282" font-family="'Share Tech Mono',monospace" font-size="7" fill="#00cc44">#0043</text>
+  <text x="346" y="282" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008020">Réseau WiFi — Salle B12</text>
+  <text x="510" y="282" font-family="'Share Tech Mono',monospace" font-size="7" fill="#ffaa00">URGENT</text>
+
+  <rect x="308" y="289" width="246" height="14" rx="1" fill="#001a00" stroke="#003a0a" stroke-width="0.5"/>
+  <text x="316" y="299" font-family="'Share Tech Mono',monospace" font-size="7" fill="#00cc44">#0044</text>
+  <text x="346" y="299" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008020">MAJ OS — Poste direction</text>
+  <text x="510" y="299" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">RÉSOLU</text>
+
+  <rect x="308" y="306" width="246" height="14" rx="1" fill="#001500" stroke="#003a0a" stroke-width="0.5"/>
+  <text x="316" y="316" font-family="'Share Tech Mono',monospace" font-size="7" fill="#00cc44">#0045</text>
+  <text x="346" y="316" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008020">Inventaire poste — Accueil</text>
+  <text x="510" y="316" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">RÉSOLU</text>
+
+  <!-- Progress bar TTO -->
+  <text x="312" y="334" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">TTO</text>
+  <rect x="330" y="327" width="100" height="8" rx="2" fill="#001000" stroke="#003a0a" stroke-width="0.5"/>
+  <rect x="330" y="327" width="72"  height="8" rx="2" fill="#00aa33"/>
+  <text x="438" y="334" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008020">72%</text>
+  <text x="312" y="347" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">TTR</text>
+  <rect x="330" y="340" width="100" height="8" rx="2" fill="#001000" stroke="#003a0a" stroke-width="0.5"/>
+  <rect x="330" y="340" width="86"  height="8" rx="2" fill="#008822"/>
+  <text x="438" y="347" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008020">86%</text>
+
+  <!-- Inventory count -->
+  <text x="470" y="334" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">PARC:</text>
+  <text x="500" y="334" font-family="'Share Tech Mono',monospace" font-size="8" fill="#00cc44">148 équip.</text>
+  <text x="470" y="348" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">LOGICIELS:</text>
+  <text x="520" y="348" font-family="'Share Tech Mono',monospace" font-size="8" fill="#00cc44">63 lic.</text>
+
+  <!-- Bottom GLPI bar -->
+  <rect x="240" y="363" width="320" height="22" rx="0" fill="#001200" stroke="#003a0a" stroke-width="0.5"/>
+  <text x="400" y="378" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">GLPI v10.x — Apache / MariaDB / PHP — Debian 13 Trixie</text>
+
+  <!-- ═══ RIGHT: VM DEBIAN / LAMP ═══ -->
+  <rect x="614" y="195" width="148" height="170" rx="3" fill="#001200" stroke="#00aa33" stroke-width="1.2"/>
+  <text class="dim-text" x="688" y="212" text-anchor="middle">// SERVEUR VM</text>
+  <!-- Debian swirl icon (simplified) -->
+  <circle cx="688" cy="238" r="22" fill="#001800" stroke="#008020" stroke-width="1"/>
+  <path d="M688 220 Q700 228 696 240 Q692 252 680 248 Q672 244 676 236 Q680 228 688 220" fill="none" stroke="#00cc44" stroke-width="1.5"/>
+  <circle cx="688" cy="238" r="4" fill="none" stroke="#00aa33" stroke-width="1"/>
+  <text x="688" y="273" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="9" fill="#00cc44">Debian 13</text>
+  <text x="688" y="285" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="8" fill="#005c10">"Trixie"</text>
+  <!-- LAMP stack components -->
+  <line stroke="#003a0a" stroke-width="0.8" x1="628" y1="296" x2="748" y2="296"/>
+  <text x="688" y="309" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">LAMP STACK</text>
+  <rect x="626" y="315" width="28" height="14" rx="2" fill="#001000" stroke="#006018" stroke-width="0.6"/>
+  <text x="640" y="326" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008822">Linux</text>
+  <rect x="658" y="315" width="30" height="14" rx="2" fill="#001000" stroke="#006018" stroke-width="0.6"/>
+  <text x="673" y="326" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008822">Apache</text>
+  <rect x="692" y="315" width="34" height="14" rx="2" fill="#001000" stroke="#006018" stroke-width="0.6"/>
+  <text x="709" y="326" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008822">MariaDB</text>
+  <rect x="629" y="333" width="26" height="14" rx="2" fill="#001000" stroke="#006018" stroke-width="0.6"/>
+  <text x="642" y="344" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#008822">PHP</text>
+  <rect x="659" y="333" width="80" height="14" rx="2" fill="#001800" stroke="#00aa33" stroke-width="0.8"/>
+  <text x="699" y="344" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#00cc44">GLPI Installé ✓</text>
+  <!-- LED -->
+  <circle cx="748" cy="202" r="3" fill="#00cc44" filter="url(#glow-strong)"/>
+  <circle cx="740" cy="202" r="3" fill="#00aa33"/>
+
+  <!-- ═══ FLOW ARROWS ═══ -->
+  <!-- Agents → GLPI -->
+  <line class="line-flow" x1="190" y1="262" x2="236" y2="262"/>
+  <text x="213" y="256" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">tickets</text>
+
+  <!-- GLPI ← VM (GLPI runs on VM) -->
+  <line class="line-dashed" x1="560" y1="280" x2="610" y2="280"/>
+  <text x="585" y="274" text-anchor="middle" font-family="'Share Tech Mono',monospace" font-size="7" fill="#005c10">hébergé sur</text>
+
+  <!-- ═══ BOTTOM: Missions & Tags ═══ -->
+  <line stroke="#003a0a" stroke-width="0.8" x1="42" y1="395" x2="758" y2="395"/>
+  <text class="dim-text" x="400" y="408" text-anchor="middle">// MISSIONS : Inventaire · Déploiement GLPI · Configuration SLA/OLA · Formation agents</text>
+
+  <rect x="44"  y="415" width="84"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="86"  y="428" text-anchor="middle">GLPI v10.x</text>
+
+  <rect x="134" y="415" width="76"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="172" y="428" text-anchor="middle">Debian 13</text>
+
+  <rect x="216" y="415" width="70"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="251" y="428" text-anchor="middle">LAMP</text>
+
+  <rect x="292" y="415" width="80"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="332" y="428" text-anchor="middle">Ticketing</text>
+
+  <rect x="378" y="415" width="78"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="417" y="428" text-anchor="middle">Inventaire</text>
+
+  <rect x="462" y="415" width="62"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="493" y="428" text-anchor="middle">SLA/OLA</text>
+
+  <rect x="530" y="415" width="62"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="561" y="428" text-anchor="middle">TTO/TTR</text>
+
+  <rect x="598" y="415" width="70"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="633" y="428" text-anchor="middle">Formation</text>
+
+  <rect x="674" y="415" width="82"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="715" y="428" text-anchor="middle">Open Source</text>
+
+  <!-- Status -->
+  <circle cx="390" cy="452" r="3" fill="#ffaa00" filter="url(#glow-strong)"/>
+  <text class="tag-text" x="400" y="456" text-anchor="middle">// STATUS : EN COURS — DÉPLOIEMENT GLPI EN COURS</text>
+</svg>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madzi Project — Portfolio BTS SIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div id="cur-ring"></div><div id="cur-dot"></div>
+<canvas id="mx-canvas"></canvas><div id="mx-vignette"></div><div id="mx-grid"></div>
+<div class="hud tl">SYS::EN<br><span class="hb">PROJECT</span></div>
+<div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+<div class="hud bl">NANTERRE::92</div>
+<div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+<nav id="main-nav"></nav>
+
+<!-- PDF Viewer modal -->
+<div id="pdf-modal">
+  <div class="pdf-bar">
+    <span class="pdf-name" id="pdf-name">Document</span>
+    <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+  </div>
+  <iframe id="pdf-frame" title="PDF Viewer"></iframe>
+</div>
+
+<div class="page-content page-wrap">
+<div class="wrap" style="padding-bottom:80px;">
+
+  <!-- Breadcrumb -->
+  <div style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+    <a href="projects.html" style="color:var(--g6);text-decoration:none;">← BACK TO PROJECTS</a>
+  </div>
+
+  <!-- Header -->
+  <div class="sec-hd rv">
+    <span class="sec-tag">// PROJECT 01 — NETWORK</span>
+    <h2 class="sec-title">MADZI PROJECT</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <!-- Hero: image + metadata -->
+  <div class="pj-det-hero rv">
+
+    <!-- Screenshot: VLANs configuration -->
+    <div>
+      <img class="pj-det-img" src="../assets/images/projet-1.svg" alt="MADZI Project — VLANs Configuration">
+    </div>
+
+    <!-- Metadata -->
+    <div>
+      <div class="pj-meta">
+
+        <!-- Status: successful -->
+        <div class="card pj-meta-item">
+          <span class="pj-meta-lbl">// STATUS</span>
+          <span class="pj-status st-success">✓ SUCCESSFUL</span>
+        </div>
+
+        <div class="card pj-meta-item">
+          <span class="pj-meta-lbl">// DURATION</span>
+          <span class="pj-meta-val">February — March 2026</span>
+        </div>
+
+        <div class="card pj-meta-item">
+          <span class="pj-meta-lbl">// TEAM</span>
+          <span class="pj-meta-val">Solo</span>
+        </div>
+
+        <div class="card pj-meta-item">
+          <span class="pj-meta-lbl">// YEAR</span>
+          <span class="pj-meta-val">2025 — 2026</span>
+        </div>
+
+        <div class="card pj-meta-item">
+          <span class="pj-meta-lbl">// TOOLS</span>
+          <span class="pj-meta-val">Cisco, Packet Tracer, VLANs, OSPF, DHCP</span>
+        </div>
+
+        <div class="card pj-meta-item">
+          <span class="pj-meta-lbl">// CONTEXT</span>
+          <span class="pj-meta-val">Academic — BTS SIO Year 1</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="pj-section rv">
+    <h3>DESCRIPTION</h3>
+    <p>The MADZI Project is a network infrastructure lab carried out as part of the BTS SIO programme. The goal was to design and configure a complete enterprise network with VLAN segmentation, dynamic OSPF routing between several Cisco routers, and the deployment of DHCP and DNS network services.</p>
+  </div>
+
+  <!-- Objectives -->
+  <div class="pj-section rv">
+    <h3>OBJECTIVES</h3>
+    <p>Configure a multi-site network infrastructure on Cisco equipment: create and assign VLANs, set up inter-VLAN routing via sub-interfaces on a router, enable the OSPF dynamic routing protocol between three routers (R1, R2, R3), and deploy DHCP pools with automatic IP address assignment to client workstations.</p>
+  </div>
+
+  <!-- Implementation -->
+  <div class="pj-section rv">
+    <h3>IMPLEMENTATION</h3>
+    <p>The project was carried out in several stages:</p>
+    <p style="margin-top:12px;">
+      <strong style="color:var(--g3);">1. VLAN Configuration</strong> — Creating and assigning VLANs on switches, configuring ports in access and trunk mode.<br><br>
+      <strong style="color:var(--g3);">2. Inter-VLAN Routing</strong> — Configuring sub-interfaces on the router with 802.1Q encapsulation, assigning gateway addresses for each VLAN.<br><br>
+      <strong style="color:var(--g3);">3. OSPF</strong> — Enabling OSPF on all three routers, declaring networks in area 0. Resolved a clock conflict on R1 using the <code style="color:var(--g4);">clock rate</code> command.<br><br>
+      <strong style="color:var(--g3);">4. DHCP / DNS</strong> — Configuring DHCP pools on the router, verifying automatic IP address assignment on client workstations.
+    </p>
+  </div>
+
+  <!-- Results -->
+  <div class="pj-section rv">
+    <h3>RESULTS</h3>
+    <p>The infrastructure was successfully deployed. Ping tests between R1, R2 and R3 are conclusive after resolving the clock conflict. Client machines correctly obtain their IP addresses via DHCP. This project strengthened skills in Cisco network administration, OSPF dynamic routing and VLAN segmentation.</p>
+  </div>
+
+  <!-- Documents -->
+  <div class="pj-section rv">
+    <h3>DOCUMENTS &amp; DELIVERABLES</h3>
+    <div class="doc-list">
+
+      <!-- Lab report -->
+      <div class="card doc-item">
+        <span class="doc-icon">📄</span>
+        <span class="doc-name">MADZI Lab Report</span>
+        <span class="doc-size">~143 KB</span>
+        <button class="doc-link" onclick="openPDF('../assets/docs/projet-1/compte-rendu.pdf','MADZI Lab Report')" style="cursor:none;">OPEN</button>
+      </div>
+
+      <!-- Project brief -->
+      <div class="card doc-item">
+        <span class="doc-icon">📋</span>
+        <span class="doc-name">Project Brief — MADZI BTS1 SIO 2025-26</span>
+        <span class="doc-size">~209 KB</span>
+        <button class="doc-link" onclick="openPDF('../assets/docs/projet-1/sujet.pdf','MADZI Project Brief')" style="cursor:none;">OPEN</button>
+      </div>
+
+      <!-- PowerPoint — download (not supported in PDF iframe) -->
+      <div class="card doc-item">
+        <span class="doc-icon">📊</span>
+        <span class="doc-name">PowerPoint Presentation — Yuung Addi Kansietoko</span>
+        <span class="doc-size">~1.9 MB</span>
+        <a class="doc-link" href="../assets/docs/projet-1/presentation.pptx" download style="cursor:none;">DOWNLOAD</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="margin-top:40px;" class="rv">
+    <a href="projects.html" class="btn btn-g">← BACK TO PROJECTS</a>
+  </div>
+
+</div>
+
+<footer><div class="f-brand">YK_PORTFOLIO</div><div class="f-copy">© 2025 BTS SIO</div><div class="f-live"><div class="ldot"></div>AVAILABLE</div></footer>
+</div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

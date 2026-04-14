@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      .bg         { fill: #020d02; }
+      .grid-line  { stroke: #003a0a; stroke-width: 0.5; }
+      .title-text { font-family: 'Share Tech Mono', monospace; fill: #00cc44; font-size: 13px; letter-spacing: 2px; }
+      .label-text { font-family: 'Share Tech Mono', monospace; fill: #00aa33; font-size: 11px; letter-spacing: 1px; }
+      .small-text { font-family: 'Share Tech Mono', monospace; fill: #008020; font-size: 9px; letter-spacing: 1px; }
+      .tag-text   { font-family: 'Share Tech Mono', monospace; fill: #33bb55; font-size: 10px; letter-spacing: 1px; }
+      .dim-text   { font-family: 'Share Tech Mono', monospace; fill: #005c10; font-size: 9px; }
+      .vlan-text  { font-family: 'Share Tech Mono', monospace; fill: #00cc44; font-size: 8px; letter-spacing: 1px; }
+      .line-trunk { stroke: #00cc44; stroke-width: 1.6; fill: none; }
+      .line-acc   { stroke: #008020; stroke-width: 1; fill: none; stroke-dasharray: 4,2; }
+      .line-ospf  { stroke: #00aa33; stroke-width: 1.2; fill: none; }
+      .domain-box { fill: none; stroke: #005c10; stroke-width: 1; stroke-dasharray: 4,3; }
+    </style>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="500"/>
+
+  <!-- Grid -->
+  <g opacity="0.3">
+    <line class="grid-line" x1="0" y1="25" x2="800" y2="25"/><line class="grid-line" x1="0" y1="50" x2="800" y2="50"/>
+    <line class="grid-line" x1="0" y1="75" x2="800" y2="75"/><line class="grid-line" x1="0" y1="100" x2="800" y2="100"/>
+    <line class="grid-line" x1="0" y1="125" x2="800" y2="125"/><line class="grid-line" x1="0" y1="150" x2="800" y2="150"/>
+    <line class="grid-line" x1="0" y1="175" x2="800" y2="175"/><line class="grid-line" x1="0" y1="200" x2="800" y2="200"/>
+    <line class="grid-line" x1="0" y1="225" x2="800" y2="225"/><line class="grid-line" x1="0" y1="250" x2="800" y2="250"/>
+    <line class="grid-line" x1="0" y1="275" x2="800" y2="275"/><line class="grid-line" x1="0" y1="300" x2="800" y2="300"/>
+    <line class="grid-line" x1="0" y1="325" x2="800" y2="325"/><line class="grid-line" x1="0" y1="350" x2="800" y2="350"/>
+    <line class="grid-line" x1="0" y1="375" x2="800" y2="375"/><line class="grid-line" x1="0" y1="400" x2="800" y2="400"/>
+    <line class="grid-line" x1="0" y1="425" x2="800" y2="425"/><line class="grid-line" x1="0" y1="450" x2="800" y2="450"/>
+    <line class="grid-line" x1="0" y1="475" x2="800" y2="475"/>
+    <line class="grid-line" x1="25" y1="0" x2="25" y2="500"/><line class="grid-line" x1="50" y1="0" x2="50" y2="500"/>
+    <line class="grid-line" x1="75" y1="0" x2="75" y2="500"/><line class="grid-line" x1="100" y1="0" x2="100" y2="500"/>
+    <line class="grid-line" x1="125" y1="0" x2="125" y2="500"/><line class="grid-line" x1="150" y1="0" x2="150" y2="500"/>
+    <line class="grid-line" x1="175" y1="0" x2="175" y2="500"/><line class="grid-line" x1="200" y1="0" x2="200" y2="500"/>
+    <line class="grid-line" x1="225" y1="0" x2="225" y2="500"/><line class="grid-line" x1="250" y1="0" x2="250" y2="500"/>
+    <line class="grid-line" x1="275" y1="0" x2="275" y2="500"/><line class="grid-line" x1="300" y1="0" x2="300" y2="500"/>
+    <line class="grid-line" x1="325" y1="0" x2="325" y2="500"/><line class="grid-line" x1="350" y1="0" x2="350" y2="500"/>
+    <line class="grid-line" x1="375" y1="0" x2="375" y2="500"/><line class="grid-line" x1="400" y1="0" x2="400" y2="500"/>
+    <line class="grid-line" x1="425" y1="0" x2="425" y2="500"/><line class="grid-line" x1="450" y1="0" x2="450" y2="500"/>
+    <line class="grid-line" x1="475" y1="0" x2="475" y2="500"/><line class="grid-line" x1="500" y1="0" x2="500" y2="500"/>
+    <line class="grid-line" x1="525" y1="0" x2="525" y2="500"/><line class="grid-line" x1="550" y1="0" x2="550" y2="500"/>
+    <line class="grid-line" x1="575" y1="0" x2="575" y2="500"/><line class="grid-line" x1="600" y1="0" x2="600" y2="500"/>
+    <line class="grid-line" x1="625" y1="0" x2="625" y2="500"/><line class="grid-line" x1="650" y1="0" x2="650" y2="500"/>
+    <line class="grid-line" x1="675" y1="0" x2="675" y2="500"/><line class="grid-line" x1="700" y1="0" x2="700" y2="500"/>
+    <line class="grid-line" x1="725" y1="0" x2="725" y2="500"/><line class="grid-line" x1="750" y1="0" x2="750" y2="500"/>
+    <line class="grid-line" x1="775" y1="0" x2="775" y2="500"/>
+  </g>
+
+  <!-- HUD corners -->
+  <text class="dim-text" x="10" y="14">SYS::MADZI</text>
+  <text class="dim-text" x="650" y="14">CISCO::PACKET_TRACER</text>
+  <text class="dim-text" x="10" y="492">OSPF::AREA_0 — VLANS::10·20·30</text>
+  <text class="dim-text" x="580" y="492">DHCP::OK — DNS::OK — ROUTING::OK</text>
+
+  <!-- Domain boundary -->
+  <rect class="domain-box" x="30" y="28" width="740" height="440" rx="3"/>
+  <text class="tag-text" x="400" y="46" text-anchor="middle" filter="url(#glow)">// INFRASTRUCTURE RÉSEAU MULTI-SITES — PROJET MADZI</text>
+  <line stroke="#005c10" stroke-width="0.8" x1="170" y1="50" x2="630" y2="50"/>
+
+  <!-- ═══════════════════════════════════════
+       ROUTEUR R1 (centre-haut)
+  ═══════════════════════════════════════ -->
+  <!-- Symbole routeur R1 : cercle + croix interne -->
+  <circle cx="400" cy="105" r="30" fill="#001800" stroke="#00cc44" stroke-width="1.8" filter="url(#glow)"/>
+  <line stroke="#00cc44" stroke-width="1.2" x1="375" y1="105" x2="425" y2="105"/>
+  <line stroke="#00cc44" stroke-width="1.2" x1="400" y1="80"  x2="400" y2="130"/>
+  <circle cx="400" cy="105" r="6" fill="#001800" stroke="#00aa33" stroke-width="1"/>
+  <text class="title-text" x="400" y="152" text-anchor="middle" filter="url(#glow)">R1</text>
+  <text class="small-text" x="400" y="165" text-anchor="middle">CISCO 2911</text>
+  <text class="dim-text"   x="400" y="177" text-anchor="middle">192.168.1.1 / .2.1 / .3.1</text>
+  <!-- LED -->
+  <circle cx="418" cy="90" r="2.5" fill="#00cc44" filter="url(#glow-strong)"/>
+  <circle cx="425" cy="90" r="2.5" fill="#00aa33"/>
+
+  <!-- ═══════════════════════════════════════
+       OSPF links R1 ↔ R2 ↔ R3
+  ═══════════════════════════════════════ -->
+  <!-- R1 → R2 (gauche-bas) -->
+  <line class="line-ospf" x1="374" y1="124" x2="220" y2="235"/>
+  <text class="dim-text" x="278" y="178" text-anchor="middle" transform="rotate(-34,278,178)">OSPF AREA 0</text>
+  <text class="dim-text" x="270" y="190" text-anchor="middle" transform="rotate(-34,270,190)">10.0.12.0/30</text>
+
+  <!-- R1 → R3 (droite-bas) -->
+  <line class="line-ospf" x1="426" y1="124" x2="580" y2="235"/>
+  <text class="dim-text" x="520" y="178" text-anchor="middle" transform="rotate(34,520,178)">OSPF AREA 0</text>
+  <text class="dim-text" x="528" y="190" text-anchor="middle" transform="rotate(34,528,190)">10.0.13.0/30</text>
+
+  <!-- R2 → R3 (bas) -->
+  <line class="line-ospf" x1="248" y1="260" x2="552" y2="260"/>
+  <text class="dim-text" x="400" y="256" text-anchor="middle">OSPF AREA 0 — 10.0.23.0/30</text>
+
+  <!-- ═══════════════════════════════════════
+       ROUTEUR R2 (gauche)
+  ═══════════════════════════════════════ -->
+  <circle cx="200" cy="260" r="30" fill="#001800" stroke="#00cc44" stroke-width="1.8" filter="url(#glow)"/>
+  <line stroke="#00cc44" stroke-width="1.2" x1="175" y1="260" x2="225" y2="260"/>
+  <line stroke="#00cc44" stroke-width="1.2" x1="200" y1="235" x2="200" y2="285"/>
+  <circle cx="200" cy="260" r="6" fill="#001800" stroke="#00aa33" stroke-width="1"/>
+  <text class="title-text" x="200" y="307" text-anchor="middle" filter="url(#glow)">R2</text>
+  <text class="small-text" x="200" y="320" text-anchor="middle">CISCO 2911</text>
+  <text class="dim-text"   x="200" y="332" text-anchor="middle">192.168.10.1</text>
+  <circle cx="218" cy="245" r="2.5" fill="#00cc44" filter="url(#glow-strong)"/>
+  <circle cx="225" cy="245" r="2.5" fill="#00aa33"/>
+
+  <!-- ═══════════════════════════════════════
+       ROUTEUR R3 (droite)
+  ═══════════════════════════════════════ -->
+  <circle cx="600" cy="260" r="30" fill="#001800" stroke="#00cc44" stroke-width="1.8" filter="url(#glow)"/>
+  <line stroke="#00cc44" stroke-width="1.2" x1="575" y1="260" x2="625" y2="260"/>
+  <line stroke="#00cc44" stroke-width="1.2" x1="600" y1="235" x2="600" y2="285"/>
+  <circle cx="600" cy="260" r="6" fill="#001800" stroke="#00aa33" stroke-width="1"/>
+  <text class="title-text" x="600" y="307" text-anchor="middle" filter="url(#glow)">R3</text>
+  <text class="small-text" x="600" y="320" text-anchor="middle">CISCO 2911</text>
+  <text class="dim-text"   x="600" y="332" text-anchor="middle">192.168.20.1</text>
+  <circle cx="618" cy="245" r="2.5" fill="#00cc44" filter="url(#glow-strong)"/>
+  <circle cx="625" cy="245" r="2.5" fill="#00aa33"/>
+
+  <!-- ═══════════════════════════════════════
+       SWITCH SW1 sous R2
+  ═══════════════════════════════════════ -->
+  <!-- Ligne R2 → SW1 (trunk 802.1Q) -->
+  <line class="line-trunk" x1="200" y1="290" x2="200" y2="355"/>
+  <text class="dim-text" x="160" y="325">TRUNK</text>
+  <text class="dim-text" x="155" y="336">802.1Q</text>
+
+  <!-- Switch SW1 : rectangle avec ports -->
+  <rect x="138" y="355" width="124" height="38" rx="3" fill="#001200" stroke="#00aa33" stroke-width="1.2"/>
+  <rect x="144" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="158" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="172" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="186" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="200" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="214" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="228" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <circle cx="248" cy="365" r="2.5" fill="#00cc44" filter="url(#glow-strong)"/>
+  <text class="tag-text"  x="200" y="385" text-anchor="middle">SW1 — CISCO 2960</text>
+
+  <!-- ═══════════════════════════════════════
+       SWITCH SW2 sous R3
+  ═══════════════════════════════════════ -->
+  <line class="line-trunk" x1="600" y1="290" x2="600" y2="355"/>
+  <text class="dim-text" x="608" y="325">TRUNK</text>
+  <text class="dim-text" x="605" y="336">802.1Q</text>
+
+  <rect x="538" y="355" width="124" height="38" rx="3" fill="#001200" stroke="#00aa33" stroke-width="1.2"/>
+  <rect x="544" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="558" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="572" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="586" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="600" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="614" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <rect x="628" y="360" width="10" height="10" rx="1" fill="#001800" stroke="#008020" stroke-width="0.6"/>
+  <circle cx="648" cy="365" r="2.5" fill="#00cc44" filter="url(#glow-strong)"/>
+  <text class="tag-text"  x="600" y="385" text-anchor="middle">SW2 — CISCO 2960</text>
+
+  <!-- ═══════════════════════════════════════
+       VLANs sous SW1
+  ═══════════════════════════════════════ -->
+  <!-- VLAN 10 -->
+  <line class="line-acc" x1="162" y1="393" x2="100" y2="430"/>
+  <rect x="48" y="430" width="104" height="38" rx="2" fill="#001000" stroke="#00aa28" stroke-width="1"/>
+  <text class="vlan-text" x="100" y="444" text-anchor="middle" fill="#00cc44">VLAN 10</text>
+  <text class="dim-text"  x="100" y="456" text-anchor="middle">192.168.10.0/24</text>
+  <text class="small-text" x="100" y="466" text-anchor="middle">ADMIN</text>
+
+  <!-- VLAN 20 -->
+  <line class="line-acc" x1="200" y1="393" x2="200" y2="430"/>
+  <rect x="148" y="430" width="104" height="38" rx="2" fill="#001000" stroke="#00aa28" stroke-width="1"/>
+  <text class="vlan-text" x="200" y="444" text-anchor="middle" fill="#00cc44">VLAN 20</text>
+  <text class="dim-text"  x="200" y="456" text-anchor="middle">192.168.20.0/24</text>
+  <text class="small-text" x="200" y="466" text-anchor="middle">UTILISATEURS</text>
+
+  <!-- ═══════════════════════════════════════
+       VLANs sous SW2
+  ═══════════════════════════════════════ -->
+  <!-- VLAN 30 -->
+  <line class="line-acc" x1="562" y1="393" x2="500" y2="430"/>
+  <rect x="448" y="430" width="104" height="38" rx="2" fill="#001000" stroke="#00aa28" stroke-width="1"/>
+  <text class="vlan-text" x="500" y="444" text-anchor="middle" fill="#00cc44">VLAN 30</text>
+  <text class="dim-text"  x="500" y="456" text-anchor="middle">192.168.30.0/24</text>
+  <text class="small-text" x="500" y="466" text-anchor="middle">SERVEURS</text>
+
+  <!-- VLAN 40 -->
+  <line class="line-acc" x1="600" y1="393" x2="650" y2="430"/>
+  <rect x="598" y="430" width="104" height="38" rx="2" fill="#001000" stroke="#00aa28" stroke-width="1"/>
+  <text class="vlan-text" x="650" y="444" text-anchor="middle" fill="#00cc44">VLAN 40</text>
+  <text class="dim-text"  x="650" y="456" text-anchor="middle">192.168.40.0/24</text>
+  <text class="small-text" x="650" y="466" text-anchor="middle">DIRECTION</text>
+
+  <!-- ═══════════════════════════════════════
+       DHCP / DNS block (centre)
+  ═══════════════════════════════════════ -->
+  <rect x="330" y="220" width="140" height="76" rx="3" fill="#001200" stroke="#005c10" stroke-width="1" stroke-dasharray="3,2"/>
+  <text class="dim-text" x="400" y="237" text-anchor="middle">// SERVICES</text>
+  <text class="small-text" x="400" y="252" text-anchor="middle">DHCP — pools /24</text>
+  <text class="small-text" x="400" y="266" text-anchor="middle">DNS — résolution locale</text>
+  <text class="small-text" x="400" y="280" text-anchor="middle">Sub-interfaces 802.1Q</text>
+  <text class="dim-text"   x="400" y="292" text-anchor="middle">clock rate — résolu</text>
+  <!-- Lines from R1 to services box -->
+  <line stroke="#003a0a" stroke-width="0.8" stroke-dasharray="2,3" x1="400" y1="135" x2="400" y2="220"/>
+
+  <!-- ═══════════════════════════════════════
+       Bottom status bar
+  ═══════════════════════════════════════ -->
+  <line stroke="#003a0a" stroke-width="0.8" x1="50" y1="425" x2="750" y2="425"/>
+
+  <!-- Tags -->
+  <rect x="55"  y="433" width="66"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="88"  y="446" text-anchor="middle">Cisco IOS</text>
+
+  <rect x="129" y="433" width="66"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="162" y="446" text-anchor="middle">VLANs</text>
+
+  <rect x="203" y="433" width="66"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="236" y="446" text-anchor="middle">OSPF</text>
+
+  <rect x="277" y="433" width="66"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="310" y="446" text-anchor="middle">DHCP/DNS</text>
+
+  <rect x="351" y="433" width="100" height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="401" y="446" text-anchor="middle">Packet Tracer</text>
+
+  <rect x="459" y="433" width="90"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="504" y="446" text-anchor="middle">Inter-VLAN</text>
+
+  <rect x="557" y="433" width="90"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="602" y="446" text-anchor="middle">802.1Q Trunk</text>
+
+  <rect x="655" y="433" width="90"  height="18" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="700" y="446" text-anchor="middle">3 Routeurs</text>
+
+  <!-- Status -->
+  <circle cx="390" cy="461" r="3" fill="#00cc44" filter="url(#glow-strong)"/>
+  <text class="tag-text" x="400" y="465" text-anchor="middle" filter="url(#glow)">// STATUS : RÉUSSI — PING R1↔R2↔R3 CONCLUANT</text>
+</svg>
+

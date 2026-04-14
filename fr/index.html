@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuung Addi Kansietoko — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">ACCUEIL</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92<br><span class="hb">MEM::OK</span></div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span><br><span class="hb">DISPONIBLE</span></div>
+  <nav id="main-nav"></nav>
+
+  <div class="page-content page-wrap">
+
+    <!-- ══ HERO ══════════════════════════════════════════════ -->
+    <section id="hero">
+      <div class="h-in">
+        <!-- Le lien sur le BTS ouvre la fiche ONISEP officielle -->
+        <p class="h-tag">// <a
+            href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
+            target="_blank" rel="noopener"
+            style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;">BTS SIO — OPTION B
+            (SLAM)</a> — 2025·2026</p>
+        <h1 class="h-name" data-text="YUUNG ADDI KANSIETOKO">YUUNG ADDI KANSIETOKO</h1>
+        <p class="h-role"><span id="typed-text"></span><span class="t-cur">&nbsp;</span></p>
+        <div class="h-sep"></div>
+        <p class="h-desc">
+          Étudiant en <strong>BTS SIO option B — SLAM</strong>, avec une passion profonde pour les réseaux et la
+          cybersécurité.<br>
+          Ma finalité : basculer vers le SISR et devenir ingénieur en cybersécurité, expert des infrastructures réseau.
+        </p>
+        <div class="h-btns">
+          <a href="projets.html" class="btn btn-p">VOIR MES PROJETS</a>
+          <a href="competences.html" class="btn btn-g">MES COMPÉTENCES</a>
+          <a href="contact.html" class="btn btn-g">ME CONTACTER</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTENU PRINCIPAL ══════════════════════════════════ -->
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- ── Cartes d'identité rapide ──────────────────────── -->
+      <div class="h-cards rv">
+        <div class="card h-card">
+          <div class="hc-lbl">// NOM COMPLET</div>
+          <div class="hc-val">Yuung Addi Kansietoko</div>
+        </div>
+        <div class="card h-card">
+          <div class="hc-lbl">// FORMATION</div>
+          <div class="hc-val">
+            <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
+              target="_blank" rel="noopener"
+              style="color:var(--g3);text-decoration:none;border-bottom:1px solid var(--g5);">BTS SIO — Option B
+              SLAM</a>
+          </div>
+        </div>
+        <div class="card h-card">
+          <div class="hc-lbl">// ÉTABLISSEMENT</div>
+          <div class="hc-val">
+            <!-- Lien vers la page Google du lycée pour voir sa localisation -->
+            <a href="https://www.google.com/search?q=Lycée+Latournelle+La+Garenne-Colombes" target="_blank"
+              rel="noopener" style="color:var(--g3);text-decoration:none;border-bottom:1px solid var(--g5);">
+              Lycée Latournelle
+            </a><br>
+            <span style="font-size:.75em;color:var(--g6);">La Garenne-Colombes (92)</span>
+          </div>
+        </div>
+        <div class="card h-card">
+          <div class="hc-lbl">// ANNÉE SCOLAIRE</div>
+          <div class="hc-val">2025 — 2026</div>
+        </div>
+        <div class="card h-card">
+          <div class="hc-lbl">// LOCALISATION</div>
+          <div class="hc-val">Nanterre, 92</div>
+        </div>
+      </div>
+
+      <!-- ── Bloc À PROPOS ─────────────────────────────────── -->
+      <div style="margin-top:72px;" class="rv">
+        <div class="sec-hd">
+          <span class="sec-tag">// 01 — À PROPOS</span>
+          <h2 class="sec-title">QUI SUIS-JE ?</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <!-- Grille 2 colonnes : biographie gauche | encarts droite -->
+        <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:64px;align-items:start;">
+
+          <!-- ── Colonne biographie ── -->
+          <div style="font-size:.96rem;font-weight:300;line-height:2;color:#55cc77;">
+
+            <p>
+              Passionné par l'informatique et la cybersécurité depuis mes premiers pas dans le monde du numérique,
+              je me forme aujourd'hui pour devenir un professionnel capable de <strong
+                style="color:var(--g3);">protéger,
+                analyser et sécuriser</strong> les infrastructures réseau face aux cybermenaces actuelles.
+              Mon moteur : comprendre comment les systèmes fonctionnent pour mieux les défendre.
+            </p>
+
+            <p style="margin-top:18px;">
+              Mon parcours n'est pas linéaire — et c'est une force. Après un <strong style="color:var(--g3);">Bac Pro
+                Systèmes Numériques</strong> et un passage en <strong style="color:var(--g3);">BTS
+                Électronique</strong>,
+              j'ai choisi de me réorienter vers l'informatique et j'intègre aujourd'hui le
+              <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
+                target="_blank" rel="noopener"
+                style="color:var(--g3);text-decoration:none;border-bottom:1px dotted var(--g5);"><strong
+                  style="color:var(--g3);">BTS SIO option B — SLAM</strong></a>
+              au
+              <a href="https://www.google.com/search?q=Lycée+Latournelle+La+Garenne-Colombes" target="_blank"
+                rel="noopener" style="color:var(--g3);text-decoration:none;border-bottom:1px dotted var(--g5);">Lycée
+                Latournelle</a>
+              (La Garenne-Colombes), promotion 2025–2026. Le SLAM me donne de solides bases en développement logiciel,
+              en base de données et en conception d'applications — des compétences qui complètent parfaitement mon
+              profil.
+            </p>
+
+            <p style="margin-top:18px;">
+              Mais ne vous y trompez pas :
+              <strong style="color:var(--g3);">ma vraie passion, c'est le réseau</strong>.
+              Les protocoles, la topologie des infrastructures, la cybersécurité, la défense des systèmes —
+              c'est ce qui me lève le matin. Ma finalité est claire : basculer vers le
+              <strong style="color:var(--g3);">SISR</strong> pour devenir expert en sécurité des infrastructures réseau
+              et intégrer un SOC ou une équipe cyberdéfense.
+            </p>
+
+            <p style="margin-top:18px;">
+              Rigoureux, autonome et en veille permanente sur les nouvelles menaces, je cherche à intégrer
+              un environnement professionnel — SOC, équipe réseau, ou structure cyber — pour transformer
+              ma formation en impact concret. Je suis disponible pour un
+              <strong style="color:var(--g3);">stage en 2025 / 2026</strong>.
+            </p>
+
+            <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="competences.html" class="btn btn-p btn-sm">MES COMPÉTENCES →</a>
+              <a href="certifications.html" class="btn btn-g btn-sm">MES CERTIFICATIONS →</a>
+            </div>
+          </div>
+
+          <!-- ── Colonne droite : encarts ── -->
+          <div style="display:flex;flex-direction:column;gap:16px;">
+
+            <!-- Profil rapide -->
+            <div class="card" style="padding:24px;border-left:3px solid var(--g3);">
+              <div
+                style="font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g6);margin-bottom:12px;">//
+                PROFIL RAPIDE</div>
+              <div style="font-size:.84rem;color:var(--g5);line-height:2.1;">
+                <span style="color:var(--g3);">▸ Domaine</span> — Cybersécurité · SLAM<br>
+                <span style="color:var(--g3);">▸ Spécialité</span> — Réseaux · Sécurité · Administration<br>
+                <span style="color:var(--g3);">▸ Certifications</span> — AWS · ANSSI · CISSP · IA<br>
+                <span style="color:var(--g3);">▸ Objectif</span> — Ingénieur Cybersécurité / Expert Réseaux<br>
+                <span style="color:var(--g3);">▸ Stage</span> — Disponible 2025 / 2026<br>
+                <span style="color:var(--g3);">▸ Localisation</span> — Nanterre · Île-de-France
+              </div>
+            </div>
+
+            <!-- Compétences transverses — lien avec la restauration -->
+            <div class="card" style="padding:24px;border-left:3px solid var(--g5);">
+              <div
+                style="font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g6);margin-bottom:12px;">//
+                COMPÉTENCES TRANSVERSES</div>
+              <div style="font-size:.84rem;color:var(--g5);line-height:2.1;">
+                <span style="color:var(--g3);">▸ Travail d'équipe</span><br>
+                <span style="font-size:.78rem;color:var(--g7);">
+                  Mon expérience en restauration m'a appris à collaborer sous pression,
+                  à communiquer efficacement et à m'adapter en temps réel aux imprévus.
+                  Des réflexes directement transposables en environnement SOC ou réseau.
+                </span><br><br>
+                <span style="color:var(--g3);">▸ Gestion du stress</span><br>
+                <span style="font-size:.78rem;color:var(--g7);">
+                  Habitué aux pics d'activité intense (service restaurant), je maintiens
+                  calme, efficacité et priorisation même dans les situations critiques.
+                </span><br><br>
+                <span style="color:var(--g3);">▸ Adaptabilité</span><br>
+                <span style="font-size:.78rem;color:var(--g7);">
+                  Parcours atypique = capacité prouvée à changer d'environnement,
+                  à absorber rapidement de nouvelles compétences et à repartir de zéro
+                  avec détermination.
+                </span><br><br>
+                <span style="color:var(--g3);">▸ Rigueur & organisation</span><br>
+                <span style="font-size:.78rem;color:var(--g7);">
+                  Sens du détail et respect des procédures développés dans des milieux
+                  exigeants — une qualité essentielle en cybersécurité.
+                </span>
+              </div>
+            </div>
+
+          </div><!-- /colonne droite -->
+        </div>
+      </div>
+
+      <!-- ── Expériences professionnelles ─────────────────────── -->
+      <div style="margin-top:64px;" class="rv">
+        <div class="sec-hd">
+          <span class="sec-tag">// 01.1 — TERRAIN</span>
+          <h2 class="sec-title">EXPÉRIENCES PROFESSIONNELLES</h2>
+          <div class="sec-line"></div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:20px;margin-top:32px;position:relative;">
+          <!-- ligne verticale timeline -->
+          <div style="position:absolute;left:18px;top:14px;bottom:14px;width:1px;background:linear-gradient(to bottom,var(--g3),var(--g7));"></div>
+
+          <!-- Alternance IT : Kuba -->
+          <div class="card" style="padding:22px 24px 22px 54px;position:relative;">
+            <div style="position:absolute;left:12px;top:28px;width:12px;height:12px;background:var(--g3);border:2px solid var(--bg);box-shadow:var(--glow-xs);transform:rotate(45deg);"></div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+              <div>
+                <div style="font-family:var(--ft);font-size:.68rem;letter-spacing:3px;color:var(--g3);">APPRENTI TECHNICIEN SUPÉRIEUR — ALTERNANCE</div>
+                <div style="font-size:.9rem;color:var(--g4);margin-top:4px;font-weight:500;">Kuba — Besançon</div>
+                <div style="font-size:.76rem;color:var(--g6);margin-top:2px;">Gestion licences · Accès utilisateurs · Tests logiciels UI</div>
+              </div>
+              <span style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g6);white-space:nowrap;border:1px solid rgba(0,204,68,.2);padding:3px 10px;border-radius:2px;">OCT 2024 — MARS 2025</span>
+            </div>
+            <ul style="font-size:.82rem;color:var(--g6);line-height:2;list-style:none;padding:0;margin:0;">
+              <li>▸ Gestion des licences informatiques et des accès utilisateurs</li>
+              <li>▸ Tests de logiciels sur interface utilisateur</li>
+            </ul>
+          </div>
+
+          <!-- Stage 1 : Digimobee -->
+          <div class="card" style="padding:22px 24px 22px 54px;position:relative;">
+            <div style="position:absolute;left:12px;top:28px;width:12px;height:12px;background:var(--g3);border:2px solid var(--bg);box-shadow:var(--glow-xs);transform:rotate(45deg);"></div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+              <div>
+                <div style="font-family:var(--ft);font-size:.68rem;letter-spacing:3px;color:var(--g3);">STAGE PRATIQUE DE TERMINALE</div>
+                <div style="font-size:.9rem;color:var(--g4);margin-top:4px;font-weight:500;">Digimobee — Paris</div>
+                <div style="font-size:.76rem;color:var(--g6);margin-top:2px;">Testeur d'applications UI · Ligne d'Azur &amp; Wallet LAT</div>
+              </div>
+              <span style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g6);white-space:nowrap;border:1px solid rgba(0,204,68,.2);padding:3px 10px;border-radius:2px;">NOV 2023 — JAN 2024</span>
+            </div>
+            <ul style="font-size:.82rem;color:var(--g6);line-height:2;list-style:none;padding:0;margin:0;">
+              <li>▸ Tests d'interface utilisateur — achat, revente et recharge de titres de transport</li>
+              <li>▸ Simulation de scénarios via l'application Ligne d'Azur et les bornes de validation</li>
+              <li>▸ Recharge des cartes de transport via le logiciel Mobeepass (application LAT)</li>
+              <li>▸ Tests de conformité et de non-régression sur LAT &amp; Wallet LAT</li>
+              <li>▸ Reporting des bugs sur Excel après tests de non-régression</li>
+            </ul>
+          </div>
+
+          <!-- Stage 2 : Centre Social des Sablons -->
+          <div class="card" style="padding:22px 24px 22px 54px;position:relative;">
+            <div style="position:absolute;left:12px;top:28px;width:12px;height:12px;background:var(--g5);border:2px solid var(--bg);transform:rotate(45deg);"></div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+              <div>
+                <div style="font-family:var(--ft);font-size:.68rem;letter-spacing:3px;color:var(--g3);">STAGE D'OBSERVATION DE 2NDE</div>
+                <div style="font-size:.9rem;color:var(--g4);margin-top:4px;font-weight:500;">Centre Social des Sablons — Sarcelles</div>
+                <div style="font-size:.76rem;color:var(--g6);margin-top:2px;">Assistant professeur — Outils informatiques</div>
+              </div>
+              <span style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g6);white-space:nowrap;border:1px solid rgba(0,204,68,.2);padding:3px 10px;border-radius:2px;">MAI — JUIN 2023</span>
+            </div>
+            <ul style="font-size:.82rem;color:var(--g6);line-height:2;list-style:none;padding:0;margin:0;">
+              <li>▸ Dispense de cours sur les outils informatiques — Pack Office, navigation internet</li>
+              <li>▸ Élaboration d'un plan de cours annuel via Word et PowerPoint</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── Restauration & Événementiel ─────────────────────── -->
+      <div style="margin-top:64px;" class="rv">
+        <div class="sec-hd">
+          <span class="sec-tag">// 01.1B — RESTAURATION & ÉVÉNEMENTIEL</span>
+          <h2 class="sec-title">RESTAURATION &amp; ÉVÉNEMENTIEL</h2>
+          <div class="sec-line"></div>
+        </div>
+        <div style="position:relative;margin-top:32px;padding-left:20px;">
+          <div style="position:absolute;left:17px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--g3),transparent);opacity:.35;"></div>
+
+          <!-- Events One -->
+          <div class="card" style="padding:22px 24px 22px 54px;position:relative;margin-bottom:16px;">
+            <div style="position:absolute;left:12px;top:28px;width:12px;height:12px;background:var(--g4);border:2px solid var(--bg);box-shadow:var(--glow-xs);transform:rotate(45deg);"></div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+              <div>
+                <div style="font-family:var(--ft);font-size:.68rem;letter-spacing:3px;color:var(--g3);">CHEF DE RANG / SERVEUR ÉVÉNEMENTIEL</div>
+                <div style="font-size:.9rem;color:var(--g4);margin-top:4px;font-weight:500;">Events One Intérim — Paris</div>
+                <div style="font-size:.76rem;color:var(--g6);margin-top:2px;">Service en salle · Événements d'entreprise · Banquets</div>
+              </div>
+              <span style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g6);white-space:nowrap;border:1px solid rgba(0,204,68,.2);padding:3px 10px;border-radius:2px;">JUIL 2023 — OCT 2024</span>
+            </div>
+            <ul style="font-size:.82rem;color:var(--g6);line-height:2;list-style:none;padding:0;margin:0;">
+              <li>▸ Service en salle lors d'événements d'entreprise, cocktails et banquets</li>
+              <li>▸ Coordination avec les équipes cuisine et accueil · Gestion du rythme sous pression</li>
+            </ul>
+          </div>
+
+          <!-- McDonald's -->
+          <div class="card" style="padding:22px 24px 22px 54px;position:relative;margin-bottom:16px;">
+            <div style="position:absolute;left:12px;top:28px;width:12px;height:12px;background:var(--g4);border:2px solid var(--bg);box-shadow:var(--glow-xs);transform:rotate(45deg);"></div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+              <div>
+                <div style="font-family:var(--ft);font-size:.68rem;letter-spacing:3px;color:var(--g3);">ÉQUIPIER POLYVALENT</div>
+                <div style="font-size:.9rem;color:var(--g4);margin-top:4px;font-weight:500;">McDonald's — Taverny</div>
+                <div style="font-size:.76rem;color:var(--g6);margin-top:2px;">Service client · Préparation · Caisse</div>
+              </div>
+              <span style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g6);white-space:nowrap;border:1px solid rgba(0,204,68,.2);padding:3px 10px;border-radius:2px;">MARS — SEP 2024</span>
+            </div>
+            <ul style="font-size:.82rem;color:var(--g6);line-height:2;list-style:none;padding:0;margin:0;">
+              <li>▸ Accueil et service client · Préparation des commandes · Tenue de caisse</li>
+              <li>▸ Travail en équipe dans un environnement à cadence élevée</li>
+            </ul>
+          </div>
+
+          <!-- Paradis Latin -->
+          <div class="card" style="padding:22px 24px 22px 54px;position:relative;margin-bottom:16px;">
+            <div style="position:absolute;left:12px;top:28px;width:12px;height:12px;background:var(--g4);border:2px solid var(--bg);box-shadow:var(--glow-xs);transform:rotate(45deg);"></div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+              <div>
+                <div style="font-family:var(--ft);font-size:.68rem;letter-spacing:3px;color:var(--g3);">COMMIS DE SALLE</div>
+                <div style="font-size:.9rem;color:var(--g4);margin-top:4px;font-weight:500;">Paradis Latin — Paris</div>
+                <div style="font-size:.76rem;color:var(--g6);margin-top:2px;">Cabaret · Service de soirée · Dressage de tables</div>
+              </div>
+              <span style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g6);white-space:nowrap;border:1px solid rgba(0,204,68,.2);padding:3px 10px;border-radius:2px;">JUIL 2023 — JAN 2024</span>
+            </div>
+            <ul style="font-size:.82rem;color:var(--g6);line-height:2;list-style:none;padding:0;margin:0;">
+              <li>▸ Service en salle lors des spectacles de cabaret · Dressage et débarrassage des tables</li>
+              <li>▸ Accueil d'une clientèle internationale · Maintien d'un cadre haut de gamme</li>
+            </ul>
+          </div>
+
+          <!-- Gruppomimo -->
+          <div class="card" style="padding:22px 24px 22px 54px;position:relative;">
+            <div style="position:absolute;left:12px;top:28px;width:12px;height:12px;background:var(--g5);border:2px solid var(--bg);transform:rotate(45deg);"></div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+              <div>
+                <div style="font-family:var(--ft);font-size:.68rem;letter-spacing:3px;color:var(--g3);">CHEF DE RANG</div>
+                <div style="font-size:.9rem;color:var(--g4);margin-top:4px;font-weight:500;">Gruppomimo — Paris 2e</div>
+                <div style="font-size:.76rem;color:var(--g6);margin-top:2px;">Restaurant italien · Service à table · Gestion de rang</div>
+              </div>
+              <span style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g6);white-space:nowrap;border:1px solid rgba(0,204,68,.2);padding:3px 10px;border-radius:2px;">MAI — JUIL 2023</span>
+            </div>
+            <ul style="font-size:.82rem;color:var(--g6);line-height:2;list-style:none;padding:0;margin:0;">
+              <li>▸ Gestion d'un rang complet · Prise de commandes et service à table</li>
+              <li>▸ Relation client et satisfaction · Ambiance restaurant haut de gamme</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── Centres d'intérêt ──────────────────────────────── -->
+      <div style="margin-top:64px;" class="rv">
+        <div class="sec-hd">
+          <span class="sec-tag">// 01.2 — AU-DELÀ DU CODE</span>
+          <h2 class="sec-title">CENTRES D'INTÉRÊT</h2>
+          <div class="sec-line"></div>
+          <p class="sec-desc" style="margin-top:12px;">Ce qui nourrit ma curiosité, ma motivation et mon rapport au
+            monde professionnel.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-top:32px;">
+
+          <div class="card" style="padding:22px 20px;">
+            <div style="font-size:1.5rem;margin-bottom:10px;">🎙️</div>
+            <div style="font-family:var(--fm);font-size:.54rem;letter-spacing:2px;color:var(--g3);margin-bottom:8px;">LA RHÉTORIQUE</div>
+            <div style="font-size:.78rem;color:var(--g6);line-height:1.7;">L'art de convaincre et de structurer sa pensée. La rhétorique nourrit ma capacité à communiquer clairement dans les contextes techniques, à rédiger des rapports précis et à défendre mes choix d'architecture.</div>
+          </div>
+
+          <div class="card" style="padding:22px 20px;">
+            <div style="font-size:1.5rem;margin-bottom:10px;">⚽</div>
+            <div style="font-family:var(--fm);font-size:.54rem;letter-spacing:2px;color:var(--g3);margin-bottom:8px;">SPORT</div>
+            <div style="font-size:.78rem;color:var(--g6);line-height:1.7;">Football, course, fitness — le sport me maintient discipliné et l'esprit affûté. Un état d'esprit qui se transpose directement dans la rigueur et la persévérance au travail.</div>
+          </div>
+
+          <div class="card" style="padding:22px 20px;">
+            <div style="font-size:1.5rem;margin-bottom:10px;">🎵</div>
+            <div style="font-family:var(--fm);font-size:.54rem;letter-spacing:2px;color:var(--g3);margin-bottom:8px;">MUSIQUE</div>
+            <div style="font-size:.78rem;color:var(--g6);line-height:1.7;">La musique comme source de concentration et de créativité. Une grande diversité de genres — de l'afrobeat à l'électro — pour me ressourcer et rester inspiré.</div>
+          </div>
+
+          <div class="card" style="padding:22px 20px;">
+            <div style="font-size:1.5rem;margin-bottom:10px;">🍳</div>
+            <div style="font-family:var(--fm);font-size:.54rem;letter-spacing:2px;color:var(--g3);margin-bottom:8px;">CUISINE</div>
+            <div style="font-size:.78rem;color:var(--g6);line-height:1.7;">Une passion cultivée par des années en restauration. Expérimenter en cuisine, jouer avec les saveurs et les techniques — un exutoire créatif qui reflète la précision que j'apporte à l'informatique.</div>
+          </div>
+
+          <div class="card" style="padding:22px 20px;">
+            <div style="font-size:1.5rem;margin-bottom:10px;">🔐</div>
+            <div style="font-family:var(--fm);font-size:.54rem;letter-spacing:2px;color:var(--g3);margin-bottom:8px;">CYBERSÉCURITÉ</div>
+            <div style="font-size:.78rem;color:var(--g6);line-height:1.7;">Plus qu'un choix de carrière — une vraie passion. CTF, recherche de vulnérabilités, Kali Linux — la cybersécurité est quelque chose que j'explore quotidiennement par pure curiosité.</div>
+          </div>
+
+          <div class="card" style="padding:22px 20px;">
+            <div style="font-size:1.5rem;margin-bottom:10px;">🎮</div>
+            <div style="font-family:var(--fm);font-size:.54rem;letter-spacing:2px;color:var(--g3);margin-bottom:8px;">GAMING</div>
+            <div style="font-size:.78rem;color:var(--g6);line-height:1.7;">Le jeu vidéo comme terrain d'entraînement pour la stratégie, la prise de décision rapide et la résolution de problèmes. Une passion qui a allumé ma curiosité pour l'informatique dès le début.</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- /.wrap -->
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 — BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+
+  </div><!-- /.page-wrap -->
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

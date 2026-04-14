@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications — Portfolio BTS SIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div id="cur-ring"></div><div id="cur-dot"></div>
+<canvas id="mx-canvas"></canvas><div id="mx-vignette"></div><div id="mx-grid"></div>
+<div class="hud tl">SYS::EN<br><span class="hb">CERTIFICATIONS</span></div>
+<div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+<div class="hud bl">NANTERRE::92</div>
+<div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+<nav id="main-nav"></nav>
+
+<!-- PDF Viewer modal — triggered by openPDF() in each VIEW button -->
+<div id="pdf-modal">
+  <div class="pdf-bar">
+    <span class="pdf-name" id="pdf-name">Certification</span>
+    <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+  </div>
+  <iframe id="pdf-frame" title="Certification Viewer"></iframe>
+</div>
+
+<div class="page-content page-wrap">
+<div class="wrap" style="padding-bottom:80px;">
+
+  <div class="sec-hd rv" style="margin-top:30px;">
+    <span class="sec-tag">// CERTIFICATIONS &amp; DIPLOMAS</span>
+    <h2 class="sec-title">CERTIFICATIONS</h2>
+    <div class="sec-line"></div>
+    <p class="sec-desc">Obtained certifications, diplomas and training certificates. Click "VIEW" to display the document.</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       TO ADD A CERTIFICATION:
+       ─────────────────────────────────────────────────────────────────
+       1. Copy your PDF to: assets/docs/certifications/my-file.pdf
+       2. Duplicate a .cert-item block below
+       3. Replace: icon, title, organisation, date, PDF filename
+
+       TEMPLATE:
+       <div class="card cert-item rv">
+         <div class="cert-icon">[EMOJI]</div>
+         <div>
+           <div class="cert-title">[CERT NAME]</div>
+           <div class="cert-org">[ORGANISATION]</div>
+           <div class="cert-date">Obtained: [MM/YYYY]</div>
+         </div>
+         <div class="cert-btns">
+           <button onclick="openPDF('../assets/docs/certifications/[FILE].pdf','[NAME]')"
+                   class="cert-btn view" style="cursor:none;">VIEW 📄</button>
+         </div>
+       </div>
+  ══════════════════════════════════════════════════════════════════ -->
+
+  <div class="cert-list">
+
+    <!-- ── AWS ── -->
+    <div class="card cert-item rv">
+      <div class="cert-icon">☁️</div>
+      <div>
+        <div class="cert-title">AWS</div>
+        <div class="cert-org">Amazon Web Services</div>
+        <div class="cert-date">Obtained: 02/2026</div>
+      </div>
+      <div class="cert-btns">
+        <button onclick="openPDF('../assets/docs/certifications/aws.pdf','AWS')"
+                class="cert-btn view" style="cursor:none;">VIEW 📄</button>
+      </div>
+    </div>
+
+    <!-- ── ANSSI ── -->
+    <div class="card cert-item rv d1">
+      <div class="cert-icon">🔒</div>
+      <div>
+        <div class="cert-title">ANSSI Certification</div>
+        <div class="cert-org">ANSSI — Agence Nationale de la Sécurité des Systèmes d'Information</div>
+        <div class="cert-date">Obtained: 02/2026</div>
+      </div>
+      <div class="cert-btns">
+        <button onclick="openPDF('../assets/docs/certifications/certif-anssi.pdf','ANSSI Certification')"
+                class="cert-btn view" style="cursor:none;">VIEW 📄</button>
+      </div>
+    </div>
+
+    <!-- ── CISSP ── -->
+    <div class="card cert-item rv d2">
+      <div class="cert-icon">🛡️</div>
+      <div>
+        <div class="cert-title">CISSP Certification</div>
+        <div class="cert-org">ISC² — International Information System Security Certification Consortium</div>
+        <div class="cert-date">Obtained: 02/2026</div>
+      </div>
+      <div class="cert-btns">
+        <button onclick="openPDF('../assets/docs/certifications/certif-cissp.pdf','CISSP Certification')"
+                class="cert-btn view" style="cursor:none;">VIEW 📄</button>
+      </div>
+    </div>
+
+    <!-- ── AI Mastery ── -->
+    <div class="card cert-item rv d3">
+      <div class="cert-icon">🤖</div>
+      <div>
+        <div class="cert-title">AI Mastery Certificate</div>
+        <div class="cert-org">Anthropic</div>
+        <div class="cert-date">Obtained: 03/2026</div>
+      </div>
+      <div class="cert-btns">
+        <button onclick="openPDF('../assets/docs/certifications/certif-ia.pdf','AI Mastery Certificate')"
+                class="cert-btn view" style="cursor:none;">VIEW 📄</button>
+      </div>
+    </div>
+
+    <!-- ── Empty slot — paste additional certifications here ── -->
+    <div class="card cert-item rv" style="opacity:.4;border-style:dashed;">
+      <div class="cert-icon" style="color:rgba(0,255,65,.2);">+</div>
+      <div>
+        <div class="cert-title" style="color:rgba(0,255,65,.3);font-style:italic;font-family:var(--fm);font-size:.7rem;letter-spacing:2px;">
+          Copy the TEMPLATE from the top of the code · assets/docs/certifications/
+        </div>
+      </div>
+      <div class="cert-btns">
+        <span class="cert-btn ph-btn">+ ADD</span>
+      </div>
+    </div>
+
+  </div><!-- /.cert-list -->
+</div><!-- /.wrap -->
+
+<footer><div class="f-brand">YK_PORTFOLIO</div><div class="f-copy">© 2025 BTS SIO</div><div class="f-live"><div class="ldot"></div>AVAILABLE</div></footer>
+</div><!-- /.page-wrap -->
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

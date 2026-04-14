@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">CERTIFICATIONS</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">PARIS::FR</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF (modal) — déclenché par openPDF() dans chaque bouton VOIR -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Certification</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur de certification"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <div class="sec-hd rv" style="margin-top:30px;">
+        <span class="sec-tag">// CERTIFICATIONS &amp; DIPLÔMES</span>
+        <h2 class="sec-title">CERTIFICATIONS</h2>
+        <div class="sec-line"></div>
+        <p class="sec-desc">Certifications obtenues, diplômes et attestations de formation. Cliquez sur "VOIR" pour
+          afficher le document.</p>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════════════════════
+       POUR AJOUTER UNE CERTIFICATION SUPPLÉMENTAIRE :
+       ─────────────────────────────────────────────────────────────────
+       1. Copie ton PDF dans : assets/docs/certifications/mon-fichier.pdf
+       2. Duplique un bloc .cert-item ci-dessous
+       3. Remplace : icône, titre, organisme, date, nom du fichier PDF
+
+       TEMPLATE :
+       <div class="card cert-item rv">
+         <div class="cert-icon">[EMOJI]</div>
+         <div>
+           <div class="cert-title">[NOM CERTIF]</div>
+           <div class="cert-org">[ORGANISME]</div>
+           <div class="cert-date">Obtenu le : [MM/AAAA]</div>
+         </div>
+         <div class="cert-btns">
+           <button onclick="openPDF('../assets/docs/certifications/[FICHIER].pdf','[NOM]')"
+                   class="cert-btn view" style="cursor:none;">VOIR 📄</button>
+         </div>
+       </div>
+  ══════════════════════════════════════════════════════════════════ -->
+
+      <div class="cert-list">
+
+        <!-- ── AWS ── -->
+        <div class="card cert-item rv">
+          <div class="cert-icon">☁️</div>
+          <div>
+            <div class="cert-title">AWS</div>
+            <div class="cert-org">Amazon Web Services</div>
+            <div class="cert-date">Obtenu le : 02/2026</div>
+          </div>
+          <div class="cert-btns">
+            <button onclick="openPDF('../assets/docs/certifications/aws.pdf','AWS')" class="cert-btn view"
+              style="cursor:none;">VOIR 📄</button>
+          </div>
+        </div>
+
+        <!-- ── ANSSI ── -->
+        <div class="card cert-item rv d1">
+          <div class="cert-icon">🔒</div>
+          <div>
+            <div class="cert-title">Certification ANSSI</div>
+            <div class="cert-org">ANSSI — Agence Nationale de la Sécurité des Systèmes d'Information</div>
+            <div class="cert-date">Obtenu le : 02/2026</div>
+          </div>
+          <div class="cert-btns">
+            <button onclick="openPDF('../assets/docs/certifications/certif-anssi.pdf','Certification ANSSI')"
+              class="cert-btn view" style="cursor:none;">VOIR 📄</button>
+          </div>
+        </div>
+
+        <!-- ── CISSP ── -->
+        <div class="card cert-item rv d2">
+          <div class="cert-icon">🛡️</div>
+          <div>
+            <div class="cert-title">Certification CISSP</div>
+            <div class="cert-org">ISC² — International Information System Security Certification Consortium</div>
+            <div class="cert-date">Obtenu le : 02/2026</div>
+          </div>
+          <div class="cert-btns">
+            <button onclick="openPDF('../assets/docs/certifications/certif-cissp.pdf','Certification CISSP')"
+              class="cert-btn view" style="cursor:none;">VOIR 📄</button>
+          </div>
+        </div>
+
+        <!-- ── Maîtrise de l'IA ── -->
+        <div class="card cert-item rv d3">
+          <div class="cert-icon">🤖</div>
+          <div>
+            <div class="cert-title">Maîtrise de l'Intelligence Artificielle</div>
+            <div class="cert-org">Anthropic</div>
+            <div class="cert-date">Obtenu le : 03/2026</div>
+          </div>
+          <div class="cert-btns">
+            <button onclick="openPDF('../assets/docs/certifications/certif-ia.pdf','Maîtrise de l\'IA')"
+              class="cert-btn view" style="cursor:none;">VOIR 📄</button>
+          </div>
+        </div>
+
+        <!-- ── Slot vide — colle ici tes certifs supplémentaires ── -->
+        <div class="card cert-item rv" style="opacity:.4;border-style:dashed;">
+          <div class="cert-icon" style="color:rgba(0,255,65,.2);">+</div>
+          <div>
+            <div class="cert-title"
+              style="color:rgba(0,255,65,.3);font-style:italic;font-family:var(--fm);font-size:.7rem;letter-spacing:2px;">
+              Copie le TEMPLATE en haut du code · assets/docs/certifications/
+            </div>
+          </div>
+          <div class="cert-btns">
+            <span class="cert-btn ph-btn">+ AJOUTER</span>
+          </div>
+        </div>
+
+      </div><!-- /.cert-list -->
+    </div><!-- /.wrap -->
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div><!-- /.page-wrap -->
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

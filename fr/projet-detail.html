@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Madzi — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">PROJET</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">PARIS::FR</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- Fil d'ariane -->
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projets.html" style="color:var(--g6);text-decoration:none;">← RETOUR AUX PROJETS</a>
+      </div>
+
+      <!-- En-tête -->
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJET 01 — RÉSEAU</span>
+        <h2 class="sec-title">PROJET MADZI</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <!-- Hero : image + métadonnées -->
+      <div class="pj-det-hero rv">
+
+        <!-- Image : capture de la config VLANs -->
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-1.svg" alt="Projet MADZI — Configuration des VLANs">
+        </div>
+
+        <!-- Métadonnées -->
+        <div>
+          <div class="pj-meta">
+
+            <!-- Statut : réussi -->
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUT</span>
+              <span class="pj-status st-success">✓ RÉUSSI</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// DURÉE</span>
+              <span class="pj-meta-val">Février — Mars 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ÉQUIPE</span>
+              <span class="pj-meta-val">Seul</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ANNÉE</span>
+              <span class="pj-meta-val">2025 — 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// OUTILS</span>
+              <span class="pj-meta-val">Cisco, Packet Tracer, VLANs, OSPF, DHCP</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CONTEXTE</span>
+              <span class="pj-meta-val">Projet scolaire — BTS SIO 1ère année</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="pj-section rv">
+        <h3>DESCRIPTION</h3>
+        <p>Le Projet MADZI est un TP d'infrastructure réseau réalisé dans le cadre du BTS SIO. L'objectif était de
+          concevoir et configurer un réseau d'entreprise complet avec segmentation par VLANs, routage dynamique OSPF
+          entre plusieurs routeurs Cisco, et mise en place des services réseau DHCP et DNS.</p>
+      </div>
+
+      <!-- Objectifs -->
+      <div class="pj-section rv">
+        <h3>OBJECTIFS</h3>
+        <p>Configurer une infrastructure réseau multi-sites sur équipements Cisco : créer et attribuer des VLANs, mettre
+          en place le routage inter-VLAN via des sous-interfaces sur un routeur, activer le protocole de routage
+          dynamique OSPF entre trois routeurs (R1, R2, R3), et déployer les pools DHCP avec attribution automatique des
+          adresses IP aux postes clients.</p>
+      </div>
+
+      <!-- Réalisation -->
+      <div class="pj-section rv">
+        <h3>RÉALISATION</h3>
+        <p>Le projet a été mené en plusieurs étapes :</p>
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">1. Configuration des VLANs</strong> — Création et attribution des VLANs sur
+          les switches, configuration des ports en mode access et trunk.<br><br>
+          <strong style="color:var(--g3);">2. Routage inter-VLAN</strong> — Configuration des sous-interfaces sur le
+          routeur avec encapsulation 802.1Q, attribution des adresses de passerelle pour chaque VLAN.<br><br>
+          <strong style="color:var(--g3);">3. OSPF</strong> — Activation du protocole OSPF sur les trois routeurs,
+          déclaration des réseaux dans la zone 0. Résolution d'un conflit d'horloge sur R1 via la commande <code
+            style="color:var(--g4);">clock rate</code>.<br><br>
+          <strong style="color:var(--g3);">4. DHCP / DNS</strong> — Configuration des pools DHCP sur le routeur,
+          vérification de l'attribution automatique des adresses IP sur les postes clients.
+        </p>
+      </div>
+
+      <!-- Résultats -->
+      <div class="pj-section rv">
+        <h3>RÉSULTATS</h3>
+        <p>L'infrastructure a été déployée avec succès. Les tests de ping entre R1, R2 et R3 sont concluants après
+          résolution du conflit d'horloge. Les machines clientes obtiennent correctement leurs adresses IP via DHCP. Ce
+          projet a permis de consolider les compétences en administration réseau Cisco, en routage dynamique OSPF et en
+          segmentation VLAN.</p>
+      </div>
+
+      <!-- Documents -->
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; LIVRABLES</h3>
+        <div class="doc-list">
+
+          <!-- Compte-rendu TP -->
+          <div class="card doc-item">
+            <span class="doc-icon">📄</span>
+            <span class="doc-name">Compte-Rendu TP MADZI</span>
+            <span class="doc-size">~143 Ko</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-1/compte-rendu.pdf','Compte-Rendu TP MADZI')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+          <!-- Sujet du projet -->
+          <div class="card doc-item">
+            <span class="doc-icon">📋</span>
+            <span class="doc-name">Sujet — PROJET MADZI BTS1 SIO 2025-26</span>
+            <span class="doc-size">~209 Ko</span>
+            <button class="doc-link" onclick="openPDF('../assets/docs/projet-1/sujet.pdf','Sujet Projet MADZI')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+          <!-- Présentation PowerPoint — ne s'ouvre pas dans l'iframe, téléchargement direct -->
+          <div class="card doc-item">
+            <span class="doc-icon">📊</span>
+            <span class="doc-name">Présentation PowerPoint — Yuung Addi Kansietoko</span>
+            <span class="doc-size">~1.9 Mo</span>
+            <!-- Le fichier .pptx s'ouvre dans une nouvelle fenêtre (pas pris en charge par l'iframe PDF) -->
+            <a class="doc-link" href="../assets/docs/projet-1/presentation.pptx" download
+              style="cursor:none;">TÉLÉCHARGER</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projets.html" class="btn btn-g">← RETOUR AUX PROJETS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

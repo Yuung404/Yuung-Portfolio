@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Versailles City Hall Project — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::EN<br><span class="hb">PROJECT</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- PDF Viewer -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+    </div>
+    <iframe id="pdf-frame" title="PDF Viewer"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- Breadcrumb -->
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projects.html" style="color:var(--g6);text-decoration:none;">← BACK TO PROJECTS</a>
+      </div>
+
+      <!-- Header -->
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJECT 03 — ADMINISTRATION · HELPDESK</span>
+        <h2 class="sec-title">VERSAILLES CITY HALL PROJECT</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <!-- Hero: image + metadata -->
+      <div class="pj-det-hero rv">
+
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-3.svg" alt="Versailles City Hall — GLPI Helpdesk">
+        </div>
+
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUS</span>
+              <span class="pj-status st-progress">⟳ IN PROGRESS</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// DURATION</span>
+              <span class="pj-meta-val">March — December 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TEAM</span>
+              <span class="pj-meta-val">Individual</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// YEAR</span>
+              <span class="pj-meta-val">2025 — 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TOOLS</span>
+              <span class="pj-meta-val">GLPI v10, Debian 13 Trixie, Apache, MariaDB, PHP, VirtualBox</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CONTEXT</span>
+              <span class="pj-meta-val">Academic project — BTS SIO Year 1</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CLIENT</span>
+              <span class="pj-meta-val">Mairie de Versailles<br>
+                <span style="font-size:.75em;color:var(--g6);">4 avenue de Paris — Yvelines (78)</span>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Context -->
+      <div class="pj-section rv">
+        <h3>CONTEXT</h3>
+        <p><strong style="color:var(--g3);">Versailles City Hall</strong>, located at 4 avenue de Paris in the
+          Yvelines department, launched a broad initiative to modernise its digital infrastructure.
+          The <strong style="color:var(--g3);">IT Department (DSI)</strong> was managing incidents through
+          entirely informal channels: direct phone calls, WhatsApp messages and Teams chats. This approach
+          produced critical failure points:</p>
+        <p style="margin-top:12px;">
+          ▸ <strong style="color:var(--g3);">Information loss</strong> — missed calls and messages during peak
+          activity, leading to frustration among municipal staff<br>
+          ▸ <strong style="color:var(--g3);">No traceability</strong> — no centralised data, making it impossible
+          to measure Helpdesk workload or calculate TTO/TTR resolution times<br>
+          ▸ <strong style="color:var(--g3);">Technical debt</strong> — without a rigorous inventory, licence
+          tracking, critical updates and end-of-life OS mapping were uncontrolled
+        </p>
+        <p style="margin-top:12px;">
+          To address these challenges, the city decided to deploy
+          <strong style="color:var(--g3);">GLPI (Gestionnaire Libre de Parc Informatique)</strong>, an
+          open-source ITSM solution proven across both public and private sector environments.
+        </p>
+      </div>
+
+      <!-- Description -->
+      <div class="pj-section rv">
+        <h3>MISSION DESCRIPTION</h3>
+        <p>Since <strong style="color:var(--g3);">09/03/2026</strong>, I have been working as a support
+          technician within the Versailles City Hall IT department. The mission, assigned by M. LATOUR
+          (IT Director), covers four areas:</p>
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">1. Needs assessment &amp; solution selection</strong><br>
+          Analysis of the DSI's requirements and justification of GLPI as the appropriate open-source
+          solution for the public sector.<br><br>
+          <strong style="color:var(--g3);">2. Initial IT asset inventory</strong><br>
+          Identification and cataloguing of all equipment (workstations, servers, printers, etc.) and
+          software across municipal services — inventory carried out both manually and automatically
+          via the GLPI agent.<br><br>
+          <strong style="color:var(--g3);">3. GLPI installation &amp; configuration</strong><br>
+          Deployment of GLPI on a <strong style="color:var(--g3);">Debian 13 (Trixie)</strong> virtual
+          machine with LAMP stack (Linux, Apache, MariaDB, PHP). Configuration of SLAs (Service Level
+          Agreements), OLAs (Operational Level Agreements), escalation levels and ticket priority rules.<br><br>
+          <strong style="color:var(--g3);">4. Team training</strong><br>
+          Training supervisory staff on the ticket management module, then rolling out access to all
+          municipal agents.
+        </p>
+      </div>
+
+      <!-- Technical architecture -->
+      <div class="pj-section rv">
+        <h3>TECHNICAL ARCHITECTURE</h3>
+        <p>
+          <strong style="color:var(--g3);">VM Server</strong> — Debian 13 "Trixie" virtual machine
+          running on a Type 2 hypervisor (VirtualBox)<br><br>
+          <strong style="color:var(--g3);">LAMP Stack</strong> —
+          <code style="color:var(--g4);">Linux (Debian 13)</code> ·
+          <code style="color:var(--g4);">Apache</code> ·
+          <code style="color:var(--g4);">MariaDB</code> ·
+          <code style="color:var(--g4);">PHP</code><br><br>
+          <strong style="color:var(--g3);">GLPI v10.x</strong> — Web-based management interface: tickets,
+          inventory, users, reports, SLA configuration<br><br>
+          <strong style="color:var(--g3);">SLA / OLA</strong> — Configuration of maximum take-over times
+          <code style="color:var(--g4);">(TTO)</code> and resolution times
+          <code style="color:var(--g4);">(TTR)</code> with automatic escalation levels
+        </p>
+      </div>
+
+      <!-- Expected outcomes -->
+      <div class="pj-section rv">
+        <h3>EXPECTED OUTCOMES (Review — 29/12/2026)</h3>
+        <p>
+          ▸ <strong style="color:var(--g3);">Centralisation</strong> — unified real-time management of the
+          city hall's entire IT estate<br>
+          ▸ <strong style="color:var(--g3);">Cost reduction</strong> — better asset lifecycle management
+          and licence optimisation<br>
+          ▸ <strong style="color:var(--g3);">Helpdesk efficiency</strong> — reduced TTO/TTR times through
+          the ticketing system and automatic incident prioritisation<br>
+          ▸ <strong style="color:var(--g3);">Controlled inventory</strong> — complete, up-to-date mapping
+          of hardware and software assets<br>
+          ▸ <strong style="color:var(--g3);">Automation</strong> — automated ticket handling, escalations
+          and notifications
+        </p>
+      </div>
+
+      <!-- Skills demonstrated -->
+      <div class="pj-section rv">
+        <h3>SKILLS DEMONSTRATED</h3>
+        <p>
+          ▸ Linux system administration (Debian 13)<br>
+          ▸ LAMP stack deployment (Apache, MariaDB, PHP)<br>
+          ▸ Installation and configuration of an ITSM tool (GLPI)<br>
+          ▸ IT asset management (hardware and software inventory)<br>
+          ▸ SLA/OLA configuration and priority management (TTO, TTR)<br>
+          ▸ End-user training<br>
+          ▸ Virtualisation (Type 2 hypervisor)
+        </p>
+      </div>
+
+      <!-- Documents -->
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; DELIVERABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📋</span>
+            <span class="doc-name">Project Brief — Versailles City Hall BTS1 SIO 2025-26</span>
+            <span class="doc-size">~322 KB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-3/sujet.pdf','Versailles City Hall Project Brief')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+        </div>
+        <p style="margin-top:16px;font-size:.78rem;color:var(--g7);">
+          // The technical installation report (final deliverable) will be added upon deployment completion.
+        </p>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projects.html" class="btn btn-g">← BACK TO PROJECTS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>AVAILABLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

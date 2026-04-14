@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Technologique — Portfolio BTS SIO</title>
+  <!-- Polices Google -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Éléments globaux (curseur, fond Matrix, HUD, nav) -->
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">VEILLE</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF (modal) — pour les PDFs des articles sauvegardés -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- En-tête de section -->
+      <div class="sec-hd rv" style="margin-top:30px;">
+        <span class="sec-tag">// 04 — INTELLIGENCE TECH</span>
+        <h2 class="sec-title">VEILLE TECHNOLOGIQUE</h2>
+        <div class="sec-line"></div>
+        <p class="sec-desc">Suivi régulier de l'actualité cybersécurité, réseaux et nouvelles technologies — sources :
+          ANSSI, CERT-FR, The Hacker News, LeMagIT, Krebs on Security.</p>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════════
+       GRILLE D'ARTICLES DE VEILLE
+       3 colonnes sur desktop, 1 colonne sur mobile.
+       ⚠ POUR AJOUTER UN ARTICLE : duplique un bloc .vl-card
+         et remplis : date, titre, source, résumé.
+       POUR LIER UN PDF :
+         1. Dépose le PDF dans assets/docs/veille/
+         2. Décommente le bouton dans la carte concernée
+  ══════════════════════════════════════════════════════ -->
+      <div class="vl-grid">
+
+        <!-- ── Article 1 : Ransomwares 2025 ─────────────────── -->
+        <div class="card vl-card rv">
+          <div class="vl-date">// JANVIER 2025</div>
+          <h3 class="vl-topic">MONTÉE EN PUISSANCE DES RANSOMWARES AS A SERVICE (RAAS)</h3>
+          <div class="vl-src">// SOURCE : ANSSI — Rapport sur la menace ransomware 2024</div>
+          <p class="vl-txt">Les groupes cybercriminels proposent désormais leurs outils d'attaque en mode "service"
+            (RaaS), abaissant drastiquement la barrière d'entrée pour les attaquants. L'ANSSI recense une augmentation
+            de 30 % des incidents ransomware en France en 2024. Enjeu majeur pour les PME et les collectivités
+            territoriales, souvent moins bien protégées que les grandes entreprises.</p>
+        </div>
+
+        <!-- ── Article 2 : CVE & gestion des vulnérabilités ── -->
+        <div class="card vl-card rv d1">
+          <div class="vl-date">// FÉVRIER 2025</div>
+          <h3 class="vl-topic">GESTION DES CVE : L'IMPORTANCE DU PATCH MANAGEMENT</h3>
+          <div class="vl-src">// SOURCE : CERT-FR — Bulletins de sécurité</div>
+          <p class="vl-txt">La majorité des cyberattaques réussies exploitent des vulnérabilités connues (CVE) non
+            corrigées. Le CERT-FR publie régulièrement des bulletins de sécurité détaillant les failles critiques. La
+            mise en place d'un processus de patch management rigoureux est un pilier fondamental de la défense en
+            profondeur pour toute organisation.</p>
+        </div>
+
+        <!-- ── Article 3 : Ingénierie sociale / Phishing ───── -->
+        <div class="card vl-card rv d2">
+          <div class="vl-date">// FÉVRIER 2025</div>
+          <h3 class="vl-topic">PHISHING & INGÉNIERIE SOCIALE : LE FACTEUR HUMAIN</h3>
+          <div class="vl-src">// SOURCE : The Hacker News</div>
+          <p class="vl-txt">L'ingénierie sociale reste le vecteur d'attaque n°1 selon de nombreuses études. Les
+            techniques de spear-phishing ciblant les employés avec des messages personnalisés et convaincants
+            contournent souvent les défenses techniques. La sensibilisation des utilisateurs est aussi importante que
+            les outils de sécurité pour limiter la surface d'attaque.</p>
+        </div>
+
+        <!-- ── Article 4 : SIEM & SOC ───────────────────────── -->
+        <div class="card vl-card rv">
+          <div class="vl-date">// MARS 2025</div>
+          <h3 class="vl-topic">SIEM ET SOC : LA DÉTECTION EN TEMPS RÉEL DES MENACES</h3>
+          <div class="vl-src">// SOURCE : LeMagIT — Dossier cybersécurité</div>
+          <p class="vl-txt">Les Security Information and Event Management (SIEM) centralisent et corrèlent les logs de
+            sécurité pour détecter les incidents en temps réel. Couplés à un SOC (Security Operations Center), ils
+            permettent une réponse rapide aux incidents. Outils phares du marché : Splunk, Microsoft Sentinel, IBM
+            QRadar. Compétence clé pour les futurs analystes cybersécurité.</p>
+        </div>
+
+        <!-- ── Article 5 : IA & Cybersécurité ───────────────── -->
+        <div class="card vl-card rv d1">
+          <div class="vl-date">// MARS 2025</div>
+          <h3 class="vl-topic">IA GÉNÉRATIVE ET CYBERSÉCURITÉ : DOUBLE TRANCHANT</h3>
+          <div class="vl-src">// SOURCE : Krebs on Security</div>
+          <p class="vl-txt">L'intelligence artificielle générative est exploitée des deux côtés : les attaquants
+            l'utilisent pour créer des malwares polymorphes et des campagnes de phishing ultra-ciblées, tandis que les
+            défenseurs s'en servent pour la détection d'anomalies et l'automatisation de la réponse aux incidents.
+            Comprendre ces usages est essentiel pour anticiper les menaces de demain.</p>
+        </div>
+
+        <!-- ── Article 6 : Directive NIS2 ───────────────────── -->
+        <div class="card vl-card rv d2">
+          <div class="vl-date">// AVRIL 2025</div>
+          <h3 class="vl-topic">DIRECTIVE NIS2 : NOUVELLES OBLIGATIONS DE CYBERSÉCURITÉ EN EUROPE</h3>
+          <div class="vl-src">// SOURCE : ANSSI — NIS2 Transposition</div>
+          <p class="vl-txt">La directive européenne NIS2, transposée en droit français, étend les obligations de
+            cybersécurité à des milliers d'entités supplémentaires (secteurs santé, énergie, transports,
+            administrations). Les organisations concernées doivent désormais notifier les incidents sous 24h,
+            implémenter des mesures de gestion des risques et réaliser des audits réguliers. Impact majeur sur les
+            pratiques de sécurité des SI.</p>
+        </div>
+
+      </div><!-- /.vl-grid -->
+    </div><!-- /.wrap -->
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div><!-- /.page-wrap -->
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

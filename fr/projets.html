@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Portfolio BTS SIO</title>
+  <!-- Polices Google : Share Tech Mono (monospace terminal), Orbitron (titres), Inter (texte courant) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <!-- Icônes technos (devicon) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════
+     ÉLÉMENTS GLOBAUX (présents sur toutes les pages)
+     • cur-ring / cur-dot : composants du curseur personnalisé
+     • mx-canvas          : canvas du fond Matrix animé
+     • mx-vignette        : dégradé radial qui assombrit les bords
+     • mx-grid            : grille fine en surimpression
+     • .hud               : indicateurs HUD aux 4 coins (position fixed)
+     • #main-nav          : navigation injectée dynamiquement par script.js
+══════════════════════════════════════════════════════════ -->
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+
+  <!-- HUD coins — modifie les libellés si nécessaire -->
+  <div class="hud tl">SYS::FR<br><span class="hb">PROJETS</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+
+  <!-- Navigation injectée par buildNav() dans script.js -->
+  <nav id="main-nav"></nav>
+
+  <!-- ══════════════════════════════════════════════════════════
+     CONTENU PRINCIPAL
+     • .page-content  : ajoute le padding-top pour la navbar fixe
+     • .page-wrap     : cible de l'animation fade-in au chargement
+     • .wrap          : conteneur centré max-width 1180px
+══════════════════════════════════════════════════════════ -->
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- En-tête de section -->
+      <div class="sec-hd rv" style="margin-top:30px;">
+        <span class="sec-tag">// 03 — TRAVAUX</span>
+        <h2 class="sec-title">PROJETS</h2>
+        <div class="sec-line"></div>
+        <p class="sec-desc">Réalisations scolaires et personnelles. Cliquez sur un projet pour accéder à la
+          documentation complète.</p>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════════
+       GRILLE DE PROJETS
+       Chaque .pj-card correspond à un projet.
+       ⚠ Pour ajouter un projet : duplique un bloc .pj-card
+         et incrémente le numéro (05, 06…).
+
+       SYSTÈME DE STATUT — badge .pj-status à placer
+       juste après .pj-cat. Choisir UNE classe parmi :
+         st-success   →  ✓ RÉUSSI
+         st-partial   →  ~ RÉUSSI 75%   (changer le % dans le texte)
+         st-progress  →  ⟳ EN COURS
+         st-abandoned →  — ABANDONNÉ
+         st-aborted   →  ✕ AVORTÉ
+  ══════════════════════════════════════════════════════ -->
+      <div class="pj-grid">
+
+        <!-- ── PROJET 01 : MADZI ─────────────────────────── -->
+        <div class="card pj-card rv">
+          <div class="pj-accent"></div>
+          <div class="pj-num">01</div>
+          <!-- Image réelle du projet (capture config VLANs) -->
+          <img class="pj-img" src="../assets/images/projet-1.svg" alt="Projet MADZI — Config VLANs">
+          <div class="pj-body">
+            <span class="pj-cat">RÉSEAU</span>
+            <!-- Statut : projet terminé avec succès -->
+            <span class="pj-status st-success">✓ RÉUSSI</span>
+            <h3 class="pj-title">Projet Madzi</h3>
+            <p class="pj-desc">Infrastructure réseau complète : configuration des VLANs, routage inter-VLAN, protocole
+              OSPF et services DHCP/DNS sur équipements Cisco.</p>
+            <div class="pj-footer">
+              <div class="pj-tags">
+                <span class="tag">Cisco</span>
+                <span class="tag">VLANs</span>
+                <span class="tag">OSPF</span>
+                <span class="tag">DHCP</span>
+              </div>
+              <a href="projet-detail.html?id=1" class="btn btn-p btn-sm">VOIR →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJET 02 : MALLET ────────────────────────── -->
+        <div class="card pj-card rv d1">
+          <div class="pj-accent"></div>
+          <div class="pj-num">02</div>
+          <img class="pj-img" src="../assets/images/projet-2.svg" alt="Projet Mallet — Audit Infrastructure AD">
+          <div class="pj-body">
+            <span class="pj-cat">SYSTÈMES &amp; RÉSEAUX</span>
+            <!-- Statut : mission 1 validée, missions 2-4 en cours -->
+            <span class="pj-status st-progress">⟳ EN COURS</span>
+            <h3 class="pj-title">Projet Mallet</h3>
+            <p class="pj-desc">Audit et déploiement d'une infrastructure Windows Server 2025 avec Active Directory, GPO et 3 OUs pour la Fondation Mallet (11 établissements, Yvelines).</p>
+            <div class="pj-footer">
+              <div class="pj-tags">
+                <span class="tag">Windows Server</span>
+                <span class="tag">Active Directory</span>
+                <span class="tag">GPO</span>
+                <span class="tag">GLPI</span>
+              </div>
+              <a href="projet-mallet.html" class="btn btn-p btn-sm">VOIR →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJET 03 : MAIRIE DE VERSAILLES ──────────── -->
+        <div class="card pj-card rv d2">
+          <div class="pj-accent"></div>
+          <div class="pj-num">03</div>
+          <img class="pj-img" src="../assets/images/projet-3.svg" alt="Projet Mairie de Versailles — GLPI Helpdesk">
+          <div class="pj-body">
+            <span class="pj-cat">ADMINISTRATION · HELPDESK</span>
+            <!-- Statut : en cours -->
+            <span class="pj-status st-progress">⟳ EN COURS</span>
+            <h3 class="pj-title">Projet Mairie de Versailles</h3>
+            <p class="pj-desc">Déploiement de GLPI sur Debian 13 pour la DSI de la Mairie de Versailles : gestion du parc informatique, ticketing et suivi SLA/TTO/TTR.</p>
+            <div class="pj-footer">
+              <div class="pj-tags">
+                <span class="tag">GLPI</span>
+                <span class="tag">Debian 13</span>
+                <span class="tag">LAMP</span>
+                <span class="tag">Helpdesk</span>
+              </div>
+              <a href="projet-versailles.html" class="btn btn-p btn-sm">VOIR →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PROJET 04 ──────────────────────────────────── -->
+        <div class="card pj-card rv d3">
+          <div class="pj-accent"></div>
+          <div class="pj-num">04</div>
+          <div class="pj-img-ph"><span>[ IMAGE PROJET ]</span></div>
+          <div class="pj-body">
+            <span class="pj-cat">[ CATÉGORIE ]</span>
+            <!-- ⚠ STATUT -->
+            <span class="pj-status st-progress">⟳ EN COURS</span>
+            <h3 class="pj-title ph">[ Nom du projet 4 ]</h3>
+            <p class="pj-desc ph">Courte description — contexte, objectif principal, résultat obtenu.</p>
+            <div class="pj-footer">
+              <div class="pj-tags"><span class="tag">[ Tech ]</span><span class="tag">[ Tech ]</span></div>
+              <a href="projet-detail.html?id=4" class="btn btn-p btn-sm">VOIR →</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.pj-grid -->
+    </div><!-- /.wrap -->
+
+    <!-- Pied de page : ⚠ remplace [INITIALES] par tes vraies initiales -->
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <!-- Indicateur de disponibilité (ldot = point clignotant vert) -->
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+
+  </div><!-- /.page-wrap -->
+
+  <!-- Script principal — doit rester en bas du body -->
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::BOOT<br><span class="hb">VER 3.0</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">AES-256</span></div>
+  <div class="hud bl">PARIS::FR<br><span class="hb">MEM::OK</span></div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span><br><span id="hud-status" class="hb">INIT</span></div>
+
+  <div id="splash">
+    <div class="sp-logo">PORTFOLIO</div>
+    <div class="sp-sub">// BTS SIO · BOOT SEQUENCE · SELECT LANGUAGE</div>
+    <div class="term-win">
+      <div class="tw-bar">
+        <div class="td r"></div>
+        <div class="td y"></div>
+        <div class="td g"></div>
+        <span class="tw-lbl">root@portfolio:~$ ./boot --init --multipage --lang=auto</span>
+      </div>
+      <div class="tw-body">
+        <div class="tw-inner" id="term-inner"><span class="tcur" id="tcur"></span></div>
+      </div>
+    </div>
+    <div class="pg-w" id="pg-w">
+      <div class="pg-top"><span id="pg-lbl">INIT...</span><span id="pg-n" class="pg-n">0%</span></div>
+      <div class="pg-track">
+        <div class="pg-fill" id="pg-fill"></div>
+        <div class="pg-sh"></div>
+      </div>
+      <div class="pg-bot"><span>[ LOADING ]</span><span id="pg-n2" class="pg-n">0%</span></div>
+    </div>
+    <div class="lang-pick" id="lang-pick">
+      <div class="lang-title">// CHOISISSEZ · CHOOSE YOUR LANGUAGE</div>
+      <div class="lang-btns">
+        <a href="fr/index.html" class="lbtn fr"><span class="lflag">🇫🇷</span> FRANÇAIS</a>
+        <a href="en/index.html" class="lbtn en"><span class="lflag">🇬🇧</span> ENGLISH</a>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

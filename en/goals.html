@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goals — Portfolio BTS SIO</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<!-- Global elements (cursor, Matrix background, HUD, nav) -->
+<div id="cur-ring"></div><div id="cur-dot"></div>
+<canvas id="mx-canvas"></canvas><div id="mx-vignette"></div><div id="mx-grid"></div>
+<div class="hud tl">SYS::EN<br><span class="hb">GOALS</span></div>
+<div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+<div class="hud bl">NANTERRE::92</div>
+<div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+<nav id="main-nav"></nav>
+
+<div class="page-content page-wrap">
+<div class="wrap" style="padding-bottom:80px;">
+
+  <!-- Section header -->
+  <div class="sec-hd rv" style="margin-top:30px;">
+    <span class="sec-tag">// 06 — TRAJECTORY</span>
+    <h2 class="sec-title">GOALS</h2>
+    <div class="sec-line"></div>
+    <p class="sec-desc">My professional and academic roadmap — short, medium and long term — in the cybersecurity field.</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       GOALS LIST
+       Each .obj-item = 3 columns: number | text | status.
+       On mobile (< 600px) the status badge is hidden (CSS).
+
+       AVAILABLE STATUS LABELS (.obj-st):
+         (no extra class)  → dimmed green text
+         .live             → bright green text + glow
+       Example labels: IN PROGRESS · PLANNED · ACHIEVED · VISION
+  ══════════════════════════════════════════════════════ -->
+  <div class="obj-list">
+
+    <!-- ── Goal 01: BTS SIO in progress ─────────────────── -->
+    <div class="card obj-item rv">
+      <div class="obj-n">01</div>
+      <div>
+        <div class="obj-title">COMPLETE THE BTS SIO OPTION B SLAM PROGRAMME</div>
+        <div class="obj-desc">Finish my training at Lycée Latournelle (La Garenne-Colombes), pass all BTS SIO option B SLAM exams with distinction, and consolidate my foundations in network administration, cybersecurity and virtualisation. Class of 2025–2027.</div>
+      </div>
+      <div class="obj-st live">IN PROGRESS</div>
+    </div>
+
+    <!-- ── Goal 02: Cybersecurity internship ────────────── -->
+    <div class="card obj-item rv d1">
+      <div class="obj-n">02</div>
+      <div>
+        <div class="obj-title">SECURE A CYBERSECURITY INTERNSHIP</div>
+        <div class="obj-desc">Join a company, IT services firm or public administration for an internship in cybersecurity or network administration. Goal: gain hands-on experience in incident detection, vulnerability management or security auditing. Target: 2025 / 2026.</div>
+      </div>
+      <div class="obj-st">PLANNED</div>
+    </div>
+
+    <!-- ── Goal 03: CompTIA Security+ ───────────────────── -->
+    <div class="card obj-item rv d2">
+      <div class="obj-n">03</div>
+      <div>
+        <div class="obj-title">OBTAIN COMPTIA SECURITY+ CERTIFICATION</div>
+        <div class="obj-desc">Prepare and pass the CompTIA Security+ (SY0-701) exam to validate cybersecurity skills at an international level. Globally recognised, required for many SOC and penetration testing roles. Planned after graduating from the BTS.</div>
+      </div>
+      <div class="obj-st">PLANNED</div>
+    </div>
+
+    <!-- ── Goal 04: SOC Analyst / Cyber Expert ──────────── -->
+    <div class="card obj-item rv d3">
+      <div class="obj-n">04</div>
+      <div>
+        <div class="obj-title">BECOME A SOC ANALYST / CYBERSECURITY EXPERT</div>
+        <div class="obj-desc">3–5 year vision: join a Security Operations Center (SOC) as a Level 1 analyst, then grow into a cyber-defence expert, incident responder or penetration tester. Target domains: critical infrastructure defence, threat intelligence, red/blue team operations.</div>
+      </div>
+      <div class="obj-st">VISION</div>
+    </div>
+
+    <!-- ── Goal 05: Further studies ─────────────────────── -->
+    <div class="card obj-item rv d3">
+      <div class="obj-n">05</div>
+      <div>
+        <div class="obj-title">PURSUE A BACHELOR'S / PROFESSIONAL DEGREE IN CYBERSECURITY</div>
+        <div class="obj-desc">After the BTS, consider continuing with a Cybersecurity Bachelor's degree or a Professional Licence in Information Systems Security to deepen technical expertise and access higher-responsibility positions.</div>
+      </div>
+      <div class="obj-st">PLANNED</div>
+    </div>
+
+  </div><!-- /.obj-list -->
+</div><!-- /.wrap -->
+
+<footer><div class="f-brand">YK_PORTFOLIO</div><div class="f-copy">© 2025 BTS SIO</div><div class="f-live"><div class="ldot"></div>AVAILABLE</div></footer>
+</div><!-- /.page-wrap -->
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

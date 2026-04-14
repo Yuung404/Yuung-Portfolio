@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Watch — Portfolio BTS SIO</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<!-- Global elements (cursor, Matrix background, HUD, nav) -->
+<div id="cur-ring"></div><div id="cur-dot"></div>
+<canvas id="mx-canvas"></canvas><div id="mx-vignette"></div><div id="mx-grid"></div>
+<div class="hud tl">SYS::EN<br><span class="hb">TECH WATCH</span></div>
+<div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+<div class="hud bl">NANTERRE::92</div>
+<div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+<nav id="main-nav"></nav>
+
+<!-- PDF Viewer (modal) — for saved article PDFs -->
+<div id="pdf-modal">
+  <div class="pdf-bar">
+    <span class="pdf-name" id="pdf-name">Document</span>
+    <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+  </div>
+  <iframe id="pdf-frame" title="PDF Viewer"></iframe>
+</div>
+
+<div class="page-content page-wrap">
+<div class="wrap" style="padding-bottom:80px;">
+
+  <!-- Section header -->
+  <div class="sec-hd rv" style="margin-top:30px;">
+    <span class="sec-tag">// 04 — TECH INTELLIGENCE</span>
+    <h2 class="sec-title">TECH WATCH</h2>
+    <div class="sec-line"></div>
+    <p class="sec-desc">Regular monitoring of cybersecurity news, networks and emerging technologies — sources: ANSSI, CERT-FR, The Hacker News, LeMagIT, Krebs on Security.</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       ARTICLE GRID
+       3 columns on desktop, 1 column on mobile.
+       ⚠ TO ADD AN ARTICLE: duplicate a .vl-card block
+         and fill in: date, title, source, summary.
+       TO LINK A SAVED PDF:
+         1. Place the PDF in assets/docs/veille/
+         2. Uncomment the button in the relevant card
+  ══════════════════════════════════════════════════════ -->
+  <div class="vl-grid">
+
+    <!-- ── Article 1: Ransomware 2025 ───────────────────── -->
+    <div class="card vl-card rv">
+      <div class="vl-date">// JANUARY 2025</div>
+      <h3 class="vl-topic">THE RISE OF RANSOMWARE AS A SERVICE (RAAS)</h3>
+      <div class="vl-src">// SOURCE: ANSSI — Ransomware Threat Report 2024</div>
+      <p class="vl-txt">Cybercriminal groups now offer their attack tools as a "service" (RaaS), dramatically lowering the barrier to entry for attackers. ANSSI recorded a 30% increase in ransomware incidents in France in 2024. A major challenge for SMBs and local authorities, which are often less well-protected than large enterprises.</p>
+    </div>
+
+    <!-- ── Article 2: CVE & patch management ────────────── -->
+    <div class="card vl-card rv d1">
+      <div class="vl-date">// FEBRUARY 2025</div>
+      <h3 class="vl-topic">CVE MANAGEMENT: THE IMPORTANCE OF PATCH MANAGEMENT</h3>
+      <div class="vl-src">// SOURCE: CERT-FR — Security Bulletins</div>
+      <p class="vl-txt">The majority of successful cyberattacks exploit known (CVE) unpatched vulnerabilities. CERT-FR regularly publishes security bulletins detailing critical flaws. Implementing a rigorous patch management process is a fundamental pillar of defence-in-depth for any organisation.</p>
+    </div>
+
+    <!-- ── Article 3: Social engineering / Phishing ─────── -->
+    <div class="card vl-card rv d2">
+      <div class="vl-date">// FEBRUARY 2025</div>
+      <h3 class="vl-topic">PHISHING & SOCIAL ENGINEERING: THE HUMAN FACTOR</h3>
+      <div class="vl-src">// SOURCE: The Hacker News</div>
+      <p class="vl-txt">Social engineering remains the #1 attack vector according to multiple studies. Spear-phishing techniques targeting employees with personalised, convincing messages often bypass technical defences. User awareness is as important as security tools for limiting the attack surface.</p>
+    </div>
+
+    <!-- ── Article 4: SIEM & SOC ─────────────────────────── -->
+    <div class="card vl-card rv">
+      <div class="vl-date">// MARCH 2025</div>
+      <h3 class="vl-topic">SIEM AND SOC: REAL-TIME THREAT DETECTION</h3>
+      <div class="vl-src">// SOURCE: LeMagIT — Cybersecurity Feature</div>
+      <p class="vl-txt">Security Information and Event Management (SIEM) systems centralise and correlate security logs for real-time incident detection. Combined with a SOC (Security Operations Center), they enable rapid incident response. Leading tools: Splunk, Microsoft Sentinel, IBM QRadar. A key skill for future cybersecurity analysts.</p>
+    </div>
+
+    <!-- ── Article 5: AI & Cybersecurity ────────────────── -->
+    <div class="card vl-card rv d1">
+      <div class="vl-date">// MARCH 2025</div>
+      <h3 class="vl-topic">GENERATIVE AI AND CYBERSECURITY: A DOUBLE-EDGED SWORD</h3>
+      <div class="vl-src">// SOURCE: Krebs on Security</div>
+      <p class="vl-txt">Generative AI is being exploited on both sides: attackers use it to craft polymorphic malware and hyper-targeted phishing campaigns, while defenders leverage it for anomaly detection and automated incident response. Understanding these uses is essential to anticipate tomorrow's threats.</p>
+    </div>
+
+    <!-- ── Article 6: NIS2 Directive ────────────────────── -->
+    <div class="card vl-card rv d2">
+      <div class="vl-date">// APRIL 2025</div>
+      <h3 class="vl-topic">NIS2 DIRECTIVE: NEW CYBERSECURITY OBLIGATIONS IN EUROPE</h3>
+      <div class="vl-src">// SOURCE: ANSSI — NIS2 Transposition</div>
+      <p class="vl-txt">The European NIS2 directive, transposed into French law, extends cybersecurity obligations to thousands of additional entities (health, energy, transport, public administration). Affected organisations must now report incidents within 24 hours, implement risk management measures and conduct regular audits. Major impact on IS security practices across sectors.</p>
+    </div>
+
+  </div><!-- /.vl-grid -->
+</div><!-- /.wrap -->
+
+<footer><div class="f-brand">YK_PORTFOLIO</div><div class="f-copy">© 2025 BTS SIO</div><div class="f-live"><div class="ldot"></div>AVAILABLE</div></footer>
+</div><!-- /.page-wrap -->
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

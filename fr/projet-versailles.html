@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Mairie de Versailles — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">PROJET</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- Fil d'ariane -->
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projets.html" style="color:var(--g6);text-decoration:none;">← RETOUR AUX PROJETS</a>
+      </div>
+
+      <!-- En-tête -->
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJET 03 — ADMINISTRATION · HELPDESK</span>
+        <h2 class="sec-title">PROJET MAIRIE DE VERSAILLES</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <!-- Hero : image + métadonnées -->
+      <div class="pj-det-hero rv">
+
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-3.svg" alt="Projet Mairie de Versailles — GLPI Helpdesk">
+        </div>
+
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUT</span>
+              <span class="pj-status st-progress">⟳ EN COURS</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// DURÉE</span>
+              <span class="pj-meta-val">Mars — Décembre 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ÉQUIPE</span>
+              <span class="pj-meta-val">Individuel</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ANNÉE</span>
+              <span class="pj-meta-val">2025 — 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// OUTILS</span>
+              <span class="pj-meta-val">GLPI v10, Debian 13 Trixie, Apache, MariaDB, PHP, VirtualBox</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CONTEXTE</span>
+              <span class="pj-meta-val">Projet scolaire — BTS SIO 1ère année</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CLIENT</span>
+              <span class="pj-meta-val">Mairie de Versailles<br>
+                <span style="font-size:.75em;color:var(--g6);">4 avenue de Paris — Yvelines (78)</span>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contexte -->
+      <div class="pj-section rv">
+        <h3>CONTEXTE</h3>
+        <p>La <strong style="color:var(--g3);">Mairie de Versailles</strong>, située au 4 avenue de Paris dans les
+          Yvelines, s'est engagée dans une démarche de modernisation de ses infrastructures numériques.
+          La <strong style="color:var(--g3);">Direction des Systèmes d'Information (DSI)</strong> faisait face
+          à une gestion des incidents entièrement informelle : dépannage par appel téléphonique direct, messages
+          WhatsApp ou Teams. Cette méthode engendrait des points de rupture critiques :</p>
+        <p style="margin-top:12px;">
+          ▸ <strong style="color:var(--g3);">Perte d'information</strong> — appels et messages manqués lors des pics
+          d'activité, frustration des agents municipaux<br>
+          ▸ <strong style="color:var(--g3);">Absence de traçabilité</strong> — aucune centralisation des données,
+          impossible de mesurer la charge réelle du Helpdesk, de calculer les délais TTO/TTR<br>
+          ▸ <strong style="color:var(--g3);">Dette technique</strong> — sans inventaire rigoureux, suivi des licences,
+          mises à jour critiques et cartographie des OS en fin de vie non maîtrisés
+        </p>
+        <p style="margin-top:12px;">
+          Pour répondre à ces défis, la ville a décidé de déployer
+          <strong style="color:var(--g3);">GLPI (Gestionnaire Libre de Parc Informatique)</strong>, solution
+          open source reconnue pour sa robustesse dans les secteurs public et privé.
+        </p>
+      </div>
+
+      <!-- Description -->
+      <div class="pj-section rv">
+        <h3>DESCRIPTION DE LA MISSION</h3>
+        <p>Depuis le <strong style="color:var(--g3);">09/03/2026</strong>, j'interviens en tant que technicien
+          support au sein de la Mairie de Versailles. La mission, confiée par M. LATOUR (responsable DSI),
+          comprend quatre volets :</p>
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">1. Évaluation des besoins &amp; choix de la solution</strong><br>
+          Analyse des besoins de la DSI, justification du choix de GLPI comme solution open source adaptée
+          au secteur public.<br><br>
+          <strong style="color:var(--g3);">2. Inventaire initial du parc informatique</strong><br>
+          Identification et recensement de tous les équipements (postes de travail, serveurs, imprimantes, etc.)
+          et logiciels utilisés dans les services municipaux — inventaire réalisé de manière manuelle et
+          automatique (agent GLPI).<br><br>
+          <strong style="color:var(--g3);">3. Installation et configuration de GLPI</strong><br>
+          Déploiement de GLPI sur une machine virtuelle <strong style="color:var(--g3);">Debian 13 (Trixie)</strong>
+          avec stack LAMP (Linux, Apache, MariaDB, PHP). Configuration des SLA (Service Level Agreements),
+          des OLA (Operational Level Agreements), des niveaux d'escalade et des règles de priorité des tickets.<br><br>
+          <strong style="color:var(--g3);">4. Formation des équipes</strong><br>
+          Formation à la gestion des demandes d'intervention pour les agents encadrants, puis généralisation
+          de l'accès à toute la collectivité.
+        </p>
+      </div>
+
+      <!-- Architecture technique -->
+      <div class="pj-section rv">
+        <h3>ARCHITECTURE TECHNIQUE</h3>
+        <p>
+          <strong style="color:var(--g3);">Serveur VM</strong> — Machine virtuelle Debian 13 "Trixie" sous
+          hyperviseur de type 2 (VirtualBox)<br><br>
+          <strong style="color:var(--g3);">Stack LAMP</strong> —
+          <code style="color:var(--g4);">Linux (Debian 13)</code> ·
+          <code style="color:var(--g4);">Apache</code> ·
+          <code style="color:var(--g4);">MariaDB</code> ·
+          <code style="color:var(--g4);">PHP</code><br><br>
+          <strong style="color:var(--g3);">GLPI v10.x</strong> — Interface web de gestion : tickets,
+          inventaire, utilisateurs, rapports, configuration SLA<br><br>
+          <strong style="color:var(--g3);">SLA / OLA</strong> — Paramétrage des délais maximaux de prise
+          en charge <code style="color:var(--g4);">(TTO)</code> et de résolution
+          <code style="color:var(--g4);">(TTR)</code> avec niveaux d'escalade automatiques
+        </p>
+      </div>
+
+      <!-- Résultats attendus -->
+      <div class="pj-section rv">
+        <h3>RÉSULTATS ATTENDUS (Retour d'expérience — 29/12/2026)</h3>
+        <p>
+          ▸ <strong style="color:var(--g3);">Centralisation</strong> — gestion unifiée et en temps réel de
+          tout le parc informatique de la mairie<br>
+          ▸ <strong style="color:var(--g3);">Réduction des coûts</strong> — meilleure gestion du cycle de
+          vie des équipements, optimisation des licences<br>
+          ▸ <strong style="color:var(--g3);">Efficacité Helpdesk</strong> — réduction des délais TTO/TTR
+          grâce au système de tickets et à la priorisation automatique des incidents<br>
+          ▸ <strong style="color:var(--g3);">Inventaire maîtrisé</strong> — cartographie complète et
+          à jour du parc matériel et logiciel<br>
+          ▸ <strong style="color:var(--g3);">Automatisation</strong> — gestion automatisée des tickets,
+          escalades et notifications
+        </p>
+      </div>
+
+      <!-- Compétences mobilisées -->
+      <div class="pj-section rv">
+        <h3>COMPÉTENCES MOBILISÉES</h3>
+        <p>
+          ▸ Administration système Linux (Debian 13)<br>
+          ▸ Déploiement d'une stack LAMP (Apache, MariaDB, PHP)<br>
+          ▸ Installation et configuration d'un outil ITSM (GLPI)<br>
+          ▸ Gestion d'un parc informatique (inventaire matériel et logiciel)<br>
+          ▸ Paramétrage SLA/OLA et gestion des priorités (TTO, TTR)<br>
+          ▸ Formation d'utilisateurs finaux<br>
+          ▸ Virtualisation (hyperviseur de type 2)
+        </p>
+      </div>
+
+      <!-- Documents -->
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; LIVRABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📋</span>
+            <span class="doc-name">Sujet — Projet Mairie de Versailles BTS1 SIO 2025-26</span>
+            <span class="doc-size">~322 Ko</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-3/sujet.pdf','Sujet Mairie de Versailles')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+        </div>
+        <p style="margin-top:16px;font-size:.78rem;color:var(--g7);">
+          // Le rapport technique d'installation (livrable final) sera ajouté à l'issue du déploiement.
+        </p>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projets.html" class="btn btn-g">← RETOUR AUX PROJETS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

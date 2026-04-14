@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      .bg { fill: #020d02; }
+      .grid-line { stroke: #003a0a; stroke-width: 0.5; }
+      .title-text { font-family: 'Share Tech Mono', monospace; fill: #00cc44; font-size: 13px; letter-spacing: 2px; }
+      .label-text { font-family: 'Share Tech Mono', monospace; fill: #00aa33; font-size: 11px; letter-spacing: 1px; }
+      .small-text { font-family: 'Share Tech Mono', monospace; fill: #008020; font-size: 9px; letter-spacing: 1px; }
+      .tag-text   { font-family: 'Share Tech Mono', monospace; fill: #33bb55; font-size: 10px; letter-spacing: 1px; }
+      .dim-text   { font-family: 'Share Tech Mono', monospace; fill: #005c10; font-size: 9px; }
+      .server-box { fill: #001a00; stroke: #00cc44; stroke-width: 1.5; rx: 4; }
+      .ou-box     { fill: #001200; stroke: #00aa33; stroke-width: 1; }
+      .pc-box     { fill: #000d00; stroke: #008020; stroke-width: 0.8; }
+      .domain-box { fill: none; stroke: #005c10; stroke-width: 1; stroke-dasharray: 4,3; }
+      .line-ad    { stroke: #00aa33; stroke-width: 1.2; fill: none; }
+      .line-ou    { stroke: #008020; stroke-width: 0.8; fill: none; stroke-dasharray: 3,2; }
+      .badge      { fill: #00cc44; font-family: 'Share Tech Mono', monospace; font-size: 8px; }
+    </style>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="500"/>
+
+  <!-- Grid -->
+  <g opacity="0.3">
+    <line class="grid-line" x1="0" y1="25" x2="800" y2="25"/>
+    <line class="grid-line" x1="0" y1="50" x2="800" y2="50"/>
+    <line class="grid-line" x1="0" y1="75" x2="800" y2="75"/>
+    <line class="grid-line" x1="0" y1="100" x2="800" y2="100"/>
+    <line class="grid-line" x1="0" y1="125" x2="800" y2="125"/>
+    <line class="grid-line" x1="0" y1="150" x2="800" y2="150"/>
+    <line class="grid-line" x1="0" y1="175" x2="800" y2="175"/>
+    <line class="grid-line" x1="0" y1="200" x2="800" y2="200"/>
+    <line class="grid-line" x1="0" y1="225" x2="800" y2="225"/>
+    <line class="grid-line" x1="0" y1="250" x2="800" y2="250"/>
+    <line class="grid-line" x1="0" y1="275" x2="800" y2="275"/>
+    <line class="grid-line" x1="0" y1="300" x2="800" y2="300"/>
+    <line class="grid-line" x1="0" y1="325" x2="800" y2="325"/>
+    <line class="grid-line" x1="0" y1="350" x2="800" y2="350"/>
+    <line class="grid-line" x1="0" y1="375" x2="800" y2="375"/>
+    <line class="grid-line" x1="0" y1="400" x2="800" y2="400"/>
+    <line class="grid-line" x1="0" y1="425" x2="800" y2="425"/>
+    <line class="grid-line" x1="0" y1="450" x2="800" y2="450"/>
+    <line class="grid-line" x1="0" y1="475" x2="800" y2="475"/>
+    <line class="grid-line" x1="25" y1="0" x2="25" y2="500"/>
+    <line class="grid-line" x1="50" y1="0" x2="50" y2="500"/>
+    <line class="grid-line" x1="75" y1="0" x2="75" y2="500"/>
+    <line class="grid-line" x1="100" y1="0" x2="100" y2="500"/>
+    <line class="grid-line" x1="125" y1="0" x2="125" y2="500"/>
+    <line class="grid-line" x1="150" y1="0" x2="150" y2="500"/>
+    <line class="grid-line" x1="175" y1="0" x2="175" y2="500"/>
+    <line class="grid-line" x1="200" y1="0" x2="200" y2="500"/>
+    <line class="grid-line" x1="225" y1="0" x2="225" y2="500"/>
+    <line class="grid-line" x1="250" y1="0" x2="250" y2="500"/>
+    <line class="grid-line" x1="275" y1="0" x2="275" y2="500"/>
+    <line class="grid-line" x1="300" y1="0" x2="300" y2="500"/>
+    <line class="grid-line" x1="325" y1="0" x2="325" y2="500"/>
+    <line class="grid-line" x1="350" y1="0" x2="350" y2="500"/>
+    <line class="grid-line" x1="375" y1="0" x2="375" y2="500"/>
+    <line class="grid-line" x1="400" y1="0" x2="400" y2="500"/>
+    <line class="grid-line" x1="425" y1="0" x2="425" y2="500"/>
+    <line class="grid-line" x1="450" y1="0" x2="450" y2="500"/>
+    <line class="grid-line" x1="475" y1="0" x2="475" y2="500"/>
+    <line class="grid-line" x1="500" y1="0" x2="500" y2="500"/>
+    <line class="grid-line" x1="525" y1="0" x2="525" y2="500"/>
+    <line class="grid-line" x1="550" y1="0" x2="550" y2="500"/>
+    <line class="grid-line" x1="575" y1="0" x2="575" y2="500"/>
+    <line class="grid-line" x1="600" y1="0" x2="600" y2="500"/>
+    <line class="grid-line" x1="625" y1="0" x2="625" y2="500"/>
+    <line class="grid-line" x1="650" y1="0" x2="650" y2="500"/>
+    <line class="grid-line" x1="675" y1="0" x2="675" y2="500"/>
+    <line class="grid-line" x1="700" y1="0" x2="700" y2="500"/>
+    <line class="grid-line" x1="725" y1="0" x2="725" y2="500"/>
+    <line class="grid-line" x1="750" y1="0" x2="750" y2="500"/>
+    <line class="grid-line" x1="775" y1="0" x2="775" y2="500"/>
+  </g>
+
+  <!-- HUD corners -->
+  <text class="dim-text" x="10" y="14">SYS::MALLET.LOCAL</text>
+  <text class="dim-text" x="620" y="14">FONDATION::MALLET</text>
+  <text class="dim-text" x="10" y="492">AD::WINDOWS_SERVER_2025</text>
+  <text class="dim-text" x="590" y="492">YVELINES::78::FRANCE</text>
+
+  <!-- Domain boundary dashed box -->
+  <rect class="domain-box" x="30" y="28" width="740" height="440" rx="3"/>
+
+  <!-- Domain label top -->
+  <text class="tag-text" x="340" y="46" text-anchor="middle" filter="url(#glow)">// DOMAINE : mallet.local</text>
+  <line stroke="#005c10" stroke-width="0.8" x1="200" y1="50" x2="600" y2="50"/>
+
+  <!-- ═══ WINDOWS SERVER 2025 (Domain Controller) ═══ -->
+  <rect x="290" y="62" width="220" height="86" rx="4" fill="#001800" stroke="#00cc44" stroke-width="1.8" filter="url(#glow)"/>
+  <!-- Server icon lines -->
+  <rect x="300" y="70" width="200" height="6" rx="1" fill="#005c10"/>
+  <rect x="300" y="80" width="200" height="6" rx="1" fill="#003a0a"/>
+  <rect x="300" y="90" width="200" height="6" rx="1" fill="#003a0a"/>
+  <!-- LED dots -->
+  <circle cx="492" cy="73" r="2.5" fill="#00cc44" filter="url(#glow-strong)"/>
+  <circle cx="485" cy="73" r="2.5" fill="#00aa33"/>
+  <!-- Server label -->
+  <text class="title-text" x="400" y="112" text-anchor="middle" filter="url(#glow)">WINDOWS SERVER 2025</text>
+  <text class="small-text" x="400" y="126" text-anchor="middle">CONTRÔLEUR DE DOMAINE — DC01</text>
+  <text class="dim-text" x="400" y="140" text-anchor="middle">Active Directory Domain Services</text>
+
+  <!-- ═══ AD Tree label ═══ -->
+  <text class="label-text" x="400" y="168" text-anchor="middle">[ ACTIVE DIRECTORY ]</text>
+  <line stroke="#00aa33" stroke-width="1" x1="280" y1="172" x2="520" y2="172"/>
+
+  <!-- Lines from DC to OUs -->
+  <!-- vertical trunk -->
+  <line class="line-ad" x1="400" y1="148" x2="400" y2="178"/>
+  <!-- horizontal bar -->
+  <line class="line-ad" x1="130" y1="178" x2="670" y2="178"/>
+  <!-- drops to OUs -->
+  <line class="line-ad" x1="130" y1="178" x2="130" y2="202"/>
+  <line class="line-ad" x1="400" y1="178" x2="400" y2="202"/>
+  <line class="line-ad" x1="670" y1="178" x2="670" y2="202"/>
+
+  <!-- ═══ OU ADMIN ═══ -->
+  <rect x="50" y="202" width="160" height="70" rx="3" fill="#001200" stroke="#00aa33" stroke-width="1.2"/>
+  <text class="tag-text" x="130" y="222" text-anchor="middle">OU=ADMIN</text>
+  <text class="small-text" x="130" y="238" text-anchor="middle">Administrateurs</text>
+  <text class="dim-text" x="130" y="252" text-anchor="middle">Accès complet</text>
+  <text class="dim-text" x="130" y="264" text-anchor="middle">GPO : Politique admin</text>
+
+  <!-- ═══ OU PÉDAGOGIQUE ═══ -->
+  <rect x="320" y="202" width="160" height="70" rx="3" fill="#001200" stroke="#00aa33" stroke-width="1.2"/>
+  <text class="tag-text" x="400" y="222" text-anchor="middle">OU=PÉDAGOGIQUE</text>
+  <text class="small-text" x="400" y="238" text-anchor="middle">Enseignants &amp; Élèves</text>
+  <text class="dim-text" x="400" y="252" text-anchor="middle">Accès restreint</text>
+  <text class="dim-text" x="400" y="264" text-anchor="middle">GPO : Filtre navigation</text>
+
+  <!-- ═══ OU DIRECTION ═══ -->
+  <rect x="590" y="202" width="160" height="70" rx="3" fill="#001200" stroke="#00aa33" stroke-width="1.2"/>
+  <text class="tag-text" x="670" y="222" text-anchor="middle">OU=DIRECTION</text>
+  <text class="small-text" x="670" y="238" text-anchor="middle">Direction / RH</text>
+  <text class="dim-text" x="670" y="252" text-anchor="middle">Accès confidentiel</text>
+  <text class="dim-text" x="670" y="264" text-anchor="middle">GPO : Chiffrement</text>
+
+  <!-- Lines from OUs to workstations -->
+  <line class="line-ou" x1="130" y1="272" x2="130" y2="300"/>
+  <line class="line-ou" x1="400" y1="272" x2="400" y2="300"/>
+  <line class="line-ou" x1="670" y1="272" x2="670" y2="300"/>
+
+  <!-- ═══ WORKSTATIONS ADMIN ═══ -->
+  <!-- PC 1 -->
+  <rect x="55" y="300" width="72" height="44" rx="2" fill="#000d00" stroke="#008020" stroke-width="0.8"/>
+  <rect x="60" y="304" width="62" height="28" rx="1" fill="#001500"/>
+  <rect x="81" y="336" width="20" height="4" rx="1" fill="#005c10"/>
+  <text class="dim-text" x="91" y="350" text-anchor="middle">PC-ADM-01</text>
+  <text x="91" y="317" text-anchor="middle" font-family="monospace" font-size="8" fill="#00aa33">Win 11</text>
+  <text x="91" y="327" text-anchor="middle" font-family="monospace" font-size="7" fill="#008020">Pro</text>
+
+  <!-- PC 2 -->
+  <rect x="133" y="300" width="72" height="44" rx="2" fill="#000d00" stroke="#008020" stroke-width="0.8"/>
+  <rect x="138" y="304" width="62" height="28" rx="1" fill="#001500"/>
+  <rect x="159" y="336" width="20" height="4" rx="1" fill="#005c10"/>
+  <text class="dim-text" x="169" y="350" text-anchor="middle">PC-ADM-02</text>
+  <text x="169" y="317" text-anchor="middle" font-family="monospace" font-size="8" fill="#00aa33">Win 11</text>
+  <text x="169" y="327" text-anchor="middle" font-family="monospace" font-size="7" fill="#008020">Pro</text>
+
+  <!-- ═══ WORKSTATIONS PÉDAGOGIQUE ═══ -->
+  <rect x="325" y="300" width="68" height="44" rx="2" fill="#000d00" stroke="#008020" stroke-width="0.8"/>
+  <rect x="330" y="304" width="58" height="28" rx="1" fill="#001500"/>
+  <rect x="349" y="336" width="20" height="4" rx="1" fill="#005c10"/>
+  <text class="dim-text" x="359" y="350" text-anchor="middle">PC-PED-01</text>
+  <text x="359" y="317" text-anchor="middle" font-family="monospace" font-size="8" fill="#00aa33">Win 11</text>
+  <text x="359" y="327" text-anchor="middle" font-family="monospace" font-size="7" fill="#008020">Pro</text>
+
+  <rect x="399" y="300" width="68" height="44" rx="2" fill="#000d00" stroke="#008020" stroke-width="0.8"/>
+  <rect x="404" y="304" width="58" height="28" rx="1" fill="#001500"/>
+  <rect x="423" y="336" width="20" height="4" rx="1" fill="#005c10"/>
+  <text class="dim-text" x="433" y="350" text-anchor="middle">PC-PED-02</text>
+  <text x="433" y="317" text-anchor="middle" font-family="monospace" font-size="8" fill="#00aa33">Win 11</text>
+  <text x="433" y="327" text-anchor="middle" font-family="monospace" font-size="7" fill="#008020">Pro</text>
+
+  <!-- ═══ WORKSTATIONS DIRECTION ═══ -->
+  <rect x="595" y="300" width="72" height="44" rx="2" fill="#000d00" stroke="#008020" stroke-width="0.8"/>
+  <rect x="600" y="304" width="62" height="28" rx="1" fill="#001500"/>
+  <rect x="621" y="336" width="20" height="4" rx="1" fill="#005c10"/>
+  <text class="dim-text" x="631" y="350" text-anchor="middle">PC-DIR-01</text>
+  <text x="631" y="317" text-anchor="middle" font-family="monospace" font-size="8" fill="#00aa33">Win 11</text>
+  <text x="631" y="327" text-anchor="middle" font-family="monospace" font-size="7" fill="#008020">Pro</text>
+
+  <rect x="673" y="300" width="72" height="44" rx="2" fill="#000d00" stroke="#008020" stroke-width="0.8"/>
+  <rect x="678" y="304" width="62" height="28" rx="1" fill="#001500"/>
+  <rect x="699" y="336" width="20" height="4" rx="1" fill="#005c10"/>
+  <text class="dim-text" x="709" y="350" text-anchor="middle">PC-DIR-02</text>
+  <text x="709" y="317" text-anchor="middle" font-family="monospace" font-size="8" fill="#00aa33">Win 11</text>
+  <text x="709" y="327" text-anchor="middle" font-family="monospace" font-size="7" fill="#008020">Pro</text>
+
+  <!-- ═══ Services row ═══ -->
+  <line stroke="#003a0a" stroke-width="0.8" x1="50" y1="372" x2="750" y2="372"/>
+  <text class="dim-text" x="400" y="385" text-anchor="middle">// SERVICES DÉPLOYÉS</text>
+
+  <!-- Service badges -->
+  <rect x="55" y="393" width="88" height="20" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="99" y="407" text-anchor="middle">GLPI + Zabbix</text>
+
+  <rect x="153" y="393" width="88" height="20" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="197" y="407" text-anchor="middle">Nextcloud</text>
+
+  <rect x="251" y="393" width="88" height="20" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="295" y="407" text-anchor="middle">PaperCut MF</text>
+
+  <rect x="349" y="393" width="88" height="20" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="393" y="407" text-anchor="middle">DHCP / DNS</text>
+
+  <rect x="447" y="393" width="88" height="20" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="491" y="407" text-anchor="middle">GPO / RBAC</text>
+
+  <rect x="545" y="393" width="88" height="20" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="589" y="407" text-anchor="middle">Audit Sécu</text>
+
+  <rect x="643" y="393" width="108" height="20" rx="2" fill="#001200" stroke="#005c10" stroke-width="0.6"/>
+  <text class="small-text" x="697" y="407" text-anchor="middle">11 Établissements</text>
+
+  <!-- ═══ Bottom status bar ═══ -->
+  <line stroke="#003a0a" stroke-width="0.8" x1="50" y1="428" x2="750" y2="428"/>
+  <text class="dim-text" x="180" y="444">FONDATION MALLET — YVELINES (78)</text>
+  <text class="dim-text" x="500" y="444">AUDIT INFRASTRUCTURE — 2025·2026</text>
+  <circle cx="460" cy="440" r="3" fill="#00cc44" filter="url(#glow-strong)"/>
+  <text class="tag-text" x="400" y="462" text-anchor="middle" filter="url(#glow)">// STATUS : EN COURS — MISSION 1 VALIDÉE</text>
+</svg>
+

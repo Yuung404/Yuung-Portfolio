@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Mallet — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">PROJET</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- Fil d'ariane -->
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projets.html" style="color:var(--g6);text-decoration:none;">← RETOUR AUX PROJETS</a>
+      </div>
+
+      <!-- En-tête -->
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJET 02 — SYSTÈMES &amp; RÉSEAUX</span>
+        <h2 class="sec-title">PROJET MALLET</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <!-- Hero : image + métadonnées -->
+      <div class="pj-det-hero rv">
+
+        <!-- Image représentative : topologie AD Fondation Mallet -->
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-2.svg" alt="Projet Mallet — Topologie Active Directory">
+        </div>
+
+        <!-- Métadonnées -->
+        <div>
+          <div class="pj-meta">
+
+            <!-- Statut : mission 1 validée, missions 2-4 en cours -->
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUT</span>
+              <span class="pj-status st-progress">⟳ EN COURS</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// DURÉE</span>
+              <span class="pj-meta-val">Janvier — Juin 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ÉQUIPE</span>
+              <span class="pj-meta-val">Binôme (2 étudiants)</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ANNÉE</span>
+              <span class="pj-meta-val">2025 — 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// OUTILS</span>
+              <span class="pj-meta-val">Windows Server 2025, Active Directory, GPO, GLPI, Zabbix, Nextcloud, PaperCut MF</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CONTEXTE</span>
+              <span class="pj-meta-val">Projet scolaire — BTS SIO 1ère année</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CLIENT</span>
+              <span class="pj-meta-val">Fondation Mallet — Yvelines (78)<br>
+                <span style="font-size:.75em;color:var(--g6);">11 établissements · 3 sites</span>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contexte client -->
+      <div class="pj-section rv">
+        <h3>CONTEXTE CLIENT</h3>
+        <p>La <strong style="color:var(--g3);">Fondation Mallet</strong> est une fondation médico-sociale implantée dans
+          les Yvelines (78), regroupant <strong style="color:var(--g3);">11 établissements</strong> répartis sur
+          3 sites géographiques. Elle accompagne des personnes en situation de handicap (déficience intellectuelle,
+          polyhandicap, troubles du spectre autistique) et emploie plusieurs centaines de professionnels de santé,
+          d'éducateurs et de personnels administratifs.</p>
+        <p style="margin-top:12px;">
+          Son infrastructure informatique, vieillissante et hétérogène, ne répondait plus aux exigences de sécurité,
+          de traçabilité et de gestion centralisée. La fondation a donc confié à notre équipe un
+          <strong style="color:var(--g3);">audit complet</strong> de son système d'information, suivi de la mise en
+          place d'une infrastructure modernisée basée sur <strong style="color:var(--g3);">Windows Server 2025</strong>
+          et <strong style="color:var(--g3);">Active Directory</strong>.
+        </p>
+      </div>
+
+      <!-- Description -->
+      <div class="pj-section rv">
+        <h3>DESCRIPTION DU PROJET</h3>
+        <p>Le Projet Mallet est un projet d'infrastructure système mené dans le cadre du BTS SIO (1ère année).
+          Il se décompose en <strong style="color:var(--g3);">4 missions progressives</strong> :</p>
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Mission 1</strong> — Audit de l'existant : analyse de l'infrastructure
+          actuelle (parc informatique, réseau, services), identification des failles et rédaction d'un rapport d'audit
+          complet avec préconisations.<br><br>
+          <strong style="color:var(--g3);">Mission 2</strong> — Déploiement Active Directory : installation et
+          configuration du contrôleur de domaine Windows Server 2025, création des 3 OUs (ADMIN, PÉDAGOGIQUE,
+          DIRECTION), mise en place des comptes utilisateurs et groupes de sécurité.<br><br>
+          <strong style="color:var(--g3);">Mission 3</strong> — Stratégies de groupe (GPO) : définition et déploiement
+          des stratégies par OU — restrictions d'accès, chiffrement, filtrages et sécurisation des postes clients
+          Windows 11 Pro.<br><br>
+          <strong style="color:var(--g3);">Mission 4</strong> — Déploiement des services complémentaires : GLPI
+          (gestion du parc &amp; ticketing), Zabbix (supervision réseau), Nextcloud (partage de fichiers sécurisé),
+          PaperCut MF (gestion des impressions).
+        </p>
+      </div>
+
+      <!-- Mission 1 — Audit (détaillée car validée) -->
+      <div class="pj-section rv">
+        <h3>MISSION 1 — AUDIT DE L'EXISTANT (VALIDÉE)</h3>
+        <p>La première mission, <strong style="color:var(--g3);">entièrement réalisée et validée</strong>, consistait
+          à dresser un état des lieux exhaustif de l'infrastructure informatique de la Fondation Mallet.</p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Périmètre audité :</strong><br>
+          ▸ Parc informatique — inventaire complet des postes, serveurs, équipements réseau<br>
+          ▸ Architecture réseau — topologie, segmentation, interconnexion des 3 sites<br>
+          ▸ Services existants — annuaire (LDAP), messagerie, partages de fichiers, impressions<br>
+          ▸ Sécurité — analyse des droits d'accès, des mises à jour et des pratiques en place<br>
+          ▸ Conformité — vérification des points critiques ANSSI et RGPD
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Principales failles identifiées :</strong><br>
+          ▸ Absence de contrôleur de domaine centralisé → gestion des comptes non maîtrisée<br>
+          ▸ Pas de segmentation réseau par OU → tous les utilisateurs ont des droits équivalents<br>
+          ▸ Aucune supervision active (pas d'alertes en cas de panne ou d'incident)<br>
+          ▸ Pas de solution de ticketing → interventions non tracées<br>
+          ▸ Partages de fichiers non sécurisés et non sauvegardés centralement
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Préconisations retenues :</strong><br>
+          ▸ Déploiement d'un contrôleur de domaine <strong style="color:var(--g3);">Windows Server 2025</strong>
+          avec Active Directory (domaine <code style="color:var(--g4);">mallet.local</code>)<br>
+          ▸ Structuration en 3 OUs : <code style="color:var(--g4);">ADMIN</code>,
+          <code style="color:var(--g4);">PÉDAGOGIQUE</code>, <code style="color:var(--g4);">DIRECTION</code><br>
+          ▸ Déploiement de <strong style="color:var(--g3);">GLPI</strong> pour la gestion du parc et du ticketing<br>
+          ▸ Mise en place de <strong style="color:var(--g3);">Zabbix</strong> pour la supervision réseau<br>
+          ▸ Déploiement de <strong style="color:var(--g3);">Nextcloud</strong> pour le partage sécurisé<br>
+          ▸ Intégration de <strong style="color:var(--g3);">PaperCut MF</strong> pour la gestion des impressions
+        </p>
+      </div>
+
+      <!-- Architecture cible -->
+      <div class="pj-section rv">
+        <h3>ARCHITECTURE CIBLE</h3>
+        <p>L'infrastructure cible s'articule autour d'un domaine Active Directory
+          <code style="color:var(--g4);">mallet.local</code> géré par un contrôleur de domaine
+          <strong style="color:var(--g3);">Windows Server 2025</strong>. Trois unités organisationnelles (OUs)
+          structurent la gestion des accès :</p>
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">OU ADMIN</strong> — Administrateurs système, accès complet,
+          GPO de gestion des droits et des outils d'administration.<br><br>
+          <strong style="color:var(--g3);">OU PÉDAGOGIQUE</strong> — Enseignants et éducateurs, accès restreint
+          aux ressources pédagogiques, filtrage de navigation web par GPO.<br><br>
+          <strong style="color:var(--g3);">OU DIRECTION</strong> — Directeurs et RH, accès aux données
+          confidentielles, GPO de chiffrement des données et restriction des périphériques externes.
+        </p>
+      </div>
+
+      <!-- État d'avancement -->
+      <div class="pj-section rv">
+        <h3>ÉTAT D'AVANCEMENT</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 1</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ AUDIT VALIDÉ</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Rapport d'audit remis et approuvé</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid #ffaa00;">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 2</div>
+            <div style="font-size:.8rem;color:#ffaa00;">⟳ EN COURS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Déploiement Active Directory</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 3</div>
+            <div style="font-size:.8rem;color:var(--g7);">— EN ATTENTE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Déploiement des GPO</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 4</div>
+            <div style="font-size:.8rem;color:var(--g7);">— EN ATTENTE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">GLPI · Zabbix · Nextcloud · PaperCut</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Compétences mobilisées -->
+      <div class="pj-section rv">
+        <h3>COMPÉTENCES MOBILISÉES</h3>
+        <p>
+          ▸ Administration système Windows Server 2025<br>
+          ▸ Déploiement et configuration d'Active Directory Domain Services<br>
+          ▸ Conception et application de stratégies de groupe (GPO)<br>
+          ▸ Audit de sécurité et rédaction de rapport technique<br>
+          ▸ Supervision réseau (Zabbix) et gestion de parc (GLPI)<br>
+          ▸ Segmentation logique des accès (RBAC, OUs, groupes AD)<br>
+          ▸ Communication technique avec un commanditaire (client fictif)
+        </p>
+      </div>
+
+      <!-- Documents -->
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; LIVRABLES</h3>
+        <div class="doc-list">
+
+          <!-- Rapport d'audit Mission 1 -->
+          <div class="card doc-item">
+            <span class="doc-icon">📄</span>
+            <span class="doc-name">Rapport d'Audit — Mission 1 — Fondation Mallet</span>
+            <span class="doc-size">~2.1 Mo</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-2/audit.pdf','Rapport Audit Fondation Mallet')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+          <!-- Sujet du projet -->
+          <div class="card doc-item">
+            <span class="doc-icon">📋</span>
+            <span class="doc-name">Sujet — Projet Mallet BTS1 SIO 2025-26</span>
+            <span class="doc-size">~500 Ko</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-2/sujet.pdf','Sujet Projet Mallet')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projets.html" class="btn btn-g">← RETOUR AUX PROJETS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

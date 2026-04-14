@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Portfolio BTS SIO</title>
+  <!-- Polices Google -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Éléments globaux (curseur, fond Matrix, HUD, nav) -->
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">CONTACT</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- En-tête de section -->
+      <div class="sec-hd rv" style="margin-top:30px;">
+        <span class="sec-tag">// 07 — CONNEXION</span>
+        <h2 class="sec-title">CONTACT</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════════
+       GRILLE CONTACT
+       2 colonnes : accroche à gauche, liens de contact à droite.
+       Sur mobile (< 960px) passe en 1 colonne (CSS .ct-grid).
+  ══════════════════════════════════════════════════════ -->
+      <div class="ct-grid">
+
+        <!-- Colonne gauche : accroche + disponibilité -->
+        <div class="rv">
+          <h2 class="ct-h">ENTRONS EN<br>CONTACT.</h2>
+          <!-- Message d'accueil -->
+          <p class="ct-sub">Étudiant en BTS SIO option B SLAM, je suis ouvert à toute opportunité de stage,
+            alternance ou collaboration dans le domaine de la cybersécurité et de l'administration réseau. N'hésitez pas
+            à me contacter.</p>
+          <div style="margin-top:28px;font-family:var(--fm);font-size:.6rem;letter-spacing:3px;color:var(--g6);">
+            // DISPONIBILITÉ<br>
+            <!-- Période de stage -->
+            <span style="color:var(--g3);font-size:.72rem;margin-top:6px;display:block;">
+              Disponible pour un stage — 2025 / 2026
+            </span>
+          </div>
+        </div>
+
+        <!-- Colonne droite : cartes de contact (liens cliquables) -->
+        <div class="ct-links rv d1">
+
+          <!-- Email -->
+          <a href="mailto:addiyuung@gmail.com" class="card ct-link">
+            <span class="ct-icon">@</span>
+            <div>
+              <div class="ct-lbl">EMAIL</div>
+              <div class="ct-val">addiyuung@gmail.com</div>
+            </div>
+          </a>
+
+          <!-- Téléphone -->
+          <a href="tel:+33753155137" class="card ct-link">
+            <span class="ct-icon">☎</span>
+            <div>
+              <div class="ct-lbl">TÉLÉPHONE</div>
+              <div class="ct-val">07 53 15 51 37</div>
+            </div>
+          </a>
+
+          <!-- Site personnel -->
+          <a href="#" class="card ct-link">
+            <span class="ct-icon">⌂</span>
+            <div>
+              <div class="ct-lbl">SITE WEB</div>
+              <div class="ct-val" style="color:var(--g6);">— À venir —</div>
+            </div>
+          </a>
+
+          <!-- LinkedIn — à renseigner quand disponible -->
+          <a href="#" class="card ct-link">
+            <span class="ct-icon">in</span>
+            <div>
+              <div class="ct-lbl">LINKEDIN</div>
+              <div class="ct-val" style="color:var(--g6);">— À venir —</div>
+            </div>
+          </a>
+
+        </div><!-- /.ct-links -->
+      </div><!-- /.ct-grid -->
+    </div><!-- /.wrap -->
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div><!-- /.page-wrap -->
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

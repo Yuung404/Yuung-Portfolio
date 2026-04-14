@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objectifs — Portfolio BTS SIO</title>
+  <!-- Polices Google -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Éléments globaux (curseur, fond Matrix, HUD, nav) -->
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">OBJECTIFS</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- En-tête de section -->
+      <div class="sec-hd rv" style="margin-top:30px;">
+        <span class="sec-tag">// 06 — TRAJECTOIRE</span>
+        <h2 class="sec-title">OBJECTIFS</h2>
+        <div class="sec-line"></div>
+        <p class="sec-desc">Ma feuille de route professionnelle et académique — à court, moyen et long terme — dans le
+          domaine de la cybersécurité.</p>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════════
+       LISTE D'OBJECTIFS
+       Chaque .obj-item = 3 colonnes : numéro | texte | statut.
+       Sur mobile (< 600px) le statut est masqué (CSS).
+
+       STATUTS DISPONIBLES (classe .obj-st) :
+         (sans classe supplémentaire) → texte en vert atténué
+         .live                        → texte vert vif + glow
+       Libellés conseillés : EN COURS · PLANIFIÉ · ATTEINT · VISION
+  ══════════════════════════════════════════════════════ -->
+      <div class="obj-list">
+
+        <!-- ── Objectif 01 : BTS SIO en cours ──────────────── -->
+        <div class="card obj-item rv">
+          <div class="obj-n">01</div>
+          <div>
+            <div class="obj-title">VALIDER LE BTS SIO OPTION B SLAM</div>
+            <div class="obj-desc">Terminer ma formation au Lycée Latournelle (La Garenne-Colombes), valider toutes les
+              épreuves du BTS SIO option B SLAM avec mention, et consolider mes bases en administration réseau,
+              cybersécurité et virtualisation. Promotion 2025–2027.</div>
+          </div>
+          <div class="obj-st live">EN COURS</div>
+        </div>
+
+        <!-- ── Objectif 02 : Stage cybersécurité ───────────── -->
+        <div class="card obj-item rv d1">
+          <div class="obj-n">02</div>
+          <div>
+            <div class="obj-title">DÉCROCHER UN STAGE EN CYBERSÉCURITÉ</div>
+            <div class="obj-desc">Intégrer une entreprise, une ESN ou une administration publique pour un stage en
+              cybersécurité ou administration réseau. Objectif : acquérir une expérience terrain sur la détection
+              d'incidents, la gestion des vulnérabilités ou l'audit de sécurité. Horizon : 2025 / 2026.</div>
+          </div>
+          <div class="obj-st">PLANIFIÉ</div>
+        </div>
+
+        <!-- ── Objectif 03 : Certification CompTIA Security+ ── -->
+        <div class="card obj-item rv d2">
+          <div class="obj-n">03</div>
+          <div>
+            <div class="obj-title">OBTENIR LA CERTIFICATION COMPTIA SECURITY+</div>
+            <div class="obj-desc">Préparer et passer l'examen CompTIA Security+ (SY0-701) pour valider mes compétences
+              en cybersécurité à l'international. Reconnaissance mondiale, prérequis pour beaucoup de postes SOC et de
+              pentest. Planifié après l'obtention du BTS.</div>
+          </div>
+          <div class="obj-st">PLANIFIÉ</div>
+        </div>
+
+        <!-- ── Objectif 04 : Analyste SOC / Expert Cyber ───── -->
+        <div class="card obj-item rv d3">
+          <div class="obj-n">04</div>
+          <div>
+            <div class="obj-title">DEVENIR ANALYSTE SOC / EXPERT CYBERSÉCURITÉ</div>
+            <div class="obj-desc">Vision à 3–5 ans : intégrer un Security Operations Center (SOC) en tant qu'analyste de
+              niveau 1 puis évoluer vers un poste d'expert en cyberdéfense, réponse à incident ou pentest. Domaines
+              cibles : défense des infrastructures critiques, threat intelligence, red/blue team.</div>
+          </div>
+          <div class="obj-st">VISION</div>
+        </div>
+
+        <!-- ── Objectif 05 : Formation continue ─────────────── -->
+        <div class="card obj-item rv d3">
+          <div class="obj-n">05</div>
+          <div>
+            <div class="obj-title">POURSUIVRE EN BACHELOR / LICENCE PRO CYBERSÉCURITÉ</div>
+            <div class="obj-desc">Après le BTS, envisager une poursuite d'études en Bachelor Cybersécurité ou Licence
+              Professionnelle Sécurité des Systèmes d'Information pour approfondir les compétences techniques et accéder
+              à des postes à plus haute responsabilité.</div>
+          </div>
+          <div class="obj-st">PLANIFIÉ</div>
+        </div>
+
+      </div><!-- /.obj-list -->
+    </div><!-- /.wrap -->
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div><!-- /.page-wrap -->
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

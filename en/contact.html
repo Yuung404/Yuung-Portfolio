@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Portfolio BTS SIO</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<!-- Global elements (cursor, Matrix background, HUD, nav) -->
+<div id="cur-ring"></div><div id="cur-dot"></div>
+<canvas id="mx-canvas"></canvas><div id="mx-vignette"></div><div id="mx-grid"></div>
+<div class="hud tl">SYS::EN<br><span class="hb">CONTACT</span></div>
+<div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+<div class="hud bl">NANTERRE::92</div>
+<div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+<nav id="main-nav"></nav>
+
+<div class="page-content page-wrap">
+<div class="wrap" style="padding-bottom:80px;">
+
+  <!-- Section header -->
+  <div class="sec-hd rv" style="margin-top:30px;">
+    <span class="sec-tag">// 07 — CONNECTION</span>
+    <h2 class="sec-title">CONTACT</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       CONTACT GRID
+       2 columns: tagline on the left, contact links on the right.
+       Collapses to 1 column on mobile (< 960px) via CSS .ct-grid.
+  ══════════════════════════════════════════════════════ -->
+  <div class="ct-grid">
+
+    <!-- Left column: tagline + availability -->
+    <div class="rv">
+      <h2 class="ct-h">LET'S GET IN<br>TOUCH.</h2>
+      <!-- Welcome message -->
+      <p class="ct-sub">BTS SIO option B SLAM student, I am open to any internship, work-study or collaboration opportunity in the fields of cybersecurity and network administration. Feel free to reach out.</p>
+      <div style="margin-top:28px;font-family:var(--fm);font-size:.6rem;letter-spacing:3px;color:var(--g6);">
+        // AVAILABILITY<br>
+        <span style="color:var(--g3);font-size:.72rem;margin-top:6px;display:block;">
+          Available for an internship — 2025 / 2026
+        </span>
+      </div>
+    </div>
+
+    <!-- Right column: clickable contact cards -->
+    <div class="ct-links rv d1">
+
+      <!-- Email -->
+      <a href="mailto:addiyuung@gmail.com" class="card ct-link">
+        <span class="ct-icon">@</span>
+        <div>
+          <div class="ct-lbl">EMAIL</div>
+          <div class="ct-val">addiyuung@gmail.com</div>
+        </div>
+      </a>
+
+      <!-- Phone -->
+      <a href="tel:+33753155137" class="card ct-link">
+        <span class="ct-icon">☎</span>
+        <div>
+          <div class="ct-lbl">PHONE</div>
+          <div class="ct-val">07 53 15 51 37</div>
+        </div>
+      </a>
+
+      <!-- Personal website -->
+      <a href="#" class="card ct-link">
+        <span class="ct-icon">⌂</span>
+        <div>
+          <div class="ct-lbl">WEBSITE</div>
+          <div class="ct-val" style="color:var(--g6);">— Coming soon —</div>
+        </div>
+      </a>
+
+      <!-- LinkedIn — to be added when available -->
+      <a href="#" class="card ct-link">
+        <span class="ct-icon">in</span>
+        <div>
+          <div class="ct-lbl">LINKEDIN</div>
+          <div class="ct-val" style="color:var(--g6);">— Coming soon —</div>
+        </div>
+      </a>
+
+    </div><!-- /.ct-links -->
+  </div><!-- /.ct-grid -->
+</div><!-- /.wrap -->
+
+<footer><div class="f-brand">YK_PORTFOLIO</div><div class="f-copy">© 2025 BTS SIO</div><div class="f-live"><div class="ldot"></div>AVAILABLE</div></footer>
+</div><!-- /.page-wrap -->
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
