@@ -380,6 +380,14 @@ function runProgress(start, lang) {
 document.addEventListener('DOMContentLoaded', () => {
   const lang = document.documentElement.lang || 'fr';
 
+  // Redirect to splash if accessed directly (no language chosen yet)
+  if (!document.getElementById('splash') && !sessionStorage.getItem('splashSeen')) {
+    const depth = window.location.pathname.split('/').filter(Boolean).length;
+    const root = depth >= 2 ? '../index.html' : 'index.html';
+    window.location.replace(root);
+    return;
+  }
+
   // Splash
   if (document.getElementById('splash')) {
     document.body.style.overflow = 'hidden';
