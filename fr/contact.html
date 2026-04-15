@@ -27,6 +27,15 @@
   <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
   <nav id="main-nav"></nav>
 
+  <!-- Visionneur PDF -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
   <div class="page-content page-wrap">
     <div class="wrap" style="padding-bottom:80px;">
 
@@ -98,13 +107,17 @@
             </div>
           </a>
 
-          <a href="../assets/docs/CV_Yuung_Kansietoko_Informatique.pdf" download class="card ct-link">
+          <div class="card ct-link" style="cursor:none;">
             <span class="ct-icon">📄</span>
-            <div>
+            <div style="flex:1;">
               <div class="ct-lbl">CV INFORMATIQUE</div>
-              <div class="ct-val">Télécharger mon CV</div>
+              <div class="ct-val">Cybersécurité &amp; Réseaux</div>
             </div>
-          </a>
+            <div style="display:flex;flex-direction:column;gap:6px;margin-left:12px;">
+              <button onclick="openPDF('../assets/docs/CV_Yuung_Kansietoko_Informatique.pdf','CV — Yuung Addi Kansietoko')" style="cursor:none;font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g3);background:transparent;border:1px solid var(--g3);padding:4px 10px;border-radius:2px;">APERÇU</button>
+              <a href="../assets/docs/CV_Yuung_Kansietoko_Informatique.pdf" download style="cursor:none;font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);background:transparent;border:1px solid rgba(0,204,68,.3);padding:4px 10px;border-radius:2px;text-align:center;text-decoration:none;">⬇ DL</a>
+            </div>
+          </div>
 
         </div><!-- /.ct-links -->
       </div><!-- /.ct-grid -->
