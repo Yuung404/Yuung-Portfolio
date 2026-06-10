@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarGuide — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">PROJET</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- Fil d'ariane -->
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projets.html" style="color:var(--g6);text-decoration:none;">← RETOUR AUX PROJETS</a>
+      </div>
+
+      <!-- En-tête -->
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJET 04 — DÉVELOPPEMENT WEB · PROJET PERSONNEL</span>
+        <h2 class="sec-title">BARGUIDE v3</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <!-- Hero : image + métadonnées -->
+      <div class="pj-det-hero rv">
+
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-4.svg" alt="BarGuide — Application web de guide bar">
+        </div>
+
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUT</span>
+              <span class="pj-status st-success">✓ DÉPLOYÉ</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">Projet personnel — développement solo</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PÉRIODE</span>
+              <span class="pj-meta-val">Mai — Juin 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ÉQUIPE</span>
+              <span class="pj-meta-val">Solo (projet 100% personnel)</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STACK</span>
+              <span class="pj-meta-val">React 18, Vite 5, CSS-in-JS, Anthropic API, GitHub Actions</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// DÉPLOIEMENT</span>
+              <span class="pj-meta-val">GitHub Pages · Vercel</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// REPO</span>
+              <span class="pj-meta-val">
+                <a href="https://github.com/Yuung404/barguide" target="_blank"
+                  style="color:var(--g4);text-decoration:none;">github.com/Yuung404/barguide</a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contexte -->
+      <div class="pj-section rv">
+        <h3>CONTEXTE &amp; ORIGINE</h3>
+        <p>BarGuide est une application web de guide bar que j'ai conçue et développée entièrement seul,
+          en dehors de tout cadre scolaire. L'idée est simple : avoir à portée de main les recettes de tous
+          les cocktails officiels IBA, les bières du monde, les vins, les cafés et les shots — avec des recettes
+          générées à la demande par l'IA <strong style="color:var(--g3);">Claude (Anthropic)</strong>.</p>
+        <p style="margin-top:12px;">
+          Ce projet m'a permis de me lancer concrètement dans le développement front-end avec
+          <strong style="color:var(--g3);">React</strong>, d'apprendre à intégrer une API d'IA en production,
+          et de déployer une application complète en CI/CD autonome.
+        </p>
+      </div>
+
+      <!-- Ce que j'ai fait -->
+      <div class="pj-section rv">
+        <h3>CE QUE J'AI RÉALISÉ</h3>
+
+        <p style="margin-top:8px;">
+          <strong style="color:var(--g3);">1. Architecture de l'application (React + Vite)</strong><br>
+          J'ai structuré le projet from scratch : point d'entrée
+          <code style="color:var(--g4);">main.jsx</code>, composant principal
+          <code style="color:var(--g4);">App.jsx</code> qui gère l'UI et les données, et module
+          <code style="color:var(--g4);">api.js</code> dédié aux appels Anthropic. Aucune librairie
+          de composants — tout le CSS est injecté via CSS-in-JS avec des keyframes maison.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">2. Base de données cocktails (190+ références)</strong><br>
+          J'ai constitué manuellement la base de données :
+          102 cocktails IBA officiels (Unforgettable, Contemporary, New Era),
+          52 cocktails du monde et craft (Espagne, Mexique, Pérou, UK, NYC…),
+          36 bières spéciales (Trappiste, Sour, NEIPA, Gueuze, Bock…),
+          10 vins et bulles, 15 cafés, 20+ mocktails, shots, sangrias et digestifs.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">3. Intégration API Claude (Anthropic)</strong><br>
+          Chaque fiche cocktail génère sa recette à la demande via
+          <strong style="color:var(--g3);">claude-haiku-4-5</strong>. J'ai implémenté un système de
+          cache session pour éviter les appels redondants, et un fallback sur des recettes statiques
+          pré-enregistrées en cas d'indisponibilité de l'API.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">4. Intégration TheCocktailDB</strong><br>
+          Pour les cocktails IBA, j'ai connecté l'API publique TheCocktailDB afin d'afficher
+          une photo réelle du cocktail sur chaque fiche.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">5. Système de verres SVG réalistes</strong><br>
+          J'ai créé 16 types de verres différents en SVG (Martini, Old Fashioned, Highball, Coupe,
+          Shot, Pinte, Tulipe…) avec rendu liquide et reflets. Chaque fiche affiche
+          le verre idéal + 2 alternatives cliquables.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">6. Modes matériel</strong><br>
+          L'app propose 3 modes selon ce que l'utilisateur a chez lui :<br>
+          ▸ <strong style="color:var(--g3);">IDÉAL</strong> — recette avec kit barman complet<br>
+          ▸ <strong style="color:var(--g3);">DÉBROUILLE</strong> — 3 alternatives par ingrédient manquant<br>
+          ▸ <strong style="color:var(--g3);">SANS RIEN</strong> — guide de mesures improvisées
+          (conversion cl → ustensiles du quotidien)
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">7. Recherche et filtres</strong><br>
+          Recherche globale instantanée sur le nom, l'origine, les ingrédients et la catégorie IBA.
+          Filtres par sous-catégorie. Animations fluides : cartes en cascade, flottement du fond,
+          modal animée, effets hover glow.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">8. CI/CD et déploiement</strong><br>
+          Pipeline GitHub Actions pour le build et le déploiement automatique sur GitHub Pages à
+          chaque push sur master. L'app est également déployée sur Vercel en production,
+          avec un proxy backend pour ne pas exposer la clé API Anthropic côté client.
+        </p>
+      </div>
+
+      <!-- Itérations -->
+      <div class="pj-section rv">
+        <h3>ÉVOLUTION DU PROJET</h3>
+        <p>Le projet a évolué par itérations successives, chaque commit correspondant à une
+          fonctionnalité ou amélioration concrète :</p>
+        <p style="margin-top:12px;">
+          ▸ <strong style="color:var(--g3);">v1</strong> — Prototype initial : 38 cocktails, génération IA basique,
+          interface minimaliste<br>
+          ▸ <strong style="color:var(--g3);">v2</strong> — Ajout GitHub Pages, test Gemini API (tier gratuit),
+          puis retour sur Claude Haiku pour la qualité des recettes<br>
+          ▸ <strong style="color:var(--g3);">v3</strong> — Refonte complète : +190 références, icônes SVG verres,
+          modes matériel, cache session, TheCocktailDB, animations, Vercel prod
+        </p>
+      </div>
+
+      <!-- Compétences -->
+      <div class="pj-section rv">
+        <h3>COMPÉTENCES DÉVELOPPÉES</h3>
+        <p>
+          ▸ Développement front-end React 18 (composants, state, props, hooks)<br>
+          ▸ Bundling et configuration Vite 5 (HMR, build prod, variables d'env)<br>
+          ▸ Intégration d'API IA (Anthropic Claude, gestion des headers, cache)<br>
+          ▸ Création de SVG complexes (formes, dégradés, animations)<br>
+          ▸ CI/CD avec GitHub Actions (workflow build + deploy automatisé)<br>
+          ▸ Déploiement multi-plateforme (GitHub Pages + Vercel)<br>
+          ▸ Sécurité API : proxy backend pour protéger les clés en production<br>
+          ▸ Gestion de projet solo : conception, développement et maintenance autonomes
+        </p>
+      </div>
+
+      <!-- Liens -->
+      <div class="pj-section rv">
+        <h3>LIENS</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">⚙</span>
+            <span class="doc-name">Code source — github.com/Yuung404/barguide</span>
+            <span class="doc-size">Public</span>
+            <a class="doc-link" href="https://github.com/Yuung404/barguide" target="_blank"
+              style="cursor:none;">OUVRIR</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projets.html" class="btn btn-g">← RETOUR AUX PROJETS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      .bg         { fill: #020d02; }
+      .grid-line  { stroke: #003a0a; stroke-width: 0.5; }
+      .title-text { font-family: 'Share Tech Mono', monospace; fill: #00cc44; font-size: 13px; letter-spacing: 2px; }
+      .label-text { font-family: 'Share Tech Mono', monospace; fill: #00aa33; font-size: 11px; letter-spacing: 1px; }
+      .small-text { font-family: 'Share Tech Mono', monospace; fill: #008020; font-size: 9px; letter-spacing: 1px; }
+      .tag-text   { font-family: 'Share Tech Mono', monospace; fill: #33bb55; font-size: 10px; letter-spacing: 1px; }
+      .dim-text   { font-family: 'Share Tech Mono', monospace; fill: #005c10; font-size: 9px; }
+      .line-data  { stroke: #00cc44; stroke-width: 1.4; fill: none; }
+      .line-dashed{ stroke: #008020; stroke-width: 0.9; fill: none; stroke-dasharray: 4,2; }
+      .glass-line { stroke: #00cc44; stroke-width: 1.6; fill: none; }
+      .glass-fill { fill: rgba(0,180,60,0.08); }
+      .liquid     { fill: rgba(0,200,80,0.18); }
+    </style>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="500"/>
+
+  <!-- Grid -->
+  <g opacity="0.4">
+    <line class="grid-line" x1="0" y1="50"  x2="800" y2="50"/>
+    <line class="grid-line" x1="0" y1="100" x2="800" y2="100"/>
+    <line class="grid-line" x1="0" y1="150" x2="800" y2="150"/>
+    <line class="grid-line" x1="0" y1="200" x2="800" y2="200"/>
+    <line class="grid-line" x1="0" y1="250" x2="800" y2="250"/>
+    <line class="grid-line" x1="0" y1="300" x2="800" y2="300"/>
+    <line class="grid-line" x1="0" y1="350" x2="800" y2="350"/>
+    <line class="grid-line" x1="0" y1="400" x2="800" y2="400"/>
+    <line class="grid-line" x1="0" y1="450" x2="800" y2="450"/>
+    <line class="grid-line" x1="100" y1="0" x2="100" y2="500"/>
+    <line class="grid-line" x1="200" y1="0" x2="200" y2="500"/>
+    <line class="grid-line" x1="300" y1="0" x2="300" y2="500"/>
+    <line class="grid-line" x1="400" y1="0" x2="400" y2="500"/>
+    <line class="grid-line" x1="500" y1="0" x2="500" y2="500"/>
+    <line class="grid-line" x1="600" y1="0" x2="600" y2="500"/>
+    <line class="grid-line" x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="800" height="32" fill="#003a0a" opacity="0.6"/>
+  <text class="title-text" x="20" y="21" filter="url(#glow)">BARGUIDE v3 — APPLICATION WEB PERSONNELLE</text>
+  <text class="dim-text" x="660" y="21">React + Vite + Claude AI</text>
+
+  <!-- ── COCKTAIL GLASS (centre gauche) ── -->
+  <g filter="url(#glow)">
+    <!-- verre martini -->
+    <polygon class="glass-fill" points="170,100 310,100 260,260 220,260"/>
+    <polygon class="liquid"     points="180,130 300,130 258,260 222,260"/>
+    <!-- contour -->
+    <line class="glass-line" x1="170" y1="100" x2="220" y2="260"/>
+    <line class="glass-line" x1="310" y1="100" x2="260" y2="260"/>
+    <line class="glass-line" x1="220" y1="260" x2="260" y2="260"/>
+    <!-- pied -->
+    <line class="glass-line" x1="240" y1="260" x2="240" y2="310"/>
+    <line class="glass-line" x1="200" y1="310" x2="280" y2="310"/>
+    <!-- bord haut -->
+    <line class="glass-line" x1="155" y1="100" x2="325" y2="100"/>
+    <!-- trait liquide -->
+    <line class="line-dashed" x1="180" y1="130" x2="300" y2="130"/>
+    <!-- olive déco -->
+    <circle cx="280" cy="115" r="7" fill="none" stroke="#00cc44" stroke-width="1.2"/>
+    <line class="glass-line" x1="287" y1="100" x2="290" y2="118"/>
+    <!-- reflets -->
+    <line stroke="#33bb55" stroke-width="0.7" opacity="0.5" x1="195" y1="140" x2="205" y2="240"/>
+    <line stroke="#33bb55" stroke-width="0.4" opacity="0.3" x1="205" y1="140" x2="213" y2="240"/>
+  </g>
+
+  <!-- Label verre -->
+  <text class="label-text" x="155" y="332" text-anchor="middle">GLASS::MARTINI</text>
+  <text class="small-text" x="155" y="346" text-anchor="middle">16 types SVG disponibles</text>
+
+  <!-- ── PANEL BASE DE DONNÉES COCKTAILS (centre) ── -->
+  <rect x="350" y="55" width="240" height="230" rx="3" fill="#020d02" stroke="#005c10" stroke-width="1"/>
+  <rect x="350" y="55" width="240" height="22" rx="3" fill="#003a0a" opacity="0.8"/>
+  <text class="title-text" x="360" y="70" font-size="10">COCKTAILS DATABASE</text>
+
+  <!-- lignes de données -->
+  <text class="label-text" x="360" y="95"  font-size="9">IBA — Unforgettable    ·  34</text>
+  <text class="label-text" x="360" y="110" font-size="9">IBA — Contemporary     ·  33</text>
+  <text class="label-text" x="360" y="125" font-size="9">IBA — New Era           ·  35</text>
+  <text class="label-text" x="360" y="140" font-size="9">Cocktails monde+craft  ·  52</text>
+  <line class="line-dashed" x1="355" y1="148" x2="585" y2="148"/>
+  <text class="tag-text"   x="360" y="162" font-size="9">Bières spéciales       ·  36</text>
+  <text class="tag-text"   x="360" y="177" font-size="9">Vins &amp; bulles         ·  10</text>
+  <text class="tag-text"   x="360" y="192" font-size="9">Cafés                  ·  15</text>
+  <text class="tag-text"   x="360" y="207" font-size="9">Mocktails / Shots      ·  20+</text>
+  <line class="line-dashed" x1="355" y1="215" x2="585" y2="215"/>
+  <text class="title-text" x="360" y="230" font-size="10" filter="url(#glow)">TOTAL  ·  190+</text>
+  <text class="small-text" x="360" y="248">Recherche globale · Filtres · Favoris</text>
+  <text class="small-text" x="360" y="261">3 modes matériel · Alternatives</text>
+  <text class="small-text" x="360" y="274">Mesures improvisées · Animations</text>
+
+  <!-- ── PANEL API CLAUDE (droite) ── -->
+  <rect x="615" y="55" width="170" height="140" rx="3" fill="#020d02" stroke="#005c10" stroke-width="1"/>
+  <rect x="615" y="55" width="170" height="22" rx="3" fill="#003a0a" opacity="0.8"/>
+  <text class="title-text" x="625" y="70" font-size="10">ANTHROPIC API</text>
+  <text class="small-text" x="625" y="88">claude-haiku-4-5</text>
+  <text class="small-text" x="625" y="102">Recette générée IA</text>
+  <text class="small-text" x="625" y="116">Cache session</text>
+  <text class="small-text" x="625" y="130">Fallback statique</text>
+  <line class="line-dashed" x1="620" y1="138" x2="778" y2="138"/>
+  <text class="tag-text"   x="625" y="152" font-size="9">TheCocktailDB API</text>
+  <text class="small-text" x="625" y="166">Photo cocktail live</text>
+  <text class="small-text" x="625" y="180">SVG verres réalistes</text>
+
+  <!-- flèche API → App -->
+  <line class="line-data" x1="590" y1="120" x2="615" y2="120" filter="url(#glow)"/>
+  <polygon points="611,116 619,120 611,124" fill="#00cc44" filter="url(#glow)"/>
+
+  <!-- ── STACK TECH (bas centre) ── -->
+  <rect x="350" y="305" width="435" height="95" rx="3" fill="#020d02" stroke="#005c10" stroke-width="1"/>
+  <rect x="350" y="305" width="435" height="22" rx="3" fill="#003a0a" opacity="0.8"/>
+  <text class="title-text" x="360" y="320" font-size="10">STACK TECHNIQUE</text>
+
+  <text class="label-text" x="370" y="345" font-size="10">React 18</text>
+  <text class="label-text" x="460" y="345" font-size="10">Vite 5</text>
+  <text class="label-text" x="530" y="345" font-size="10">CSS-in-JS</text>
+  <text class="label-text" x="625" y="345" font-size="10">GitHub Actions</text>
+
+  <text class="small-text" x="370" y="362">Composants JSX</text>
+  <text class="small-text" x="460" y="362">Build + HMR</text>
+  <text class="small-text" x="530" y="362">Styles injectés</text>
+  <text class="small-text" x="625" y="362">CI/CD → Pages</text>
+
+  <text class="small-text" x="370" y="380">Vercel (prod)</text>
+  <text class="small-text" x="460" y="380">Cinzel · Lora</text>
+  <text class="small-text" x="530" y="380">Keyframes CSS</text>
+  <text class="small-text" x="625" y="380">Proxy backend</text>
+
+  <!-- ── MODES (bas gauche) ── -->
+  <rect x="20" y="365" width="300" height="90" rx="3" fill="#020d02" stroke="#005c10" stroke-width="1"/>
+  <rect x="20" y="365" width="300" height="22" rx="3" fill="#003a0a" opacity="0.8"/>
+  <text class="title-text" x="30" y="380" font-size="10">MODES MATÉRIEL</text>
+  <text class="label-text" x="30" y="400" font-size="10">✓  IDÉAL      — kit complet barman</text>
+  <text class="label-text" x="30" y="415" font-size="10">✓  DÉBROUILLE — alternatives auto</text>
+  <text class="label-text" x="30" y="430" font-size="10">✓  SANS RIEN  — mesures improvvisées</text>
+  <text class="small-text" x="30" y="447">3 alternatives / ingrédient · conversion cl → ustensiles</text>
+
+  <!-- ── CONNEXION verre → BDD ── -->
+  <line class="line-data" x1="330" y1="180" x2="350" y2="180" filter="url(#glow)"/>
+  <polygon points="346,176 354,180 346,184" fill="#00cc44" filter="url(#glow)"/>
+
+  <!-- status bar -->
+  <rect x="0" y="470" width="800" height="30" fill="#003a0a" opacity="0.6"/>
+  <text class="small-text" x="20" y="489">STATUS::DEPLOYED</text>
+  <text class="small-text" x="180" y="489">GitHub Pages · Vercel</text>
+  <text class="small-text" x="380" y="489">github.com/Yuung404/barguide</text>
+  <text class="small-text" x="650" y="489">PROJET PERSONNEL</text>
+</svg>
