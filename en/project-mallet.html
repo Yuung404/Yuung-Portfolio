@@ -208,16 +208,16 @@
             <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Audit report submitted and approved</div>
           </div>
 
-          <div class="card" style="padding:16px;border-left:3px solid #ffaa00;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 2</div>
-            <div style="font-size:.8rem;color:#ffaa00;">⟳ IN PROGRESS</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Active Directory deployment</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ AD VALIDATED</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">mallet.local domain operational</div>
           </div>
 
-          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 3</div>
-            <div style="font-size:.8rem;color:var(--g7);">— PENDING</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">GPO deployment</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ GPO VALIDATED</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">3 GPOs deployed and linked</div>
           </div>
 
           <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
@@ -227,6 +227,72 @@
           </div>
 
         </div>
+      </div>
+
+      <!-- Mission 2 — Active Directory (validated) -->
+      <div class="pj-section rv">
+        <h3>MISSION 2 — ACTIVE DIRECTORY DEPLOYMENT (VALIDATED)</h3>
+        <p>Objective: set up a centralised domain controller to replace the ageing and unmanaged infrastructure
+          of Fondation Mallet.</p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Completed tasks:</strong><br>
+          ▸ Server renamed to <code style="color:var(--g4);">SRV-MALLET</code> with a static IP address
+          (<code style="color:var(--g4);">192.168.1.10</code>) assigned<br>
+          ▸ <strong style="color:var(--g3);">AD DS</strong> role installed on Windows Server 2025<br>
+          ▸ Server promoted to primary domain controller on domain
+          <code style="color:var(--g4);">mallet.local</code><br>
+          ▸ 3 Organisational Units created:
+          <code style="color:var(--g4);">ADMIN</code>, <code style="color:var(--g4);">PEDAGOGIQUE</code>,
+          <code style="color:var(--g4);">DIRECTION</code><br>
+          ▸ 3 security groups created:
+          <code style="color:var(--g4);">GRP-ADMIN</code>, <code style="color:var(--g4);">GRP-PEDAGOGIQUE</code>,
+          <code style="color:var(--g4);">GRP-DIRECTION</code><br>
+          ▸ User accounts created by profile and assigned to their corresponding groups
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Outcome:</strong> The <code style="color:var(--g4);">mallet.local</code>
+          domain is fully operational. All users are organised by profile with rights tailored to their role.
+          The infrastructure meets the recommendations from the audit (Mission 1).
+        </p>
+      </div>
+
+      <!-- Mission 3 — GPO (validated) -->
+      <div class="pj-section rv">
+        <h3>MISSION 3 — GROUP POLICY OBJECTS (VALIDATED)</h3>
+        <p>Objective: secure and control client workstations according to user profile via targeted GPOs
+          per Organisational Unit.</p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">GPO-ADMIN — Hardened password policy</strong><br>
+          ▸ Minimum length: 12 characters<br>
+          ▸ Complexity enabled (uppercase, digits, special characters)<br>
+          ▸ Password expiry: every 90 days<br>
+          <span style="font-size:.8em;color:var(--g6);">Administrators have full system access —
+          their accounts must be maximally protected.</span>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">GPO-PEDAGOGIQUE — System rights restriction</strong><br>
+          ▸ Registry editing tools blocked<br>
+          ▸ Control Panel access restricted<br>
+          <span style="font-size:.8em;color:var(--g6);">Educators have no need to modify the system —
+          this limits the risk of accidental or intentional changes.</span>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">GPO-DIRECTION — Confidential data protection</strong><br>
+          ▸ All removable storage devices (USB) fully blocked<br>
+          <span style="font-size:.8em;color:var(--g6);">Management staff access patient records and HR data —
+          USB blocking prevents data exfiltration. A GDPR requirement for a medico-social foundation.</span>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Outcome:</strong> Each user profile has restrictions tailored to their
+          access level and the sensitivity of the data they handle. All 3 GPOs are linked to their respective OUs
+          and applied automatically at every logon.
+        </p>
       </div>
 
       <!-- Skills demonstrated -->
@@ -266,6 +332,14 @@
             <button class="doc-link"
               onclick="openPDF('../assets/docs/projet-2/sujet.pdf','Mallet Project Brief')"
               style="cursor:none;">OPEN</button>
+          </div>
+
+          <!-- Technical report Missions 2 & 3 -->
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Technical Report — Missions 2 &amp; 3 — Active Directory &amp; GPO</span>
+            <span class="doc-size">~150 KB</span>
+            <a class="doc-link" href="../assets/docs/projet-2/compte-rendu.docx" download style="cursor:none;">DOWNLOAD</a>
           </div>
 
         </div>

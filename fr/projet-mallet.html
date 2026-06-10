@@ -206,16 +206,16 @@
             <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Rapport d'audit remis et approuvé</div>
           </div>
 
-          <div class="card" style="padding:16px;border-left:3px solid #ffaa00;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 2</div>
-            <div style="font-size:.8rem;color:#ffaa00;">⟳ EN COURS</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Déploiement Active Directory</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ AD VALIDÉ</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Domaine mallet.local opérationnel</div>
           </div>
 
-          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 3</div>
-            <div style="font-size:.8rem;color:var(--g7);">— EN ATTENTE</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Déploiement des GPO</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ GPO VALIDÉES</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">3 GPO déployées et liées</div>
           </div>
 
           <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
@@ -225,6 +225,73 @@
           </div>
 
         </div>
+      </div>
+
+      <!-- Mission 2 — Active Directory (validée) -->
+      <div class="pj-section rv">
+        <h3>MISSION 2 — DÉPLOIEMENT ACTIVE DIRECTORY (VALIDÉE)</h3>
+        <p>Objectif : mettre en place un contrôleur de domaine centralisé pour remplacer l'infrastructure
+          vieillissante et non maîtrisée de la Fondation Mallet.</p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Réalisations :</strong><br>
+          ▸ Renommage du serveur en <code style="color:var(--g4);">SRV-MALLET</code> et attribution d'une adresse IP fixe
+          (<code style="color:var(--g4);">192.168.1.10</code>)<br>
+          ▸ Installation du rôle <strong style="color:var(--g3);">AD DS</strong> sur Windows Server 2025<br>
+          ▸ Promotion du serveur en contrôleur de domaine principal sur le domaine
+          <code style="color:var(--g4);">mallet.local</code><br>
+          ▸ Création de 3 Unités Organisationnelles :
+          <code style="color:var(--g4);">ADMIN</code>, <code style="color:var(--g4);">PEDAGOGIQUE</code>,
+          <code style="color:var(--g4);">DIRECTION</code><br>
+          ▸ Création de 3 groupes de sécurité :
+          <code style="color:var(--g4);">GRP-ADMIN</code>, <code style="color:var(--g4);">GRP-PEDAGOGIQUE</code>,
+          <code style="color:var(--g4);">GRP-DIRECTION</code><br>
+          ▸ Création des comptes utilisateurs par profil et affectation aux groupes correspondants
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Résultat :</strong> Le domaine
+          <code style="color:var(--g4);">mallet.local</code> est pleinement opérationnel.
+          Tous les utilisateurs sont organisés par profil avec des droits adaptés à leur fonction.
+          L'infrastructure répond aux préconisations de l'audit (Mission 1).
+        </p>
+      </div>
+
+      <!-- Mission 3 — GPO (validée) -->
+      <div class="pj-section rv">
+        <h3>MISSION 3 — STRATÉGIES DE GROUPE GPO (VALIDÉE)</h3>
+        <p>Objectif : sécuriser et contrôler les postes clients selon le profil des utilisateurs via des GPO
+          ciblées par Unité Organisationnelle.</p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">GPO-ADMIN — Politique de mots de passe renforcée</strong><br>
+          ▸ Longueur minimale : 12 caractères<br>
+          ▸ Complexité activée (majuscules, chiffres, caractères spéciaux)<br>
+          ▸ Expiration du mot de passe : tous les 90 jours<br>
+          <span style="font-size:.8em;color:var(--g6);">Les administrateurs ont accès à l'ensemble du système —
+          leur compte doit être protégé au maximum.</span>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">GPO-PEDAGOGIQUE — Restriction des droits système</strong><br>
+          ▸ Blocage de l'accès aux outils de modification du registre<br>
+          ▸ Restriction d'accès au panneau de configuration<br>
+          <span style="font-size:.8em;color:var(--g6);">Les éducateurs n'ont pas besoin de modifier le système —
+          on limite les risques d'erreur ou de modification involontaire.</span>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">GPO-DIRECTION — Protection des données confidentielles</strong><br>
+          ▸ Blocage total des périphériques de stockage amovible (USB)<br>
+          <span style="font-size:.8em;color:var(--g6);">La direction accède aux dossiers patients et données RH —
+          on empêche toute exfiltration de données. Obligation RGPD pour une fondation médico-sociale.</span>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Résultat :</strong> Chaque profil utilisateur dispose de restrictions
+          adaptées à son niveau d'accès et à la sensibilité des données qu'il manipule. Les 3 GPO sont liées aux OUs
+          correspondantes et appliquées automatiquement à chaque connexion.
+        </p>
       </div>
 
       <!-- Compétences mobilisées -->
@@ -264,6 +331,14 @@
             <button class="doc-link"
               onclick="openPDF('../assets/docs/projet-2/sujet.pdf','Sujet Projet Mallet')"
               style="cursor:none;">OUVRIR</button>
+          </div>
+
+          <!-- Compte rendu Missions 2 & 3 -->
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Compte Rendu Technique — Missions 2 &amp; 3 — Active Directory &amp; GPO</span>
+            <span class="doc-size">~150 Ko</span>
+            <a class="doc-link" href="../assets/docs/projet-2/compte-rendu.docx" download style="cursor:none;">TÉLÉCHARGER</a>
           </div>
 
         </div>
