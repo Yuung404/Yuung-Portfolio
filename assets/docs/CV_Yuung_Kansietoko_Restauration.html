@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Restauration — Yuung Addi Kansietoko</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #111111;
+      --dark: #1a1a1a;
+      --mid: #444444;
+      --light: #888888;
+      --border: #dddddd;
+      --accent: #2c2c2c;
+      --page-w: 210mm;
+      --page-h: 297mm;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 10pt;
+      color: var(--black);
+      background: #f0f0f0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: var(--page-w);
+      min-height: var(--page-h);
+      margin: 20px auto;
+      background: #ffffff;
+      display: flex;
+      box-shadow: 0 4px 24px rgba(0,0,0,.18);
+    }
+
+    /* ── Colonne gauche ── */
+    .sidebar {
+      width: 68mm;
+      background: #1a1a1a;
+      color: #ffffff;
+      padding: 36px 20px 36px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      flex-shrink: 0;
+    }
+
+    .sidebar-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 18pt;
+      font-weight: 700;
+      line-height: 1.15;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+
+    .sidebar-title {
+      font-size: 7.5pt;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #aaaaaa;
+      margin-top: 6px;
+    }
+
+    .sidebar-divider {
+      width: 32px;
+      height: 2px;
+      background: #ffffff;
+      opacity: .35;
+      margin-top: 12px;
+    }
+
+    .sidebar-section-title {
+      font-size: 6.5pt;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #888888;
+      margin-bottom: 12px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .contact-icon {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      margin-top: 1px;
+      opacity: .65;
+    }
+
+    .contact-text {
+      font-size: 8pt;
+      color: #cccccc;
+      line-height: 1.5;
+    }
+
+    .contact-text a {
+      color: #cccccc;
+      text-decoration: none;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      color: #cccccc;
+      font-size: 7.5pt;
+      padding: 4px 8px;
+      border-radius: 2px;
+      margin: 2px 2px 2px 0;
+      line-height: 1.4;
+    }
+
+    .skill-item {
+      margin-bottom: 10px;
+    }
+
+    .skill-label {
+      font-size: 8pt;
+      font-weight: 600;
+      color: #dddddd;
+      margin-bottom: 3px;
+    }
+
+    .skill-desc {
+      font-size: 7.5pt;
+      color: #999999;
+      line-height: 1.6;
+    }
+
+    .lang-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .lang-name {
+      font-size: 8pt;
+      color: #cccccc;
+    }
+
+    .lang-level {
+      font-size: 7pt;
+      color: #888888;
+      letter-spacing: 1px;
+    }
+
+    .lang-dots {
+      display: flex;
+      gap: 3px;
+      margin-top: 3px;
+    }
+
+    .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.15);
+    }
+
+    .dot.filled {
+      background: #ffffff;
+    }
+
+    /* ── Colonne principale ── */
+    .main {
+      flex: 1;
+      padding: 36px 28px 36px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+    }
+
+    .main-section-title {
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #888888;
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid #1a1a1a;
+      margin-bottom: 14px;
+    }
+
+    .exp-item {
+      margin-bottom: 16px;
+      padding-left: 12px;
+      border-left: 2px solid #dddddd;
+      position: relative;
+    }
+
+    .exp-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 5px;
+      width: 7px;
+      height: 7px;
+      background: #1a1a1a;
+      transform: rotate(45deg);
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 2px;
+    }
+
+    .exp-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #111111;
+      letter-spacing: 0.2px;
+    }
+
+    .exp-date {
+      font-size: 7pt;
+      color: #888888;
+      white-space: nowrap;
+      flex-shrink: 0;
+      font-style: italic;
+    }
+
+    .exp-company {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: #444444;
+      margin-bottom: 2px;
+    }
+
+    .exp-sub {
+      font-size: 7.5pt;
+      color: #888888;
+      margin-bottom: 6px;
+      font-style: italic;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      padding: 0;
+    }
+
+    .exp-bullets li {
+      font-size: 8pt;
+      color: #444444;
+      line-height: 1.7;
+      padding-left: 12px;
+      position: relative;
+    }
+
+    .exp-bullets li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #888888;
+      font-size: 7.5pt;
+    }
+
+    .profil-text {
+      font-size: 8.5pt;
+      color: #444444;
+      line-height: 1.8;
+    }
+
+    .profil-text strong {
+      color: #111111;
+      font-weight: 600;
+    }
+
+    .competences-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .comp-card {
+      border: 1px solid #e0e0e0;
+      border-left: 3px solid #1a1a1a;
+      padding: 10px 12px;
+    }
+
+    .comp-title {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #111111;
+      margin-bottom: 4px;
+    }
+
+    .comp-desc {
+      font-size: 7.5pt;
+      color: #666666;
+      line-height: 1.65;
+    }
+
+    /* Print */
+    @media print {
+      body { background: white; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 210mm;
+        min-height: 297mm;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar">
+
+    <!-- Identité -->
+    <div>
+      <div class="sidebar-name">Yuung Addi<br>Kansietoko</div>
+      <div class="sidebar-title">Serveur · Chef de rang<br>Événementiel & Restauration</div>
+      <div class="sidebar-divider"></div>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <div class="sidebar-section-title">Contact</div>
+
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+        </svg>
+        <div class="contact-text">addiyuung@gmail.com</div>
+      </div>
+
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.15 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.06 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        <div class="contact-text">07 53 15 51 37</div>
+      </div>
+
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        <div class="contact-text">Nanterre — Île-de-France<br><span style="font-size:7pt;color:#777;">Mobilité : Paris & banlieue</span></div>
+      </div>
+
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+        </svg>
+        <div class="contact-text"><a href="https://www.linkedin.com/in/yuung-addi-2b69823b3/">linkedin/yuung-addi</a></div>
+      </div>
+    </div>
+
+    <!-- Compétences clés -->
+    <div>
+      <div class="sidebar-section-title">Compétences clés</div>
+
+      <div class="skill-item">
+        <div class="skill-label">Service en salle</div>
+        <div class="skill-desc">Dressage, prise de commandes, service à table, débarrassage</div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-label">Relation client</div>
+        <div class="skill-desc">Accueil, fidélisation, clientèle internationale</div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-label">Événementiel</div>
+        <div class="skill-desc">Banquets, cocktails, soirées d'entreprise</div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-label">Travail en équipe</div>
+        <div class="skill-desc">Coordination cuisine / salle, cadence soutenue</div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-label">Encaissement / Caisse</div>
+        <div class="skill-desc">Tenue de caisse, gestion des commandes</div>
+      </div>
+    </div>
+
+    <!-- Langues -->
+    <div>
+      <div class="sidebar-section-title">Langues</div>
+
+      <div class="lang-row">
+        <div>
+          <div class="lang-name">Français</div>
+          <div class="lang-dots">
+            <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+          </div>
+        </div>
+        <div class="lang-level">Natif</div>
+      </div>
+
+      <div class="lang-row">
+        <div>
+          <div class="lang-name">Anglais</div>
+          <div class="lang-dots">
+            <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+        <div class="lang-level">Courant</div>
+      </div>
+    </div>
+
+    <!-- Disponibilité -->
+    <div>
+      <div class="sidebar-section-title">Disponibilité</div>
+      <div class="contact-text" style="font-size:8pt;">
+        Immédiate<br>
+        <span style="color:#777;font-size:7.5pt;">Temps plein / Temps partiel<br>Week-ends et soirs acceptés</span>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main class="main">
+
+    <!-- Profil -->
+    <section>
+      <div class="main-section-title">Profil</div>
+      <p class="profil-text">
+        Jeune professionnel de la restauration avec <strong>plus de 2 ans d'expérience</strong> dans des établissements variés — du restaurant gastronomique au fast-food, en passant par le cabaret et l'événementiel d'entreprise. Habitué aux environnements à <strong>cadence élevée</strong>, je fais preuve d'une grande <strong>adaptabilité</strong>, d'un sens aigu du service client et d'une capacité à travailler efficacement en équipe sous pression. Souriant, ponctuel et rigoureux, je m'investis pleinement dans chaque mission.
+      </p>
+    </section>
+
+    <!-- Expériences -->
+    <section>
+      <div class="main-section-title">Expériences professionnelles</div>
+
+      <!-- Events One -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-title">Chef de rang — Serveur événementiel</div>
+          <div class="exp-date">Juil. 2023 — Oct. 2024</div>
+        </div>
+        <div class="exp-company">Events One Intérim — Paris</div>
+        <div class="exp-sub">Service en salle · Événements d'entreprise · Banquets · Cocktails</div>
+        <ul class="exp-bullets">
+          <li>Service en salle lors d'événements d'entreprise, cocktails et banquets haut de gamme</li>
+          <li>Coordination avec les équipes cuisine et accueil pour un service fluide</li>
+          <li>Gestion du rythme et maintien de la qualité sous pression en service intense</li>
+        </ul>
+      </div>
+
+      <!-- McDonald's -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-title">Équipier polyvalent</div>
+          <div class="exp-date">Mars — Sep. 2024</div>
+        </div>
+        <div class="exp-company">McDonald's — Taverny (95)</div>
+        <div class="exp-sub">Service client · Préparation des commandes · Caisse</div>
+        <ul class="exp-bullets">
+          <li>Accueil et service client avec courtoisie dans un environnement à cadence élevée</li>
+          <li>Préparation des commandes dans le respect des normes d'hygiène et de rapidité</li>
+          <li>Tenue de caisse et gestion des encaissements</li>
+          <li>Travail en équipe et polyvalence sur plusieurs postes</li>
+        </ul>
+      </div>
+
+      <!-- Paradis Latin -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-title">Commis de salle</div>
+          <div class="exp-date">Juil. 2023 — Jan. 2024</div>
+        </div>
+        <div class="exp-company">Paradis Latin — Paris (75005)</div>
+        <div class="exp-sub">Cabaret · Service de soirée · Dressage de tables · Clientèle internationale</div>
+        <ul class="exp-bullets">
+          <li>Service en salle lors des spectacles de cabaret dans un cadre haut de gamme</li>
+          <li>Dressage et débarrassage des tables avec soin et précision</li>
+          <li>Accueil d'une clientèle internationale — communication en français et en anglais</li>
+          <li>Maintien d'un environnement impeccable durant les soirées</li>
+        </ul>
+      </div>
+
+      <!-- Gruppomimo -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-title">Chef de rang</div>
+          <div class="exp-date">Mai — Juil. 2023</div>
+        </div>
+        <div class="exp-company">Gruppomimo — Paris 2e</div>
+        <div class="exp-sub">Restaurant italien · Service à table · Gestion de rang</div>
+        <ul class="exp-bullets">
+          <li>Gestion complète d'un rang : dressage, prise de commandes, service et encaissement</li>
+          <li>Conseil et accompagnement des clients dans le choix des plats et vins</li>
+          <li>Relation client et satisfaction dans une ambiance restaurant haut de gamme</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Compétences transverses -->
+    <section>
+      <div class="main-section-title">Qualités professionnelles</div>
+      <div class="competences-grid">
+        <div class="comp-card">
+          <div class="comp-title">Gestion du stress</div>
+          <div class="comp-desc">Habitué aux pics d'activité intense, je maintiens calme, efficacité et priorisation même en service chargé.</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-title">Sens du service</div>
+          <div class="comp-desc">Attention portée à chaque client, anticipation des besoins, sourire et professionnalisme en toutes circonstances.</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-title">Travail en équipe</div>
+          <div class="comp-desc">Collaborer sous pression, communiquer efficacement, s'adapter en temps réel — des réflexes acquis en salle.</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-title">Rigueur & Ponctualité</div>
+          <div class="comp-desc">Respect des procédures, sens du détail et fiabilité dans des environnements exigeants.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formation -->
+    <section>
+      <div class="main-section-title">Formation</div>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-title">BTS SIO — Option B SLAM</div>
+          <div class="exp-date">2025 – 2026</div>
+        </div>
+        <div class="exp-company">Lycée Latournelle — La Garenne-Colombes</div>
+        <div class="exp-sub">Services Informatiques aux Organisations · Formation en alternance</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-title">Baccalauréat</div>
+          <div class="exp-date">2022</div>
+        </div>
+        <div class="exp-company">Lycée Évariste-Galois — Sartrouville (78)</div>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

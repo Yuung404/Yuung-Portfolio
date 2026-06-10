@@ -178,6 +178,59 @@
         </p>
       </div>
 
+      <!-- Mission 2 — Active Directory (validée) -->
+      <div class="pj-section rv">
+        <h3>MISSION 2 — DÉPLOIEMENT ACTIVE DIRECTORY (VALIDÉE)</h3>
+        <p>La deuxième mission, <strong style="color:var(--g3);">entièrement réalisée et validée</strong>, consistait à déployer un contrôleur de domaine centralisé pour remplacer l'infrastructure vieillissante de la Fondation Mallet.</p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Réalisations :</strong><br>
+          ▸ Renommage du serveur en <code style="color:var(--g4);">SRV-MALLET</code> et attribution d'une IP fixe (<code style="color:var(--g4);">192.168.1.10</code> / masque <code style="color:var(--g4);">255.255.255.0</code> / passerelle <code style="color:var(--g4);">192.168.1.1</code> / DNS <code style="color:var(--g4);">127.0.0.1</code>)<br>
+          ▸ Installation du rôle <strong style="color:var(--g3);">AD DS</strong> (Active Directory Domain Services) sur Windows Server 2025<br>
+          ▸ Promotion du serveur en contrôleur de domaine principal — domaine <code style="color:var(--g4);">mallet.local</code><br>
+          ▸ Création de 3 Unités Organisationnelles : <code style="color:var(--g4);">ADMIN</code>, <code style="color:var(--g4);">PEDAGOGIQUE</code>, <code style="color:var(--g4);">DIRECTION</code><br>
+          ▸ Création de 3 groupes de sécurité : <code style="color:var(--g4);">GRP-ADMIN</code>, <code style="color:var(--g4);">GRP-PEDAGOGIQUE</code>, <code style="color:var(--g4);">GRP-DIRECTION</code><br>
+          ▸ Création des comptes utilisateurs (<code style="color:var(--g4);">a.systeme</code>, <code style="color:var(--g4);">p.educateur</code>, <code style="color:var(--g4);">m.directrice</code>) et affectation aux groupes
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Résultat :</strong><br>
+          Le domaine <code style="color:var(--g4);">mallet.local</code> est pleinement opérationnel. Tous les utilisateurs sont organisés par profil avec des droits adaptés à leur fonction, conformément aux préconisations de l'audit (Mission 1).
+        </p>
+      </div>
+
+      <!-- Mission 3 — GPO (validée) -->
+      <div class="pj-section rv">
+        <h3>MISSION 3 — STRATÉGIES DE GROUPE (GPO) (VALIDÉE)</h3>
+        <p>La troisième mission, <strong style="color:var(--g3);">entièrement réalisée et validée</strong>, visait à sécuriser et contrôler les postes clients selon le profil des utilisateurs via des GPO ciblées par Unité Organisationnelle.</p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">GPO-ADMIN — Politique de mots de passe renforcée :</strong><br>
+          ▸ Longueur minimale : 12 caractères<br>
+          ▸ Complexité activée (majuscules, chiffres, caractères spéciaux)<br>
+          ▸ Expiration du mot de passe : tous les 90 jours<br>
+          <span style="color:var(--g6);font-size:.88em;">→ Les administrateurs ont accès à l'ensemble du système — leur compte doit être protégé au maximum.</span>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">GPO-PEDAGOGIQUE — Restriction des droits système :</strong><br>
+          ▸ Blocage de l'accès aux outils de modification du registre<br>
+          ▸ Restriction d'accès au panneau de configuration<br>
+          <span style="color:var(--g6);font-size:.88em;">→ Les éducateurs n'ont pas besoin de modifier le système — on limite les risques d'erreur ou de modification involontaire.</span>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">GPO-DIRECTION — Protection des données confidentielles :</strong><br>
+          ▸ Blocage total des périphériques de stockage amovible (USB)<br>
+          <span style="color:var(--g6);font-size:.88em;">→ La direction accède aux dossiers patients et données RH — on empêche toute exfiltration via clé USB (obligation RGPD pour une fondation médico-sociale).</span>
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">Résultat :</strong><br>
+          Chaque profil utilisateur dispose de restrictions adaptées à son niveau d'accès. Les 3 GPO sont liées aux OUs correspondantes et appliquées automatiquement à chaque connexion.
+        </p>
+      </div>
+
       <!-- Architecture cible -->
       <div class="pj-section rv">
         <h3>ARCHITECTURE CIBLE</h3>
@@ -206,22 +259,82 @@
             <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Rapport d'audit remis et approuvé</div>
           </div>
 
-          <div class="card" style="padding:16px;border-left:3px solid #ffaa00;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 2</div>
-            <div style="font-size:.8rem;color:#ffaa00;">⟳ EN COURS</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Déploiement Active Directory</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ AD VALIDÉ</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Domaine mallet.local opérationnel</div>
           </div>
 
-          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 3</div>
-            <div style="font-size:.8rem;color:var(--g7);">— EN ATTENTE</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Déploiement des GPO</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ GPO VALIDÉES</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">3 GPO déployées et liées</div>
           </div>
 
           <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 4</div>
             <div style="font-size:.8rem;color:var(--g7);">— EN ATTENTE</div>
             <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">GLPI · Zabbix · Nextcloud · PaperCut</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Guide explicatif -->
+      <div class="pj-section rv">
+        <h3>GUIDE EXPLICATIF — COMPRENDRE LES ACTIONS</h3>
+        <p style="color:var(--g6);font-size:.88em;margin-bottom:20px;">Ce guide explique simplement chaque action réalisée — ce qu'on a fait, pourquoi, et comment comprendre le résultat.</p>
+
+        <div style="display:flex;flex-direction:column;gap:14px;">
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">01 — RENOMMER LE SERVEUR</div>
+            <p style="font-size:.82rem;color:var(--g5);">Changement du nom de <code style="color:var(--g4);">WIN-XXXXXXX</code> en <code style="color:var(--g4);">SRV-MALLET</code> via Gestionnaire de serveurs → Serveur local. <span style="color:var(--g7);">Un serveur doit être identifiable sur le réseau — SRV = serveur, MALLET = projet.</span></p>
+          </div>
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">02 — ADRESSE IP FIXE</div>
+            <p style="font-size:.82rem;color:var(--g5);">Configuration manuelle de <code style="color:var(--g4);">192.168.1.10</code> sur la carte réseau. <span style="color:var(--g7);">Un serveur ne doit jamais changer d'adresse — sinon les clients ne savent plus où le trouver. L'IP fixe est l'adresse permanente du serveur sur le réseau.</span></p>
+          </div>
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">03 — INSTALLATION RÔLE AD DS</div>
+            <p style="font-size:.82rem;color:var(--g5);">Ajout du rôle AD DS via Gestionnaire de serveurs → Gérer → Ajouter des rôles. <span style="color:var(--g7);">Les rôles sont des modules activables — AD DS transforme le serveur en chef d'orchestre du réseau, gérant utilisateurs, machines et droits depuis un seul endroit.</span></p>
+          </div>
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">04 — PROMOTION EN CONTRÔLEUR DE DOMAINE</div>
+            <p style="font-size:.82rem;color:var(--g5);">Création d'une nouvelle forêt avec le domaine <code style="color:var(--g4);">mallet.local</code> via l'assistant post-installation AD DS. <span style="color:var(--g7);">Installer AD DS pose les fondations ; promouvoir le serveur construit la maison. Le domaine = le territoire que contrôle ce serveur.</span></p>
+          </div>
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">05 — CRÉATION DES OUs</div>
+            <p style="font-size:.82rem;color:var(--g5);">Création de <code style="color:var(--g4);">ADMIN</code>, <code style="color:var(--g4);">PEDAGOGIQUE</code>, <code style="color:var(--g4);">DIRECTION</code> dans Outils → Utilisateurs et ordinateurs AD → clic droit → Nouveau → Unité d'organisation. <span style="color:var(--g7);">Une OU = un dossier pour ranger les utilisateurs par profil. Sans OUs, tout le monde aurait les mêmes droits — faille de sécurité majeure.</span></p>
+          </div>
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">06 — GROUPES DE SÉCURITÉ</div>
+            <p style="font-size:.82rem;color:var(--g5);">Création de <code style="color:var(--g4);">GRP-ADMIN</code>, <code style="color:var(--g4);">GRP-PEDAGOGIQUE</code>, <code style="color:var(--g4);">GRP-DIRECTION</code> dans chaque OU. <span style="color:var(--g7);">Le groupe est l'intermédiaire entre l'utilisateur et ses droits — on donne les droits au groupe, pas à chaque utilisateur un par un. Comme une carte d'accès collective.</span></p>
+          </div>
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">07 — COMPTES UTILISATEURS</div>
+            <p style="font-size:.82rem;color:var(--g5);">Création de <code style="color:var(--g4);">a.systeme</code> (ADMIN), <code style="color:var(--g4);">p.educateur</code> (PEDAGOGIQUE), <code style="color:var(--g4);">m.directrice</code> (DIRECTION) et affectation à leur groupe. <span style="color:var(--g7);">Chaque employé a un badge d'entrée adapté à son poste — en le plaçant dans la bonne OU, il hérite automatiquement des règles correspondantes.</span></p>
+          </div>
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">08 — GPO-ADMIN : MOTS DE PASSE</div>
+            <p style="font-size:.82rem;color:var(--g5);">Éditeur GPO lié à l'OU ADMIN : min. 12 caractères, complexité activée, expiration 90 jours. <span style="color:var(--g7);">Les admins ont accès à tout le système — leur mot de passe doit être aussi solide qu'un code de coffre-fort à 12 chiffres.</span></p>
+          </div>
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">09 — GPO-PEDAGOGIQUE : RESTRICTIONS SYSTÈME</div>
+            <p style="font-size:.82rem;color:var(--g5);">Configuration utilisateur → Modèles d'administration : blocage du registre et du panneau de configuration. <span style="color:var(--g7);">Les éducateurs n'ont pas besoin de modifier le système — on leur donne les clés de la salle de classe, mais pas celles de la salle des serveurs.</span></p>
+          </div>
+
+          <div class="card" style="padding:14px 18px;">
+            <div style="font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g3);margin-bottom:6px;">10 — GPO-DIRECTION : BLOCAGE USB</div>
+            <p style="font-size:.82rem;color:var(--g5);">Configuration ordinateur → Modèles d'administration → Système → Accès au stockage amovible : tous périphériques amovibles bloqués. <span style="color:var(--g7);">La direction gère dossiers patients et données RH — sans restriction, un USB suffit pour tout exfiltrer en 2 minutes. Obligation RGPD pour une fondation médico-sociale.</span></p>
           </div>
 
         </div>
@@ -263,6 +376,16 @@
             <span class="doc-size">~500 Ko</span>
             <button class="doc-link"
               onclick="openPDF('../assets/docs/projet-2/sujet.pdf','Sujet Projet Mallet')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+          <!-- Compte rendu Missions 2 & 3 -->
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Compte Rendu Technique — Missions 2 &amp; 3 — Active Directory &amp; GPO</span>
+            <span class="doc-size">~150 Ko</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-2/compte-rendu-m2-m3.pdf','Compte Rendu Missions 2 &amp; 3')"
               style="cursor:none;">OUVRIR</button>
           </div>
 

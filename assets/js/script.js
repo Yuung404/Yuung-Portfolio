@@ -250,7 +250,7 @@ function openPDF(url, name) {
   const frame = document.getElementById('pdf-frame');
   const nm    = document.getElementById('pdf-name');
   if (!modal || !frame) { window.open(url, '_blank'); return; }
-  frame.src   = url;
+  frame.src   = url + '#zoom=page-fit';
   nm.textContent = name || url.split('/').pop();
   modal.classList.add('open');
 }
