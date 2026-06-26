@@ -103,6 +103,7 @@
     { href: 'veille.html',         label: 'VEILLE'        },
     { href: 'certifications.html', label: 'CERTIFICATIONS'},
     { href: 'objectifs.html',      label: 'OBJECTIFS'     },
+    { href: 'experience.html',     label: 'EXPÉRIENCE'    },
     { href: 'contact.html',        label: 'CONTACT'       },
   ];
   const pages_en = [
@@ -112,6 +113,7 @@
     { href: 'watch.html',           label: 'TECH WATCH'    },
     { href: 'certifications.html',  label: 'CERTIFICATIONS'},
     { href: 'goals.html',           label: 'GOALS'         },
+    { href: 'experience.html',      label: 'EXPERIENCE'    },
     { href: 'contact.html',         label: 'CONTACT'       },
   ];
   const pages = lang === 'en' ? pages_en : pages_fr;
@@ -150,6 +152,7 @@
     'projet-detail.html':  'project-detail.html',
     'projet-mallet.html':      'project-mallet.html',
     'projet-versailles.html':  'project-versailles.html',
+    'experience.html':         'experience.html',
   };
   const PAGE_MAP_EN_TO_FR = {
     'index.html':              'index.html',
@@ -162,6 +165,7 @@
     'project-detail.html':     'projet-detail.html',
     'project-mallet.html':     'projet-mallet.html',
     'project-versailles.html': 'projet-versailles.html',
+    'experience.html':         'experience.html',
   };
 
   // Switch langue — conserve la page courante

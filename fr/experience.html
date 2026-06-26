@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expérience — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">EXPÉRIENCE</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- En-tête -->
+      <div class="sec-hd rv">
+        <span class="sec-tag">// STAGE PROFESSIONNEL — CYBERSÉCURITÉ</span>
+        <h2 class="sec-title">EXPÉRIENCE</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <!-- Hero : métadonnées -->
+      <div class="pj-det-hero rv">
+
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUT</span>
+              <span class="pj-status st-progress">⟳ EN COURS</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// POSTE</span>
+              <span class="pj-meta-val">Technicien en Cybersécurité</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ENTREPRISE</span>
+              <span class="pj-meta-val">Groupe Bayard</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// SERVICE</span>
+              <span class="pj-meta-val">Équipe Cybersécurité — DSI</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// DURÉE</span>
+              <span class="pj-meta-val">Juin — Juillet 2026 (5 semaines)</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// DÉBUT</span>
+              <span class="pj-meta-val">15 Juin 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CONTEXTE</span>
+              <span class="pj-meta-val">Stage BTS SIO — 1ère année</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- L'entreprise -->
+      <div class="pj-section rv">
+        <h3>L'ENTREPRISE</h3>
+        <p>Le <strong style="color:var(--g3);">Groupe Bayard</strong> est le <strong style="color:var(--g3);">5ème groupe de presse en France</strong>,
+          fondé en 1873 et porté par les Augustins de l'Assomption. Acteur majeur des médias catholiques et familiaux,
+          le groupe édite des titres reconnus comme <strong style="color:var(--g3);">La Croix</strong>, <strong style="color:var(--g3);">Le Pèlerin</strong>,
+          <strong style="color:var(--g3);">Astrapi</strong> et <strong style="color:var(--g3);">Okapi</strong>.</p>
+        <p style="margin-top:12px;">
+          Avec plus de <strong style="color:var(--g3);">200 sites web</strong> à opérer et environ
+          <strong style="color:var(--g3);">1 950 salariés</strong>, la DSI du Groupe Bayard assure la continuité
+          numérique d'un écosystème médiatique vaste et critique. L'équipe Cybersécurité, au sein de la DSI,
+          veille à la protection des infrastructures, des données et des services numériques du groupe.
+        </p>
+      </div>
+
+      <!-- Missions confiées -->
+      <div class="pj-section rv">
+        <h3>MISSIONS CONFIÉES</h3>
+        <p style="color:var(--g6);font-style:italic;">
+          — Contenu à compléter au fil du stage —
+        </p>
+      </div>
+
+      <!-- Compétences mobilisées -->
+      <div class="pj-section rv">
+        <h3>COMPÉTENCES MOBILISÉES</h3>
+        <p style="color:var(--g6);font-style:italic;">
+          — Contenu à compléter au fil du stage —
+        </p>
+      </div>
+
+      <!-- Ce que j'en retiens -->
+      <div class="pj-section rv">
+        <h3>CE QUE J'EN RETIENS</h3>
+        <p style="color:var(--g6);font-style:italic;">
+          — Contenu à compléter à l'issue du stage —
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
