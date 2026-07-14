@@ -114,7 +114,7 @@ body{background:var(--bg);color:var(--g3);font-family:var(--fb);overflow-x:hidde
 /* ── SCROLL REVEAL ── */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease;}
 .rv.on{opacity:1;transform:none;}
-.d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
+.d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}.d4{transition-delay:.4s;}
 
 /* ──────────────────────────────────────────
    SPLASH (index.html)
