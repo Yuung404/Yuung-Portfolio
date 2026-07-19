@@ -103,7 +103,7 @@
     { href: 'veille.html',         label: 'VEILLE'        },
     { href: 'certifications.html', label: 'CERTIFICATIONS'},
     { href: 'objectifs.html',      label: 'OBJECTIFS'     },
-    { href: 'experience.html',     label: 'EXPÉRIENCE'    },
+    { href: 'experience.html',     label: 'CARRIÈRE'      },
     { href: 'contact.html',        label: 'CONTACT'       },
   ];
   const pages_en = [
@@ -113,7 +113,7 @@
     { href: 'watch.html',           label: 'TECH WATCH'    },
     { href: 'certifications.html',  label: 'CERTIFICATIONS'},
     { href: 'goals.html',           label: 'GOALS'         },
-    { href: 'experience.html',      label: 'EXPERIENCE'    },
+    { href: 'experience.html',      label: 'CAREER'        },
     { href: 'contact.html',         label: 'CONTACT'       },
   ];
   const pages = lang === 'en' ? pages_en : pages_fr;
