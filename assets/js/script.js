@@ -102,7 +102,6 @@
     { href: 'projets.html',        label: 'PROJETS'       },
     { href: 'veille.html',         label: 'VEILLE'        },
     { href: 'certifications.html', label: 'CERTIFICATIONS'},
-    { href: 'objectifs.html',      label: 'OBJECTIFS'     },
     { href: 'experience.html',     label: 'CARRIÈRE'      },
     { href: 'contact.html',        label: 'CONTACT'       },
   ];
@@ -112,7 +111,6 @@
     { href: 'projects.html',        label: 'PROJECTS'      },
     { href: 'watch.html',           label: 'TECH WATCH'    },
     { href: 'certifications.html',  label: 'CERTIFICATIONS'},
-    { href: 'goals.html',           label: 'GOALS'         },
     { href: 'experience.html',      label: 'CAREER'        },
     { href: 'contact.html',         label: 'CONTACT'       },
   ];
@@ -147,7 +145,6 @@
     'projets.html':        'projects.html',
     'veille.html':         'watch.html',
     'certifications.html': 'certifications.html',
-    'objectifs.html':      'goals.html',
     'contact.html':        'contact.html',
     'projet-detail.html':  'project-detail.html',
     'projet-mallet.html':      'project-mallet.html',
@@ -160,7 +157,6 @@
     'projects.html':           'projets.html',
     'watch.html':              'veille.html',
     'certifications.html':     'certifications.html',
-    'goals.html':              'objectifs.html',
     'contact.html':            'contact.html',
     'project-detail.html':     'projet-detail.html',
     'project-mallet.html':     'projet-mallet.html',

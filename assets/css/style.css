@@ -315,18 +315,6 @@ body{background:var(--bg);color:var(--g3);font-family:var(--fb);overflow-x:hidde
 #pdf-frame{width:100%;max-width:900px;height:80vh;border:1px solid var(--border);border-radius:var(--rs);background:rgba(0,10,0,.5);}
 
 /* ──────────────────────────────────────────
-   OBJECTIFS
-────────────────────────────────────────── */
-.obj-list{display:flex;flex-direction:column;gap:14px;}
-.obj-item{display:grid;grid-template-columns:54px 1fr auto;align-items:center;gap:22px;padding:24px 28px;transition:all .28s;}
-.obj-item:hover{border-color:var(--border2);background:var(--glass2);transform:translateX(6px);}
-.obj-n{font-family:var(--ft);font-size:1.6rem;font-weight:900;color:rgba(0,204,68,.2);}
-.obj-title{font-family:var(--ft);font-size:.78rem;letter-spacing:2px;color:var(--g3);margin-bottom:5px;}
-.obj-desc{font-size:.84rem;color:var(--g5);line-height:1.65;font-weight:300;}
-.obj-st{font-family:var(--fm);font-size:.52rem;letter-spacing:2px;color:var(--g5);border:1px solid rgba(0,204,68,.2);padding:5px 12px;white-space:nowrap;border-radius:2px;}
-.obj-st.live{color:var(--g3);border-color:rgba(0,204,68,.45);box-shadow:var(--glow-xs);}
-
-/* ──────────────────────────────────────────
    CONTACT
 ────────────────────────────────────────── */
 .ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
