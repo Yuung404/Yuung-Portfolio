@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JO 2028 — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">PROJET</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- Fil d'ariane -->
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projets.html" style="color:var(--g6);text-decoration:none;">← RETOUR AUX PROJETS</a>
+      </div>
+
+      <!-- En-tête -->
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJET 05 — DÉVELOPPEMENT WEB · ÉPREUVE E6</span>
+        <h2 class="sec-title">JEUX OLYMPIQUES 2028</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <!-- Hero : image + métadonnées -->
+      <div class="pj-det-hero rv">
+
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-5.svg" alt="JO 2028 — Modèle relationnel et recette du site">
+        </div>
+
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUT</span>
+              <!-- STATUT-JO2028 -->
+              <span class="pj-status st-progress">⟳ MISE EN LIGNE</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">Projet scolaire — épreuve E6, BTS SIO option SLAM</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PÉRIODE</span>
+              <span class="pj-meta-val">Octobre — Décembre 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ÉQUIPE</span>
+              <span class="pj-meta-val">Solo</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STACK</span>
+              <span class="pj-meta-val">PHP 8.3 (PDO), MySQL, HTML5, CSS3 responsive, PHPUnit 11, Composer</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// OUTILS</span>
+              <span class="pj-meta-val">MAMP, VS Code, phpMyAdmin, Mocodo, Git, GitHub, Trello, PowerShell</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// DÉPLOIEMENT</span>
+              <span class="pj-meta-val">InfinityFree (Apache, MySQL) · envoi FTPS scripté</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// REPO</span>
+              <span class="pj-meta-val">
+                <a href="https://github.com/Yuung404/jo2028-kansietoko-yuung" target="_blank" rel="noopener noreferrer"
+                  style="color:var(--g4);text-decoration:none;">github.com/Yuung404/jo2028-kansietoko-yuung</a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Contexte -->
+      <div class="pj-section rv">
+        <h3>CONTEXTE &amp; OBJECTIFS</h3>
+        <p>Projet de fin d'études présenté à l'<strong style="color:var(--g3);">épreuve E6</strong> du BTS SIO
+          (option SLAM). Le comité d'organisation des Jeux Olympiques de Los Angeles 2028 a besoin d'un site
+          web : une partie publique qui présente les sports, le calendrier des épreuves et les résultats, et un
+          <strong style="color:var(--g3);">back-office</strong> réservé aux administrateurs pour gérer toutes
+          ces données.</p>
+        <p style="margin-top:12px;">
+          Le projet partait d'un code de départ fourni, volontairement imparfait. Ma démarche a été celle d'un
+          ingénieur qui reprend un existant : auditer, corriger, sécuriser, puis développer les fonctionnalités
+          manquantes, les tester et les mettre en production. Le tout en PHP natif, sans framework, pour
+          maîtriser chaque mécanisme.
+        </p>
+      </div>
+
+      <!-- Gestion de projet -->
+      <div class="pj-section rv">
+        <h3>DÉMARCHE &amp; GESTION DE PROJET</h3>
+        <p>Le projet est découpé en <strong style="color:var(--g3);">8 missions</strong> et suivi sur un tableau
+          <strong style="color:var(--g3);">Trello</strong> en méthode Kanban (À faire, En cours, Terminé). Chaque
+          carte a une échéance et une checklist ; la mission 6 est éclatée en une carte par table gérée, toutes
+          construites sur la même checklist (liste, ajout, modification, suppression, garde de session,
+          échappement, test, commit).</p>
+        <p style="margin-top:12px;">
+          ▸ <strong style="color:var(--g3);">M1</strong> — Recensement des ressources (matériel, logiciels, langages, documentation)<br>
+          ▸ <strong style="color:var(--g3);">M2</strong> — Wireframes ordinateur, tablette et mobile<br>
+          ▸ <strong style="color:var(--g3);">M3</strong> — Cahier des charges techniques + dépôt GitHub public<br>
+          ▸ <strong style="color:var(--g3);">M4</strong> — Fiche descriptive E6<br>
+          ▸ <strong style="color:var(--g3);">M5</strong> — Base de données MySQL<br>
+          ▸ <strong style="color:var(--g3);">M6</strong> — Back-office : 8 CRUD sécurisés<br>
+          ▸ <strong style="color:var(--g3);">M7</strong> — Tests automatisés PHPUnit<br>
+          ▸ <strong style="color:var(--g3);">M8</strong> — Publication GitHub et mise en production
+        </p>
+      </div>
+
+      <!-- État d'avancement -->
+      <div class="pj-section rv">
+        <h3>ÉTAT D'AVANCEMENT</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSIONS 1 À 3</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ CADRAGE VALIDÉ</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Cahier des charges noté 20/20</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 5</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ BASE DE DONNÉES</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">8 tables, 6 clés étrangères, 7 UNIQUE</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 6</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ BACK-OFFICE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">8 CRUD sécurisés</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 7</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ TESTS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">29 tests, 77 assertions, 100 % réussis</div>
+          </div>
+
+          <!-- AVANCEMENT-M8 -->
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 8</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ MISE EN LIGNE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">GitHub publié · base InfinityFree importée</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 4</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ FICHE E6</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Dépôt Cyclades avant le 30 novembre</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Réalisations -->
+      <div class="pj-section rv">
+        <h3>CE QUE J'AI RÉALISÉ</h3>
+
+        <p style="margin-top:8px;">
+          <strong style="color:var(--g3);">1. Audit et correction du code fourni</strong><br>
+          Avant de développer, j'ai audité le code de départ et trouvé 7 défauts. Deux cassaient le site :
+          le filtre <code style="color:var(--g4);">FILTER_SANITIZE_STRING</code>, obsolète depuis PHP 8.1, bloquait la
+          redirection après connexion ; des noms de tables en minuscules auraient planté sur un serveur Linux,
+          sensible à la casse. Les autres étaient des failles : suppression par simple lien sans protection CSRF,
+          erreurs SQL affichées au visiteur, double échappement. Tout est corrigé dans un commit dédié.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">2. Base de données relationnelle</strong><br>
+          8 tables en <code style="color:var(--g4);">utf8mb4</code> et moteur InnoDB : sports, lieux, pays, genres,
+          épreuves, athlètes, administrateurs, et la table d'association
+          <code style="color:var(--g4);">PARTICIPER</code> à clé primaire composée (un résultat par athlète et par
+          épreuve). J'ai écrit une migration qui ajoute la colonne <code style="color:var(--g4);">nom_epreuve</code>
+          absente du script fourni, et 7 contraintes <code style="color:var(--g4);">UNIQUE</code> qui bloquent les
+          doublons au niveau de la base, en plus du contrôle PHP (défense en profondeur).
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">3. Socle commun et sécurité</strong><br>
+          Toutes les pages passent par un fichier d'amorçage unique qui charge la configuration (hors Git), démarre
+          une session aux cookies durcis (<code style="color:var(--g4);">HttpOnly</code>,
+          <code style="color:var(--g4);">SameSite=Strict</code>, <code style="color:var(--g4);">Secure</code> en HTTPS)
+          et ouvre une connexion PDO avec de vraies requêtes préparées côté MySQL. Une bibliothèque de fonctions
+          centralise l'échappement HTML, le jeton anti-CSRF, la garde d'accès et la validation des saisies.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">4. Authentification</strong><br>
+          Mots de passe hachés en <strong style="color:var(--g3);">Bcrypt</strong>
+          (<code style="color:var(--g4);">password_hash</code> / <code style="color:var(--g4);">password_verify</code>),
+          nouvel identifiant de session à la connexion contre la fixation de session, temps de réponse identique
+          que le login existe ou non, message d'erreur générique, déconnexion automatique après 30 minutes
+          d'inactivité, et déconnexion en POST protégée par jeton.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">5. Back-office : 8 CRUD</strong><br>
+          Administrateurs, sports, lieux, pays, genres, calendrier des épreuves, athlètes et résultats. Chaque
+          rubrique suit le même modèle : garde d'accès, vérification du jeton, validation côté serveur, contrôle
+          des doublons, contrôle d'intégrité avant suppression (un sport utilisé par une épreuve ne peut pas être
+          supprimé), requête préparée, message de confirmation et redirection (motif Post-Redirect-Get). Listes
+          déroulantes dont chaque identifiant est revérifié en base.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">6. Partie publique responsive</strong><br>
+          Accueil, sports, calendrier et résultats, construits par jointures SQL sur plusieurs tables, avec dates
+          au format français et mise en page adaptée à l'ordinateur, à la tablette et au mobile.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">7. Tests automatisés</strong><br>
+          <strong style="color:var(--g3);">PHPUnit 11</strong> installé avec Composer : 15 tests unitaires sur les
+          fonctions de validation et de sécurité, et 14 tests fonctionnels qui pilotent le vrai site (serveur PHP
+          intégré + navigateur simulé en cURL) sur une base de test recréée avant chaque test. Chaque test vérifie
+          le message affiché <em>et</em> l'état réel de la base, y compris les attaques XSS et CSRF.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">8. Mise en production</strong><br>
+          Dépôt GitHub public sans aucun secret (<code style="color:var(--g4);">.gitignore</code> + modèle de
+          configuration), fichier <code style="color:var(--g4);">.htaccess</code> qui bloque l'accès aux scripts SQL et
+          aux dossiers internes et ajoute des en-têtes de sécurité, script SQL de production réimportable qui
+          impose InnoDB, et script PowerShell qui génère la configuration de production et envoie le site en FTPS.
+        </p>
+      </div>
+
+      <!-- Sécurité -->
+      <div class="pj-section rv">
+        <h3>SÉCURITÉ EN RÉSUMÉ</h3>
+        <p>
+          ▸ <strong style="color:var(--g3);">Injection SQL</strong> — requêtes préparées PDO, émulation désactivée<br>
+          ▸ <strong style="color:var(--g3);">XSS</strong> — échappement <code style="color:var(--g4);">htmlspecialchars</code> de chaque donnée affichée<br>
+          ▸ <strong style="color:var(--g3);">CSRF</strong> — jeton aléatoire de 64 caractères, comparaison en temps constant, suppressions en POST<br>
+          ▸ <strong style="color:var(--g3);">Mots de passe</strong> — Bcrypt salé, 8 caractères minimum, 72 octets maximum<br>
+          ▸ <strong style="color:var(--g3);">Sessions</strong> — régénération à la connexion, cookies durcis, expiration à 30 minutes<br>
+          ▸ <strong style="color:var(--g3);">Erreurs</strong> — message générique en production, détail dans le journal serveur<br>
+          ▸ <strong style="color:var(--g3);">Serveur</strong> — <code style="color:var(--g4);">.htaccess</code> : pas de listing, fichiers sensibles en 403, dossiers internes en 404
+        </p>
+      </div>
+
+      <!-- Compétences -->
+      <div class="pj-section rv">
+        <h3>COMPÉTENCES MOBILISÉES</h3>
+        <p>
+          ▸ Analyse d'un existant et correction de code hérité<br>
+          ▸ Conception de base de données : MCD, MLD, MPD, contraintes d'intégrité<br>
+          ▸ Développement PHP orienté sécurité (OWASP : injection, XSS, CSRF, sessions)<br>
+          ▸ Développement d'une application CRUD complète avec back-office<br>
+          ▸ Tests unitaires et fonctionnels automatisés (PHPUnit, Composer)<br>
+          ▸ Versionnement Git et publication sur GitHub<br>
+          ▸ Déploiement sur un hébergement mutualisé (Apache, MySQL, FTPS)<br>
+          ▸ Gestion de projet Kanban (Trello) et rédaction d'un cahier des charges techniques
+        </p>
+      </div>
+
+      <!-- Documents -->
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; LIVRABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📄</span>
+            <span class="doc-name">Cahier des charges techniques — JO 2028</span>
+            <span class="doc-size">~1.6 Mo</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-5/cahier-des-charges.pdf','Cahier des charges JO 2028')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+          <div class="card doc-item">
+            <span class="doc-icon">🧪</span>
+            <span class="doc-name">Rapport de tests PHPUnit — 29 tests réussis</span>
+            <span class="doc-size">~410 Ko</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-5/rapport-phpunit.png','Rapport PHPUnit JO 2028')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+          <div class="card doc-item">
+            <span class="doc-icon">⚙</span>
+            <span class="doc-name">Code source — github.com/Yuung404/jo2028-kansietoko-yuung</span>
+            <span class="doc-size">Public</span>
+            <a class="doc-link" href="https://github.com/Yuung404/jo2028-kansietoko-yuung" target="_blank"
+              rel="noopener noreferrer" style="cursor:none;">OUVRIR</a>
+          </div>
+
+          <!-- LIEN-SITE -->
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projets.html" class="btn btn-g">← RETOUR AUX PROJETS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

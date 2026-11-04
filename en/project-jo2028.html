@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA 2028 Olympics — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::EN<br><span class="hb">PROJECT</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- PDF viewer -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+    </div>
+    <iframe id="pdf-frame" title="PDF Viewer"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <!-- Breadcrumb -->
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projects.html" style="color:var(--g6);text-decoration:none;">← BACK TO PROJECTS</a>
+      </div>
+
+      <!-- Header -->
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJECT 05 — WEB DEVELOPMENT · E6 EXAM</span>
+        <h2 class="sec-title">LA 2028 OLYMPICS</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <!-- Hero: image + metadata -->
+      <div class="pj-det-hero rv">
+
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-5.svg" alt="LA 2028 Olympics — Relational model and test run">
+        </div>
+
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUS</span>
+              <!-- STATUT-JO2028 -->
+              <span class="pj-status st-progress">⟳ GOING LIVE</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">School project — E6 exam, BTS SIO (software development track)</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PERIOD</span>
+              <span class="pj-meta-val">October — December 2026</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TEAM</span>
+              <span class="pj-meta-val">Solo</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STACK</span>
+              <span class="pj-meta-val">PHP 8.3 (PDO), MySQL, HTML5, responsive CSS3, PHPUnit 11, Composer</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TOOLS</span>
+              <span class="pj-meta-val">MAMP, VS Code, phpMyAdmin, Mocodo, Git, GitHub, Trello, PowerShell</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// DEPLOYMENT</span>
+              <span class="pj-meta-val">InfinityFree (Apache, MySQL) · scripted FTPS upload</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// REPO</span>
+              <span class="pj-meta-val">
+                <a href="https://github.com/Yuung404/jo2028-kansietoko-yuung" target="_blank" rel="noopener noreferrer"
+                  style="color:var(--g4);text-decoration:none;">github.com/Yuung404/jo2028-kansietoko-yuung</a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Context -->
+      <div class="pj-section rv">
+        <h3>CONTEXT &amp; GOALS</h3>
+        <p>Final-year project presented at the <strong style="color:var(--g3);">E6 exam</strong> of the BTS SIO
+          (software development track). The organising committee of the Los Angeles 2028 Olympic Games needs a
+          website: a public part showing the sports, the event schedule and the results, and an
+          <strong style="color:var(--g3);">admin back-office</strong> to manage all of this data.</p>
+        <p style="margin-top:12px;">
+          The project started from a provided codebase that was deliberately imperfect. I approached it like an
+          engineer taking over legacy code: audit, fix, secure, then build the missing features, test them and
+          ship them to production. All in plain PHP, with no framework, to master every mechanism.
+        </p>
+      </div>
+
+      <!-- Project management -->
+      <div class="pj-section rv">
+        <h3>APPROACH &amp; PROJECT MANAGEMENT</h3>
+        <p>The project is split into <strong style="color:var(--g3);">8 missions</strong> tracked on a
+          <strong style="color:var(--g3);">Trello</strong> Kanban board (To do, In progress, Done). Every card has a
+          due date and a checklist; mission 6 is split into one card per managed table, all built on the same
+          checklist (list, create, update, delete, session guard, output escaping, test, commit).</p>
+        <p style="margin-top:12px;">
+          ▸ <strong style="color:var(--g3);">M1</strong> — Inventory of resources (hardware, software, languages, documentation)<br>
+          ▸ <strong style="color:var(--g3);">M2</strong> — Desktop, tablet and mobile wireframes<br>
+          ▸ <strong style="color:var(--g3);">M3</strong> — Technical specification + public GitHub repository<br>
+          ▸ <strong style="color:var(--g3);">M4</strong> — E6 project sheet<br>
+          ▸ <strong style="color:var(--g3);">M5</strong> — MySQL database<br>
+          ▸ <strong style="color:var(--g3);">M6</strong> — Back-office: 8 secure CRUD modules<br>
+          ▸ <strong style="color:var(--g3);">M7</strong> — Automated PHPUnit tests<br>
+          ▸ <strong style="color:var(--g3);">M8</strong> — GitHub release and production deployment
+        </p>
+      </div>
+
+      <!-- Progress -->
+      <div class="pj-section rv">
+        <h3>PROGRESS STATUS</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSIONS 1 TO 3</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ SCOPING APPROVED</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Technical specification graded 20/20</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 5</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ DATABASE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">8 tables, 6 foreign keys, 7 UNIQUE</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 6</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ BACK-OFFICE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">8 secure CRUD modules</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 7</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ TESTS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">29 tests, 77 assertions, all passing</div>
+          </div>
+
+          <!-- AVANCEMENT-M8 -->
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 8</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ GOING LIVE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">GitHub released · InfinityFree database imported</div>
+          </div>
+
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">MISSION 4</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ E6 SHEET</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Submission due by 30 November</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Work done -->
+      <div class="pj-section rv">
+        <h3>WHAT I BUILT</h3>
+
+        <p style="margin-top:8px;">
+          <strong style="color:var(--g3);">1. Audit and fix of the provided code</strong><br>
+          Before building anything, I audited the starter code and found 7 defects. Two broke the site: the
+          <code style="color:var(--g4);">FILTER_SANITIZE_STRING</code> filter, deprecated since PHP 8.1, blocked the
+          redirect after login; lowercase table names would have crashed on a case-sensitive Linux server. The
+          others were security flaws: deletion through a plain link with no CSRF protection, SQL errors shown to
+          visitors, double escaping. All fixed in a dedicated commit.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">2. Relational database</strong><br>
+          8 tables in <code style="color:var(--g4);">utf8mb4</code> with the InnoDB engine: sports, venues, countries,
+          genders, events, athletes, administrators, and the <code style="color:var(--g4);">PARTICIPER</code>
+          association table with a composite primary key (one result per athlete per event). I wrote a migration
+          adding the <code style="color:var(--g4);">nom_epreuve</code> column missing from the provided script, and
+          7 <code style="color:var(--g4);">UNIQUE</code> constraints that block duplicates at database level, on top
+          of the PHP checks (defence in depth).
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">3. Shared core and security</strong><br>
+          Every page goes through a single bootstrap file that loads the configuration (kept out of Git), starts a
+          session with hardened cookies (<code style="color:var(--g4);">HttpOnly</code>,
+          <code style="color:var(--g4);">SameSite=Strict</code>, <code style="color:var(--g4);">Secure</code> over HTTPS)
+          and opens a PDO connection using real server-side prepared statements. A function library centralises
+          HTML escaping, the anti-CSRF token, the access guard and input validation.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">4. Authentication</strong><br>
+          Passwords hashed with <strong style="color:var(--g3);">Bcrypt</strong>
+          (<code style="color:var(--g4);">password_hash</code> / <code style="color:var(--g4);">password_verify</code>),
+          new session ID at login against session fixation, identical response time whether or not the login
+          exists, generic error message, automatic logout after 30 minutes of inactivity, and token-protected
+          POST logout.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">5. Back-office: 8 CRUD modules</strong><br>
+          Administrators, sports, venues, countries, genders, event schedule, athletes and results. Every module
+          follows the same pattern: access guard, token check, server-side validation, duplicate check, integrity
+          check before deletion (a sport used by an event cannot be deleted), prepared statement, confirmation
+          message and redirect (Post-Redirect-Get). Every ID picked from a drop-down list is checked again
+          against the database.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">6. Responsive public site</strong><br>
+          Home, sports, schedule and results pages, built with multi-table SQL joins, with French date formats
+          and a layout adapted to desktop, tablet and mobile.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">7. Automated tests</strong><br>
+          <strong style="color:var(--g3);">PHPUnit 11</strong> installed with Composer: 15 unit tests on the
+          validation and security functions, and 14 functional tests driving the real site (PHP built-in server +
+          cURL-based simulated browser) against a test database rebuilt before every test. Each test checks the
+          displayed message <em>and</em> the actual database state, including XSS and CSRF attacks.
+        </p>
+
+        <p style="margin-top:12px;">
+          <strong style="color:var(--g3);">8. Production release</strong><br>
+          Public GitHub repository with no secrets (<code style="color:var(--g4);">.gitignore</code> + configuration
+          template), an <code style="color:var(--g4);">.htaccess</code> file that blocks SQL scripts and internal
+          folders and adds security headers, a re-importable production SQL script that enforces InnoDB, and a
+          PowerShell script that generates the production configuration and uploads the site over FTPS.
+        </p>
+      </div>
+
+      <!-- Security -->
+      <div class="pj-section rv">
+        <h3>SECURITY AT A GLANCE</h3>
+        <p>
+          ▸ <strong style="color:var(--g3);">SQL injection</strong> — PDO prepared statements, emulation disabled<br>
+          ▸ <strong style="color:var(--g3);">XSS</strong> — <code style="color:var(--g4);">htmlspecialchars</code> on every displayed value<br>
+          ▸ <strong style="color:var(--g3);">CSRF</strong> — 64-character random token, constant-time comparison, POST-only deletions<br>
+          ▸ <strong style="color:var(--g3);">Passwords</strong> — salted Bcrypt, 8 characters minimum, 72 bytes maximum<br>
+          ▸ <strong style="color:var(--g3);">Sessions</strong> — regenerated at login, hardened cookies, 30-minute timeout<br>
+          ▸ <strong style="color:var(--g3);">Errors</strong> — generic message in production, details in the server log<br>
+          ▸ <strong style="color:var(--g3);">Server</strong> — <code style="color:var(--g4);">.htaccess</code>: no directory listing, sensitive files 403, internal folders 404
+        </p>
+      </div>
+
+      <!-- Skills -->
+      <div class="pj-section rv">
+        <h3>SKILLS DEMONSTRATED</h3>
+        <p>
+          ▸ Analysing and fixing legacy code<br>
+          ▸ Database design: conceptual, logical and physical models, integrity constraints<br>
+          ▸ Security-focused PHP development (OWASP: injection, XSS, CSRF, sessions)<br>
+          ▸ Building a complete CRUD application with an admin back-office<br>
+          ▸ Automated unit and functional testing (PHPUnit, Composer)<br>
+          ▸ Git version control and GitHub publishing<br>
+          ▸ Deployment to shared hosting (Apache, MySQL, FTPS)<br>
+          ▸ Kanban project management (Trello) and technical specification writing
+        </p>
+      </div>
+
+      <!-- Documents -->
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; DELIVERABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📄</span>
+            <span class="doc-name">Technical specification — LA 2028 Olympics (in French)</span>
+            <span class="doc-size">~1.6 MB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-5/cahier-des-charges.pdf','Technical specification LA 2028')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+          <div class="card doc-item">
+            <span class="doc-icon">🧪</span>
+            <span class="doc-name">PHPUnit test report — 29 tests passing</span>
+            <span class="doc-size">~410 KB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-5/rapport-phpunit.png','PHPUnit report LA 2028')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+          <div class="card doc-item">
+            <span class="doc-icon">⚙</span>
+            <span class="doc-name">Source code — github.com/Yuung404/jo2028-kansietoko-yuung</span>
+            <span class="doc-size">Public</span>
+            <a class="doc-link" href="https://github.com/Yuung404/jo2028-kansietoko-yuung" target="_blank"
+              rel="noopener noreferrer" style="cursor:none;">OPEN</a>
+          </div>
+
+          <!-- LIEN-SITE -->
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projects.html" class="btn btn-g">← BACK TO PROJECTS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>AVAILABLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
