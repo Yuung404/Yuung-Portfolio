@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komptoir — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::EN<br><span class="hb">PROJECT</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- PDF Viewer -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+    </div>
+    <iframe id="pdf-frame" title="PDF Viewer"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projects.html" style="color:var(--g6);text-decoration:none;">← BACK TO PROJECTS</a>
+      </div>
+
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJECT 09 — E-COMMERCE · PERSONAL PROJECT</span>
+        <h2 class="sec-title">KOMPTOIR</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="pj-det-hero rv">
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-9.svg" alt="Komptoir — Shopify store and launch plan">
+        </div>
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUS</span>
+              <span class="pj-status st-progress">⟳ IN PREPARATION</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">Personal business project</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PERIOD</span>
+              <span class="pj-meta-val">October — December 2026</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PLATFORM</span>
+              <span class="pj-meta-val">Shopify (store on trial plan)</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CATALOGUE</span>
+              <span class="pj-meta-val">5 draft products: home, pets, beauty</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// LAUNCH</span>
+              <span class="pj-meta-val">Planned for 20 November 2026</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TOOLS</span>
+              <span class="pj-meta-val">Shopify, AMZScout, interactive mock-up, MiniMax (videos), Meta and TikTok Ads</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CONTEXT &amp; GOALS</h3>
+        <p><strong style="color:var(--g3);">Komptoir</strong> (working name) is my online store: a general store selling already popular products, with a more polished presentation than the big marketplaces. I start from Amazon's familiar structure and rework it: typography, product layout, rating display.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>WHAT I BUILT</h3>
+        <p><strong style="color:var(--g3);">1. Market research</strong><br>Since Amazon does not publish sales figures, I used <strong style="color:var(--g3);">AMZScout</strong> estimates of the best sellers (category, price, rating, 30-day sales). I ruled out big-brand products, which cannot be resold without being an authorised distributor.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Interactive mock-up</strong><br>A home page ranking the top 20 products with category filters, and a product page with quantity and cart. Bricolage Grotesque and DM Sans fonts, rating badge, visible rank. Mobile first.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. Shopify catalogue</strong><br>5 product pages created in the store as <strong style="color:var(--g3);">drafts</strong> until purchase prices and sample photos are ready: candle warmer, cat water fountain, under-sink mat, satin heatless curlers, heated throw (€29.90 to €59.90), with SKUs and ad-test tags.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">4. Legal framework</strong><br>Micro-business registration and consumer mediator, mandatory pages (legal notice, terms of sale, 14-day withdrawal), honest reference prices for Black Friday, no fake reviews, EU General Product Safety Regulation (GPSR), new customs fees on non-EU parcels.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">5. Launch plan</strong><br>Foundations, sourcing, store, ad content, then a deliberately small test of <strong style="color:var(--g3);">€25 per day per product</strong> for 3 days, with sorting rules applied every morning.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>PROGRESS STATUS</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">RESEARCH</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ MARKET</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Best sellers analysed</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">DESIGN</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ MOCK-UP</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Home + product page</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">SHOPIFY</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ 5 PRODUCTS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">As drafts</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LEGAL</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ STATUS + PAGES</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Registration, terms, legal notice</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LAUNCH</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ 20 NOVEMBER</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Samples, photos, videos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>SKILLS DEMONSTRATED</h3>
+        <p>
+          ▸ Market research from sales data<br>▸ Designing a mobile-first e-commerce interface<br>▸ Running a Shopify store<br>▸ E-commerce legal compliance (consumer law, GPSR, GDPR)<br>▸ Planning a launch and managing a test budget
+        </p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; DELIVERABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Report — Komptoir e-commerce store (in French)</span>
+            <span class="doc-size">~55 KB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-9/compte-rendu.pdf','Komptoir report')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projects.html" class="btn btn-g">← BACK TO PROJECTS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>AVAILABLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

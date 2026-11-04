@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debian Servers — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::EN<br><span class="hb">PROJECT</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- PDF Viewer -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+    </div>
+    <iframe id="pdf-frame" title="PDF Viewer"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projects.html" style="color:var(--g6);text-decoration:none;">← BACK TO PROJECTS</a>
+      </div>
+
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJECT 08 — SYSTEM ADMINISTRATION · SIDEL LAB</span>
+        <h2 class="sec-title">DEBIAN SERVERS</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="pj-det-hero rv">
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-8.svg" alt="Debian servers — SSH hardening and Apache virtual hosts">
+        </div>
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUS</span>
+              <span class="pj-status st-progress">⟳ IN PROGRESS</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">BTS SIO lab — SIDEL company scenario</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PERIOD</span>
+              <span class="pj-meta-val">October 2026</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TEAM</span>
+              <span class="pj-meta-val">Solo</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ENVIRONMENT</span>
+              <span class="pj-meta-val">VMware Workstation, Debian 13 with no desktop</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TOOLS</span>
+              <span class="pj-meta-val">SSH, sudo, Fail2ban, Apache 2.4, PHP 8.4, MariaDB, Cockpit</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CONTEXT &amp; GOALS</h3>
+        <p>The company SIDEL needs a Linux server for its internal services. <strong style="color:var(--g3);">Lab 1</strong> is about installing a minimal Debian server and securing remote access; <strong style="color:var(--g3);">Lab 2</strong> turns it into a web server hosting several sites.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>WHAT I BUILT</h3>
+        <p><strong style="color:var(--g3);">1. Minimal installation</strong><br>Debian 13 in text mode, no desktop: fewer packages, fewer vulnerabilities. A root account for administration and a standard account <code style="color:var(--g4);">yuung</code> for daily use. A GNOME desktop had been installed by mistake: I reinstalled, checking every option.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Securing remote access</strong><br>Added my account to the sudo group (<code style="color:var(--g4);">usermod -aG sudo yuung</code>), blocked root over SSH (<code style="color:var(--g4);">PermitRootLogin no</code>, checked with <code style="color:var(--g4);">sshd -T</code>), then <strong style="color:var(--g3);">Fail2ban</strong> against brute force: 5 failures and 1 ban recorded during my tests.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. Web server and virtual hosts</strong><br>Static IP, Apache 2.4, PHP 8.4 and MariaDB, then two sites on one server, <code style="color:var(--g4);">site1.sidel.local</code> and <code style="color:var(--g4);">site2.sidel.local</code>, each with its own <code style="color:var(--g4);">ServerName</code>, <code style="color:var(--g4);">DocumentRoot</code> and logs. Tested from the PC through the <code style="color:var(--g4);">hosts</code> file, and without it using <code style="color:var(--g4);">curl.exe -H &quot;Host: …&quot;</code>.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">4. Web-based administration</strong><br>Installed <strong style="color:var(--g3);">Cockpit</strong>, the administration interface served over HTTPS on port 9090 with the standard account.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>PROGRESS STATUS</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LAB 1</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ SECURE SSH</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">root blocked, Fail2ban on</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LAB 2</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ WEB STACK</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Apache, PHP, MariaDB</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LAB 2</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ VIRTUAL HOSTS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">site1 and site2 enabled</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LAB 2</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ COCKPIT</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Admin on port 9090</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">NEXT</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ DOCKER</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Docker and Portainer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>SKILLS DEMONSTRATED</h3>
+        <p>
+          ▸ Installing a minimal Linux server in a virtual machine<br>▸ Managing accounts and privileges (sudo, groups)<br>▸ SSH hardening and brute-force protection<br>▸ Configuring Apache and virtual hosts<br>▸ Network troubleshooting (static IP, DNS, hosts file, curl)<br>▸ Writing a technical report
+        </p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; DELIVERABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Report — Debian servers, labs 1 and 2 (in French)</span>
+            <span class="doc-size">~450 KB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-8/compte-rendu.pdf','Debian servers report')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+          <div class="card doc-item">
+            <span class="doc-icon">📄</span>
+            <span class="doc-name">Detailed report of lab 1 — Debian server and SSH (in French)</span>
+            <span class="doc-size">~1.1 MB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-8/cr-tp1-ssh.pdf','Lab 1 Debian SSH report')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projects.html" class="btn btn-g">← BACK TO PROJECTS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>AVAILABLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

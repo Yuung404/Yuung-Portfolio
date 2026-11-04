@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serveurs Debian — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">PROJET</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projets.html" style="color:var(--g6);text-decoration:none;">← RETOUR AUX PROJETS</a>
+      </div>
+
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJET 08 — ADMINISTRATION SYSTÈME · TP SIDEL</span>
+        <h2 class="sec-title">SERVEURS DEBIAN</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="pj-det-hero rv">
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-8.svg" alt="Serveurs Debian — Sécurisation SSH et virtual hosts Apache">
+        </div>
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUT</span>
+              <span class="pj-status st-progress">⟳ EN COURS</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">TP BTS SIO — contexte entreprise SIDEL</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PÉRIODE</span>
+              <span class="pj-meta-val">Octobre 2026</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ÉQUIPE</span>
+              <span class="pj-meta-val">Solo</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// ENVIRONNEMENT</span>
+              <span class="pj-meta-val">VMware Workstation, Debian 13 sans interface graphique</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// OUTILS</span>
+              <span class="pj-meta-val">SSH, sudo, Fail2ban, Apache 2.4, PHP 8.4, MariaDB, Cockpit</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CONTEXTE &amp; OBJECTIFS</h3>
+        <p>L'entreprise SIDEL a besoin d'un serveur Linux pour ses services internes. Le <strong style="color:var(--g3);">TP 1</strong> consiste à installer un serveur Debian minimal et à sécuriser son accès à distance ; le <strong style="color:var(--g3);">TP 2</strong> le transforme en serveur web capable d'héberger plusieurs sites.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CE QUE J'AI RÉALISÉ</h3>
+        <p><strong style="color:var(--g3);">1. Installation minimale</strong><br>Debian 13 en mode texte, sans bureau : moins de logiciels, donc moins de failles. Compte root pour l'administration et compte standard <code style="color:var(--g4);">yuung</code> pour le quotidien. Un bureau GNOME s'était installé par erreur : j'ai réinstallé en vérifiant chaque case.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Sécurisation de l'accès distant</strong><br>Ajout de mon compte au groupe sudo (<code style="color:var(--g4);">usermod -aG sudo yuung</code>), interdiction de root en SSH (<code style="color:var(--g4);">PermitRootLogin no</code>, vérifié avec <code style="color:var(--g4);">sshd -T</code>), puis <strong style="color:var(--g3);">Fail2ban</strong> contre les attaques par force brute : 5 échecs et 1 bannissement enregistrés pendant mes tests.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. Serveur web et virtual hosts</strong><br>IP fixe, Apache 2.4, PHP 8.4 et MariaDB, puis deux sites sur un seul serveur, <code style="color:var(--g4);">site1.sidel.local</code> et <code style="color:var(--g4);">site2.sidel.local</code>, chacun avec son <code style="color:var(--g4);">ServerName</code>, son <code style="color:var(--g4);">DocumentRoot</code> et ses journaux. Test côté PC par le fichier <code style="color:var(--g4);">hosts</code>, et sans lui avec <code style="color:var(--g4);">curl.exe -H &quot;Host: …&quot;</code>.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">4. Administration par le web</strong><br>Installation de <strong style="color:var(--g3);">Cockpit</strong>, l'interface d'administration accessible en HTTPS sur le port 9090 avec le compte standard.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>ÉTAT D'AVANCEMENT</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">TP 1</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ SSH SÉCURISÉ</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">root interdit, Fail2ban actif</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">TP 2</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ PILE WEB</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Apache, PHP, MariaDB</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">TP 2</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ VIRTUAL HOSTS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">site1 et site2 activés</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">TP 2</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ COCKPIT</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Administration sur le port 9090</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">SUITE</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ DOCKER</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Docker et Portainer</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>COMPÉTENCES MOBILISÉES</h3>
+        <p>
+          ▸ Installation d'un serveur Linux minimal en machine virtuelle<br>▸ Gestion des comptes et des droits (sudo, groupes)<br>▸ Sécurisation SSH et protection contre la force brute<br>▸ Configuration d'Apache et des virtual hosts<br>▸ Diagnostic réseau (IP fixe, DNS, fichier hosts, curl)<br>▸ Rédaction d'un compte rendu technique
+        </p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; LIVRABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Compte rendu — Serveurs Debian (TP 1 et TP 2)</span>
+            <span class="doc-size">~450 Ko</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-8/compte-rendu.pdf','Compte rendu Serveurs Debian')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+          <div class="card doc-item">
+            <span class="doc-icon">📄</span>
+            <span class="doc-name">Compte rendu détaillé du TP 1 — Installation d'un serveur Debian et SSH</span>
+            <span class="doc-size">~1,1 Mo</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-8/cr-tp1-ssh.pdf','Compte rendu TP 1 Debian SSH')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projets.html" class="btn btn-g">← RETOUR AUX PROJETS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

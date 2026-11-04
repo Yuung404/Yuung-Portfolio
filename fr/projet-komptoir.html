@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komptoir — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">PROJET</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projets.html" style="color:var(--g6);text-decoration:none;">← RETOUR AUX PROJETS</a>
+      </div>
+
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJET 09 — E-COMMERCE · PROJET PERSONNEL</span>
+        <h2 class="sec-title">KOMPTOIR</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="pj-det-hero rv">
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-9.svg" alt="Komptoir — Boutique Shopify et plan de lancement">
+        </div>
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUT</span>
+              <span class="pj-status st-progress">⟳ EN PRÉPARATION</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">Projet entrepreneurial personnel</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PÉRIODE</span>
+              <span class="pj-meta-val">Octobre — Décembre 2026</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PLATEFORME</span>
+              <span class="pj-meta-val">Shopify (boutique en période d'essai)</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CATALOGUE</span>
+              <span class="pj-meta-val">5 produits en brouillon : maison, animaux, beauté</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// LANCEMENT</span>
+              <span class="pj-meta-val">Prévu le 20 novembre 2026</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// OUTILS</span>
+              <span class="pj-meta-val">Shopify, AMZScout, maquette interactive, MiniMax (vidéos), Meta et TikTok Ads</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CONTEXTE &amp; OBJECTIFS</h3>
+        <p><strong style="color:var(--g3);">Komptoir</strong> (nom provisoire) est ma boutique en ligne : une boutique généraliste qui vend des produits déjà plébiscités, avec une présentation plus soignée que les places de marché. Je pars de la structure d'Amazon, que tout le monde sait utiliser, et je la retravaille : typographie, mise en page des produits, affichage des notes.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CE QUE J'AI RÉALISÉ</h3>
+        <p><strong style="color:var(--g3);">1. Étude de marché</strong><br>Amazon ne publiant pas ses ventes, j'ai utilisé les estimations d'<strong style="color:var(--g3);">AMZScout</strong> sur les meilleures ventes (catégorie, prix, note, ventes sur 30 jours). J'ai écarté les produits de grandes marques, qu'on ne peut pas revendre sans être distributeur agréé.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Maquette interactive</strong><br>Une page d'accueil avec un classement des 20 meilleurs produits filtrable par catégorie, et une fiche produit avec quantité et panier. Polices Bricolage Grotesque et DM Sans, note en badge, rang affiché. Pensée pour le téléphone d'abord.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. Catalogue Shopify</strong><br>5 fiches créées dans la boutique, <strong style="color:var(--g3);">en brouillon</strong> tant que les prix d'achat et les photos des échantillons ne sont pas prêts : chauffe-bougie, fontaine pour chat, tapis sous évier, bigoudis en satin, plaid chauffant (29,90 € à 59,90 €), avec références et étiquettes de test publicitaire.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">4. Cadre légal</strong><br>Statut de micro-entreprise et médiateur de la consommation, pages obligatoires (mentions légales, CGV, rétractation de 14 jours), prix de référence honnêtes pour le Black Friday, interdiction des faux avis, règlement européen sur la sécurité des produits (GPSR), nouveaux frais de douane sur les colis hors Union européenne.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">5. Plan de lancement</strong><br>Fondations, sourcing, boutique, contenus publicitaires, puis un test volontairement limité à <strong style="color:var(--g3);">25 € par jour et par produit</strong> pendant 3 jours, avec des règles de tri appliquées chaque matin.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>ÉTAT D'AVANCEMENT</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">ÉTUDE</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ MARCHÉ</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Meilleures ventes analysées</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">DESIGN</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ MAQUETTE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Accueil + fiche produit</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">SHOPIFY</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ 5 FICHES</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">En brouillon</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LÉGAL</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ STATUT + PAGES</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">SIRET, CGV, mentions légales</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LANCEMENT</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ 20 NOVEMBRE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Échantillons, photos, vidéos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>COMPÉTENCES MOBILISÉES</h3>
+        <p>
+          ▸ Étude de marché à partir de données de ventes<br>▸ Conception d'une interface e-commerce pensée pour le mobile<br>▸ Administration d'une boutique Shopify<br>▸ Conformité légale du commerce en ligne (consommation, GPSR, RGPD)<br>▸ Planification d'un lancement et gestion d'un budget de test
+        </p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; LIVRABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Compte rendu — Komptoir, boutique e-commerce</span>
+            <span class="doc-size">~55 Ko</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-9/compte-rendu.pdf','Compte rendu Komptoir')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projets.html" class="btn btn-g">← RETOUR AUX PROJETS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

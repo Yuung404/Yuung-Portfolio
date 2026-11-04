@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      .bg { fill: #020d02; } .grid-line { stroke: #003a0a; stroke-width: 0.5; }
+      .title-text { font-family: 'Share Tech Mono', monospace; fill: #00cc44; font-size: 13px; letter-spacing: 2px; }
+      .label-text { font-family: 'Share Tech Mono', monospace; fill: #00cc44; font-size: 11px; letter-spacing: 1px; }
+      .small-text { font-family: 'Share Tech Mono', monospace; fill: #00aa33; font-size: 9px; letter-spacing: 1px; }
+      .dim-text { font-family: 'Share Tech Mono', monospace; fill: #00801f; font-size: 9px; letter-spacing: 0.5px; }
+      .ok { font-family: 'Share Tech Mono', monospace; fill: #33ff77; font-size: 10px; letter-spacing: 1px; }
+      .warn { font-family: 'Share Tech Mono', monospace; fill: #ffcc44; font-size: 10px; letter-spacing: 1px; }
+      .cmd { font-family: 'Share Tech Mono', monospace; fill: #00aa33; font-size: 10px; letter-spacing: 1px; }
+      .box { fill: rgba(0,180,60,0.06); stroke: #00aa33; stroke-width: 1.2; }
+      .box-main { fill: rgba(0,200,80,0.16); stroke: #00ee55; stroke-width: 1.8; }
+      .panel { fill: rgba(0,60,15,0.35); stroke: #005c10; stroke-width: 1; }
+      .ln { stroke: #00aa33; stroke-width: 1.1; fill: none; }
+    </style>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#00aa33"/></marker>
+  </defs>
+  <rect class="bg" width="800" height="500"/>
+  <g opacity="0.4"><line class="grid-line" x1="0" y1="100" x2="800" y2="100"/><line class="grid-line" x1="0" y1="200" x2="800" y2="200"/><line class="grid-line" x1="0" y1="300" x2="800" y2="300"/><line class="grid-line" x1="0" y1="400" x2="800" y2="400"/><line class="grid-line" x1="100" y1="0" x2="100" y2="500"/><line class="grid-line" x1="200" y1="0" x2="200" y2="500"/><line class="grid-line" x1="300" y1="0" x2="300" y2="500"/><line class="grid-line" x1="400" y1="0" x2="400" y2="500"/><line class="grid-line" x1="500" y1="0" x2="500" y2="500"/><line class="grid-line" x1="600" y1="0" x2="600" y2="500"/><line class="grid-line" x1="700" y1="0" x2="700" y2="500"/></g>
+  <rect x="0" y="0" width="800" height="32" fill="#003a0a" opacity="0.6"/>
+  <text class="title-text" x="20" y="21" filter="url(#glow)">SERVEURS DEBIAN — ADMINISTRATION SYSTÈME</text>
+  <text class="dim-text" x="672" y="21">Debian 13 · VMware</text>
+<rect class="panel" x="24" y="52" width="400" height="400" rx="6"/><rect x="24" y="52" width="400" height="24" fill="#003a0a" opacity="0.7"/><text class="dim-text" x="38" y="68">yuung@debianyuung: ~</text><text class="cmd" x="38" y="98">$ sudo whoami</text><text class="ok" x="38" y="123">root</text><text class="cmd" x="38" y="148">$ sudo sshd -T | grep permitroot</text><text class="ok" x="38" y="173">permitrootlogin no</text><text class="cmd" x="38" y="198">PS> ssh root@debianyuung</text><text class="warn" x="38" y="223">Permission denied</text><text class="cmd" x="38" y="248">$ sudo fail2ban-client status sshd</text><text class="ok" x="38" y="273">Total failed: 5  Total banned: 1</text><text class="cmd" x="38" y="298">$ sudo apache2ctl configtest</text><text class="ok" x="38" y="323">Syntax OK</text><text class="cmd" x="38" y="348">$ ls /etc/apache2/sites-enabled/</text><text class="ok" x="38" y="373">000-default  site1.conf  site2.conf</text><text class="cmd" x="38" y="398">$ systemctl is-active cockpit.socket</text><text class="ok" x="38" y="423">active</text><text class="small-text" x="452" y="70">UN SERVEUR, DEUX SITES (VIRTUAL HOSTS)</text><rect class="box-main" x="452" y="86" width="324" height="52" rx="4"/><text class="label-text" x="614.0" y="108.0" text-anchor="middle">DEBIAN 13 · APACHE 2.4</text><text class="dim-text" x="614.0" y="124.0" text-anchor="middle">PHP 8.4 · MariaDB · Cockpit :9090</text><path class="ln" d="M540 138 V176" marker-end="url(#arr)"/><path class="ln" d="M690 138 V176" marker-end="url(#arr)"/><rect class="box" x="452" y="180" width="150" height="56" rx="4"/><text class="label-text" x="527.0" y="204.0" text-anchor="middle">site1.sidel.local</text><text class="dim-text" x="527.0" y="220.0" text-anchor="middle">/var/www/site1</text><rect class="box" x="626" y="180" width="150" height="56" rx="4"/><text class="label-text" x="701.0" y="204.0" text-anchor="middle">site2.sidel.local</text><text class="dim-text" x="701.0" y="220.0" text-anchor="middle">/var/www/site2</text><text class="small-text" x="452" y="276">SÉCURISATION</text><text class="ok" x="452" y="300">[OK] serveur minimal, sans bureau</text><text class="ok" x="452" y="326">[OK] compte standard + sudo</text><text class="ok" x="452" y="352">[OK] root interdit en SSH</text><text class="ok" x="452" y="378">[OK] Fail2ban anti brute-force</text><text class="warn" x="452" y="404">[..] suite : Docker + Portainer</text>  <rect x="0" y="468" width="800" height="32" fill="#003a0a" opacity="0.6"/>
+  <text class="small-text" x="20" y="488">TP BTS SIO · CONTEXTE ENTREPRISE SIDEL · 2026</text>
+</svg>

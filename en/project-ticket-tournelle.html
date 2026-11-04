@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket'Tournelle — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::EN<br><span class="hb">PROJECT</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- PDF Viewer -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+    </div>
+    <iframe id="pdf-frame" title="PDF Viewer"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projects.html" style="color:var(--g6);text-decoration:none;">← BACK TO PROJECTS</a>
+      </div>
+
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJECT 07 — WEB DEVELOPMENT · PROFESSIONAL WORKSHOP</span>
+        <h2 class="sec-title">TICKET'TOURNELLE</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="pj-det-hero rv">
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-7.svg" alt="Ticket'Tournelle — Ticket lifecycle and server architecture">
+        </div>
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUS</span>
+              <span class="pj-status st-progress">⟳ IN PROGRESS</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">School project — Professional Workshop, BTS SIO year 2</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PERIOD</span>
+              <span class="pj-meta-val">School year 2026 — 2027</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CLIENT</span>
+              <span class="pj-meta-val">Lycée La Tournelle, La Garenne-Colombes (200+ staff)</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STACK</span>
+              <span class="pj-meta-val">Debian 13, Apache 2.4, PHP 8.4, MariaDB, PDO</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// INFRA</span>
+              <span class="pj-meta-val">VMware VM, HTTPS, UFW firewall, Fail2ban, key-based SSH, systemd backups</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TRACKING</span>
+              <span class="pj-meta-val">Trello in 10 phases · private GitHub repository</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CONTEXT &amp; PROBLEM</h3>
+        <p>At the school, technical incidents are reported through Excel, text messages, WhatsApp voice notes or phone calls. The result: lost requests, delays, no figures for management and overloaded IT staff. <strong style="color:var(--g3);">Ticket'Tournelle</strong> is a web portal where every staff member reports an incident and follows its resolution, technicians handle tickets, and management reads indicators.</p>
+        <p style="margin-top:12px;">The client sets 9 constraints, including a <strong style="color:var(--g3);">named account</strong> per person, a <strong style="color:var(--g3);">French and English</strong> interface, an <strong style="color:var(--g3);">in-house server</strong> that we install and run ourselves, and admin accounts managed according to <strong style="color:var(--g3);">ANSSI</strong> guidelines.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>WHAT I BUILT</h3>
+        <p><strong style="color:var(--g3);">1. Specification and mock-ups</strong><br>Needs analysis, specification, user stories, ticket lifecycle (open, assigned, on hold, resolved, closed), categories and priorities, then 12 screen mock-ups for the three roles: user, technician and administrator.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Database</strong><br>Conceptual and logical models, then <strong style="color:var(--g3);">13 MariaDB tables</strong> with constraints and indexes, and <strong style="color:var(--g3);">5 SQL views</strong> for the dashboard. I added 4 tables justified by the specification: rooms, allowed status transitions (any other change is rejected), one-time password reset, security log. Bilingual labels, <code style="color:var(--g4);">Argon2id</code> hashes, accounts disabled rather than deleted, least-privilege application SQL account.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. In-house web server</strong><br>Debian 13 VM with no desktop, root disabled in favour of a named sudo account. The whole setup is automated in a re-runnable <code style="color:var(--g4);">provision.sh</code>: Apache and PHP 8.4, MariaDB listening locally only, HTTPS with <code style="color:var(--g4);">TLS 1.2 / 1.3</code>, security headers, UFW firewall (22, 80, 443), Fail2ban, key-based SSH, automatic security updates, nightly database backup. Two test scripts check the database and the server's security.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>PROGRESS STATUS</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 1</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ SPECIFICATION</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">User stories, mock-ups, data models</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 3</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ IN-HOUSE SERVER</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Hardened Debian, HTTPS</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 4</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ DATABASE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">13 tables, 5 views, test data</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 5</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ DEVELOPMENT</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Authentication, tickets, roles</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASES 6 TO 10</div>
+            <div style="font-size:.8rem;color:#ffcc44;">— UPCOMING</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Security, testing, production, hand-over</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>SKILLS DEMONSTRATED</h3>
+        <p>
+          ▸ Analysing a real need and writing a specification<br>▸ Designing mock-ups for several user profiles<br>▸ Data modelling and advanced SQL (constraints, views)<br>▸ Installing and hardening a Debian server (ANSSI)<br>▸ Automating an installation with a Bash script<br>▸ Managing a 10-phase project on Trello
+        </p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; DELIVERABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Report — Ticket'Tournelle (status at 5 November 2026, in French)</span>
+            <span class="doc-size">~330 KB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-7/compte-rendu.pdf','Ticket'Tournelle report')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+          <div class="card doc-item">
+            <span class="doc-icon">📋</span>
+            <span class="doc-name">Specification — Ticket'Tournelle (in French)</span>
+            <span class="doc-size">~45 KB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-7/cahier-des-charges.pdf','Ticket'Tournelle specification')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+          <div class="card doc-item">
+            <span class="doc-icon">🎨</span>
+            <span class="doc-name">Screen mock-ups (12 screens)</span>
+            <span class="doc-size">~2.6 MB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-7/maquettes.pdf','Ticket'Tournelle mock-ups')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projects.html" class="btn btn-g">← BACK TO PROJECTS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>AVAILABLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

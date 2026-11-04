@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoudazo Traiteur — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::EN<br><span class="hb">PROJECT</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- PDF Viewer -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+    </div>
+    <iframe id="pdf-frame" title="PDF Viewer"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projects.html" style="color:var(--g6);text-decoration:none;">← BACK TO PROJECTS</a>
+      </div>
+
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJECT 06 — WEB DEVELOPMENT · CLIENT PROJECT</span>
+        <h2 class="sec-title">SPOUDAZO TRAITEUR</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="pj-det-hero rv">
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-6.svg" alt="Spoudazo Traiteur — Showcase website and security">
+        </div>
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUS</span>
+              <span class="pj-status st-progress">⟳ GOING LIVE</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">Professional project — showcase website for a caterer in Kinshasa (DRC)</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PERIOD</span>
+              <span class="pj-meta-val">July — August 2026 (version 1.6)</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TEAM</span>
+              <span class="pj-meta-val">Sole developer, working with the client's management</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STACK</span>
+              <span class="pj-meta-val">Next.js 15, React 19, TypeScript, Tailwind CSS 4, Supabase (PostgreSQL)</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// HOSTING</span>
+              <span class="pj-meta-val">Vercel (planned) · domain name to be bought by the client</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CODE</span>
+              <span class="pj-meta-val">Private GitHub repository (client project)</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CONTEXT &amp; GOALS</h3>
+        <p>SPOUDAZO Traiteur, founded in 2010 in Kinshasa, caters for ministries, embassies, international organisations and companies, and runs a Bar &amp; Restaurant at the FIKIN. The client gave me a specification in July 2026: a <strong style="color:var(--g3);">showcase website</strong> presenting the company, its services, its menu and its references, with an online quote request.</p>
+        <p style="margin-top:12px;">The client's three priorities: <strong style="color:var(--g3);">security</strong>, easy maintenance and room to grow.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>WHAT I BUILT</h3>
+        <p><strong style="color:var(--g3);">1. A justified technical choice</strong><br>I compared WordPress (exposed through plugins and its login page), a hand-written HTML site (not scalable) and Wix or Squarespace (subscription, little control). I chose <strong style="color:var(--g3);">Next.js</strong> with static generation: with no database or exposed server behind the pages, SQL injection and admin takeover have nothing to target.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Centralised content</strong><br>11 menu categories and over 100 priced items, 9 catering packages, 5 reference categories. Everything lives in 4 data files (<code style="color:var(--g4);">src/data/</code>), separate from the display code: changing a price is a one-line edit.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. Design in three versions</strong><br>After two rounds of client feedback ("too bland", then "not classy enough"), I rebuilt the site around a fine-dining look: deep black, gold, Playfair Display, full-width photos. 10 animations, all disabled for motion-sensitive users. A drawn illustration under every photo means no empty area on a slow network.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">4. Customer reviews and QR code</strong><br>Added beyond the specification: customers scan a QR code on the table and leave a rating. The API enforces <strong style="color:var(--g3);">7 checks</strong> (mandatory moderation, bot trap, minimum delay, hourly and daily limits, HTML and link stripping), and IP addresses are only stored as a salted SHA-256 hash. Supabase database with row-level security.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">5. Security</strong><br>Six verified HTTP headers: <code style="color:var(--g4);">Content-Security-Policy</code>, <code style="color:var(--g4);">Strict-Transport-Security</code>, <code style="color:var(--g4);">X-Frame-Options: DENY</code>, <code style="color:var(--g4);">X-Content-Type-Options</code>, <code style="color:var(--g4);">Referrer-Policy</code> and <code style="color:var(--g4);">Permissions-Policy</code>. I also declined to publish the requested bank details: a copied page with another account number could divert payments.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">6. Documentation</strong><br>8 documents for the client and any future developer: project file with architecture decisions, changelog, security, hosting, maintenance, reviews and QR codes, a jargon-free go-live guide, progress status.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>PROGRESS STATUS</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">DEVELOPMENT</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ 11 PAGES</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">16 routes, clean build</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">SECURITY</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ HEADERS + REVIEWS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">6 headers, 7 anti-abuse checks</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">CONTENT</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ 45 REAL PHOTOS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Sorted by category</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">GO-LIVE</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ CLIENT SIDE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Vercel accounts and domain in the client's name</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 2</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ ADMIN AREA</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Menu, photos and news without code</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>SKILLS DEMONSTRATED</h3>
+        <p>
+          ▸ Gathering and analysing a client specification<br>▸ Comparing and justifying a technical choice<br>▸ Next.js, React and TypeScript development<br>▸ Web security: HTTP headers, CSP, anti-abuse, data minimisation<br>▸ PostgreSQL design with row-level security<br>▸ Working through client feedback and design iterations<br>▸ Writing hand-over documentation
+        </p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; DELIVERABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Report — SPOUDAZO Traiteur website (in French)</span>
+            <span class="doc-size">~820 KB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-6/compte-rendu.pdf','Spoudazo Traiteur report')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projects.html" class="btn btn-g">← BACK TO PROJECTS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>AVAILABLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
