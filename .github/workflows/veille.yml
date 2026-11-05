@@ -6,6 +6,11 @@ on:
   schedule:
     - cron: '17 * * * *'      # toutes les heures, à la 17e minute
   workflow_dispatch:           # bouton « Run workflow » pour lancer à la main
+  push:                        # et dès que le script ou cette tâche sont modifiés
+    branches: [main]
+    paths:
+      - 'outils/veille.py'
+      - '.github/workflows/veille.yml'
 
 permissions:
   contents: write              # nécessaire pour enregistrer les nouveaux fichiers dans le dépôt
