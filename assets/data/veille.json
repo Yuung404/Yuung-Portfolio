@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-05T00:29:59+00:00",
+ "genere_le": "2026-11-05T07:56:55+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 189,
-  "ia": 46,
+  "ia": 47,
   "kev": 34,
   "kev_ia": 0
  },
@@ -110,6 +110,30 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+   "lien": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-05T05:17:04+00:00",
+   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+   "lien": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-05T04:31:16+00:00",
+   "resume": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. \"Our prototype identified and analyzed 2,308 candidate Linux kernel…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
    "lien": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
@@ -301,7 +325,7 @@
    "source_id": "thn",
    "langue": "en",
    "date": "2026-11-04T14:27:52+00:00",
-   "resume": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected…",
+   "resume": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected…",
    "tags": [],
    "cve": []
   },
@@ -1634,36 +1658,6 @@
    "resume": "The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
    "tags": [],
    "cve": []
-  },
-  {
-   "titre": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
-   "lien": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-10-30T07:45:30+00:00",
-   "resume": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13.…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-118539"
-   ]
-  },
-  {
-   "titre": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
-   "lien": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-10-30T07:27:05+00:00",
-   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-97229 (CVSS score: 10.0) -…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-97229"
-   ]
   },
   {
    "titre": "Vulnérabilité dans CPython (30 octobre 2026)",
