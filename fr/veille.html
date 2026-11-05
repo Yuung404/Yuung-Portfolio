@@ -44,9 +44,24 @@
         <span class="sec-tag">// 04 — INTELLIGENCE TECH</span>
         <h2 class="sec-title">VEILLE TECHNOLOGIQUE</h2>
         <div class="sec-line"></div>
-        <p class="sec-desc">Suivi régulier de l'actualité cybersécurité, réseaux et nouvelles technologies — sources :
-          ANSSI, CERT-FR, The Hacker News, LeMagIT, Krebs on Security.</p>
+        <p class="sec-desc">Ma veille porte sur l'intelligence artificielle dans la cybersécurité : attaques qui utilisent l'IA,
+          failles des outils d'IA (injection de prompt, agents, MCP) et failles activement exploitées. Le fil en direct agrège
+          The Hacker News, BleepingComputer, Dark Reading, SecurityWeek, Le Monde Informatique, Embrace The Red, Simon Willison,
+          le CERT-FR et le catalogue KEV de la CISA, mis à jour toutes les heures.</p>
       </div>
+
+      <!-- ══════════════════════════════════════════════════════
+       VEILLE EN DIRECT — IA et cybersécurité
+       Contenu rempli automatiquement par assets/js/veille.js à partir de
+       assets/data/veille.json, mis à jour toutes les heures par GitHub Actions
+       (.github/workflows/veille.yml → outils/veille.py).
+  ══════════════════════════════════════════════════════ -->
+      <div class="vlv-wrap rv">
+        <h3 class="vlv-h3">// VEILLE EN DIRECT — L'IA DANS LA CYBERSÉCURITÉ</h3>
+        <div id="veille-live"><p class="vlv-empty">// CHARGEMENT DES FLUX…</p></div>
+      </div>
+
+      <h3 class="vlv-h3 rv">// ARTICLES ANALYSÉS</h3>
 
       <!-- ══════════════════════════════════════════════════════
        GRILLE D'ARTICLES DE VEILLE
@@ -138,6 +153,7 @@
     </footer>
   </div><!-- /.page-wrap -->
   <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/veille.js"></script>
 </body>
 
 </html>

@@ -36,8 +36,20 @@
     <span class="sec-tag">// 04 — TECH INTELLIGENCE</span>
     <h2 class="sec-title">TECH WATCH</h2>
     <div class="sec-line"></div>
-    <p class="sec-desc">Regular monitoring of cybersecurity news, networks and emerging technologies — sources: ANSSI, CERT-FR, The Hacker News, LeMagIT, Krebs on Security.</p>
+    <p class="sec-desc">My watch focuses on artificial intelligence in cybersecurity: AI-powered attacks, flaws in AI tools (prompt injection, agents, MCP) and actively exploited vulnerabilities. The live feed aggregates The Hacker News, BleepingComputer, Dark Reading, SecurityWeek, Le Monde Informatique, Embrace The Red, Simon Willison, CERT-FR and the CISA KEV catalog, refreshed every hour.</p>
   </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       LIVE WATCH — AI and cybersecurity
+       Filled automatically by assets/js/veille.js from assets/data/veille.json,
+       refreshed every hour by GitHub Actions (.github/workflows/veille.yml → outils/veille.py).
+  ══════════════════════════════════════════════════════ -->
+  <div class="vlv-wrap rv">
+    <h3 class="vlv-h3">// LIVE WATCH — AI IN CYBERSECURITY</h3>
+    <div id="veille-live"><p class="vlv-empty">// LOADING FEEDS…</p></div>
+  </div>
+
+  <h3 class="vlv-h3 rv">// ANALYSED ARTICLES</h3>
 
   <!-- ══════════════════════════════════════════════════════
        ARTICLE GRID
@@ -104,5 +116,6 @@
 <footer><div class="f-brand">YK_PORTFOLIO</div><div class="f-copy">© 2025 BTS SIO</div><div class="f-live"><div class="ldot"></div>AVAILABLE</div></footer>
 </div><!-- /.page-wrap -->
 <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/veille.js"></script>
 </body>
 </html>
