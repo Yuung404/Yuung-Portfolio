@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-05T22:41:55+00:00",
+ "genere_le": "2026-11-06T03:28:03+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 189,
@@ -110,6 +110,30 @@
   }
  ],
  "articles": [
+  {
+   "titre": "3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million",
+   "lien": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-06T03:03:29+00:00",
+   "resume": "The trio, who have nicknames that include “Rocky Balboa,” “Superman Cash” and “Fat Boy,” often targeted the companies’ accounting departments. The post 3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "FBI, CISA warn of cyberattacks targeting refrigeration systems",
+   "lien": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-06T00:56:44+00:00",
+   "resume": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards. [...]",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "US Government Email Systems Open to Abuse Thanks to Typos",
    "lien": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
@@ -713,30 +737,6 @@
    "date": "2026-11-04T16:00:18+00:00",
    "resume": "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack that reportedly exposed an encrypted customer database. [...]",
    "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
-   "lien": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-04T15:00:10+00:00",
-   "resume": "A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Sysdig Adds Runtime Security and Governance for AI Agents",
-   "lien": "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-04T14:34:44+00:00",
-   "resume": "Sysdig’s platform uses runtime visibility to track AI agent actions and block risky behavior before it reaches production systems. The post Sysdig Adds Runtime Security and Governance for AI Agents appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
    "cve": []
   },
   {
