@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-06T03:28:03+00:00",
+ "genere_le": "2026-11-06T12:11:29+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 189,
-  "ia": 48,
+  "ia": 49,
   "kev": 34,
   "kev_ia": 0
  },
@@ -110,6 +110,102 @@
   }
  ],
  "articles": [
+  {
+   "titre": "The Flood is Coming And The Pipes Were Already Full",
+   "lien": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-06T11:30:00+00:00",
+   "resume": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "OpenAI dévoile GPT-6 Cyber",
+   "lien": "https://www.lemondeinformatique.fr/actualites/lire-openai-devoile-gpt-6-cyber-100921.html",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-06T11:11:26+00:00",
+   "resume": "Quelques jours après avoir dévoilé Image 2.6, la nouvelle version de son générateur d'images, OpenAI annonce GPT-6 Cyber, (...)",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions",
+   "lien": "https://www.securityweek.com/openai-model-wrote-its-own-network-code-to-get-around-sandbox-restrictions/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-06T09:33:51+00:00",
+   "resume": "After its sandbox proxy failed, an internal OpenAI model crafted raw packets and probed AWS services trying to reach the internet. The post OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "MetaMask says recent attack didn't affect wallet infrastructure",
+   "lien": "https://www.bleepingcomputer.com/news/security/metamask-says-recent-attack-didnt-affect-wallet-infrastructure/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-06T09:22:28+00:00",
+   "resume": "Cryptocurrency wallet provider MetaMask said a recent security incident has not affected MetaMask wallets or its wallet infrastructure. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "UK Warns Its Critical Infrastructure Faces Grave Risk",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-06T09:00:00+00:00",
+   "resume": "Britain's new Labour-led government is making a concerted push to get ahead of the AI risks to its national networks and the industrial complex.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+   "lien": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-06T08:04:49+00:00",
+   "resume": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. \"While we investigated, we removed access to Reactor and Data Solutions,\" the company…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
+   "lien": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-06T05:58:54+00:00",
+   "resume": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+   "lien": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-06T05:39:10+00:00",
+   "resume": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw,…",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million",
    "lien": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
@@ -430,19 +526,6 @@
    "cve": []
   },
   {
-   "titre": "OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks",
-   "lien": "https://www.securityweek.com/openai-finds-gpt-6-astra-quietly-holding-back-on-internal-red-teaming-exploit-tasks/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-05T10:02:00+00:00",
-   "resume": "OpenAI says its Critical-rated cyber model met fewer hidden task goals when work was framed as AI safety research, often silently. The post OpenAI Finds GPT-6 Astra Quietly Holding Back on Internal Red-Teaming, Exploit Tasks appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
    "lien": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
    "source": "BleepingComputer",
@@ -726,17 +809,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "mSecure password manager hack prompts password reset warnings",
-   "lien": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-04T16:00:18+00:00",
-   "resume": "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack that reportedly exposed an encrypted customer database. [...]",
-   "tags": [],
    "cve": []
   },
   {
@@ -1672,56 +1744,6 @@
    "cve": []
   },
   {
-   "titre": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
-   "lien": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-01T07:02:58+00:00",
-   "resume": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
-   "lien": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-10-31T12:01:56+00:00",
-   "resume": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-   "lien": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-10-31T08:27:43+00:00",
-   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-111357"
-   ]
-  },
-  {
-   "titre": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
-   "lien": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-10-31T05:33:41+00:00",
-   "resume": "A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at the security firm Parameter showed. The researchers reported the flaw through OpenAI's bug bounty program on October 18,…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Investors Dish on New Startups & What They'd Back Next",
    "lien": "https://www.darkreading.com/cybersecurity-operations/investors-dish-new-startsup-what-back-next",
    "source": "Dark Reading",
@@ -2291,19 +2313,6 @@
    "cve": []
   },
   {
-   "titre": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-23T11:38:28+00:00",
-   "resume": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may compound — not contain — the risk.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Frigos de supermarchés piratés : l'Anssi pointe des failles de sécurité élémentaires",
    "lien": "https://www.lemondeinformatique.fr/actualites/lire-frigos-de-supermarches-pirates-l-anssi-pointe-des-failles-de-securite-elementaires-100864.html",
    "source": "Le Monde Informatique",
@@ -2322,17 +2331,6 @@
    "langue": "fr",
    "date": "2026-10-22T17:58:36+00:00",
    "resume": "Le 21 octobre 2026, l’ANSSI, via le CERT-FR, a publié une alerte concernant deux failles affectant PHP, l’un des langages de programmation (...)",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Körber s'appuie sur les SBOM pour unifier la sécurité de ses logiciels",
-   "lien": "https://www.lemondeinformatique.fr/actualites/lire-kurber-s-appuie-sur-les-sbom-pour-unifier-la-securite-de-ses-logiciels-100863.html",
-   "source": "Le Monde Informatique",
-   "source_id": "lmi",
-   "langue": "fr",
-   "date": "2026-10-22T14:54:30+00:00",
-   "resume": "Lors de la conférence swampUP 2026 de JFrog, organisée du 20 au 22 octobre à Barcelone, les responsables sécurité de (...)",
    "tags": [],
    "cve": []
   },
