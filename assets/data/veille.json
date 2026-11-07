@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-06T19:29:12+00:00",
+ "genere_le": "2026-11-07T00:08:49+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 190,
-  "ia": 47,
-  "kev": 34,
+  "ia": 49,
+  "kev": 30,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,62 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 34,
+   "nb": 30,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+   "lien": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-07T00:00:55+00:00",
+   "resume": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+   "lien": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-06T22:27:25+00:00",
+   "resume": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-06T21:27:36+00:00",
+   "resume": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
+   "lien": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-06T20:24:19+00:00",
+   "resume": "OpenAI has revealed GPT-6 Cyber, a new artificial intelligence model that has discovered 81 previously unknown high-severity Firefox vulnerabilities and developed working exploits for 948 distinct Linux kernel flaws. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "Fake security tools on GitHub push backdoors and infostealers",
    "lien": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
@@ -645,6 +695,17 @@
    "cve": []
   },
   {
+   "titre": "Operação de influência russa tem como alvo generalizado a América Latina",
+   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-05T22:13:23+00:00",
+   "resume": "A operação, que contou com o uso de inteligência artificial, utilizou e-mails falsos, documentos governamentais falsificados e a criação de uma organização local para atacar escolas no Peru e no Equador, entre outras ações.",
+   "tags": [],
+   "cve": []
+  },
+  {
    "titre": "US Government Email Systems Open to Abuse Thanks to Typos",
    "lien": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
    "source": "Dark Reading",
@@ -760,39 +821,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Hackers backdoor Linux servers using trojanized CWP web server",
-   "lien": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-05T16:24:26+00:00",
-   "resume": "A new Linux malware called CWPdoor is being distributed through a trojanized version of cwpsrv, the web server behind the Control Web Panel (CWP) management interface. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "DigiCert data breach exposes customer information, identity documents",
-   "lien": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-05T16:12:46+00:00",
-   "resume": "DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Closing the Identity Gap at the Service Desk",
-   "lien": "https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-05T15:00:10+00:00",
-   "resume": "Attackers target IT service desks to bypass MFA by impersonating employees and convincing staff to reset passwords or register new authentication devices. Specops Software explains why traditional identity verification methods are no longer sufficient and how organizations can secure account…",
-   "tags": [],
    "cve": []
   },
   {
@@ -2293,30 +2321,6 @@
    "cve": []
   },
   {
-   "titre": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
-   "lien": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-23T19:41:23+00:00",
-   "resume": "Fixing the critical PHP flaws is not as simple as clicking \"Update.\" Here's how to assess your risk, and what you can do to protect yourself.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "AI Tools Are Generating Massive Attacks for Little Cost",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-23T17:26:59+00:00",
-   "resume": "One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12. Cyber-defense will have to change.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "GitLab corrige une faille critique vieille de douze ans",
    "lien": "https://www.lemondeinformatique.fr/actualites/lire-gitlab-corrige-une-faille-critique-vieille-de-douze-ans-100870.html",
    "source": "Le Monde Informatique",
@@ -2424,6 +2428,18 @@
   }
  ],
  "kev": [
+  {
+   "cve": "CVE-2026-19868",
+   "editeur": "SonicWall",
+   "produit": "SonicOS SSLVPN",
+   "nom": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+   "date": "2026-11-06T00:00:00+00:00",
+   "echeance": "2026-11-20",
+   "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868"
+  },
   {
    "cve": "CVE-2024-27834",
    "editeur": "Apple",
@@ -2771,66 +2787,6 @@
    "rancongiciel": false,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
-  },
-  {
-   "cve": "CVE-2015-5477",
-   "editeur": "ISC",
-   "produit": "BIND",
-   "nom": " ISC BIND Data Processing Errors Vulnerability",
-   "date": "2026-10-08T00:00:00+00:00",
-   "echeance": "2026-10-11",
-   "description": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2015-5477"
-  },
-  {
-   "cve": "CVE-2016-3081",
-   "editeur": "Apache",
-   "produit": "Struts",
-   "nom": "Apache Struts Command Injection Vulnerability",
-   "date": "2026-10-08T00:00:00+00:00",
-   "echeance": "2026-10-11",
-   "description": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2016-3081"
-  },
-  {
-   "cve": "CVE-2023-22894",
-   "editeur": "Strapi",
-   "produit": "Strapi",
-   "nom": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
-   "date": "2026-10-08T00:00:00+00:00",
-   "echeance": "2026-10-11",
-   "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with…",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2023-22894"
-  },
-  {
-   "cve": "CVE-2021-3199",
-   "editeur": "ONLYOFFICE",
-   "produit": "Docs",
-   "nom": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
-   "date": "2026-10-08T00:00:00+00:00",
-   "echeance": "2026-10-11",
-   "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2021-3199"
-  },
-  {
-   "cve": "CVE-2015-3306",
-   "editeur": "ProFTPD",
-   "produit": "ProFTPD",
-   "nom": "ProFTPD Improper Access Control Vulnerability",
-   "date": "2026-10-08T00:00:00+00:00",
-   "echeance": "2026-10-11",
-   "description": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2015-3306"
   }
  ]
 }
