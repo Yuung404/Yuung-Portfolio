@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-07T06:08:25+00:00",
+ "genere_le": "2026-11-07T13:13:02+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 190,
@@ -110,6 +110,34 @@
   }
  ],
  "articles": [
+  {
+   "titre": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+   "lien": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-07T10:16:23+00:00",
+   "resume": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek .",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-19868"
+   ]
+  },
+  {
+   "titre": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+   "lien": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-07T06:44:17+00:00",
+   "resume": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them. When a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret,…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
    "lien": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
@@ -512,19 +540,6 @@
    "date": "2026-11-06T05:39:10+00:00",
    "resume": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw,…",
    "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million",
-   "lien": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-06T03:03:29+00:00",
-   "resume": "The trio, who have nicknames that include “Rocky Balboa,” “Superman Cash” and “Fat Boy,” often targeted the companies’ accounting departments. The post 3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
    "cve": []
   },
   {
@@ -1831,17 +1846,6 @@
    "langue": "fr",
    "date": "2026-11-02T11:11:20+00:00",
    "resume": "Le secteur des cryptomonnaies fait face à l'une des plus importantes crises de sécurité de son histoire. Binance, l'une des principales (...)",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
-   "lien": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-02T11:08:45+00:00",
-   "resume": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said…",
    "tags": [],
    "cve": []
   },
