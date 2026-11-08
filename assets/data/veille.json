@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-08T09:06:05+00:00",
+ "genere_le": "2026-11-08T16:01:47+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 170,
@@ -110,6 +110,30 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+   "lien": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-08T15:43:08+00:00",
+   "resume": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Brava Security Emerges From Stealth With $15 Million in Funding",
+   "lien": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-08T12:14:00+00:00",
+   "resume": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "Hackers pull off $133 million French bank heist via service provider",
    "lien": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
@@ -469,19 +493,6 @@
    "cve": []
   },
   {
-   "titre": "OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions",
-   "lien": "https://www.securityweek.com/openai-model-wrote-its-own-network-code-to-get-around-sandbox-restrictions/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-06T09:33:51+00:00",
-   "resume": "After its sandbox proxy failed, an internal OpenAI model crafted raw packets and probed AWS services trying to reach the internet. The post OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "MetaMask says recent attack didn't affect wallet infrastructure",
    "lien": "https://www.bleepingcomputer.com/news/security/metamask-says-recent-attack-didnt-affect-wallet-infrastructure/",
    "source": "BleepingComputer",
@@ -750,17 +761,6 @@
    "langue": "en",
    "date": "2026-11-05T21:00:47+00:00",
    "resume": "In this video conversation, Dark Reading editors discuss some of the news they didn't get a chance to cover, from an ill-conceived phishing simulation to a hacktivist attack on a US government agency.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Nearly 1.5 million exposed secrets targeted in new revocation program",
-   "lien": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-05T20:15:08+00:00",
-   "resume": "Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid. [...]",
    "tags": [],
    "cve": []
   },
