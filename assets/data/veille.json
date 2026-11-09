@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-09T00:58:17+00:00",
+ "genere_le": "2026-11-09T08:04:01+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 170,
-  "ia": 41,
+  "ia": 40,
   "kev": 30,
   "kev_ia": 0
  },
@@ -110,6 +110,41 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
+   "lien": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-09T07:05:48+00:00",
+   "resume": "The OpenAI engineer who was arrested and charged last month for planting a covert audio recording device in the company's office has pleaded not guilty. According to reports from Bloomberg and CNBC, Saudi national Abdulrahman Alfozan made an appearance in San Francisco federal court on Friday,…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
+   "lien": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-09T06:15:10+00:00",
+   "resume": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory. \"The actors may exploit vulnerabilities or weaknesses in unpatched or…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+   "lien": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-09T06:05:24+00:00",
+   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks. The vulnerability, tracked as…",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
    "lien": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
@@ -1721,17 +1756,6 @@
    "cve": []
   },
   {
-   "titre": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-   "lien": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-02T14:46:05+00:00",
-   "resume": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
    "lien": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
    "source": "Dark Reading",
@@ -1740,32 +1764,6 @@
    "date": "2026-11-02T14:00:00+00:00",
    "resume": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
    "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
-   "lien": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-02T11:50:00+00:00",
-   "resume": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
-   "lien": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-02T11:30:00+00:00",
-   "resume": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next…",
-   "tags": [
-    "ia"
-   ],
    "cve": []
   },
   {
