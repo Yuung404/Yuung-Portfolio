@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-09T18:53:16+00:00",
+ "genere_le": "2026-11-10T02:12:56+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 170,
-  "ia": 42,
-  "kev": 30,
+  "ia": 37,
+  "kev": 33,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,89 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 30,
+   "nb": 33,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
+   "lien": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-09T23:52:12+00:00",
+   "resume": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "SEGA newsletter data breach exposes 2.2 million email addresses",
+   "lien": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-09T22:09:33+00:00",
+   "resume": "Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
+   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-09T21:38:20+00:00",
+   "resume": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+   "lien": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-09T21:26:25+00:00",
+   "resume": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers take over vulnerable systems. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "York University breach exposed personal information dating to 2007",
+   "lien": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-09T21:22:31+00:00",
+   "resume": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
+   "lien": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-09T21:12:24+00:00",
+   "resume": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-09T20:19:56+00:00",
+   "resume": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue.",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "France blames Iranian hackers for supermarket attacks that sparked fires",
    "lien": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
@@ -609,30 +686,6 @@
    "cve": []
   },
   {
-   "titre": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
-   "lien": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-07T00:00:55+00:00",
-   "resume": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
-   "lien": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-06T22:27:25+00:00",
-   "resume": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
    "lien": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
    "source": "Dark Reading",
@@ -643,30 +696,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
-   "lien": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-06T20:24:19+00:00",
-   "resume": "OpenAI has revealed GPT-6 Cyber, a new artificial intelligence model that has discovered 81 previously unknown high-severity Firefox vulnerabilities and developed working exploits for 948 distinct Linux kernel flaws. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Fake security tools on GitHub push backdoors and infostealers",
-   "lien": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-06T18:46:52+00:00",
-   "resume": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]",
-   "tags": [],
    "cve": []
   },
   {
@@ -2079,45 +2108,6 @@
    "cve": []
   },
   {
-   "titre": "So Many AI Security Benchmarks, but None Tell the Whole Story",
-   "lien": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-27T00:26:50+00:00",
-   "resume": "Measuring artificial intelligence model security gets complex, fast, thanks to a growing patchwork of benchmarks targeting different variables in the equation. But none replace testing against your own code and workflows.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Risks & Rewards: How AI Is Redefining the CISO's Role",
-   "lien": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-26T21:44:33+00:00",
-   "resume": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
-   "lien": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-26T20:59:26+00:00",
-   "resume": "A new AI agent prompt injection technique exploits how coding assistants consume local instruction files, blurring the line between text documents and executable actions.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "[Màj] Multiples vulnérabilités dans PHP (21 octobre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/",
    "source": "CERT-FR — Alertes",
@@ -2192,6 +2182,42 @@
   }
  ],
  "kev": [
+  {
+   "cve": "CVE-2026-102895",
+   "editeur": "GPUStack",
+   "produit": "GPUStack",
+   "nom": "GPUStack Improper Authentication Vulnerability",
+   "date": "2026-11-09T00:00:00+00:00",
+   "echeance": "2026-11-12",
+   "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895"
+  },
+  {
+   "cve": "CVE-2026-123158",
+   "editeur": "OpenBSD",
+   "produit": "OpenSSH",
+   "nom": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+   "date": "2026-11-09T00:00:00+00:00",
+   "echeance": "2026-11-12",
+   "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158"
+  },
+  {
+   "cve": "CVE-2026-116779",
+   "editeur": "SignalWire",
+   "produit": "FreeSwitch",
+   "nom": "SignalWire FreeSwitch Code Injection Vulnerability",
+   "date": "2026-11-09T00:00:00+00:00",
+   "echeance": "2026-11-12",
+   "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779"
+  },
   {
    "cve": "CVE-2026-19868",
    "editeur": "SonicWall",
