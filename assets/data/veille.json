@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-11T15:21:17+00:00",
+ "genere_le": "2026-11-11T22:45:05+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 173,
-  "ia": 41,
+  "ia": 43,
   "kev": 40,
   "kev_ia": 0
  },
@@ -110,6 +110,126 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
+   "lien": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-11T21:44:04+00:00",
+   "resume": "Researchers dubbed an attack chain \"Greeter\" after discovering that attackers deliberately covered their trail by leaving \"hello\" messages in logs.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "eMudhra revokes 8 more CA certificates after private key mishap",
+   "lien": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-11T21:27:40+00:00",
+   "resume": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "AI Raises the Stakes for Cyber Resilience",
+   "lien": "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-11T21:20:41+00:00",
+   "resume": "An organization's ability to quickly recover from a business disruption will be a competitive advantage in an era of AI-driven threats and business enablement.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Notion says Fireworks breach exposed customer AI chat transcripts",
+   "lien": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-11T20:54:20+00:00",
+   "resume": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
+   "lien": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-11T20:05:18+00:00",
+   "resume": "The RMM provider also released a hotfix as one of recommended mitigations to address public exploits for the alleged zero-days that allow for attacker takeover.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online",
+   "lien": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-11T16:29:42+00:00",
+   "resume": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense strategies defining the modern enterprise. The post Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
+   "lien": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-11T16:24:18+00:00",
+   "resume": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+   "lien": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-11T16:12:46+00:00",
+   "resume": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-2026-108186 (CVSS score: 9.6) - An improper input validation…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-108186"
+   ]
+  },
+  {
+   "titre": "Critical Xen Orchestra Flaws Exploited in Attacks",
+   "lien": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-11T15:42:47+00:00",
+   "resume": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in Attacks appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+   "lien": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-11T15:34:27+00:00",
+   "resume": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
    "lien": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
@@ -324,17 +444,6 @@
    ]
   },
   {
-   "titre": "Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD",
-   "lien": "https://www.securityweek.com/chipmaker-patch-tuesday-over-200-vulnerabilities-addressed-by-intel-amd/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-11T08:42:44+00:00",
-   "resume": "Intel and AMD disclose more than 200 vulnerabilities, including critical flaws in Intel TDX software and numerous AMD graphics bugs. The post Chipmaker Patch Tuesday: Over 200 Vulnerabilities Addressed by Intel, AMD appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
    "lien": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
    "source": "The Hacker News",
@@ -342,17 +451,6 @@
    "langue": "en",
    "date": "2026-11-11T08:17:53+00:00",
    "resume": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws. These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools,…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Recently Patched Barracuda Vulnerabilities Exploited in Attacks",
-   "lien": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-11T07:53:51+00:00",
-   "resume": "The security defects could allow attackers to bypass authorization and gain root access to devices. The post Recently Patched Barracuda Vulnerabilities Exploited in Attacks appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -582,17 +680,6 @@
    "cve": []
   },
   {
-   "titre": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
-   "lien": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-10T16:17:16+00:00",
-   "resume": "A critical authentication bypass vulnerability in Xen Orchestra is being actively exploited in attacks that could grant administrator privileges and allow takeover of XCP-ng virtualization hosts. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
    "lien": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
    "source": "The Hacker News",
@@ -607,17 +694,6 @@
     "CVE-2026-105133",
     "CVE-2026-105134"
    ]
-  },
-  {
-   "titre": "Binance warns of iOS flaw that could leak crypto wallet secrets",
-   "lien": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-10T15:59:19+00:00",
-   "resume": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials. [...]",
-   "tags": [],
-   "cve": []
   },
   {
    "titre": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
@@ -641,17 +717,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Ransomware recovery is now a client retention metric",
-   "lien": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-10T15:01:11+00:00",
-   "resume": "Recovering from ransomware doesn't guarantee an MSP will retain its clients, especially when delays, poor communication, and unexpected costs undermine trust. Kaseya examines how disconnected recovery tools create these problems and how integrated workflows can improve response times, transparency,…",
-   "tags": [],
    "cve": []
   },
   {
@@ -1674,28 +1739,6 @@
    "cve": []
   },
   {
-   "titre": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
-   "lien": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-05T14:41:10+00:00",
-   "resume": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster,…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out",
-   "lien": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-05T12:25:00+00:00",
-   "resume": "A critical finding can move through several security tools and still leave the organization exposed. The vulnerability has a severity score, and a ticket has reached the queue. Progress then depends on information the finding may lack: who owns the system, whether attackers can reach it, what…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "[MàJ] Vulnérabilité dans OpenSSH (05 novembre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/",
    "source": "CERT-FR — Alertes",
@@ -2121,30 +2164,6 @@
    "cve": []
   },
   {
-   "titre": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
-   "lien": "https://www.darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-29T10:00:00+00:00",
-   "resume": "The enigmatic service is providing popular AI coding tools to mainland China and other regions where OpenAI and Anthropic products are not officially for sale — but with key security features turned off.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
-   "lien": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-29T08:00:00+00:00",
-   "resume": "Researchers can't quite explain why cyber threats look so different in Italy compared with everywhere else.",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Multiples vulnérabilités dans WordPress (29 octobre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1420/",
    "source": "CERT-FR — Avis de sécurité",
@@ -2155,17 +2174,6 @@
    "tags": [
     "faille"
    ],
-   "cve": []
-  },
-  {
-   "titre": "GhostAction Hacking Wave Fizzles, but Attackers Lurk on in GitHub",
-   "lien": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-28T19:39:00+00:00",
-   "resume": "The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit.",
-   "tags": [],
    "cve": []
   },
   {
