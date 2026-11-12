@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-12T03:52:04+00:00",
+ "genere_le": "2026-11-12T12:51:14+00:00",
  "fenetre_jours": 30,
  "compteurs": {
-  "articles": 173,
-  "ia": 44,
+  "articles": 175,
+  "ia": 40,
   "kev": 38,
   "kev_ia": 0
  },
@@ -54,7 +54,7 @@
    "site": "https://www.lemondeinformatique.fr",
    "cat": "actu",
    "ok": true,
-   "nb": 4,
+   "nb": 6,
    "erreur": "",
    "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml"
   },
@@ -110,6 +110,260 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Microsoft: Recent Windows updates cause SQL Server performance issues",
+   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-sql-server-performance-issues/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-12T12:11:11+00:00",
+   "resume": "Microsoft has confirmed that Windows updates released since the October 2026 Patch Tuesday are causing SQL Server performance and stability issues. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
+   "lien": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T12:09:14+00:00",
+   "resume": "Google Cloud VMs on AMD Turin chips need a guest OS patch and a stop-and-start to protect against three CPU side-channel flaws, Google said this week. The company has already applied mitigations against attacks between VMs, and between VMs and the host. Inside a VM, the flaws may let an attacker…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
+   "lien": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T12:02:51+00:00",
+   "resume": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
+   "lien": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T11:51:43+00:00",
+   "resume": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. \"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
+   "lien": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T11:51:31+00:00",
+   "resume": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose. The Threat Research team at Material Security spotted the campaign and…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
+   "lien": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T11:33:15+00:00",
+   "resume": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-126325"
+   ]
+  },
+  {
+   "titre": "Notion Customer Data Compromised in Fireworks AI Hack",
+   "lien": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-12T11:08:52+00:00",
+   "resume": "The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. Most transcripts were unattributable. The post Notion Customer Data Compromised in Fireworks AI Hack appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Inside an AI Attack Against a US Retailer",
+   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-12T11:00:00+00:00",
+   "resume": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Zoom Workplace : une faille critique et une faille élevée corrigées sous Windows",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/zoom-workplace-une-faille-critique-et-une-faille-e",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-12T10:46:15+00:00",
+   "resume": "Zoom a publié des correctifs pour deux vulnérabilités affectant Workplace sous Windows, dont une faille critique d’élévation de privilèges notée 9,6 sur l’échelle CVSS. Référencées CVE-2026-108186 et CVE-2026-108187, elles pourraient permettre à un attaquant non authentifié d’obtenir des privilèges…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-108186",
+    "CVE-2026-108187"
+   ]
+  },
+  {
+   "titre": "Hackers Deploy Malware in Fresh ScreenConnect Campaign",
+   "lien": "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-12T10:39:34+00:00",
+   "resume": "The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication. The post Hackers Deploy Malware in Fresh ScreenConnect Campaign appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Microsoft confirms Windows security updates installation issues",
+   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-12T10:24:07+00:00",
+   "resume": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
+   "lien": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-12T09:39:55+00:00",
+   "resume": "The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones. The post Hackers Target N-central Zero-Days as N-able Rushes Patches appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Hackers plant GSocket on Linux servers for persistent access",
+   "lien": "https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-12T09:38:00+00:00",
+   "resume": "Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+   "lien": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T09:25:00+00:00",
+   "resume": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-118383"
+   ]
+  },
+  {
+   "titre": "Critical Red Hat Quay Vulnerability Could Expose Private Container Images",
+   "lien": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-12T09:23:21+00:00",
+   "resume": "Attackers could exploit a critical Red Hat Quay flaw to steal private container images, overwrite repositories and maintain persistent access. The post Critical Red Hat Quay Vulnerability Could Expose Private Container Images appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Maersk Confirms Data Theft Amid $5 Million Extortion Attempt",
+   "lien": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-12T08:38:47+00:00",
+   "resume": "The WhiteArmor ransomware group claims it stole 100GB of data from the shipping giant’s systems. The post Maersk Confirms Data Theft Amid $5 Million Extortion Attempt appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+   "lien": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T08:20:37+00:00",
+   "resume": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Grok Build : plus de 35 000 applications IA accessibles sans authentification",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/grok-build-plus-de-35-000-applications-ia-accessib",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-12T07:45:45+00:00",
+   "resume": "Une étude de la société de cybersécurité Claroc révèle d’importants défauts de confidentialité dans des applications créées avec Grok Build, l’outil de création d’applications assistée par IA de SpaceXSI, l’éditeur de Grok anciennement appelé xAI. Sur les 37 571 applications actives examinées, 35…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+   "lien": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T06:42:47+00:00",
+   "resume": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+   "lien": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T05:12:26+00:00",
+   "resume": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-119618"
+   ]
+  },
+  {
+   "titre": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
+   "lien": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-12T04:39:48+00:00",
+   "resume": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a…",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
    "lien": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
@@ -371,19 +625,6 @@
    "cve": []
   },
   {
-   "titre": "Fortinet Patches Nearly 100 Vulnerabilities",
-   "lien": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-11T12:10:14+00:00",
-   "resume": "The massive drop comes after the company integrated frontier AI models into its product security testing. The post Fortinet Patches Nearly 100 Vulnerabilities appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
    "lien": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
    "source": "The Hacker News",
@@ -408,19 +649,6 @@
    "cve": []
   },
   {
-   "titre": "Bay Raises $50 Million to Control What Enterprise AI Agents Can Do",
-   "lien": "https://www.securityweek.com/bay-raises-50-million-to-control-what-enterprise-ai-agents-can-do/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-11T11:30:00+00:00",
-   "resume": "Founded by three ex-IDF Unit 8200 intelligence officers, Bay is launched to provide a control plane for AI agents. The post Bay Raises $50 Million to Control What Enterprise AI Agents Can Do appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Microsoft fixes audio issues caused by September security updates",
    "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-usb-audio-issues-caused-by-september-security-updates/",
    "source": "BleepingComputer",
@@ -428,28 +656,6 @@
    "langue": "en",
    "date": "2026-11-11T11:18:36+00:00",
    "resume": "Microsoft says the November 2026 cumulative updates resolve USB audio issues plaguing Windows users who have installed security updates released since September. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks",
-   "lien": "https://www.securityweek.com/dreeze-emerges-from-stealth-with-33m-to-rebuild-cloud-apps-after-cyberattacks/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-11T11:16:40+00:00",
-   "resume": "Created by Zerto and Kashya veterans, the startup has launched a platform designed to recover whole cloud applications. The post Dreeze Emerges From Stealth With $33M to Rebuild Cloud Apps After Cyberattacks appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure",
-   "lien": "https://www.securityweek.com/ics-patch-tuesday-siemens-flags-high-severity-flaws-node2shell-exposure/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-11T10:35:15+00:00",
-   "resume": "Pre-Patch Tuesday advisories were published by VDE CERT, Phoenix Contact, Johnson Controls, and Hitachi Energy. The post ICS Patch Tuesday: Siemens Flags High-Severity Flaws, Node2Shell Exposure appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -474,22 +680,6 @@
    "resume": "Microsoft has fixed Outlook sign-in and mail delivery issues on Exchange Server systems after installing the October 2026 Windows Server security updates. [...]",
    "tags": [],
    "cve": []
-  },
-  {
-   "titre": "Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities",
-   "lien": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-11T09:01:07+00:00",
-   "resume": "The flaws, CVE-2026-111793 and CVE-2026-20320, let attackers leak sensitive information, including configuration data. The post Threat Actors Exploit Openwave, Cisco BroadWorks Vulnerabilities appeared first on SecurityWeek .",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-111793",
-    "CVE-2026-20320"
-   ]
   },
   {
    "titre": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
@@ -577,17 +767,6 @@
    "cve": []
   },
   {
-   "titre": "Japanese furniture giant Nitori says hackers stole 37.6M customer records",
-   "lien": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-10T20:54:55+00:00",
-   "resume": "Nitori, a major Japanese furniture and home accessories retailer, discovered that an attacker accessed a system on its network and may have stolen 37.62 million customer records. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
    "lien": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
    "source": "Dark Reading",
@@ -621,28 +800,6 @@
    "langue": "en",
    "date": "2026-11-10T20:18:43+00:00",
    "resume": "Cloud Range's free 28-question OT Cyber Readiness Assessment helps organizations identify gaps in operational technology (OT) incident response.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Microsoft releases Windows 10 KB5131096 extended security update",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-10T20:04:36+00:00",
-   "resume": "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Hackers exploit trusted AWS access to breach multiple cloud environments",
-   "lien": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-10T19:31:11+00:00",
-   "resume": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments. [...]",
    "tags": [],
    "cve": []
   },
@@ -1402,34 +1559,6 @@
    "cve": []
   },
   {
-   "titre": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
-   "lien": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-06T15:21:49+00:00",
-   "resume": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-123158"
-   ]
-  },
-  {
-   "titre": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
-   "lien": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-06T14:58:32+00:00",
-   "resume": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is \"more capable at finding and fixing vulnerabilities, and far more…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Why Europe's Freezer Hacks Spread So Far, So Fast",
    "lien": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
    "source": "Dark Reading",
@@ -1437,45 +1566,6 @@
    "langue": "en",
    "date": "2026-11-06T14:00:00+00:00",
    "resume": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
-   "lien": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-06T12:06:43+00:00",
-   "resume": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates. The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today. The…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-83844"
-   ]
-  },
-  {
-   "titre": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
-   "lien": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-06T12:06:35+00:00",
-   "resume": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "The Flood is Coming And The Pipes Were Already Full",
-   "lien": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-06T11:30:00+00:00",
-   "resume": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what…",
    "tags": [],
    "cve": []
   },
@@ -1490,41 +1580,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
-   "lien": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-06T08:04:49+00:00",
-   "resume": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. \"While we investigated, we removed access to Reactor and Data Solutions,\" the company…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
-   "lien": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-06T05:58:54+00:00",
-   "resume": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
-   "lien": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-06T05:39:10+00:00",
-   "resume": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw,…",
-   "tags": [],
    "cve": []
   },
   {
@@ -1735,30 +1790,6 @@
    "langue": "en",
    "date": "2026-11-05T16:48:36+00:00",
    "resume": "The ungated resource explains how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
-   "lien": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-05T16:42:46+00:00",
-   "resume": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
-   "lien": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-05T16:42:32+00:00",
-   "resume": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration…",
    "tags": [
     "ia"
    ],
@@ -2147,19 +2178,6 @@
    "langue": "en",
    "date": "2026-10-29T20:15:37+00:00",
    "resume": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Why CTF Competitions May Be More Important Than Ever",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-29T19:56:44+00:00",
-   "resume": "As artificial intelligence squeezes early-career learning opportunities, capture-the-flag contests could be one way to help pick up the slack.",
    "tags": [
     "ia"
    ],
