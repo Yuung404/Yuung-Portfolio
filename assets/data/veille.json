@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-11T22:45:05+00:00",
+ "genere_le": "2026-11-12T03:52:04+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 173,
-  "ia": 43,
-  "kev": 40,
+  "ia": 44,
+  "kev": 38,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,60 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 40,
+   "nb": 38,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
+   "lien": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-12T01:00:00+00:00",
+   "resume": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-12T00:00:00+00:00",
+   "resume": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Baker Tilly notifies clients of data breach at third-party provider",
+   "lien": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-11T23:01:31+00:00",
+   "resume": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+   "lien": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-11T22:56:21+00:00",
+   "resume": "ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices. [...]",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
    "lien": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
@@ -623,17 +671,6 @@
    "cve": []
   },
   {
-   "titre": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-10T19:07:36+00:00",
-   "resume": "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "AI Coding Agents Leak Thousands of Secrets to GitHub",
    "lien": "https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github",
    "source": "Dark Reading",
@@ -644,17 +681,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Windows 11 KB5132061 & KB5131087 cumulative updates released",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-10T18:33:26+00:00",
-   "resume": "Microsoft has released the Patch Tuesday Windows 11 and cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new features. [...]",
-   "tags": [],
    "cve": []
   },
   {
@@ -2140,30 +2166,6 @@
    "cve": []
   },
   {
-   "titre": "Claude Model Builds Exploits Across Major Browsers & OSes",
-   "lien": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-29T18:15:59+00:00",
-   "resume": "An unreleased version of the AI model has found and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux, Anthropic says.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Threat Modeling With 4 Simple Questions on a White Board",
-   "lien": "https://www.darkreading.com/cyber-risk/threat-modeling-4-simple-questions",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-29T15:44:04+00:00",
-   "resume": "A four-question exercise that CISOs can use to create a threat model that promises results, without a big spend.",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Multiples vulnérabilités dans WordPress (29 octobre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1420/",
    "source": "CERT-FR — Avis de sécurité",
@@ -2680,30 +2682,6 @@
    "rancongiciel": false,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
-  },
-  {
-   "cve": "CVE-2026-104935",
-   "editeur": "Ivanti",
-   "produit": "Connect Secure",
-   "nom": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-   "date": "2026-10-13T00:00:00+00:00",
-   "echeance": "2026-10-16",
-   "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935"
-  },
-  {
-   "cve": "CVE-2026-96951",
-   "editeur": "Microsoft",
-   "produit": "Windows",
-   "nom": "Microsoft Windows Command Injection Vulnerability",
-   "date": "2026-10-13T00:00:00+00:00",
-   "echeance": "2026-10-16",
-   "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951"
   }
  ]
 }
