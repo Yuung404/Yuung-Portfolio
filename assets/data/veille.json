@@ -1,8 +1,8 @@
 {
- "genere_le": "2026-11-13T01:54:08+00:00",
+ "genere_le": "2026-11-13T09:39:35+00:00",
  "fenetre_jours": 30,
  "compteurs": {
-  "articles": 173,
+  "articles": 174,
   "ia": 36,
   "kev": 34,
   "kev_ia": 0
@@ -54,7 +54,7 @@
    "site": "https://www.lemondeinformatique.fr",
    "cat": "actu",
    "ok": true,
-   "nb": 6,
+   "nb": 7,
    "erreur": "",
    "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml"
   },
@@ -111,6 +111,135 @@
  ],
  "articles": [
   {
+   "titre": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
+   "lien": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-13T09:36:56+00:00",
+   "resume": "Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. The post Citrix Patches 10 Critical NetScaler Vulnerabilities appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Microsoft confirms Windows activation failures after November updates",
+   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-13T09:36:18+00:00",
+   "resume": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
+   "lien": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-13T09:21:01+00:00",
+   "resume": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches. The post OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
+   "lien": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-13T08:50:36+00:00",
+   "resume": "It abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process. The post Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’ appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Police arrest 354 suspects in dark web cybercrime crackdown",
+   "lien": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-13T08:34:20+00:00",
+   "resume": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
+   "lien": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-13T08:05:49+00:00",
+   "resume": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point,…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
+   "lien": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-13T07:39:04+00:00",
+   "resume": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root. The post PHP2Shell Exploited in Destructive Check Point Gateway Attacks appeared first on SecurityWeek .",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-123039"
+   ]
+  },
+  {
+   "titre": "Hackers Exploit New N-central Zero-Day Hours After PoC Publication",
+   "lien": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-13T07:20:50+00:00",
+   "resume": "Dubbed 4EverAble2Shell, the flaw could allow remote, unauthenticated attackers to execute code with root privileges. The post Hackers Exploit New N-central Zero-Day Hours After PoC Publication appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Cybersécurité : OpenAI enrichit Daybreak de deux outils d’IA pour traquer les failles",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cybersecurite-openai-enrichit-daybreak-de-deux-out",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-13T06:37:37+00:00",
+   "resume": "OpenAI étoffe sa plateforme de cybersécurité Daybreak avec deux solutions reposant sur des agents d’intelligence artificielle. Présentés le 12 novembre 2026, Daybreak Red Team et Daybreak Defense Factory visent respectivement à automatiser les tests d’intrusion et à accélérer la préparation des…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+   "lien": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-13T05:43:28+00:00",
+   "resume": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+   "lien": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-13T02:28:21+00:00",
+   "resume": "Also Thursday, the FBI blamed North Korea for a separate social engineering scheme that officials say resulted in the theft of $400 million worth of cryptocurrency. The post FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
    "titre": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
    "lien": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
    "source": "BleepingComputer",
@@ -118,6 +247,17 @@
    "langue": "en",
    "date": "2026-11-12T22:53:10+00:00",
    "resume": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Getting Past the Post-Quantum Cryptography Discovery Phase",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-12T22:46:05+00:00",
+   "resume": "Most organizations haven't sorted out their cryptographic estate enough to even know where they'd start with post-quantum cryptography (PQC).",
    "tags": [],
    "cve": []
   },
@@ -353,19 +493,6 @@
    "cve": []
   },
   {
-   "titre": "Daylight Lands $80 Million for AI-Powered Security Operations",
-   "lien": "https://www.securityweek.com/daylight-lands-80-million-for-ai-powered-security-operations/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-12T13:12:11+00:00",
-   "resume": "The company plans to accelerate product development, hire new talent, expand its US presence, and enter new markets. The post Daylight Lands $80 Million for AI-Powered Security Operations appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
    "lien": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
    "source": "The Hacker News",
@@ -436,19 +563,6 @@
    ]
   },
   {
-   "titre": "Notion Customer Data Compromised in Fireworks AI Hack",
-   "lien": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-12T11:08:52+00:00",
-   "resume": "The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. Most transcripts were unattributable. The post Notion Customer Data Compromised in Fireworks AI Hack appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Inside an AI Attack Against a US Retailer",
    "lien": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
    "source": "Dark Reading",
@@ -478,17 +592,6 @@
    ]
   },
   {
-   "titre": "Hackers Deploy Malware in Fresh ScreenConnect Campaign",
-   "lien": "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-12T10:39:34+00:00",
-   "resume": "The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication. The post Hackers Deploy Malware in Fresh ScreenConnect Campaign appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Microsoft confirms Windows security updates installation issues",
    "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
    "source": "BleepingComputer",
@@ -496,17 +599,6 @@
    "langue": "en",
    "date": "2026-11-12T10:24:07+00:00",
    "resume": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
-   "lien": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-12T09:39:55+00:00",
-   "resume": "The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones. The post Hackers Target N-central Zero-Days as N-able Rushes Patches appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -535,28 +627,6 @@
    "cve": [
     "CVE-2026-118383"
    ]
-  },
-  {
-   "titre": "Critical Red Hat Quay Vulnerability Could Expose Private Container Images",
-   "lien": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-12T09:23:21+00:00",
-   "resume": "Attackers could exploit a critical Red Hat Quay flaw to steal private container images, overwrite repositories and maintain persistent access. The post Critical Red Hat Quay Vulnerability Could Expose Private Container Images appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Maersk Confirms Data Theft Amid $5 Million Extortion Attempt",
-   "lien": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-12T08:38:47+00:00",
-   "resume": "The WhiteArmor ransomware group claims it stole 100GB of data from the shipping giant’s systems. The post Maersk Confirms Data Theft Amid $5 Million Extortion Attempt appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
   },
   {
    "titre": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
@@ -1021,17 +1091,6 @@
    "cve": []
   },
   {
-   "titre": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
-   "lien": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-11T22:56:21+00:00",
-   "resume": "ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "AIを活用したサイバー攻撃の増加を受け、日本がサイバーセキュリティへの緊急資金拠出を推進",
    "lien": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
    "source": "Dark Reading",
@@ -1050,17 +1109,6 @@
    "langue": "en",
    "date": "2026-11-11T21:44:04+00:00",
    "resume": "Researchers dubbed an attack chain \"Greeter\" after discovering that attackers deliberately covered their trail by leaving \"hello\" messages in logs.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "eMudhra revokes 8 more CA certificates after private key mishap",
-   "lien": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-11T21:27:40+00:00",
-   "resume": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process. [...]",
    "tags": [],
    "cve": []
   },
@@ -1831,28 +1879,6 @@
    "cve": []
   },
   {
-   "titre": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
-   "lien": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-09T10:56:25+00:00",
-   "resume": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
-   "lien": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-09T10:01:21+00:00",
-   "resume": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Multiples vulnérabilités dans les produits VMware (09 novembre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1486/",
    "source": "CERT-FR — Avis de sécurité",
@@ -2179,17 +2205,6 @@
    "langue": "en",
    "date": "2026-10-30T15:39:54+00:00",
    "resume": "I ricercatori non riescono a spiegare del tutto perché le minacce informatiche in Italia siano così diverse rispetto a quelle di qualsiasi altro Paese.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Undead Software Projects Continue to Raise Security Risks",
-   "lien": "https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-30T14:10:37+00:00",
-   "resume": "A security firm patched a decade-old app to prevent the takeover of millions of machines, highlighting that abandoned domains remain a boon to attackers.",
    "tags": [],
    "cve": []
   },
