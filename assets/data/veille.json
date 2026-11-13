@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-13T17:50:14+00:00",
+ "genere_le": "2026-11-13T23:38:54+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 175,
   "ia": 41,
-  "kev": 34,
+  "kev": 36,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,47 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 34,
+   "nb": 36,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’",
+   "lien": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-13T21:33:27+00:00",
+   "resume": "Federal officials have yet to say what caused the communications disruption or whether they are investigating a possible cyberattack. The post FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’ appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
+   "lien": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-13T20:20:27+00:00",
+   "resume": "The Android malware has expanded from focusing on crypto theft to full device control, and the attackers have added advanced analysis of stolen information.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
+   "lien": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-13T19:38:36+00:00",
+   "resume": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "German military drone operations disrupted by cyberattack",
    "lien": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
@@ -411,17 +446,6 @@
    "cve": [
     "CVE-2026-123039"
    ]
-  },
-  {
-   "titre": "Hackers Exploit New N-central Zero-Day Hours After PoC Publication",
-   "lien": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-13T07:20:50+00:00",
-   "resume": "Dubbed 4EverAble2Shell, the flaw could allow remote, unauthenticated attackers to execute code with root privileges. The post Hackers Exploit New N-central Zero-Day Hours After PoC Publication appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
   },
   {
    "titre": "Cybersécurité : OpenAI enrichit Daybreak de deux outils d’IA pour traquer les failles",
@@ -808,17 +832,6 @@
    "langue": "en",
    "date": "2026-11-12T15:07:20+00:00",
    "resume": "Europol and law enforcement partners from nine countries have seized hundreds of servers and domains used by the Gootloader, CastleRAT, and StealC malware operations. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Your Endpoint Management Platform Could Be Your Biggest Security Risk",
-   "lien": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-12T15:00:10+00:00",
-   "resume": "Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint…",
    "tags": [],
    "cve": []
   },
@@ -2212,19 +2225,6 @@
    "cve": []
   },
   {
-   "titre": "Devs Hit by Trojanized Claude Code Extension for Cursor",
-   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-30T20:05:58+00:00",
-   "resume": "Two serious security issues hit Cursor on the same day, highlighting the risks for AI-powered integrated development environments (IDEs).",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "[Màj] Multiples vulnérabilités dans PHP (21 octobre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/",
    "source": "CERT-FR — Alertes",
@@ -2241,6 +2241,30 @@
   }
  ],
  "kev": [
+  {
+   "cve": "CVE-2026-114713",
+   "editeur": "UnrealIRCd",
+   "produit": "UnrealIRCd",
+   "nom": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+   "date": "2026-11-13T00:00:00+00:00",
+   "echeance": "2026-11-16",
+   "description": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713"
+  },
+  {
+   "cve": "CVE-2026-123039",
+   "editeur": "Check Point",
+   "produit": "Multiple Products",
+   "nom": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+   "date": "2026-11-13T00:00:00+00:00",
+   "echeance": "2026-11-16",
+   "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command…",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039"
+  },
   {
    "cve": "CVE-2026-124194",
    "editeur": "Microsoft",
