@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-12T20:53:51+00:00",
+ "genere_le": "2026-11-13T01:54:08+00:00",
  "fenetre_jours": 30,
  "compteurs": {
-  "articles": 175,
-  "ia": 38,
-  "kev": 38,
+  "articles": 173,
+  "ia": 36,
+  "kev": 34,
   "kev_ia": 0
  },
  "sources": [
@@ -64,7 +64,7 @@
    "site": "https://embracethered.com",
    "cat": "ia",
    "ok": true,
-   "nb": 1,
+   "nb": 0,
    "erreur": "",
    "url": "https://embracethered.com/blog/index.xml"
   },
@@ -84,7 +84,7 @@
    "site": "https://cert.cyber.gouv.fr/alerte/",
    "cat": "alerte",
    "ok": true,
-   "nb": 3,
+   "nb": 2,
    "erreur": "",
    "url": "https://cert.cyber.gouv.fr/alerte/feed/"
   },
@@ -104,12 +104,58 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 38,
+   "nb": 34,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
+   "lien": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-12T22:53:10+00:00",
+   "resume": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
+   "lien": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-12T22:25:30+00:00",
+   "resume": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Cyber Experts Weigh In: How to Fight Artex & AntiFox",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-12T21:18:52+00:00",
+   "resume": "Cybercriminals using agentic pen-testing tools is a proverbial genie out of the bottle at this point, so enterprises need to get a defense plan in place right away.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams",
+   "lien": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-12T20:55:30+00:00",
+   "resume": "Microsoft says failed server health checks disrupted Outlook and other Microsoft 365 services. The company is still investigating the cause and has disclosed no evidence of a cyberattack. The post Microsoft 365 Outage Disrupts Outlook, Exchange Online and Teams appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Massive Microsoft 365 outage disrupts Outlook, Teams, Copilot worldwide",
    "lien": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/",
@@ -130,7 +176,7 @@
    "source_id": "darkreading",
    "langue": "en",
    "date": "2026-11-12T20:09:41+00:00",
-   "resume": "The cybercriminals are re-targeting law firms that refused to pay its first ransom, with a social engineering con aimed at stealing Microsoft access tokens.",
+   "resume": "The cybercriminals are retargeting law firms that refused to pay its first ransom, with a social engineering con aimed at stealing Microsoft access tokens.",
    "tags": [],
    "cve": []
   },
@@ -986,6 +1032,17 @@
    "cve": []
   },
   {
+   "titre": "AIを活用したサイバー攻撃の増加を受け、日本がサイバーセキュリティへの緊急資金拠出を推進",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-11T22:14:44+00:00",
+   "resume": "この対策パッケージには、官民合同のサイバー対応チーム、経済省が主導するAI専門チーム、および政府の新たな能動的サイバー防衛権限の行使に関する裁量の拡大が含まれている。",
+   "tags": [],
+   "cve": []
+  },
+  {
    "titre": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
    "lien": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
    "source": "Dark Reading",
@@ -1021,19 +1078,6 @@
    "cve": []
   },
   {
-   "titre": "Notion says Fireworks breach exposed customer AI chat transcripts",
-   "lien": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-11T20:54:20+00:00",
-   "resume": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
    "lien": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
    "source": "Dark Reading",
@@ -1041,28 +1085,6 @@
    "langue": "en",
    "date": "2026-11-11T20:05:18+00:00",
    "resume": "The RMM provider also released a hotfix as a recommended mitigation to address public exploits for the alleged zero-days, which allow for attacker takeover.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online",
-   "lien": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-11T16:29:42+00:00",
-   "resume": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense strategies defining the modern enterprise. The post Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-   "lien": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-11T16:24:18+00:00",
-   "resume": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]",
    "tags": [],
    "cve": []
   },
@@ -2172,30 +2194,6 @@
    "cve": []
   },
   {
-   "titre": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
-   "lien": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-30T08:00:00+00:00",
-   "resume": "The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
-   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-10-29T21:21:56+00:00",
-   "resume": "Obvious phishing emails with numerous red flags are somehow getting past some of the industry-leading secure email gateway (SEG) products.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "[Màj] Multiples vulnérabilités dans PHP (21 octobre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/",
    "source": "CERT-FR — Alertes",
@@ -2208,38 +2206,6 @@
    ],
    "cve": [
     "CVE-2026-115560"
-   ]
-  },
-  {
-   "titre": "[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure (ICS) (14 octobre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-013/",
-   "source": "CERT-FR — Alertes",
-   "source_id": "certfr-alerte",
-   "langue": "fr",
-   "date": "2026-10-14T00:00:00+00:00",
-   "resume": "[Mise à jour du 2 novembre 2026] Le 29 octobre 2026, Ivanti a mis à jour son avis de sécurité du 13 octobre 2026 pour ajouter deux vulnérabilités (CVE-2026-111357 et CVE-2026-118527). Celles-ci permettent à un attaquant authentifié d'élever ses privilèges et de téléverser un fichier arbitraire...",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-111357",
-    "CVE-2026-118527"
-   ]
-  },
-  {
-   "titre": "Visual Studio Copilot and SSMS Remote Code Execution (CVE-2026-103572)",
-   "lien": "https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/",
-   "source": "Embrace The Red",
-   "source_id": "embracethered",
-   "langue": "en",
-   "date": "2026-10-13T22:00:40+00:00",
-   "resume": "A . is all you need! Today Microsoft shipped the patch for a vulnerability in Visual Studio Copilot that I reported in August. Microsoft classified it as Important severity Remote Code Execution vulnerability. At the root cause it allows Copilot in Visual Studio or SQL Server Management Studio to…",
-   "tags": [
-    "ia",
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-103572"
    ]
   }
  ],
@@ -2651,54 +2617,6 @@
    "rancongiciel": false,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
-  },
-  {
-   "cve": "CVE-2026-105134",
-   "editeur": "Ahsay",
-   "produit": "AhsayCBS",
-   "nom": "Ahsay AhsayCBS Command Injection Vulnerability",
-   "date": "2026-10-14T00:00:00+00:00",
-   "echeance": "2026-10-17",
-   "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134"
-  },
-  {
-   "cve": "CVE-2026-76519",
-   "editeur": "Cisco",
-   "produit": "Secure Email Gateway",
-   "nom": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-   "date": "2026-10-14T00:00:00+00:00",
-   "echeance": "2026-10-17",
-   "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519"
-  },
-  {
-   "cve": "CVE-2026-105133",
-   "editeur": "Ahsay",
-   "produit": "AhsayCBS",
-   "nom": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-   "date": "2026-10-14T00:00:00+00:00",
-   "echeance": "2026-10-17",
-   "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with CVE-2026-105134.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133"
-  },
-  {
-   "cve": "CVE-2026-0322",
-   "editeur": "Palo Alto Networks",
-   "produit": "PAN-OS",
-   "nom": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-   "date": "2026-10-14T00:00:00+00:00",
-   "echeance": "2026-10-17",
-   "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322"
   }
  ]
 }
