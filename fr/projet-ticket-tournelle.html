@@ -56,7 +56,7 @@
 
             <div class="card pj-meta-item">
               <span class="pj-meta-lbl">// STATUT</span>
-              <span class="pj-status st-progress">⟳ EN COURS</span>
+              <span class="pj-status st-progress">⟳ VERSION CANDIDATE v1.0.0-rc1</span>
             </div>
 
             <div class="card pj-meta-item">
@@ -73,7 +73,7 @@
             </div>
             <div class="card pj-meta-item">
               <span class="pj-meta-lbl">// STACK</span>
-              <span class="pj-meta-val">Debian 13, Apache 2.4, PHP 8.4, MariaDB, PDO</span>
+              <span class="pj-meta-val">Debian 13, Apache 2.4, PHP 8.4 sans framework, MariaDB, PDO, Playwright</span>
             </div>
             <div class="card pj-meta-item">
               <span class="pj-meta-lbl">// INFRA</span>
@@ -97,8 +97,12 @@
       <div class="pj-section rv">
         <h3>CE QUE J'AI RÉALISÉ</h3>
         <p><strong style="color:var(--g3);">1. Cahier des charges et maquettes</strong><br>Analyse des besoins, cahier des charges, user stories, cycle de vie d'un ticket (ouvert, pris en charge, en attente, résolu, clos), catégories et priorités, puis 12 maquettes d'écrans pour les trois rôles : utilisateur, technicien et administrateur.</p>
-        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Base de données</strong><br>MCD et MLD, puis <strong style="color:var(--g3);">13 tables</strong> MariaDB avec contraintes et index, et <strong style="color:var(--g3);">5 vues SQL</strong> pour les indicateurs. J'ai ajouté 4 tables justifiées par le cahier des charges : salles, transitions de statut autorisées (un changement non prévu est refusé), réinitialisation du mot de passe à usage unique, journal de sécurité. Libellés bilingues, empreintes <code style="color:var(--g4);">Argon2id</code>, comptes désactivés et non supprimés, compte SQL applicatif à privilèges minimaux.</p>
-        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. Serveur web interne</strong><br>VM Debian 13 sans interface graphique, root désactivé au profit d'un compte nominatif sudo. Toute l'installation est automatisée dans <code style="color:var(--g4);">provision.sh</code>, rejouable : Apache et PHP 8.4, MariaDB qui n'écoute qu'en local, HTTPS en <code style="color:var(--g4);">TLS 1.2 / 1.3</code>, en-têtes de sécurité, pare-feu UFW (22, 80, 443), Fail2ban, SSH par clé, mises à jour de sécurité automatiques, sauvegarde de la base chaque nuit. Deux scripts de tests vérifient la base et la sécurité du serveur.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Base de données</strong><br>MCD et MLD, puis <strong style="color:var(--g3);">16 tables</strong> MariaDB avec contraintes et index, et <strong style="color:var(--g3);">5 vues SQL</strong> pour les indicateurs. Plusieurs tables sont justifiées par le cahier des charges (salles, transitions de statut autorisées, un changement non prévu étant refusé, réinitialisation du mot de passe à usage unique, journal de sécurité), et deux autres ont été ajoutées par migration pendant le développement, sans perte de données. Libellés bilingues, empreintes <code style="color:var(--g4);">Argon2id</code>, comptes désactivés et non supprimés, compte SQL applicatif à privilèges minimaux.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. Serveur web interne</strong><br>VM Debian 13 sans interface graphique, root désactivé au profit d'un compte nominatif sudo. Toute l'installation est automatisée dans <code style="color:var(--g4);">provision.sh</code>, rejouable : Apache et PHP 8.4, MariaDB qui n'écoute qu'en local, HTTPS en <code style="color:var(--g4);">TLS 1.2 / 1.3</code>, en-têtes de sécurité, pare-feu UFW (22, 80, 443), Fail2ban, SSH par clé, mises à jour de sécurité automatiques, sauvegarde de la base chaque nuit. Trois scripts de tests vérifient la base (24 contrôles), le serveur (48) et la restauration réelle d'une sauvegarde (9). Le déploiement d'une version se fait en une commande depuis le PC.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">4. Application</strong><br>PHP 8.4 sans framework, avec un routeur unique qui vérifie pour chaque page la méthode, le jeton CSRF, la session et le droit du rôle. Déclaration d'un incident avec photo contrôlée, file des techniciens triée par priorité, cycle de vie à 6 statuts, notes internes, notifications et mails dans la langue de chacun, tableau de bord dessiné en SVG côté serveur, administration des comptes par lien d'activation.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">5. Sécurité justifiée et prouvée</strong><br>Pour chaque mesure, la menace, la référence (OWASP Top 10, ANSSI, CNIL) et le test qui la prouve : requêtes préparées (sqlmap ne trouve rien à injecter), échappement et CSP stricte, jeton CSRF, verrouillage atomique après 5 échecs (même avec 12 essais envoyés au même instant), ticket d'autrui en 404, photo vérifiée par son contenu.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">6. Tests et triple vérification</strong><br>Lanceur de tests écrit pour le projet : <strong style="color:var(--g3);">285</strong> tests unitaires et fonctionnels, <strong style="color:var(--g3);">130</strong> contrôles dans un vrai navigateur (Playwright, FR, EN et mobile), <strong style="color:var(--g3);">30</strong> sur la connexion, <strong style="color:var(--g3);">81</strong> sur le serveur. Trois vérifications croisées (deux environnements, une relecture indépendante, un environnement neuf) ont trouvé <strong style="color:var(--g3);">23 anomalies</strong>, toutes corrigées avec un test de non-régression.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">7. Documentation et restitution</strong><br>Guide des personnels avec captures, documentation technique, dossier sécurité, cahier de recette, registres des anomalies et des échanges avec le MOA, fiche de situation professionnelle et compte rendu, rassemblés dans l'espace collaboratif. Restitution au MOA le 4 décembre 2026.</p>
       </div>
 
       <div class="pj-section rv">
@@ -117,17 +121,27 @@
           <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 4</div>
             <div style="font-size:.8rem;color:var(--g3);">✓ BASE DE DONNÉES</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">13 tables, 5 vues, jeu de test</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">16 tables, 5 vues, jeu de test</div>
           </div>
-          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 5</div>
-            <div style="font-size:.8rem;color:#ffcc44;">⟳ DÉVELOPPEMENT</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Authentification, tickets, rôles</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ DÉVELOPPEMENT</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">PHP 8.4 sans framework, 26 pages, FR / EN</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASES 6 À 8</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ SÉCURITÉ, TESTS, DOCS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Plus de 520 tests au vert, 23 anomalies corrigées</div>
           </div>
           <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
-            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASES 6 À 10</div>
-            <div style="font-size:.8rem;color:#ffcc44;">— À VENIR</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Sécurité, recette, production, restitution</div>
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 9</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ MISE EN PRODUCTION</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">v1.0.0-rc1 déployée sur le serveur de recette</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 10</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ RESTITUTION</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Présentation au MOA le 4 décembre 2026</div>
           </div>
         </div>
       </div>
@@ -135,7 +149,7 @@
       <div class="pj-section rv">
         <h3>COMPÉTENCES MOBILISÉES</h3>
         <p>
-          ▸ Analyse d'un besoin réel et rédaction d'un cahier des charges<br>▸ Conception de maquettes pour plusieurs profils d'utilisateurs<br>▸ Modélisation MCD/MLD et SQL avancé (contraintes, vues)<br>▸ Installation et durcissement d'un serveur Debian (ANSSI)<br>▸ Automatisation d'une installation par script Bash<br>▸ Gestion de projet en 10 phases sur Trello
+          ▸ Analyse d'un besoin réel et rédaction d'un cahier des charges<br>▸ Conception de maquettes pour plusieurs profils d'utilisateurs<br>▸ Modélisation MCD/MLD et SQL avancé (contraintes, vues)<br>▸ Installation et durcissement d'un serveur Debian (ANSSI)<br>▸ Automatisation d'une installation par script Bash<br>▸ Gestion de projet en 10 phases sur Trello<br>▸ Développement PHP sécurisé sans framework (OWASP)<br>▸ Tests automatisés, tests de bout en bout et recette<br>▸ Déploiement scripté et sauvegarde avec restauration testée<br>▸ Documentation pour les utilisateurs, l'administrateur et le jury
         </p>
       </div>
 
@@ -145,7 +159,7 @@
 
           <div class="card doc-item">
             <span class="doc-icon">📝</span>
-            <span class="doc-name">Compte rendu — Ticket'Tournelle (état au 5 novembre 2026)</span>
+            <span class="doc-name">Compte rendu — Ticket'Tournelle (état au 13 novembre 2026)</span>
             <span class="doc-size">~330 Ko</span>
             <button class="doc-link"
               onclick="openPDF('../assets/docs/projet-7/compte-rendu.pdf','Compte rendu Ticket'Tournelle')"

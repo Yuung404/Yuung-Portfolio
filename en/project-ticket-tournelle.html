@@ -56,7 +56,7 @@
 
             <div class="card pj-meta-item">
               <span class="pj-meta-lbl">// STATUS</span>
-              <span class="pj-status st-progress">⟳ IN PROGRESS</span>
+              <span class="pj-status st-progress">⟳ RELEASE CANDIDATE v1.0.0-rc1</span>
             </div>
 
             <div class="card pj-meta-item">
@@ -73,7 +73,7 @@
             </div>
             <div class="card pj-meta-item">
               <span class="pj-meta-lbl">// STACK</span>
-              <span class="pj-meta-val">Debian 13, Apache 2.4, PHP 8.4, MariaDB, PDO</span>
+              <span class="pj-meta-val">Debian 13, Apache 2.4, framework-free PHP 8.4, MariaDB, PDO, Playwright</span>
             </div>
             <div class="card pj-meta-item">
               <span class="pj-meta-lbl">// INFRA</span>
@@ -97,8 +97,12 @@
       <div class="pj-section rv">
         <h3>WHAT I BUILT</h3>
         <p><strong style="color:var(--g3);">1. Specification and mock-ups</strong><br>Needs analysis, specification, user stories, ticket lifecycle (open, assigned, on hold, resolved, closed), categories and priorities, then 12 screen mock-ups for the three roles: user, technician and administrator.</p>
-        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Database</strong><br>Conceptual and logical models, then <strong style="color:var(--g3);">13 MariaDB tables</strong> with constraints and indexes, and <strong style="color:var(--g3);">5 SQL views</strong> for the dashboard. I added 4 tables justified by the specification: rooms, allowed status transitions (any other change is rejected), one-time password reset, security log. Bilingual labels, <code style="color:var(--g4);">Argon2id</code> hashes, accounts disabled rather than deleted, least-privilege application SQL account.</p>
-        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. In-house web server</strong><br>Debian 13 VM with no desktop, root disabled in favour of a named sudo account. The whole setup is automated in a re-runnable <code style="color:var(--g4);">provision.sh</code>: Apache and PHP 8.4, MariaDB listening locally only, HTTPS with <code style="color:var(--g4);">TLS 1.2 / 1.3</code>, security headers, UFW firewall (22, 80, 443), Fail2ban, key-based SSH, automatic security updates, nightly database backup. Two test scripts check the database and the server's security.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Database</strong><br>Conceptual and logical models, then <strong style="color:var(--g3);">16 MariaDB tables</strong> with constraints and indexes, and <strong style="color:var(--g3);">5 SQL views</strong> for the dashboard. Several tables are justified by the specification (rooms, allowed status transitions so that any other change is rejected, one-time password reset, security log), and two more were added by migration during development without data loss. Bilingual labels, <code style="color:var(--g4);">Argon2id</code> hashes, accounts disabled rather than deleted, least-privilege application SQL account.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. In-house web server</strong><br>Debian 13 VM with no desktop, root disabled in favour of a named sudo account. The whole setup is automated in a re-runnable <code style="color:var(--g4);">provision.sh</code>: Apache and PHP 8.4, MariaDB listening locally only, HTTPS with <code style="color:var(--g4);">TLS 1.2 / 1.3</code>, security headers, UFW firewall (22, 80, 443), Fail2ban, key-based SSH, automatic security updates, nightly database backup. Three test scripts check the database (24 checks), the server (48) and an actual backup restore (9). A release is deployed from the PC with a single command.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">4. Application</strong><br>Framework-free PHP 8.4 with a single router that checks, for every page, the method, the CSRF token, the session and the role's permission. Incident reporting with a verified photo, technician queue sorted by priority, 6-status lifecycle, internal notes, notifications and e-mails in each user's language, server-side SVG dashboard, account administration through activation links.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">5. Justified, proven security</strong><br>For each measure: the threat, the reference (OWASP Top 10, ANSSI, CNIL) and the test that proves it. Prepared statements (sqlmap finds nothing injectable), output escaping and a strict CSP, CSRF tokens, atomic lockout after 5 failures (even with 12 attempts sent at the same instant), other users' tickets answer 404, photos checked by their content.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">6. Tests and triple verification</strong><br>A test runner written for the project: <strong style="color:var(--g3);">285</strong> unit and functional tests, <strong style="color:var(--g3);">130</strong> checks in a real browser (Playwright, French, English and mobile), <strong style="color:var(--g3);">30</strong> on login, <strong style="color:var(--g3);">81</strong> on the server. Three cross-checks (two environments, an independent review, a fresh environment) found <strong style="color:var(--g3);">23 defects</strong>, all fixed with a regression test.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">7. Documentation and hand-over</strong><br>Staff guide with screenshots, technical documentation, security file, acceptance test book, defect and client-exchange logs, professional situation sheet and project report, all gathered in the shared workspace. Hand-over to the client on 4 December 2026.</p>
       </div>
 
       <div class="pj-section rv">
@@ -117,17 +121,27 @@
           <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 4</div>
             <div style="font-size:.8rem;color:var(--g3);">✓ DATABASE</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">13 tables, 5 views, test data</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">16 tables, 5 views, test data</div>
           </div>
-          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
             <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 5</div>
-            <div style="font-size:.8rem;color:#ffcc44;">⟳ DEVELOPMENT</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Authentication, tickets, roles</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ DEVELOPMENT</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Framework-free PHP 8.4, 26 pages, FR / EN</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASES 6 TO 8</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ SECURITY, TESTS, DOCS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Over 520 passing tests, 23 defects fixed</div>
           </div>
           <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
-            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASES 6 TO 10</div>
-            <div style="font-size:.8rem;color:#ffcc44;">— UPCOMING</div>
-            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Security, testing, production, hand-over</div>
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 9</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ GO-LIVE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">v1.0.0-rc1 deployed on the staging server</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PHASE 10</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ HAND-OVER</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Presentation to the client on 4 December 2026</div>
           </div>
         </div>
       </div>
@@ -135,7 +149,7 @@
       <div class="pj-section rv">
         <h3>SKILLS DEMONSTRATED</h3>
         <p>
-          ▸ Analysing a real need and writing a specification<br>▸ Designing mock-ups for several user profiles<br>▸ Data modelling and advanced SQL (constraints, views)<br>▸ Installing and hardening a Debian server (ANSSI)<br>▸ Automating an installation with a Bash script<br>▸ Managing a 10-phase project on Trello
+          ▸ Analysing a real need and writing a specification<br>▸ Designing mock-ups for several user profiles<br>▸ Data modelling and advanced SQL (constraints, views)<br>▸ Installing and hardening a Debian server (ANSSI)<br>▸ Automating an installation with a Bash script<br>▸ Managing a 10-phase project on Trello<br>▸ Secure framework-free PHP development (OWASP)<br>▸ Automated, end-to-end and acceptance testing<br>▸ Scripted deployment and backups with tested restores<br>▸ Documentation for users, the administrator and the examiners
         </p>
       </div>
 
@@ -145,7 +159,7 @@
 
           <div class="card doc-item">
             <span class="doc-icon">📝</span>
-            <span class="doc-name">Report — Ticket'Tournelle (status at 5 November 2026, in French)</span>
+            <span class="doc-name">Report — Ticket'Tournelle (status at 13 November 2026, in French)</span>
             <span class="doc-size">~330 KB</span>
             <button class="doc-link"
               onclick="openPDF('../assets/docs/projet-7/compte-rendu.pdf','Ticket'Tournelle report')"
