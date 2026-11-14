@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-13T23:38:54+00:00",
+ "genere_le": "2026-11-14T06:37:29+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 175,
   "ia": 41,
-  "kev": 36,
+  "kev": 35,
   "kev_ia": 0
  },
  "sources": [
@@ -104,7 +104,7 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 36,
+   "nb": 35,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
@@ -2660,18 +2660,6 @@
    "rancongiciel": false,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
-  },
-  {
-   "cve": "CVE-2026-21589",
-   "editeur": "Atlassian",
-   "produit": "Multiple Products",
-   "nom": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-   "date": "2026-10-15T00:00:00+00:00",
-   "echeance": "2026-10-18",
-   "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in…",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589"
   }
  ]
 }
