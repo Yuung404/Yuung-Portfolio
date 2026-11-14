@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-14T14:14:35+00:00",
+ "genere_le": "2026-11-14T19:15:31+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 175,
-  "ia": 41,
+  "ia": 42,
   "kev": 35,
   "kev_ia": 0
  },
@@ -110,6 +110,43 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Cursor confirms security breach led to malicious Claude Code extension",
+   "lien": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-14T17:27:25+00:00",
+   "resume": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "US disrupts North Korean campaign behind $400 million crypto theft",
+   "lien": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-14T15:15:49+00:00",
+   "resume": "The U.S. government has disrupted a North Korean social engineering campaign called 'FaceStealer', responsible for stealing more than $400 million in cryptocurrency. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Is AI Making Us Worse at Cybersecurity?",
+   "lien": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-14T14:00:00+00:00",
+   "resume": "Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there’s no playbook. The post Is AI Making Us Worse at Cybersecurity? appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
    "lien": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
@@ -417,19 +454,6 @@
    "date": "2026-11-13T09:36:18+00:00",
    "resume": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes. [...]",
    "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
-   "lien": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-13T09:21:01+00:00",
-   "resume": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches. The post OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
    "cve": []
   },
   {
@@ -797,17 +821,6 @@
    "cve": []
   },
   {
-   "titre": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
-   "lien": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-12T16:04:00+00:00",
-   "resume": "Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
    "lien": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
    "source": "The Hacker News",
@@ -829,17 +842,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Police dismantle Gootloader, CastleRAT, StealC malware infrastructure",
-   "lien": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-12T15:07:20+00:00",
-   "resume": "Europol and law enforcement partners from nine countries have seized hundreds of servers and domains used by the Gootloader, CastleRAT, and StealC malware operations. [...]",
-   "tags": [],
    "cve": []
   },
   {
