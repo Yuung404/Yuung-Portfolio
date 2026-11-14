@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-14T06:37:29+00:00",
+ "genere_le": "2026-11-14T14:14:35+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 175,
@@ -110,6 +110,39 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+   "lien": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-14T12:38:35+00:00",
+   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability,…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
+   "lien": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-14T11:00:00+00:00",
+   "resume": "The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones. The post Apple Reveals How Secure Exclaves Shield Camera and Microphone Data appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update",
+   "lien": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-14T08:40:22+00:00",
+   "resume": "Officials say there is no evidence of a cyberattack behind the nationwide FAA outage, which may have been caused by a software update. The post No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’",
    "lien": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
@@ -400,17 +433,6 @@
    "cve": []
   },
   {
-   "titre": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
-   "lien": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-13T08:50:36+00:00",
-   "resume": "It abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process. The post Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’ appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Police arrest 354 suspects in dark web cybercrime crackdown",
    "lien": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
    "source": "BleepingComputer",
@@ -431,21 +453,6 @@
    "resume": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point,…",
    "tags": [],
    "cve": []
-  },
-  {
-   "titre": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
-   "lien": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-13T07:39:04+00:00",
-   "resume": "PHP2Shell enabled initial compromise, while CVE-2026-123039 allowed attackers to elevate privileges to root. The post PHP2Shell Exploited in Destructive Check Point Gateway Attacks appeared first on SecurityWeek .",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-123039"
-   ]
   },
   {
    "titre": "Cybersécurité : OpenAI enrichit Daybreak de deux outils d’IA pour traquer les failles",
@@ -1832,21 +1839,6 @@
    "resume": "Des attaquants ont détourné les accès AWS de Qubole pour voler des secrets et des données chez plusieurs entreprises clientes. Certaines avaient abandonné la plateforme sans révoquer ses autorisations. Rendue publique le 9 novembre 2026, la campagne a été observée du 14 au 26 octobre",
    "tags": [],
    "cve": []
-  },
-  {
-   "titre": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
-   "lien": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-10T06:52:54+00:00",
-   "resume": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has been described as a use-after-free bug in the XML…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-125350"
-   ]
   },
   {
    "titre": "NIS 2 : la loi Résilience arrive enfin à l’Assemblée",
