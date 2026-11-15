@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-15T11:07:20+00:00",
+ "genere_le": "2026-11-15T17:47:40+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 175,
-  "ia": 42,
+  "ia": 43,
   "kev": 33,
   "kev_ia": 0
  },
@@ -110,6 +110,41 @@
   }
  ],
  "articles": [
+  {
+   "titre": "TSMC employee data breach linked to cloud provider",
+   "lien": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-15T15:23:48+00:00",
+   "resume": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Pentagon Renames CDAO ‘Super Intelligence Office’",
+   "lien": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-15T12:51:33+00:00",
+   "resume": "The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications. The post Pentagon Renames CDAO ‘Super Intelligence Office’ appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+   "lien": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-15T11:27:31+00:00",
+   "resume": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users'…",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
    "lien": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
@@ -433,17 +468,6 @@
    "langue": "en",
    "date": "2026-11-13T10:55:03+00:00",
    "resume": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
-   "lien": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-13T10:48:40+00:00",
-   "resume": "Investigators seized 235 servers and 257 domains, along with 6.4 million victim credentials as part of Operation Endgame. The post Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -775,17 +799,6 @@
    "langue": "en",
    "date": "2026-11-12T19:51:16+00:00",
    "resume": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
-   "lien": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-12T19:12:55+00:00",
-   "resume": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE). [...]",
    "tags": [],
    "cve": []
   },
@@ -1817,17 +1830,6 @@
    "langue": "en",
    "date": "2026-11-10T10:02:40+00:00",
    "resume": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score. Three are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
-   "lien": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-10T09:08:20+00:00",
-   "resume": "An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday. The attackers broke into controllers on the night of October 11 and changed their defrost…",
    "tags": [],
    "cve": []
   },
