@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-15T17:47:40+00:00",
+ "genere_le": "2026-11-15T22:55:44+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 175,
-  "ia": 43,
+  "ia": 44,
   "kev": 33,
   "kev_ia": 0
  },
@@ -110,6 +110,19 @@
   }
  ],
  "articles": [
+  {
+   "titre": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+   "lien": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-15T18:29:53+00:00",
+   "resume": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "TSMC employee data breach linked to cloud provider",
    "lien": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
@@ -788,17 +801,6 @@
    "langue": "en",
    "date": "2026-11-12T20:09:41+00:00",
    "resume": "The cybercriminals are retargeting law firms that refused to pay its first ransom, with a social engineering con aimed at stealing Microsoft access tokens.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
-   "lien": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-12T19:51:16+00:00",
-   "resume": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update. [...]",
    "tags": [],
    "cve": []
   },
