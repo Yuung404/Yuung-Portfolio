@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-15T02:45:31+00:00",
+ "genere_le": "2026-11-15T11:07:20+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 175,
@@ -110,6 +110,30 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+   "lien": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-15T08:22:04+00:00",
+   "resume": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook",
+   "lien": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-14T19:00:00+00:00",
+   "resume": "The directive protects smartphones as part of a person’s private sphere and requires “free and informed consent” for such access, the authority said. The post Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Cursor confirms security breach led to malicious Claude Code extension",
    "lien": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
@@ -431,17 +455,6 @@
    "langue": "en",
    "date": "2026-11-13T10:44:22+00:00",
    "resume": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
-   "lien": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-13T09:36:56+00:00",
-   "resume": "Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. The post Citrix Patches 10 Critical NetScaler Vulnerabilities appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -1816,19 +1829,6 @@
    "date": "2026-11-10T09:08:20+00:00",
    "resume": "An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday. The attackers broke into controllers on the night of October 11 and changed their defrost…",
    "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
-   "lien": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-10T08:16:14+00:00",
-   "resume": "Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision. During pre-release training, the large language models (LLMs) helped its engineers \"complete otherwise-infeasible software migrations, designed three…",
-   "tags": [
-    "ia"
-   ],
    "cve": []
   },
   {
