@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-14T23:07:17+00:00",
+ "genere_le": "2026-11-15T02:45:31+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 175,
   "ia": 42,
-  "kev": 35,
+  "kev": 33,
   "kev_ia": 0
  },
  "sources": [
@@ -104,7 +104,7 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 35,
+   "nb": 33,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
@@ -2630,30 +2630,6 @@
    "rancongiciel": false,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936"
-  },
-  {
-   "cve": "CVE-2026-102764",
-   "editeur": "BeyondTrust",
-   "produit": "Remote Support",
-   "nom": "BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-   "date": "2026-10-16T00:00:00+00:00",
-   "echeance": "2026-10-19",
-   "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764"
-  },
-  {
-   "cve": "CVE-2025-61624",
-   "editeur": "Fortinet",
-   "produit": "Multiple Products",
-   "nom": "Fortinet Multiple Products Path Traversal Vulnerability",
-   "date": "2026-10-16T00:00:00+00:00",
-   "echeance": "2026-10-19",
-   "description": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624"
   }
  ]
 }
