@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-17T04:37:17+00:00",
+ "genere_le": "2026-11-17T14:34:20+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 177,
-  "ia": 52,
+  "ia": 50,
   "kev": 33,
   "kev_ia": 0
  },
@@ -111,6 +111,238 @@
  ],
  "articles": [
   {
+   "titre": "Fandango Warns Ticket Buyers of Payment Card Data Exposure",
+   "lien": "https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T14:14:24+00:00",
+   "resume": "Card numbers, CVVs, expiration dates, and email addresses used at Fandango’s ticketing checkout over four days in October may have been exposed. The post Fandango Warns Ticket Buyers of Payment Card Data Exposure appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Pretxt Emerges Stealth With $5M Seed and an AI Supervision Tool",
+   "lien": "https://www.securityweek.com/pretxt-emerges-stealth-with-5m-seed-and-an-ai-supervision-tool/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T14:00:00+00:00",
+   "resume": "Pretxt provides technology to prevent AI agents escaping their guardrails and causing unintended harm. The post Pretxt Emerges Stealth With $5M Seed and an AI Supervision Tool appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
+   "lien": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T13:24:43+00:00",
+   "resume": "More than 40 servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files. The post MSP ScreenConnect Servers Targeted in Month-Long Campaign appeared first on SecurityWeek .",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-84869"
+   ]
+  },
+  {
+   "titre": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
+   "lien": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-17T13:22:15+00:00",
+   "resume": "The emerging technology will soon break the \"lock and key\" encryption currently protecting sensitive data. A new GAO report shows agencies are behind on building their defenses.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Access Dental Management Data Breach Impacts Over 340,000",
+   "lien": "https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T12:59:04+00:00",
+   "resume": "Hackers breached Access Dental’s network and stole personal, health, and insurance information. The post Access Dental Management Data Breach Impacts Over 340,000 appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Corma Receives $125 Million to Train Foundation Models for Defensive Cybersecurity",
+   "lien": "https://www.securityweek.com/corma-receives-125-million-to-train-foundation-models-for-defensive-cybersecurity/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T12:51:54+00:00",
+   "resume": "Led by NEA and supported by existing investors, the funding brings the company’s valuation to $1 billion. The post Corma Receives $125 Million to Train Foundation Models for Defensive Cybersecurity appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "N-able Kills Legacy APIs, Patches 17 N-central Zero-Days",
+   "lien": "https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T12:28:45+00:00",
+   "resume": "The patches target recently disclosed zero-days, as well as vulnerabilities already exploited in the wild. The post N-able Kills Legacy APIs, Patches 17 N-central Zero-Days appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+   "lien": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T12:25:06+00:00",
+   "resume": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+   "lien": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T12:14:36+00:00",
+   "resume": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack",
+   "lien": "https://www.securityweek.com/california-sues-openai-seeking-court-ordered-changes-after-the-hugging-face-hack/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T12:00:00+00:00",
+   "resume": "The lawsuit alleges that OpenAI misled and endangered the public and users by knowingly developing advanced AI models without necessary safeguards. The post California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+   "lien": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T11:20:18+00:00",
+   "resume": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2). The activity has been codenamed Operation…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Microsoft testing Remote Lock for lost or stolen Windows devices",
+   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T11:19:51+00:00",
+   "resume": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+   "lien": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T11:07:31+00:00",
+   "resume": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents. The changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
+   "lien": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T10:22:20+00:00",
+   "resume": "Affected organizations include BBC, CNN, Zoom, GitLab, Salesforce, Equifax, HSBC, and IKEA. The post Optimizely Vulnerability Exploited to Serve Malware on Major Websites appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Court clears brothers of $25 million Ethereum crypto heist charges",
+   "lien": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T09:44:22+00:00",
+   "resume": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Uber notifies drivers of data breach affecting nearly 150,000 people",
+   "lien": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T08:35:42+00:00",
+   "resume": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Ransomware affiliate suspect extradited to US, faces 27 years in prison",
+   "lien": "https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T07:25:44+00:00",
+   "resume": "A Kazakh national has been extradited from Italy to face charges alleging he targeted US schools, hospitals, and healthcare entities in ransomware attacks. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+   "lien": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T07:12:13+00:00",
+   "resume": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today. Visitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+   "lien": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T06:29:27+00:00",
+   "resume": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+   "lien": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T05:00:34+00:00",
+   "resume": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and…",
+   "tags": [],
+   "cve": []
+  },
+  {
    "titre": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
    "lien": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
    "source": "BleepingComputer",
@@ -119,6 +351,123 @@
    "date": "2026-11-17T02:12:17+00:00",
    "resume": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit…",
    "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans Mitel MiCollab (17 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1547/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-17T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans Mitel MiCollab. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Vulnérabilité dans GLPI (17 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1548/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-17T00:00:00+00:00",
+   "resume": "Une vulnérabilité a été découverte dans GLPI. Elle permet à un attaquant de provoquer une atteinte à l'intégrité des données.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Vulnérabilité dans Axis OS (17 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1549/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-17T00:00:00+00:00",
+   "resume": "Une vulnérabilité a été découverte dans Axis OS. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans Tenable Identity Exposure (17 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1550/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-17T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans Tenable Identity Exposure. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Vulnérabilité dans Juniper Networks Junos OS Evolved (17 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1551/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-17T00:00:00+00:00",
+   "resume": "Une vulnérabilité a été découverte dans Juniper Networks Junos OS Evolved. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans GitLab (17 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1552/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-17T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans GitLab. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une falsification de requêtes côté serveur (SSRF).",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans Typo3 (17 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1553/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-17T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans Typo3. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans OpenSSL (17 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1554/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-17T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans OpenSSL. Elles permettent à un attaquant de provoquer un déni de service à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans Microsoft SharePoint (17 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1555/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-17T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans Microsoft SharePoint. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et une élévation de privilèges.",
+   "tags": [
+    "faille"
+   ],
    "cve": []
   },
   {
@@ -272,30 +621,6 @@
    "cve": []
   },
   {
-   "titre": "Google Project Zero Sets Course for 30-Day Disclosure Deadline",
-   "lien": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-16T15:31:25+00:00",
-   "resume": "It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028. The post Google Project Zero Sets Course for 30-Day Disclosure Deadline appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks",
-   "lien": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-16T15:07:32+00:00",
-   "resume": "Chinese threat actors are broadly adopting the agentic AI penetration testing framework to accelerate their attacks. The post Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "7 Tips For Complying with CJIS Password and MFA Requirements",
    "lien": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
    "source": "BleepingComputer",
@@ -357,17 +682,6 @@
    "cve": []
   },
   {
-   "titre": "Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch",
-   "lien": "https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-16T12:48:03+00:00",
-   "resume": "Kaspersky suspects exploitation of Telegram’s new widgets to deliver WebRAT, as researchers demo RCE and Pavel Durov disputes the claims. The post Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
    "lien": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
    "source": "The Hacker News",
@@ -401,56 +715,6 @@
    "cve": []
   },
   {
-   "titre": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
-   "lien": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-16T11:15:48+00:00",
-   "resume": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited in Attacks appeared first on SecurityWeek .",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-114713"
-   ]
-  },
-  {
-   "titre": "Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers",
-   "lien": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-16T11:05:42+00:00",
-   "resume": "Vulncheck disclosed 14 vulnerabilities affecting Copeland XWEB EVO controllers, including two that threat actors quickly targeted. The post Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Uber Data Breach Impacts 150,000 People",
-   "lien": "https://www.securityweek.com/uber-data-breach-impacts-150000-people/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-16T11:02:48+00:00",
-   "resume": "Hackers compromised a third-party services provider and stole names, addresses, and driver’s license numbers. The post Uber Data Breach Impacts 150,000 People appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
-   "lien": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T11:00:00+00:00",
-   "resume": "Anthropic recently rolled out Claude Mythos 5.2 to selected partners and Fable 5.2 to regular users, with improvements to coding and reasoning. But we also noticed some interesting cybersecurity changes. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
    "lien": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
    "source": "The Hacker News",
@@ -458,50 +722,6 @@
    "langue": "en",
    "date": "2026-11-16T09:32:57+00:00",
    "resume": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "New NoisyTCP vulnerability lets attackers crash Linux servers",
-   "lien": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T09:30:04+00:00",
-   "resume": "An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Tor Updates DoS Defenses Again as Relay Attacks Continue",
-   "lien": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-16T08:55:32+00:00",
-   "resume": "Tor 0.4.9.17 patches several security issues, including one related to how built-in DoS protections deal with IPv6. The post Tor Updates DoS Defenses Again as Relay Attacks Continue appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Microsoft pushes Windows emergency updates to fix activation failures",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T08:26:52+00:00",
-   "resume": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
-   "lien": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-16T08:15:12+00:00",
-   "resume": "Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. The post Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -649,19 +869,6 @@
    "cve": []
   },
   {
-   "titre": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
-   "lien": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-15T18:29:53+00:00",
-   "resume": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
    "lien": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
    "source": "The Hacker News",
@@ -694,6 +901,19 @@
    "date": "2026-11-14T12:38:35+00:00",
    "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability,…",
    "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "As Test Takers Turn to AI, Exam Security Plays Catch-Up",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-13T22:27:00+00:00",
+   "resume": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
+   "tags": [
+    "ia"
+   ],
    "cve": []
   },
   {
@@ -1325,123 +1545,6 @@
    "cve": []
   },
   {
-   "titre": "Vulnérabilité dans Sonicwall SonicOS (12 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1507/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "Une vulnérabilité a été découverte dans Sonicwall SonicOS. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Xen (12 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1508/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Xen. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et un contournement de la politique de sécurité.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans les processeurs Intel (12 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1509/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans les processeurs Intel. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et une atteinte à la confidentialité des données.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Microsoft Edge (12 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1510/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Microsoft Office (12 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1511/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Microsoft Office. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à la confidentialité des données. Microsoft indique que la vulnérabilité...",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Microsoft .Net (12 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1512/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Microsoft .Net. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Microsoft Windows (12 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1513/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Microsoft Windows. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Microsoft Azure (12 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1514/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Microsoft Azure. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à la confidentialité des données.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans les produits Microsoft (12 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1515/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans les produits Microsoft. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Multiples vulnérabilités dans Mitel MiVoice MX-ONE (12 novembre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1516/",
    "source": "CERT-FR — Avis de sécurité",
@@ -1607,19 +1710,6 @@
    "cve": []
   },
   {
-   "titre": "As Test Takers Turn to AI for Answers, Exam Security Must Catch Up",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-11T20:27:00+00:00",
-   "resume": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
    "lien": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
    "source": "Dark Reading",
@@ -1731,30 +1821,6 @@
    "cve": []
   },
   {
-   "titre": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
-   "lien": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-11T07:21:05+00:00",
-   "resume": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown. When a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
-   "lien": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-11T06:04:02+00:00",
-   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
    "lien": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
    "source": "Dark Reading",
@@ -1816,30 +1882,6 @@
    "cve": []
   },
   {
-   "titre": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
-   "lien": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-10T19:23:10+00:00",
-   "resume": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1.…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
-   "lien": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-10T19:19:39+00:00",
-   "resume": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "AI Coding Agents Leak Thousands of Secrets to GitHub",
    "lien": "https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github",
    "source": "Dark Reading",
@@ -1851,44 +1893,6 @@
     "ia"
    ],
    "cve": []
-  },
-  {
-   "titre": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
-   "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-10T18:12:21+00:00",
-   "resume": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. \"REST cookie parsing turns…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
-   "lien": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-10T17:43:23+00:00",
-   "resume": "Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across Latin America, Asia, and Europe over the…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-   "lien": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-10T16:00:55+00:00",
-   "resume": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-105133",
-    "CVE-2026-105134"
-   ]
   },
   {
    "titre": "Scality devient autorité de numérotation CVE sous l’égide de l’ENISA",
@@ -2250,19 +2254,6 @@
    "langue": "en",
    "date": "2026-11-03T15:35:50+00:00",
    "resume": "Cybercriminals have turned reselling cloud access to LLMs into a lucrative business model, with some victims paying as much as $1 million in resource consumption before access was revoked.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
-   "lien": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-03T14:00:00+00:00",
-   "resume": "Evidence suggests a model may have generated and revised commands during the ransom gang's breach, though researchers stopped short of claiming full automation.",
    "tags": [
     "ia"
    ],
