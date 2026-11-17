@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-16T22:15:20+00:00",
+ "genere_le": "2026-11-17T04:37:17+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 177,
@@ -110,6 +110,41 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Optimizely hack infected CNN, Fox News, BBC, Salesforce sites with malware",
+   "lien": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T02:12:17+00:00",
+   "resume": "A suspected supply chain attack targeting Optimizely has led to malicious JavaScript being loaded on numerous popular websites, including Zoom, CNN, Fox News, BBC, Salesforce, and GitLab, exposing visitors to scripts designed to steal cryptocurrency and payment information and exploit…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Gemini AI agents repeatedly bypassed safeguards to attack real website",
+   "lien": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-16T22:54:00+00:00",
+   "resume": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
+   "lien": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-16T22:08:20+00:00",
+   "resume": "One of the oldest running bug disclosure programs announced it would shorten public disclosure timelines to vendors from 120 days to 30 over the next 14 months.",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Google Project Zero cuts bug disclosures to 30 days amid AI threats",
    "lien": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
@@ -627,17 +662,6 @@
    "cve": []
   },
   {
-   "titre": "TSMC employee data breach linked to cloud provider",
-   "lien": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-15T15:23:48+00:00",
-   "resume": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
    "lien": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
    "source": "The Hacker News",
@@ -656,19 +680,6 @@
    "langue": "en",
    "date": "2026-11-15T08:22:04+00:00",
    "resume": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Cursor confirms security breach led to malicious Claude Code extension",
-   "lien": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-14T17:27:25+00:00",
-   "resume": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]",
    "tags": [
     "ia"
    ],
@@ -2255,17 +2266,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
-   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-02T22:27:24+00:00",
-   "resume": "The record theft shows how weak system separation, inadequate controls, and untested attack possibilities can turn one breach into systemic loss.",
-   "tags": [],
    "cve": []
   },
   {
