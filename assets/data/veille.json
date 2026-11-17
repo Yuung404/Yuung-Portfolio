@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-17T14:34:20+00:00",
+ "genere_le": "2026-11-17T22:57:20+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 177,
@@ -111,6 +111,185 @@
  ],
  "articles": [
   {
+   "titre": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+   "lien": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-17T22:34:22+00:00",
+   "resume": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Cloud keys leaked in Docker Hub images are stolen within seconds",
+   "lien": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T21:27:17+00:00",
+   "resume": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
+   "lien": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-17T20:58:13+00:00",
+   "resume": "The commercial kit uses attacker-supplied AI models to personalize lures, evade spam filters, and scale campaigns to tens of thousands of targets.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Japan takes Fugaku supercomputer offlline after cyberattack",
+   "lien": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T20:51:21+00:00",
+   "resume": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+   "lien": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T19:34:20+00:00",
+   "resume": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Apple reports outages affecting iCloud Mail, AppleCare and more",
+   "lien": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T19:24:07+00:00",
+   "resume": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Cursor Traces Malicious Claude Code Extension to Third-Party Breach",
+   "lien": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-17T18:38:37+00:00",
+   "resume": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Researchers hijack Hugging Face account for popular Kokoro AI model",
+   "lien": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T18:21:24+00:00",
+   "resume": "A Lack of ownership verification on the Hugging Face platform allowed researchers to take control of Kokoro, a text-to-speech model used in projects from Google, NVIDIA, AMD, Intel, and Amazon Web Services. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says",
+   "lien": "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T18:16:17+00:00",
+   "resume": "Threat actors are deploying multi-agent offensive frameworks to increase the velocity of multi-stage intrusions. The post AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Tor releases emergency update amid ongoing DDoS attack",
+   "lien": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T18:04:15+00:00",
+   "resume": "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Flipper Devices launches $399 ‘Flipper One’ Linux-based multi-tool",
+   "lien": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T16:00:00+00:00",
+   "resume": "Flipper Devices, the company behind the popular Flipper Zero pentesting device, has launched a crowdfunding campaign for Flipper One, a portable Linux computer and networking multi-tool. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+   "lien": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T15:17:36+00:00",
+   "resume": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-114938"
+   ]
+  },
+  {
+   "titre": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+   "lien": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-17T15:17:28+00:00",
+   "resume": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
+   "lien": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T15:01:11+00:00",
+   "resume": "Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Market Research Giant Ipsos Investigating Breach of Internal System",
+   "lien": "https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-17T14:55:30+00:00",
+   "resume": "The company made the incident public on Monday, November 16, five days after filing a complaint with authorities. The post Market Research Giant Ipsos Investigating Breach of Internal System appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
    "titre": "Fandango Warns Ticket Buyers of Payment Card Data Exposure",
    "lien": "https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/",
    "source": "SecurityWeek",
@@ -150,14 +329,16 @@
    ]
   },
   {
-   "titre": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
-   "lien": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
+   "titre": "Grok Bots Attempt to Access Corporate Data Without User Approval",
+   "lien": "https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval",
    "source": "Dark Reading",
    "source_id": "darkreading",
    "langue": "en",
-   "date": "2026-11-17T13:22:15+00:00",
-   "resume": "The emerging technology will soon break the \"lock and key\" encryption currently protecting sensitive data. A new GAO report shows agencies are behind on building their defenses.",
-   "tags": [],
+   "date": "2026-11-17T13:12:56+00:00",
+   "resume": "Two AI agents, separately over a five-day period, autonomously tried to access connected applications, including Google Calendar, Gmail, Slack, and GitHub, without account owner approval.",
+   "tags": [
+    "ia"
+   ],
    "cve": []
   },
   {
@@ -521,33 +702,7 @@
    "cve": []
   },
   {
-   "titre": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
-   "lien": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-16T20:00:00+00:00",
-   "resume": "Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users. The post Trump Administration Moves to Block China From Indirect Access to American AI Technology appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
-   "lien": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T19:57:13+00:00",
-   "resume": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Ransomware Attacks Increase Behind AI, But Payments Decline",
+   "titre": "Ransomware Attacks Increase Behind AI, but Payments Decline",
    "lien": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
    "source": "Dark Reading",
    "source_id": "darkreading",
@@ -573,17 +728,6 @@
    "cve": []
   },
   {
-   "titre": "Microsoft says months-old bug caused global Microsoft 365 outage",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T16:43:24+00:00",
-   "resume": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "China-Nexus Actors Breach 10 Organizations in AI-Driven Attacks",
    "lien": "https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks",
    "source": "Dark Reading",
@@ -597,37 +741,13 @@
    "cve": []
   },
   {
-   "titre": "Cursor Supply Chain Attack Started at Fireworks AI",
-   "lien": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
+   "titre": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
+   "lien": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
    "langue": "en",
-   "date": "2026-11-16T15:45:43+00:00",
-   "resume": "The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies. The post Cursor Supply Chain Attack Started at Fireworks AI appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Fandango says hackers stole payment card details from checkout pages",
-   "lien": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T15:44:21+00:00",
-   "resume": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "7 Tips For Complying with CJIS Password and MFA Requirements",
-   "lien": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T15:01:11+00:00",
-   "resume": "The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain compliance.…",
+   "date": "2026-11-16T14:22:15+00:00",
+   "resume": "The emerging technology will soon break the \"lock and key\" encryption currently protecting sensitive data. A new GAO report shows agencies are behind on building their defenses.",
    "tags": [],
    "cve": []
   },
@@ -645,19 +765,6 @@
    "cve": []
   },
   {
-   "titre": "Google warns that fully-automated AI attacks are coming soon",
-   "lien": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T14:00:00+00:00",
-   "resume": "Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to machine speed. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
    "lien": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
    "source": "The Hacker News",
@@ -668,17 +775,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T12:53:18+00:00",
-   "resume": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months. [...]",
-   "tags": [],
    "cve": []
   },
   {
@@ -700,17 +796,6 @@
    "langue": "en",
    "date": "2026-11-16T12:33:18+00:00",
    "resume": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\"…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Australian retail giant Coles investigates cybersecurity incident",
-   "lien": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T11:18:09+00:00",
-   "resume": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores. [...]",
    "tags": [],
    "cve": []
   },
@@ -1786,41 +1871,6 @@
    "cve": []
   },
   {
-   "titre": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
-   "lien": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-11T12:00:53+00:00",
-   "resume": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company uses to sign the certificates it issues.…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
-   "lien": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-11T08:17:53+00:00",
-   "resume": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws. These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools,…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
-   "lien": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-11T07:49:04+00:00",
-   "resume": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them. The company…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
    "lien": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
    "source": "Dark Reading",
@@ -2211,52 +2261,6 @@
    "date": "2026-11-04T01:05:40+00:00",
    "resume": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing an important authentication gap. Plus: post-quantum YubiKey beta.",
    "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Fresh European Fridge Attacks Put Cold-Chain Security in Focus",
-   "lien": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-03T22:16:49+00:00",
-   "resume": "Beyond food storage, the same combination of Internet connectivity, remote access, and inadequate security practices can put temperature-controlled infrastructure across other critical sectors at risk.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-03T21:57:12+00:00",
-   "resume": "Authorities seized more than 100 servers and arrested seven as part of a crackdown on a fraud network spanning more than 50 countries.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
-   "lien": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-03T15:38:20+00:00",
-   "resume": "Practical guidance on safer search, stronger login security, better executive protection, and other habits can reduce enterprise risk.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
-   "lien": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-03T15:35:50+00:00",
-   "resume": "Cybercriminals have turned reselling cloud access to LLMs into a lucrative business model, with some victims paying as much as $1 million in resource consumption before access was revoked.",
-   "tags": [
-    "ia"
-   ],
    "cve": []
   },
   {
