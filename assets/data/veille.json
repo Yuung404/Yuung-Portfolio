@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-18T14:10:27+00:00",
+ "genere_le": "2026-11-18T22:03:44+00:00",
  "fenetre_jours": 30,
  "compteurs": {
-  "articles": 178,
-  "ia": 44,
+  "articles": 179,
+  "ia": 48,
   "kev": 34,
   "kev_ia": 0
  },
@@ -84,7 +84,7 @@
    "site": "https://cert.cyber.gouv.fr/alerte/",
    "cat": "alerte",
    "ok": true,
-   "nb": 3,
+   "nb": 4,
    "erreur": "",
    "url": "https://cert.cyber.gouv.fr/alerte/feed/"
   },
@@ -110,6 +110,156 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+   "lien": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-18T20:49:32+00:00",
+   "resume": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
+   "lien": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-18T20:45:49+00:00",
+   "resume": "New agentic AI solution leverages APIs to collect compliance evidence from systems and applies it to over 30 frameworks with no duplicate work.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
+   "lien": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-18T20:38:42+00:00",
+   "resume": "Analysis of 20 Iranian state-sponsored threat groups details how espionage, ransomware, and hacktivism intersect in state-backed cyber campaigns.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
+   "lien": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-18T19:39:33+00:00",
+   "resume": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+   "lien": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-18T18:31:17+00:00",
+   "resume": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-123007"
+   ]
+  },
+  {
+   "titre": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+   "lien": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-18T18:15:39+00:00",
+   "resume": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+   "lien": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-18T17:10:45+00:00",
+   "resume": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-129448"
+   ]
+  },
+  {
+   "titre": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+   "lien": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-18T16:58:42+00:00",
+   "resume": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
+   "lien": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-18T16:54:52+00:00",
+   "resume": "Discovered using AI, the memory corruption vulnerability affects the OpenJDK runtime and could allow unauthenticated attackers to take over systems.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "VeroSecurity Raises $11 Million for AI Security Engineering Platform",
+   "lien": "https://www.securityweek.com/verosecurity-raises-11-million-for-ai-security-engineering-platform/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-18T15:30:42+00:00",
+   "resume": "AI Security Engineering is a new and essential security discipline now being brought into focus by VeroSecurity. The post VeroSecurity Raises $11 Million for AI Security Engineering Platform appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
+   "lien": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-18T15:00:10+00:00",
+   "resume": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+   "lien": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-18T14:11:28+00:00",
+   "resume": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical…",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Major Brazilian Signature Apps Enable RCE & Fraud",
    "lien": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
@@ -338,13 +488,13 @@
    "cve": []
   },
   {
-   "titre": "Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover",
+   "titre": "Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover",
    "lien": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/",
    "source": "SecurityWeek",
    "source_id": "securityweek",
    "langue": "en",
    "date": "2026-11-18T07:43:34+00:00",
-   "resume": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .",
+   "resume": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -371,17 +521,6 @@
    "cve": []
   },
   {
-   "titre": "Classified Communications Network at the National Security Agency Goes Down, Defense Official Says",
-   "lien": "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-18T02:15:07+00:00",
-   "resume": "The problem disrupted the operations of NSANet, a classified internal network used by employees of the agency. The post Classified Communications Network at the National Security Agency Goes Down, Defense Official Says appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Vulnérabilité dans Oracle Java SE (18 novembre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-016/",
    "source": "CERT-FR — Alertes",
@@ -394,6 +533,22 @@
    ],
    "cve": [
     "CVE-2026-114938"
+   ]
+  },
+  {
+   "titre": "Multiples vulnérabilités dans F5 NGINX (18 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-017/",
+   "source": "CERT-FR — Alertes",
+   "source_id": "certfr-alerte",
+   "langue": "fr",
+   "date": "2026-11-18T00:00:00+00:00",
+   "resume": "Le 18 novembre 2026, F5 a publié deux avis de sécurité concernant les vulnérabilités CVE-2026-123633 et CVE-2026-123007. Celles-ci affectent NGINX Open Source et NGINX Plus permettent à un attaquant non authentifié d'exécuter du code à distance, en utilisant le protocole HTTP en version 2. Le...",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-123007",
+    "CVE-2026-123633"
    ]
   },
   {
@@ -534,6 +689,19 @@
    "langue": "fr",
    "date": "2026-11-18T00:00:00+00:00",
    "resume": "De multiples vulnérabilités ont été découvertes dans Oracle Virtualization. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans les produits F5 (18 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1567/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-18T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans les produits F5. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et un contournement de la politique de sécurité.",
    "tags": [
     "faille"
    ],
@@ -695,17 +863,6 @@
    "cve": []
   },
   {
-   "titre": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
-   "lien": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-17T15:01:11+00:00",
-   "resume": "Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Grok Bots Attempt to Access Corporate Data Without User Approval",
    "lien": "https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval",
    "source": "Dark Reading",
@@ -752,17 +909,6 @@
    "cve": []
   },
   {
-   "titre": "Microsoft testing Remote Lock for lost or stolen Windows devices",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-17T11:19:51+00:00",
-   "resume": "Microsoft is testing a new feature that lets enterprise IT administrators remotely lock stolen or lost Windows devices without wiping them. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
    "lien": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
    "source": "The Hacker News",
@@ -770,30 +916,6 @@
    "langue": "en",
    "date": "2026-11-17T11:07:31+00:00",
    "resume": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents. The changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Court clears brothers of $25 million Ethereum crypto heist charges",
-   "lien": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-17T09:44:22+00:00",
-   "resume": "US District Judge Jessica Clarke has acquitted two brothers accused of stealing $25 million in cryptocurrency in about 12 seconds through a scheme that exploited a bug in the Ethereum blockchain. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Uber notifies drivers of data breach affecting nearly 150,000 people",
-   "lien": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-17T08:35:42+00:00",
-   "resume": "Ride-hailing company Uber is notifying nearly 150,000 drivers that attackers stole their data after breaching AI infrastructure provider Fireworks in early October. [...]",
    "tags": [
     "ia"
    ],
@@ -1254,7 +1376,7 @@
    "source_id": "darkreading",
    "langue": "en",
    "date": "2026-11-13T22:27:00+00:00",
-   "resume": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
+   "resume": "It's hard to detect whether someone is using artificial intelligence to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
    "tags": [
     "ia"
    ],
@@ -1411,19 +1533,6 @@
    "date": "2026-11-13T05:43:28+00:00",
    "resume": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some…",
    "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans VMware Tanzu Greenplum (13 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1527/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-13T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans VMware Tanzu Greenplum. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-   "tags": [
-    "faille"
-   ],
    "cve": []
   },
   {
@@ -1719,32 +1828,6 @@
    "cve": []
   },
   {
-   "titre": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
-   "lien": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-12T11:51:31+00:00",
-   "resume": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose. The Threat Research team at Material Security spotted the campaign and…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
-   "lien": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-12T11:33:15+00:00",
-   "resume": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-126325"
-   ]
-  },
-  {
    "titre": "Inside an AI Attack Against a US Retailer",
    "lien": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
    "source": "Dark Reading",
@@ -1772,32 +1855,6 @@
     "CVE-2026-108186",
     "CVE-2026-108187"
    ]
-  },
-  {
-   "titre": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-   "lien": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-12T09:25:00+00:00",
-   "resume": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-118383"
-   ]
-  },
-  {
-   "titre": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
-   "lien": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-12T08:20:37+00:00",
-   "resume": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed…",
-   "tags": [],
-   "cve": []
   },
   {
    "titre": "Grok Build : plus de 35 000 applications IA accessibles sans authentification",
@@ -2230,39 +2287,6 @@
    "langue": "en",
    "date": "2026-11-04T21:48:18+00:00",
    "resume": "An attacker could write arbitrary files and read sensitive files via images uploaded to the Rails Active Storage ImageMagick integration, possibly positioning a threat actor for lateral movement.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
-   "lien": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-04T16:24:08+00:00",
-   "resume": "Android device manufacturer Videostrong allegedly ran the operation, which infected set-top boxes and IoT devices with a backdoor to create infrastructure for criminal activity.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Incidents Move Too Fast for Pen & Paper",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/incidents-move-fast-pen-paper",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-04T14:17:00+00:00",
-   "resume": "Organizations may not be ready for completely autonomous communication processes, but there are places where automating information updates would alleviate pressure.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
-   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-04T02:00:00+00:00",
-   "resume": "An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour.",
    "tags": [],
    "cve": []
   },
