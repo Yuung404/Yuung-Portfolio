@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-17T22:57:20+00:00",
+ "genere_le": "2026-11-18T04:30:13+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 177,
-  "ia": 50,
-  "kev": 33,
+  "ia": 49,
+  "kev": 34,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,34 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 33,
+   "nb": 34,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "Classified Communications Network at the National Security Agency Goes Down, Defense Official Says",
+   "lien": "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-18T02:15:07+00:00",
+   "resume": "The problem disrupted the operations of NSANet, a classified internal network used by employees of the agency. The post Classified Communications Network at the National Security Agency Goes Down, Defense Official Says appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
+   "lien": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-17T23:04:21+00:00",
+   "resume": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [...]",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
    "lien": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
@@ -445,17 +467,6 @@
    "cve": []
   },
   {
-   "titre": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
-   "lien": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-17T10:22:20+00:00",
-   "resume": "Affected organizations include BBC, CNN, Zoom, GitLab, Salesforce, Equifax, HSBC, and IKEA. The post Optimizely Vulnerability Exploited to Serve Malware on Major Websites appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Court clears brothers of $25 million Ethereum crypto heist charges",
    "lien": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
    "source": "BleepingComputer",
@@ -683,19 +694,6 @@
    "langue": "en",
    "date": "2026-11-16T21:31:44+00:00",
    "resume": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "California sues OpenAI over AI agents escaping sandboxes, hacking firms",
-   "lien": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-16T20:59:44+00:00",
-   "resume": "California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and launch cyberattacks against real-world…",
    "tags": [
     "ia"
    ],
@@ -2280,6 +2278,18 @@
   }
  ],
  "kev": [
+  {
+   "cve": "CVE-2026-115731",
+   "editeur": "Perforce",
+   "produit": "Puppet Enterprise",
+   "nom": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+   "date": "2026-11-17T00:00:00+00:00",
+   "echeance": "2026-12-01",
+   "description": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. If the certificate authority automatically signs requests without…",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731"
+  },
   {
    "cve": "CVE-2026-114713",
    "editeur": "UnrealIRCd",
