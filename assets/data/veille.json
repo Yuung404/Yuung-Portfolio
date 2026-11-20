@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-20T13:03:50+00:00",
+ "genere_le": "2026-11-20T21:13:57+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 178,
-  "ia": 45,
-  "kev": 32,
+  "ia": 49,
+  "kev": 36,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,153 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 32,
+   "nb": 36,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+   "lien": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-20T18:51:43+00:00",
+   "resume": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "In Security, Words Matter as Much as Tools, Maybe More",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-20T18:35:40+00:00",
+   "resume": "From talking cloud security to using AI, cyber leaders are finding that clear, disciplined communication is now a front-line defense capability across the enterprise.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+   "lien": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-20T17:57:20+00:00",
+   "resume": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-23871"
+   ]
+  },
+  {
+   "titre": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+   "lien": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-20T17:30:00+00:00",
+   "resume": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
+   "lien": "https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-20T17:04:04+00:00",
+   "resume": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, from Jensen Huang's resignation from Nvidia to Microsoft's recent cloud outage.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+   "lien": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-20T16:58:16+00:00",
+   "resume": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
+   "lien": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-20T16:01:02+00:00",
+   "resume": "Tracked as CVE-2026-23871, the vulnerability was found by WhatsApp’s security team, and it may have been used to make scam messages more credible. The post WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign appeared first on SecurityWeek .",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-23871"
+   ]
+  },
+  {
+   "titre": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+   "lien": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-20T15:58:06+00:00",
+   "resume": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Still tracking company passwords in spreadsheets? You’re flying blind.",
+   "lien": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-20T15:00:10+00:00",
+   "resume": "Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems. NordPass explains how centralized password management can improve credential visibility, identify security risks, and simplify…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit",
+   "lien": "https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-20T14:56:23+00:00",
+   "resume": "Noteworthy stories that might have slipped under the radar: EU adds NoName057(16) to cyber sanctions list, malware targets CACs left in personal computers, Gemini agents targeted Epoch AI. The post In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "N-able says recent security breach led to major service outage",
+   "lien": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-20T13:18:36+00:00",
+   "resume": "N-able says attackers who breached one of its servers have caused a major outage affecting Mail Assure and SpamExperts Hosted Cloud services worldwide. [...]",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday",
    "lien": "https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/",
@@ -322,6 +463,240 @@
    "cve": []
   },
   {
+   "titre": "Multiples vulnérabilités dans Moodle (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1581/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans Moodle. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un contournement de la politique de sécurité.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans les produits Citrix (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1582/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans les produits Citrix. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans Tenable Security Center (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1583/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans Tenable Security Center. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une injection SQL (SQLi) et un contournement de la politique de sécurité.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Vulnérabilité dans les produits Palo Alto Networks (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1584/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "Une vulnérabilité a été découverte dans les produits Palo Alto Networks. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Vulnérabilité dans Metabase (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1585/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "Une vulnérabilité a été découverte dans Metabase. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Vulnérabilité dans KeyCloak (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1586/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "Une vulnérabilité a été découverte dans KeyCloak. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans Apache Tomcat (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1587/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans Apache Tomcat. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans les produits Mattermost (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1588/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans les produits Mattermost. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans les produits Moxa (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1589/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans les produits Moxa. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans Siemens Industrial Edge (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1590/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans Siemens Industrial Edge. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Vulnérabilité dans GitLab (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1591/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "Une vulnérabilité a été découverte dans GitLab. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans le noyau Linux de Red Hat (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1592/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans le noyau Linux de SUSE (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1593/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans le noyau Linux de Debian (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1594/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian. Elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et un déni de service.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans le noyau Linux de Debian LTS (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1595/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans le noyau Linux de Debian LTS. Elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et un déni de service.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans le noyau Linux d'Ubuntu (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1596/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une atteinte à l'intégrité des données et un déni de service.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans les produits IBM (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1597/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Multiples vulnérabilités dans les produits VMware (20 novembre 2026)",
+   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1598/",
+   "source": "CERT-FR — Avis de sécurité",
+   "source_id": "certfr-avis",
+   "langue": "fr",
+   "date": "2026-11-20T00:00:00+00:00",
+   "resume": "De multiples vulnérabilités ont été découvertes dans les produits VMware. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une injection SQL (SQLi). Google et Mandiant indiquent que la vulnérabilité...",
+   "tags": [
+    "faille"
+   ],
+   "cve": []
+  },
+  {
    "titre": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
    "lien": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
    "source": "Dark Reading",
@@ -357,7 +732,7 @@
    "cve": []
   },
   {
-   "titre": "Second Norwegian Energy Company Breached in Two Days",
+   "titre": "Second Norwegian Energy Company Breached in 2 Days",
    "lien": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
    "source": "Dark Reading",
    "source_id": "darkreading",
@@ -368,7 +743,7 @@
    "cve": []
   },
   {
-   "titre": "Critical PHP Flaws Allow Code Execution, But Don't Panic 'PHP2Shell'-Style",
+   "titre": "Critical PHP Flaws Allow Code Execution, but Don't Panic 'PHP2Shell'-Style",
    "lien": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
    "source": "Dark Reading",
    "source_id": "darkreading",
@@ -519,17 +894,6 @@
    "cve": []
   },
   {
-   "titre": "Nvidia Responds to Gentlemen Ransomware Claim",
-   "lien": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T14:17:32+00:00",
-   "resume": "Nvidia says it has found no indication that its systems were compromised after the Gentlemen ransomware group listed the company as a victim. The post Nvidia Responds to Gentlemen Ransomware Claim appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Why Holiday Security Can't Wait for Black Friday",
    "lien": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
    "source": "Dark Reading",
@@ -537,28 +901,6 @@
    "langue": "en",
    "date": "2026-11-19T14:00:00+00:00",
    "resume": "Bot-driven fraud and holiday social engineering attacks stretch across many weeks, straining security teams and small businesses alike.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
-   "lien": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T13:12:20+00:00",
-   "resume": "Attackers hacked clustered Cisco Expressway devices at a Russian organization and prepared tooling for lateral movement. The post Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
-   "lien": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-19T13:08:08+00:00",
-   "resume": "The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [...]",
    "tags": [],
    "cve": []
   },
@@ -579,28 +921,6 @@
    ]
   },
   {
-   "titre": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-19T11:46:00+00:00",
-   "resume": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Microsoft confirms app installation, launch issues after hotpatch",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-19T10:35:05+00:00",
-   "resume": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
    "lien": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
    "source": "The Hacker News",
@@ -619,17 +939,6 @@
    "langue": "fr",
    "date": "2026-11-19T09:27:33+00:00",
    "resume": "À l’approche de l’élection présidentielle de 2027, Numeum présente cinq propositions pour faire de la France et de l’Europe une puissance industrielle numérique. Le syndicat professionnel appelle notamment à porter les dépenses de recherche et développement à 4 % du PIB d’ici 2035, à mobiliser…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "NVIDIA investigating Gentlemen ransomware breach claims",
-   "lien": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-19T09:23:21+00:00",
-   "resume": "NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [...]",
    "tags": [],
    "cve": []
   },
@@ -855,17 +1164,6 @@
    "tags": [
     "faille"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
-   "lien": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-18T23:08:33+00:00",
-   "resume": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]",
-   "tags": [],
    "cve": []
   },
   {
@@ -1109,71 +1407,6 @@
     "CVE-2026-123007",
     "CVE-2026-123633"
    ]
-  },
-  {
-   "titre": "Multiples vulnérabilités dans les produits Tenable (18 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1556/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-18T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans les produits Tenable. Elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Netgate pfSense (18 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1557/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-18T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Netgate pfSense. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Vulnérabilité dans FreeBSD (18 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1558/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-18T00:00:00+00:00",
-   "resume": "Une vulnérabilité a été découverte dans FreeBSD. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données et un déni de service.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Google Chrome (18 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1559/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-18T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Mozilla Firefox (18 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1560/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-18T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Mozilla Firefox. Elles permettent à un attaquant de provoquer une élévation de privilèges et un problème de sécurité non spécifié par l'éditeur.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
   },
   {
    "titre": "Multiples vulnérabilités dans Oracle Database Server (18 novembre 2026)",
@@ -1435,123 +1668,6 @@
    "cve": []
   },
   {
-   "titre": "Multiples vulnérabilités dans Mitel MiCollab (17 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1547/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-17T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Mitel MiCollab. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Vulnérabilité dans GLPI (17 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1548/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-17T00:00:00+00:00",
-   "resume": "Une vulnérabilité a été découverte dans GLPI. Elle permet à un attaquant de provoquer une atteinte à l'intégrité des données.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Vulnérabilité dans Axis OS (17 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1549/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-17T00:00:00+00:00",
-   "resume": "Une vulnérabilité a été découverte dans Axis OS. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Tenable Identity Exposure (17 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1550/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-17T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Tenable Identity Exposure. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Vulnérabilité dans Juniper Networks Junos OS Evolved (17 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1551/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-17T00:00:00+00:00",
-   "resume": "Une vulnérabilité a été découverte dans Juniper Networks Junos OS Evolved. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance et un déni de service à distance.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans GitLab (17 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1552/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-17T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans GitLab. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et une falsification de requêtes côté serveur (SSRF).",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Typo3 (17 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1553/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-17T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Typo3. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans OpenSSL (17 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1554/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-17T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans OpenSSL. Elles permettent à un attaquant de provoquer un déni de service à distance.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Microsoft SharePoint (17 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1555/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-17T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Microsoft SharePoint. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et une élévation de privilèges.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
    "lien": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines",
    "source": "Dark Reading",
@@ -1724,58 +1840,6 @@
    "cve": []
   },
   {
-   "titre": "Vulnérabilité dans VMware Tanzu (16 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1543/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-16T00:00:00+00:00",
-   "resume": "Une vulnérabilité a été découverte dans VMware Tanzu. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans MongoDB (16 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1544/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-16T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans MongoDB. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Vulnérabilité dans Citrix App Layering (16 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1545/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-16T00:00:00+00:00",
-   "resume": "Une vulnérabilité a été découverte dans Citrix App Layering. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Multiples vulnérabilités dans Microsoft Edge (16 novembre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1546/",
-   "source": "CERT-FR — Avis de sécurité",
-   "source_id": "certfr-avis",
-   "langue": "fr",
-   "date": "2026-11-16T00:00:00+00:00",
-   "resume": "De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.",
-   "tags": [
-    "faille"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
    "lien": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
    "source": "The Hacker News",
@@ -1783,30 +1847,6 @@
    "langue": "en",
    "date": "2026-11-15T11:27:31+00:00",
    "resume": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users'…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-   "lien": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-15T08:22:04+00:00",
-   "resume": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-   "lien": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-14T12:38:35+00:00",
-   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability,…",
    "tags": [],
    "cve": []
   },
@@ -2252,30 +2292,6 @@
    "cve": []
   },
   {
-   "titre": "AI Gave Your Incident Archive a Second Job",
-   "lien": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-06T18:27:30+00:00",
-   "resume": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Why Europe's Freezer Hacks Spread So Far, So Fast",
-   "lien": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-06T14:00:00+00:00",
-   "resume": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "[MàJ] Vulnérabilité dans OpenSSH (05 novembre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/",
    "source": "CERT-FR — Alertes",
@@ -2305,6 +2321,54 @@
   }
  ],
  "kev": [
+  {
+   "cve": "CVE-2026-129448",
+   "editeur": "Apache",
+   "produit": "Roller",
+   "nom": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+   "date": "2026-11-20T00:00:00+00:00",
+   "echeance": "2026-11-23",
+   "description": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448"
+  },
+  {
+   "cve": "CVE-2026-123890",
+   "editeur": "Broadcom",
+   "produit": "VMware vCenter",
+   "nom": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+   "date": "2026-11-20T00:00:00+00:00",
+   "echeance": "2026-11-23",
+   "description": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890"
+  },
+  {
+   "cve": "CVE-2025-42884",
+   "editeur": "SAP",
+   "produit": "NetWeaver",
+   "nom": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+   "date": "2026-11-20T00:00:00+00:00",
+   "echeance": "2026-11-23",
+   "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884"
+  },
+  {
+   "cve": "CVE-2026-76466",
+   "editeur": "Cisco",
+   "produit": "Expressway Series",
+   "nom": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+   "date": "2026-11-20T00:00:00+00:00",
+   "echeance": "2026-11-23",
+   "description": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
+  },
   {
    "cve": "CVE-2024-10441",
    "editeur": "Synology",
