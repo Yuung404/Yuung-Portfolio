@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-20T03:29:49+00:00",
+ "genere_le": "2026-11-20T13:03:50+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 178,
@@ -110,6 +110,206 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday",
+   "lien": "https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-20T12:38:55+00:00",
+   "resume": "Experts commented on whether AI-accelerated patching played a role, the need for tested rollback plans, and the fragility of interconnected systems. The post Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+   "lien": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-20T12:20:00+00:00",
+   "resume": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean. On a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312,…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-99312"
+   ]
+  },
+  {
+   "titre": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
+   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-20T12:14:28+00:00",
+   "resume": "Starting this week, Microsoft has begun automatically upgrading eligible devices that aren't managed by an IT department to Windows 11 26H2. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "The Path to AI Autonomy in the SOC",
+   "lien": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-20T12:00:00+00:00",
+   "resume": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "SBC Medical Group Data Breach Impacts Over 2 Million",
+   "lien": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-20T11:36:51+00:00",
+   "resume": "Threat actors accessed databases containing customer information associated with clinics in Japan. The post SBC Medical Group Data Breach Impacts Over 2 Million appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "F5 releases emergency patches for critical BIG-IP RCE flaws",
+   "lien": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-20T10:57:43+00:00",
+   "resume": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+   "lien": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-20T10:51:42+00:00",
+   "resume": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach. The post European Commission Confirms AI-Assisted Cyberattack Disrupted Services appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+   "lien": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-20T10:38:22+00:00",
+   "resume": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks. \"Attackers now use automation and AI to find and exploit unsupported edge devices…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+   "lien": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-20T10:34:10+00:00",
+   "resume": "Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE). The post Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE appeared first on SecurityWeek .",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-132825"
+   ]
+  },
+  {
+   "titre": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+   "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-20T10:32:50+00:00",
+   "resume": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-76466"
+   ]
+  },
+  {
+   "titre": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+   "lien": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-20T09:38:15+00:00",
+   "resume": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-123890"
+   ]
+  },
+  {
+   "titre": "Windows 11 KB5132057 update released with 28 changes and fixes",
+   "lien": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-20T09:25:35+00:00",
+   "resume": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "N-able Blames Service Disruption on Cyberattack",
+   "lien": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-20T09:08:35+00:00",
+   "resume": "The incident affected Mail Assure and SpamExperts Hosted Cloud and could have led to credential theft. The post N-able Blames Service Disruption on Cyberattack appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
+   "lien": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-20T07:35:46+00:00",
+   "resume": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+   "lien": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-20T07:11:39+00:00",
+   "resume": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+   "lien": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-20T05:30:01+00:00",
+   "resume": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher…",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "VMware patches vCenter zero-day exploited in attacks since September",
    "lien": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
@@ -275,7 +475,7 @@
    ]
   },
   {
-   "titre": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+   "titre": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
    "lien": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
    "source": "The Hacker News",
    "source_id": "thn",
@@ -363,41 +563,6 @@
    "cve": []
   },
   {
-   "titre": "StepSecurity Secures $20 Million to Expand Supply Chain Protection",
-   "lien": "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T12:23:34+00:00",
-   "resume": "The company will use the funds to accelerate the development and distribution of its security platform. The post StepSecurity Secures $20 Million to Expand Supply Chain Protection appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks",
-   "lien": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T12:13:24+00:00",
-   "resume": "Attackers are targeting Confluence Data Center through an Axis flaw and Apache is warning of attacks against Roller. The post Critical Apache Roller, Axis Vulnerabilities Exploited in Attacks appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "The Governance Gap in Open-Weight AI and What to Do About It",
-   "lien": "https://www.securityweek.com/the-governance-gap-in-open-weight-ai-and-what-to-do-about-it/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T12:00:00+00:00",
-   "resume": "Lower costs, data privacy, and greater control are driving open-weight AI adoption, but many organizations are not addressing the risks that come with it. The post The Governance Gap in Open-Weight AI and What to Do About It appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Everything Is a Web Application, Including Your Firewall",
    "lien": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
    "source": "The Hacker News",
@@ -425,17 +590,6 @@
    "cve": []
   },
   {
-   "titre": "Splunk Patches Nearly 140 Flaws Across Three Core Products",
-   "lien": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T10:41:05+00:00",
-   "resume": "The security updates resolve critical and high-severity issues leading to authentication bypass, remote code execution, and privilege escalation. The post Splunk Patches Nearly 140 Flaws Across Three Core Products appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Microsoft confirms app installation, launch issues after hotpatch",
    "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-app-installation-launch-issues-after-hotpatch/",
    "source": "BleepingComputer",
@@ -443,17 +597,6 @@
    "langue": "en",
    "date": "2026-11-19T10:35:05+00:00",
    "resume": "Microsoft has shared a workaround for installation and launch issues affecting Office and third-party applications after installing this month's Windows 11 hotpatch. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public",
-   "lien": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T10:26:51+00:00",
-   "resume": "The five NGINX2Root vulnerabilities could allow remote, unauthenticated attackers to execute arbitrary code. The post F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -491,18 +634,7 @@
    "cve": []
   },
   {
-   "titre": "Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories",
-   "lien": "https://www.securityweek.com/java4shell-exploitation-attempts-begin-as-vendors-rush-out-advisories/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T09:10:58+00:00",
-   "resume": "GreyNoise, WatchTowr and Cloudflare report probing and exploit attempts, while Cisco, Elastic, Red Hat and Siemens detail impact. The post Java4Shell Exploitation Attempts Begin as Vendors Rush Out Advisories appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+   "titre": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell, Said to Hit Default Rails Apps Pre-Auth",
    "lien": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
    "source": "The Hacker News",
    "source_id": "thn",
@@ -748,19 +880,6 @@
    "cve": []
   },
   {
-   "titre": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
-   "lien": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-18T20:49:32+00:00",
-   "resume": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
    "lien": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
    "source": "Dark Reading",
@@ -781,17 +900,6 @@
    "langue": "en",
    "date": "2026-11-18T20:38:42+00:00",
    "resume": "Analysis of 20 Iranian state-sponsored threat groups details how espionage, ransomware, and hacktivism intersect in state-backed cyber campaigns.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
-   "lien": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-18T19:39:33+00:00",
-   "resume": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland. [...]",
    "tags": [],
    "cve": []
   },
@@ -835,17 +943,6 @@
    "cve": [
     "CVE-2026-129448"
    ]
-  },
-  {
-   "titre": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
-   "lien": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-18T16:58:42+00:00",
-   "resume": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]",
-   "tags": [],
-   "cve": []
   },
   {
    "titre": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
@@ -1740,17 +1837,6 @@
    "cve": []
   },
   {
-   "titre": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-   "lien": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-13T16:53:08+00:00",
-   "resume": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Rennes va accueillir un centre international dédié à l’IA de défense",
    "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/rennes-va-accueillir-un-centre-international-dedie",
    "source": "Le Monde Informatique",
@@ -1764,41 +1850,6 @@
    "cve": []
   },
   {
-   "titre": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-   "lien": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-13T15:27:05+00:00",
-   "resume": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
-   "lien": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-13T14:28:58+00:00",
-   "resume": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months.…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
-   "lien": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-13T13:54:20+00:00",
-   "resume": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
    "lien": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
    "source": "Dark Reading",
@@ -1806,41 +1857,6 @@
    "langue": "en",
    "date": "2026-11-13T13:00:00+00:00",
    "resume": "Blockchain complexities, such as attacker-deployed sweepers, hobble security controls designed to limit the damage of an exchange compromise.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "When an AI Agent Goes Wrong, Can You Stop It?",
-   "lien": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-13T11:52:31+00:00",
-   "resume": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
-   "lien": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-13T11:10:40+00:00",
-   "resume": "A newly identified spying group used hacked equipment inside Asian mobile operators to intercept the calls and texts of selected people, mostly in Taiwan. Enea, a telecom and cybersecurity software company based in Stockholm, found the group's attack sources in at least six Asian countries and…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
-   "lien": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-13T10:55:03+00:00",
-   "resume": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than 40,000…",
    "tags": [],
    "cve": []
   },
