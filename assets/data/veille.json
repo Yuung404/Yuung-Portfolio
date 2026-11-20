@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-19T22:13:49+00:00",
+ "genere_le": "2026-11-20T03:29:49+00:00",
  "fenetre_jours": 30,
  "compteurs": {
-  "articles": 179,
-  "ia": 46,
+  "articles": 178,
+  "ia": 45,
   "kev": 32,
   "kev_ia": 0
  },
@@ -84,7 +84,7 @@
    "site": "https://cert.cyber.gouv.fr/alerte/",
    "cat": "alerte",
    "ok": true,
-   "nb": 4,
+   "nb": 3,
    "erreur": "",
    "url": "https://cert.cyber.gouv.fr/alerte/feed/"
   },
@@ -110,6 +110,41 @@
   }
  ],
  "articles": [
+  {
+   "titre": "VMware patches vCenter zero-day exploited in attacks since September",
+   "lien": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-20T00:26:25+00:00",
+   "resume": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
+   "lien": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-19T22:40:03+00:00",
+   "resume": "Companies deploying AI agents have the illusion of control, but several incidents demonstrate that businesses need to be ready to enforce directions.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Hackers steal data of 1.6 million SBC Medical Group customers",
+   "lien": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-19T22:25:42+00:00",
+   "resume": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "ASUS warns of critical hard-coded key flaw in Control Center Express",
    "lien": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
@@ -826,19 +861,6 @@
    "cve": []
   },
   {
-   "titre": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
-   "lien": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-18T15:00:10+00:00",
-   "resume": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
    "lien": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
    "source": "The Hacker News",
@@ -898,17 +920,6 @@
    "cve": [
     "CVE-2026-114938"
    ]
-  },
-  {
-   "titre": "Dizigom illegal streaming service with 21M monthly visits shuts down",
-   "lien": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-18T11:50:25+00:00",
-   "resume": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the site's operators. [...]",
-   "tags": [],
-   "cve": []
   },
   {
    "titre": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
@@ -2249,19 +2260,6 @@
    "cve": []
   },
   {
-   "titre": "UK Warns Its Critical Infrastructure Faces Grave Risk",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-06T09:00:00+00:00",
-   "resume": "Britain's new Labour-led government is making a concerted push to get ahead of the AI risks to its national networks and the industrial complex.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "[MàJ] Vulnérabilité dans OpenSSH (05 novembre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/",
    "source": "CERT-FR — Alertes",
@@ -2288,21 +2286,6 @@
     "faille"
    ],
    "cve": []
-  },
-  {
-   "titre": "[Màj] Multiples vulnérabilités dans PHP (21 octobre 2026)",
-   "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/",
-   "source": "CERT-FR — Alertes",
-   "source_id": "certfr-alerte",
-   "langue": "fr",
-   "date": "2026-10-21T00:00:00+00:00",
-   "resume": "**[Mise à jour du 26 octobre 2026]** Le 23 octobre 2026, PHP a publié un avis de sécurité concernant la vulnérabilité CVE-2026-115560. Celle-ci permet une exécution de code arbitraire à distance. L'éditeur estime que les conditions d'exploitation exigent une combinaison d'options de configuration...",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-115560"
-   ]
   }
  ],
  "kev": [
