@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-21T02:29:09+00:00",
+ "genere_le": "2026-11-21T11:17:29+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 178,
-  "ia": 48,
+  "ia": 49,
   "kev": 36,
   "kev_ia": 0
  },
@@ -111,6 +111,30 @@
  ],
  "articles": [
   {
+   "titre": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+   "lien": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-21T08:49:20+00:00",
+   "resume": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+   "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-21T08:49:13+00:00",
+   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed…",
+   "tags": [],
+   "cve": []
+  },
+  {
    "titre": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
    "lien": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
    "source": "Dark Reading",
@@ -154,7 +178,7 @@
    "source_id": "thn",
    "langue": "en",
    "date": "2026-11-20T17:57:20+00:00",
-   "resume": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply…",
+   "resume": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of…",
    "tags": [
     "faille"
    ],
@@ -1837,28 +1861,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-   "lien": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-16T06:53:34+00:00",
-   "resume": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
-   "lien": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-15T11:27:31+00:00",
-   "resume": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users'…",
-   "tags": [],
    "cve": []
   },
   {
