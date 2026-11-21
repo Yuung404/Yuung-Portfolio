@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-21T11:17:29+00:00",
+ "genere_le": "2026-11-21T19:24:00+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 178,
-  "ia": 49,
+  "ia": 50,
   "kev": 36,
   "kev_ia": 0
  },
@@ -110,6 +110,87 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+   "lien": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-21T18:01:58+00:00",
+   "resume": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+   "lien": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-21T15:17:27+00:00",
+   "resume": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "FBI reportedly hacked again, this time targeting nationwide police database",
+   "lien": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-21T14:26:04+00:00",
+   "resume": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+   "lien": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-21T12:08:50+00:00",
+   "resume": "A threat actor used autonomous Cairn AI agents to discover and exploit a critical MONAI Label vulnerability. The post Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+   "lien": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-21T11:53:07+00:00",
+   "resume": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected accounts. The work was a…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+   "lien": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-21T11:05:53+00:00",
+   "resume": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions. The…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+   "lien": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-21T11:03:17+00:00",
+   "resume": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account to write files…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
    "lien": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
@@ -848,28 +929,6 @@
    "cve": []
   },
   {
-   "titre": "PHP security updates fix 18 flaws, including critical RCE bugs",
-   "lien": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-19T16:28:23+00:00",
-   "resume": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "PHP Patches Seven Critical RCE Vulnerabilities",
-   "lien": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T15:54:20+00:00",
-   "resume": "Successful exploitation could allow attackers to crash the worker process and execute code with the PHP worker’s privileges. The post PHP Patches Seven Critical RCE Vulnerabilities appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
    "lien": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
    "source": "The Hacker News",
@@ -892,28 +951,6 @@
    "langue": "en",
    "date": "2026-11-19T15:11:06+00:00",
    "resume": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Five warning signs of ransomware breach before encryption or data theft",
-   "lien": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-19T15:00:10+00:00",
-   "resume": "Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups.…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Critical NGINX ‘NGINX2Root’ bugs let attackers hijack servers",
-   "lien": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-19T14:57:24+00:00",
-   "resume": "Two critical NGINX vulnerabilities dubbed \"nginx2root\" allow unauthenticated attackers to execute code remotely on vulnerable web servers, with researchers demonstrating how the flaws can be chained with a Linux kernel bug to gain root access. [...]",
    "tags": [],
    "cve": []
   },
@@ -1801,28 +1838,6 @@
    "cve": []
   },
   {
-   "titre": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
-   "lien": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-16T12:33:18+00:00",
-   "resume": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\"…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
-   "lien": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-16T09:32:57+00:00",
-   "resume": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Cursor : une clé volée chez Fireworks AI à l’origine d’une cyberattaque",
    "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cursor-une-cle-volee-chez-fireworks-ai-a-l-origine",
    "source": "Le Monde Informatique",
@@ -1849,19 +1864,6 @@
    "cve": [
     "CVE-2026-6460"
    ]
-  },
-  {
-   "titre": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-   "lien": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-16T07:34:21+00:00",
-   "resume": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
   },
   {
    "titre": "As Test Takers Turn to AI, Exam Security Plays Catch-Up",
