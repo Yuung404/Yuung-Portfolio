@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-20T21:13:57+00:00",
+ "genere_le": "2026-11-21T02:29:09+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 178,
-  "ia": 49,
+  "ia": 48,
   "kev": 36,
   "kev_ia": 0
  },
@@ -110,6 +110,17 @@
   }
  ],
  "articles": [
+  {
+   "titre": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
+   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-20T21:03:27+00:00",
+   "resume": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Bell Canada says 'agentic' hacker stole enterprise customer data",
    "lien": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
@@ -2276,19 +2287,6 @@
    "date": "2026-11-09T15:46:10+00:00",
    "resume": "New guidance provides a basic framework for less-technical solo business owners, but it may miss the mark on how to secure technology that requires no human oversight.",
    "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-06T21:27:36+00:00",
-   "resume": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
-   "tags": [
-    "ia"
-   ],
    "cve": []
   },
   {
