@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-21T19:24:00+00:00",
+ "genere_le": "2026-11-22T00:23:16+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 178,
   "ia": 50,
-  "kev": 36,
+  "kev": 34,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,23 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 36,
+   "nb": 34,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+   "lien": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-21T22:59:58+00:00",
+   "resume": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
    "lien": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
@@ -904,17 +915,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Transport for London breach exposes 265,000 Oyster card users' data",
-   "lien": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-19T18:20:01+00:00",
-   "resume": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach. [...]",
-   "tags": [],
    "cve": []
   },
   {
@@ -2730,30 +2730,6 @@
    "rancongiciel": false,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619"
-  },
-  {
-   "cve": "CVE-2026-114625",
-   "editeur": "Arista",
-   "produit": "VeloCloud Orchestrator",
-   "nom": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
-   "date": "2026-10-23T00:00:00+00:00",
-   "echeance": "2026-10-26",
-   "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625"
-  },
-  {
-   "cve": "CVE-2026-110447",
-   "editeur": "Collabora",
-   "produit": "Collabora Online – Built-in CODE Server",
-   "nom": "Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
-   "date": "2026-10-23T00:00:00+00:00",
-   "echeance": "2026-10-26",
-   "description": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447"
   }
  ]
 }
