@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-22T16:20:52+00:00",
+ "genere_le": "2026-11-22T22:29:45+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 178,
@@ -110,6 +110,17 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+   "lien": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-22T18:45:37+00:00",
+   "resume": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
    "lien": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
@@ -634,17 +645,6 @@
    "langue": "en",
    "date": "2026-11-20T05:30:01+00:00",
    "resume": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "VMware patches vCenter zero-day exploited in attacks since September",
-   "lien": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-20T00:26:25+00:00",
-   "resume": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
    "tags": [],
    "cve": []
   },
