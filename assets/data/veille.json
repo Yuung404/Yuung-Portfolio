@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-22T00:23:16+00:00",
+ "genere_le": "2026-11-22T08:04:04+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 178,
@@ -111,6 +111,41 @@
  ],
  "articles": [
   {
+   "titre": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+   "lien": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-22T05:06:55+00:00",
+   "resume": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+   "lien": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-22T05:03:41+00:00",
+   "resume": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
+   "lien": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-22T00:53:02+00:00",
+   "resume": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
    "titre": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
    "lien": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
    "source": "BleepingComputer",
@@ -151,6 +186,17 @@
    "langue": "en",
    "date": "2026-11-21T14:26:04+00:00",
    "resume": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "President Trump Taps Kirsten Davies as National Cyber Director",
+   "lien": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-21T13:00:00+00:00",
+   "resume": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -546,17 +592,6 @@
    "cve": []
   },
   {
-   "titre": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
-   "lien": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-20T07:35:46+00:00",
-   "resume": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
    "lien": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
    "source": "The Hacker News",
@@ -891,17 +926,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
-   "lien": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-19T19:21:06+00:00",
-   "resume": "Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch. The post Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT appeared first on SecurityWeek .",
-   "tags": [],
    "cve": []
   },
   {
@@ -1811,30 +1835,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
-   "lien": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-16T13:27:20+00:00",
-   "resume": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still…",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
-   "lien": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-16T12:34:21+00:00",
-   "resume": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws.…",
-   "tags": [],
    "cve": []
   },
   {
