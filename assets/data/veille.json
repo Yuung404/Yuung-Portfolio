@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-22T22:29:45+00:00",
+ "genere_le": "2026-11-23T03:44:35+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 178,
-  "ia": 51,
+  "ia": 52,
   "kev": 34,
   "kev_ia": 0
  },
@@ -443,6 +443,19 @@
    "langue": "en",
    "date": "2026-11-20T14:56:23+00:00",
    "resume": "Noteworthy stories that might have slipped under the radar: EU adds NoName057(16) to cyber sanctions list, malware targets CACs left in personal computers, Gemini agents targeted Epoch AI. The post In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
+   "lien": "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-20T13:51:30+00:00",
+   "resume": "Microsoft announces new AI agent security tools and transparency standards to protect enterprise systems at its Ignite technical conference.",
    "tags": [
     "ia"
    ],
@@ -2282,17 +2295,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "NIST: Solo Shouldn't Mean Less Secure",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-09T15:46:10+00:00",
-   "resume": "New guidance provides a basic framework for less-technical solo business owners, but it may miss the mark on how to secure technology that requires no human oversight.",
-   "tags": [],
    "cve": []
   },
   {
