@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-24T02:16:44+00:00",
+ "genere_le": "2026-11-24T12:40:06+00:00",
  "fenetre_jours": 30,
  "compteurs": {
-  "articles": 180,
-  "ia": 47,
+  "articles": 183,
+  "ia": 51,
   "kev": 36,
   "kev_ia": 0
  },
@@ -54,7 +54,7 @@
    "site": "https://www.lemondeinformatique.fr",
    "cat": "actu",
    "ok": true,
-   "nb": 12,
+   "nb": 15,
    "erreur": "",
    "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml"
   },
@@ -110,6 +110,140 @@
   }
  ],
  "articles": [
+  {
+   "titre": "OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems",
+   "lien": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-24T12:20:41+00:00",
+   "resume": "OpenAI and Cisco’s Shirudo uses AI-generated shields to block Linux exploits while patches are prepared, but it’s not yet production-ready. The post OpenAI, Cisco Unveil Open Source Tool to Shield Unpatched Linux Systems appeared first on SecurityWeek .",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+   "lien": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-24T11:50:21+00:00",
+   "resume": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Cybersécurité : des failles Bluetooth permettent de contrôler à distance les freins de remorques",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cybersecurite-des-failles-bluetooth-permettent-de-controler-a-distance-les-freins-de-remorques",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-24T11:45:01+00:00",
+   "resume": "Des chercheurs en cybersécurité ont découvert plusieurs vulnérabilités critiques dans les contrôleurs de freinage Bluetooth du fabricant australien Elecbrakes. Ces failles permettent à une personne située à portée du signal radio d'activer ou de modifier la puissance de freinage d'une remorque sans…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "IA et Cybersécurité : les entreprises contraintes de revoir leur priorités",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/la-bataille-des-priorites-dans-les-budgets-it",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-24T11:25:03+00:00",
+   "resume": "Face au renchérissement des infrastructures et à la multiplication des projets d'IA, les entreprises doivent revoir leurs arbitrages numériques. Lors d'une table ronde organisée au TechShow Paris le 18 novembre, trois intervenants ont plaidé pour des investissements guidés par les besoins métiers,…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+   "lien": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-24T10:44:49+00:00",
+   "resume": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
+   "lien": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-24T10:44:44+00:00",
+   "resume": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents. The post Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
+   "lien": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-24T10:35:04+00:00",
+   "resume": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations. The post Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Règlementation : les entreprises doivent intégrer les contraintes dès la conception de leurs systèmes IT",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/reglementation-les-entreprises-doivent-integrer-les-contraintes-des-la-conception-de-leurs-systemes-it",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-24T09:30:57+00:00",
+   "resume": "Avec l'accumulation des réglementations européennes, de l'IA Act à NIS 2 en passant par le RGPD et DORA, la conformité devient un enjeu structurant pour les directions IT. Lors d'une conférence organisée au TechShow Paris le 18 novembre, trois intervenants ont plaidé pour une approche intégrée dès…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+   "lien": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-24T08:34:20+00:00",
+   "resume": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+   "lien": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-24T06:02:57+00:00",
+   "resume": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+   "lien": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-24T06:02:45+00:00",
+   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-2026-134624 (CVSS…",
+   "tags": [
+    "ia",
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-134624"
+   ]
+  },
   {
    "titre": "Industrial Serial Gateways Broadcast That They're Insecure",
    "lien": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
@@ -260,13 +394,13 @@
    "cve": []
   },
   {
-   "titre": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
+   "titre": "N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack",
    "lien": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
    "source": "SecurityWeek",
    "source_id": "securityweek",
    "langue": "en",
    "date": "2026-11-23T15:06:49+00:00",
-   "resume": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack appeared first on SecurityWeek .",
+   "resume": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -393,28 +527,6 @@
    "langue": "en",
    "date": "2026-11-23T11:44:18+00:00",
    "resume": "Backdoors on low-cost consumer devices served modules for ad fraud and for turning devices into residential proxies. The post BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
-   "lien": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-23T11:35:15+00:00",
-   "resume": "Threat actors could exploit them to leak or modify server information and to execute commands as root. The post SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal",
-   "lien": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-23T11:31:44+00:00",
-   "resume": "CrowdStrike expects the combined company to have more than $10 billion in annual recurring revenue. The post CrowdStrike to Acquire Zscaler in $43.9 Billion Deal appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -667,17 +779,6 @@
    "cve": []
   },
   {
-   "titre": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
-   "lien": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-22T00:53:02+00:00",
-   "resume": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
    "lien": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
    "source": "BleepingComputer",
@@ -696,17 +797,6 @@
    "langue": "en",
    "date": "2026-11-21T18:01:58+00:00",
    "resume": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "President Trump Taps Kirsten Davies as National Cyber Director",
-   "lien": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-21T13:00:00+00:00",
-   "resume": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -776,7 +866,7 @@
    "source_id": "darkreading",
    "langue": "en",
    "date": "2026-11-21T01:31:23+00:00",
-   "resume": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
+   "resume": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned jobs. But vendors' approaches vary, so CISOs face a choice.",
    "tags": [
     "ia"
    ],
@@ -805,7 +895,7 @@
    "cve": []
   },
   {
-   "titre": "In Security, Words Matter as Much as Tools, Maybe More",
+   "titre": "In Security, Words Matter as Much as Tools — Maybe More",
    "lien": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
    "source": "Dark Reading",
    "source_id": "darkreading",
@@ -865,7 +955,7 @@
    "source_id": "darkreading",
    "langue": "en",
    "date": "2026-11-20T13:51:30+00:00",
-   "resume": "Microsoft uses its Ignite technical conference to announce new AI agent security tools and transparency standards to protect enterprise systems.",
+   "resume": "At its Ignite technical conference, Microsoft announced AI agent security tools and transparency standards to protect enterprise systems.",
    "tags": [
     "ia"
    ],
@@ -1781,17 +1871,6 @@
    "cve": []
   },
   {
-   "titre": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
-   "lien": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-18T05:58:04+00:00",
-   "resume": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise. Google's Mandiant and Threat Intelligence Group (GTIG) said it…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Vulnérabilité dans Oracle Java SE (18 novembre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-016/",
    "source": "CERT-FR — Alertes",
@@ -1847,17 +1926,6 @@
    "cve": []
   },
   {
-   "titre": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
-   "lien": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-17T19:34:20+00:00",
-   "resume": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Cursor Traces Malicious Claude Code Extensions to Third-Party Breach",
    "lien": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
    "source": "Dark Reading",
@@ -1865,34 +1933,6 @@
    "langue": "en",
    "date": "2026-11-17T18:38:37+00:00",
    "resume": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
-   "lien": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-17T15:17:36+00:00",
-   "resume": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-114938"
-   ]
-  },
-  {
-   "titre": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
-   "lien": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-17T15:17:28+00:00",
-   "resume": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers…",
    "tags": [
     "ia"
    ],
