@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-23T14:49:37+00:00",
+ "genere_le": "2026-11-24T02:16:44+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 180,
-  "ia": 49,
-  "kev": 34,
+  "ia": 47,
+  "kev": 36,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,185 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 34,
+   "nb": 36,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "Industrial Serial Gateways Broadcast That They're Insecure",
+   "lien": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-23T22:02:46+00:00",
+   "resume": "Critical OT access devices will often tell you, and anyone else, whether they're protected by authentication — and many aren't.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
+   "lien": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-23T21:21:42+00:00",
+   "resume": "CrowdStrike's $44 billion acquisition of Zscaler would unite endpoint protection and zero-trust network security to obtain greater control over AI agents.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+   "lien": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-23T20:54:51+00:00",
+   "resume": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "US Cyber Director Pick Signals Shift Toward Expertise",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-23T20:13:48+00:00",
+   "resume": "Trump named Kirsten Davies as Acting National Cyber Director, bringing greater industry experience to the role amid recent outages and rising geopolitical tensions.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "OpenRouter drops AI providers over leaked prompts and secrets",
+   "lien": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-23T20:00:20+00:00",
+   "resume": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Microsoft Azure flaw exploited to steal customers' API credentials",
+   "lien": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-23T19:42:20+00:00",
+   "resume": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+   "lien": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-23T18:38:40+00:00",
+   "resume": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-23T17:45:52+00:00",
+   "resume": "Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+   "lien": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-23T17:45:15+00:00",
+   "resume": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
+   "lien": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-23T16:50:01+00:00",
+   "resume": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
+   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-23T16:17:21+00:00",
+   "resume": "A China-nexus actor used the Cairn penetration testing tool in attacks against East Asian universities, exploiting a zero-day in a medical imaging app.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
+   "lien": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-23T15:47:40+00:00",
+   "resume": "Microsoft closed an Azure API Management flaw exploited to target secrets at Norwegian energy companies, with other sectors also affected. The post Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+   "lien": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-23T15:10:48+00:00",
+   "resume": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
+   "lien": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-23T15:06:49+00:00",
+   "resume": "The company has restored access to the affected services and continues to monitor the affected environments. The post N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "AI Agents Are Creating a Shared Responsibility Gap",
+   "lien": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-23T15:00:10+00:00",
+   "resume": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "phpAfterShell Vulnerability Revives PHP2Shell’s Attack Path",
    "lien": "https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/",
@@ -527,28 +700,6 @@
    "cve": []
   },
   {
-   "titre": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
-   "lien": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-21T15:17:27+00:00",
-   "resume": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "FBI reportedly hacked again, this time targeting nationwide police database",
-   "lien": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-21T14:26:04+00:00",
-   "resume": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "President Trump Taps Kirsten Davies as National Cyber Director",
    "lien": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
    "source": "SecurityWeek",
@@ -557,19 +708,6 @@
    "date": "2026-11-21T13:00:00+00:00",
    "resume": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek .",
    "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
-   "lien": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-21T12:08:50+00:00",
-   "resume": "A threat actor used autonomous Cairn AI agents to discover and exploit a critical MONAI Label vulnerability. The post Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day appeared first on SecurityWeek .",
-   "tags": [
-    "ia"
-   ],
    "cve": []
   },
   {
@@ -638,7 +776,7 @@
    "source_id": "darkreading",
    "langue": "en",
    "date": "2026-11-21T01:31:23+00:00",
-   "resume": "Identity, runtime and development controls are converging as enterprises are tasked with keeping agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
+   "resume": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
    "tags": [
     "ia"
    ],
@@ -656,16 +794,14 @@
    "cve": []
   },
   {
-   "titre": "Bell Canada says 'agentic' hacker stole enterprise customer data",
-   "lien": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
+   "titre": "Nok et norsk energiselskap har blitt utsatt for et datainnbrudd på to dager",
+   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
    "langue": "en",
-   "date": "2026-11-20T18:51:43+00:00",
-   "resume": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
-   "tags": [
-    "ia"
-   ],
+   "date": "2026-11-20T20:43:45+00:00",
+   "resume": "Det er ikke påvist noen konkret sammenheng mellom de to hendelsene, selv om de helt klart har mange likhetstrekk.",
+   "tags": [],
    "cve": []
   },
   {
@@ -697,19 +833,6 @@
    ]
   },
   {
-   "titre": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
-   "lien": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-20T17:30:00+00:00",
-   "resume": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
    "lien": "https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry",
    "source": "Dark Reading",
@@ -736,50 +859,13 @@
    "cve": []
   },
   {
-   "titre": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
-   "lien": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-20T16:01:02+00:00",
-   "resume": "Tracked as CVE-2026-23871, the vulnerability was found by WhatsApp’s security team, and it may have been used to make scam messages more credible. The post WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign appeared first on SecurityWeek .",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-23871"
-   ]
-  },
-  {
-   "titre": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-   "lien": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-20T15:58:06+00:00",
-   "resume": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Still tracking company passwords in spreadsheets? You’re flying blind.",
-   "lien": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-20T15:00:10+00:00",
-   "resume": "Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems. NordPass explains how centralized password management can improve credential visibility, identify security risks, and simplify…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
    "lien": "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools",
    "source": "Dark Reading",
    "source_id": "darkreading",
    "langue": "en",
    "date": "2026-11-20T13:51:30+00:00",
-   "resume": "Microsoft announces new AI agent security tools and transparency standards to protect enterprise systems at its Ignite technical conference.",
+   "resume": "Microsoft uses its Ignite technical conference to announce new AI agent security tools and transparency standards to protect enterprise systems.",
    "tags": [
     "ia"
    ],
@@ -1826,28 +1912,6 @@
    "cve": []
   },
   {
-   "titre": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-   "lien": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-17T12:25:06+00:00",
-   "resume": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
-   "lien": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-17T12:14:36+00:00",
-   "resume": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt. The first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
    "lien": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines",
    "source": "Dark Reading",
@@ -2234,19 +2298,6 @@
    "cve": []
   },
   {
-   "titre": "AI Makes Reverse Engineering Mainstream Software & Malware Far Easier",
-   "lien": "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-10T13:00:00+00:00",
-   "resume": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising opportunities and concerns for organizations and cybersecurity analysts.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Cisco et IBM vont intégrer Mythos à leurs outils de cybersécurité",
    "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cisco-et-ibm-vont-integrer-mythos-a-leurs-outils-d",
    "source": "Le Monde Informatique",
@@ -2282,65 +2333,6 @@
    "cve": []
   },
   {
-   "titre": "People Are Getting Weird About AI",
-   "lien": "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-09T23:06:22+00:00",
-   "resume": "Dark Reading Confidential Episode 22: You can love AI without being blind to the cybersecurity risks. The tendency for humans to anthropomorphize the conversations and interactions we're having with AI is growing into potential delusion.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
-   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-09T21:38:20+00:00",
-   "resume": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
-   "lien": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-09T21:12:24+00:00",
-   "resume": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-09T20:19:56+00:00",
-   "resume": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
-   "lien": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-09T18:08:30+00:00",
-   "resume": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "[MàJ] Vulnérabilité dans OpenSSH (05 novembre 2026)",
    "lien": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/",
    "source": "CERT-FR — Alertes",
@@ -2357,6 +2349,30 @@
   }
  ],
  "kev": [
+  {
+   "cve": "CVE-2026-133968",
+   "editeur": "Project MONAI",
+   "produit": "MONAI Label",
+   "nom": "Project MONAI MONAI Label Path Traversal Vulnerability",
+   "date": "2026-11-23T00:00:00+00:00",
+   "echeance": "2026-11-26",
+   "description": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-133968"
+  },
+  {
+   "cve": "CVE-2026-134624",
+   "editeur": "N-able",
+   "produit": "MailAssure",
+   "nom": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+   "date": "2026-11-23T00:00:00+00:00",
+   "echeance": "2026-11-26",
+   "description": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624"
+  },
   {
    "cve": "CVE-2026-129448",
    "editeur": "Apache",
@@ -2413,7 +2429,7 @@
    "date": "2026-11-18T00:00:00+00:00",
    "echeance": "2026-11-21",
    "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors.",
-   "rancongiciel": false,
+   "rancongiciel": true,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441"
   },
