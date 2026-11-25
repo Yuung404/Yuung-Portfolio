@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skybazaar — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::EN<br><span class="hb">PROJECT</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- PDF Viewer -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ CLOSE</button>
+    </div>
+    <iframe id="pdf-frame" title="PDF Viewer"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projects.html" style="color:var(--g6);text-decoration:none;">← BACK TO PROJECTS</a>
+      </div>
+
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJECT 09 — E-COMMERCE · PERSONAL PROJECT</span>
+        <h2 class="sec-title">SKYBAZAAR</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="pj-det-hero rv">
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-9.svg" alt="Skybazaar — Live Shopify store and video ads">
+        </div>
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUS</span>
+              <span class="pj-status st-success">✓ LIVE</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">Personal business project (micro-business)</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PERIOD</span>
+              <span class="pj-meta-val">October — December 2026</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PLATFORM</span>
+              <span class="pj-meta-val">Shopify, custom "Skybazaar" theme</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CATALOGUE</span>
+              <span class="pj-meta-val">27 live products, 8 collections, including 20 Black Friday products</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// MODEL</span>
+              <span class="pj-meta-val">Dropshipping with CJ Dropshipping: no stock to buy</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TOOLS</span>
+              <span class="pj-meta-val">Shopify and its GraphQL API, CJ Dropshipping, Krea (Nano Banana, MiniMax), WebCodecs, TikTok, Meta and Google</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CONTEXT &amp; GOALS</h3>
+        <p><strong style="color:var(--g3);">Skybazaar</strong> (formerly Komptoir, then Fly Store) is my online store: a general store selling already popular products, with a more polished presentation than the big marketplaces. It runs on <strong style="color:var(--g3);">dropshipping</strong>: the supplier ships straight to the customer, so I buy no stock in advance. The goal: find a few winning products and promote them with video ads on TikTok and Instagram.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>WHAT I BUILT</h3>
+        <p><strong style="color:var(--g3);">1. Market research</strong><br>I analysed Amazon best sellers with <strong style="color:var(--g3);">AMZScout</strong> estimates, ruling out big-brand products that cannot be resold. For Black Friday, I picked 20 seasonal products (gifts, winter, wellness, pets) under €40.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Live store</strong><br>Store renamed <strong style="color:var(--g3);">Skybazaar</strong>, custom theme published, SEO (titles and descriptions for Google), menu, 8 collections and 8 published pages: legal notice, terms of sale, shipping, returns, right of withdrawal, FAQ, contact, about.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. Automated catalogue</strong><br>The 20 Black Friday products were created through the <strong style="color:var(--g3);">Shopify Admin GraphQL API</strong>: photos imported from the supplier, variants, descriptions, SEO, and the CJ Dropshipping product ID stored on each product to place orders. A "Black Friday" collection fills itself from a tag.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">4. AI video ads</strong><br><strong style="color:var(--g3);">15 videos</strong> in TikTok format: 10 product videos, then 5 brand-quality 14-second ads. Start frames are generated with Nano Banana from real product photos, animated with MiniMax, then edited by a program I wrote: animated hook, zooms, selling points appearing one by one and an end card with the price. The frame-by-frame render is encoded to MP4 right in the browser (WebCodecs), for an exact duration.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">5. Sales channels and legal framework</strong><br>Google and YouTube, TikTok, Facebook and Instagram apps installed to sell and advertise on those networks. Legal side: <strong style="color:var(--g3);">micro-business</strong> registration on the INPI one-stop shop (SIREN number obtained, awaiting validation), mandatory pages and honest reference prices for Black Friday.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>PROGRESS STATUS</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">RESEARCH</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ MARKET</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Best sellers analysed</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">STORE</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ LIVE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Theme, pages, collections</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">CATALOGUE</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ 27 PRODUCTS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Including 20 Black Friday</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">ADVERTISING</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ 15 VIDEOS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">5 pro 14-second ads</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LEGAL</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ SIREN</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Awaiting validation</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LAUNCH</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ ADS LIVE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">TikTok and Meta accounts, domain</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>SKILLS DEMONSTRATED</h3>
+        <p>
+          ▸ Market research from sales data<br>▸ Running a Shopify store and SEO<br>▸ Automation through a GraphQL API (products, media, collections)<br>▸ AI-assisted video ad production<br>▸ Programming video rendering and encoding in the browser (Canvas, WebCodecs, MP4 format)<br>▸ E-commerce legal compliance and setting up a micro-business
+        </p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; DELIVERABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Report — Skybazaar e-commerce store (in French)</span>
+            <span class="doc-size">~60 KB</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-9/compte-rendu.pdf','Skybazaar report')"
+              style="cursor:none;">OPEN</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projects.html" class="btn btn-g">← BACK TO PROJECTS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>AVAILABLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">
+
+<head>
+  <meta charset="UTF-8"><meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skybazaar — Portfolio BTS SIO</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+  <div id="cur-ring"></div>
+  <div id="cur-dot"></div>
+  <canvas id="mx-canvas"></canvas>
+  <div id="mx-vignette"></div>
+  <div id="mx-grid"></div>
+  <div class="hud tl">SYS::FR<br><span class="hb">PROJET</span></div>
+  <div class="hud tr"><span id="hud-clock">00:00:00</span><br><span class="hb">ONLINE</span></div>
+  <div class="hud bl">NANTERRE::92</div>
+  <div class="hud br"><span id="hud-scan">SCAN::0000</span></div>
+  <nav id="main-nav"></nav>
+
+  <!-- Visionneur PDF -->
+  <div id="pdf-modal">
+    <div class="pdf-bar">
+      <span class="pdf-name" id="pdf-name">Document</span>
+      <button class="pdf-close" onclick="closePDF()">✕ FERMER</button>
+    </div>
+    <iframe id="pdf-frame" title="Visionneur PDF"></iframe>
+  </div>
+
+  <div class="page-content page-wrap">
+    <div class="wrap" style="padding-bottom:80px;">
+
+      <div
+        style="margin-top:24px;margin-bottom:36px;font-family:var(--fm);font-size:.56rem;letter-spacing:3px;color:var(--g7);">
+        <a href="projets.html" style="color:var(--g6);text-decoration:none;">← RETOUR AUX PROJETS</a>
+      </div>
+
+      <div class="sec-hd rv">
+        <span class="sec-tag">// PROJET 09 — E-COMMERCE · PROJET PERSONNEL</span>
+        <h2 class="sec-title">SKYBAZAAR</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="pj-det-hero rv">
+        <div>
+          <img class="pj-det-img" src="../assets/images/projet-9.svg" alt="Skybazaar — Boutique Shopify en ligne et publicités vidéo">
+        </div>
+        <div>
+          <div class="pj-meta">
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// STATUT</span>
+              <span class="pj-status st-success">✓ EN LIGNE</span>
+            </div>
+
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// TYPE</span>
+              <span class="pj-meta-val">Projet entrepreneurial personnel (micro-entreprise)</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PÉRIODE</span>
+              <span class="pj-meta-val">Octobre — Décembre 2026</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// PLATEFORME</span>
+              <span class="pj-meta-val">Shopify, thème sur mesure « Skybazaar »</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// CATALOGUE</span>
+              <span class="pj-meta-val">27 produits en ligne, 8 collections, dont 20 produits Black Friday</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// MODÈLE</span>
+              <span class="pj-meta-val">Dropshipping avec CJ Dropshipping : aucun stock à acheter</span>
+            </div>
+            <div class="card pj-meta-item">
+              <span class="pj-meta-lbl">// OUTILS</span>
+              <span class="pj-meta-val">Shopify et son API GraphQL, CJ Dropshipping, Krea (Nano Banana, MiniMax), WebCodecs, TikTok, Meta et Google</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CONTEXTE &amp; OBJECTIFS</h3>
+        <p><strong style="color:var(--g3);">Skybazaar</strong> (anciennement Komptoir, puis Fly Store) est ma boutique en ligne : une boutique généraliste qui vend des produits déjà plébiscités, avec une présentation plus soignée que les places de marché. Je fonctionne en <strong style="color:var(--g3);">dropshipping</strong> : le fournisseur expédie directement au client, donc je n'achète aucun stock à l'avance. Objectif : trouver quelques produits gagnants et les faire connaître avec des publicités vidéo sur TikTok et Instagram.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>CE QUE J'AI RÉALISÉ</h3>
+        <p><strong style="color:var(--g3);">1. Étude de marché</strong><br>J'ai analysé les meilleures ventes d'Amazon avec les estimations d'<strong style="color:var(--g3);">AMZScout</strong>, en écartant les produits de grandes marques qu'on ne peut pas revendre. Pour le Black Friday, j'ai sélectionné 20 produits de saison (cadeaux, hiver, bien-être, animaux) à moins de 40 €.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">2. Boutique en ligne</strong><br>Boutique renommée <strong style="color:var(--g3);">Skybazaar</strong>, thème sur mesure publié, référencement (titres et descriptions pour Google), menu, 8 collections et 8 pages publiées : mentions légales, CGV, livraison, retours, droit de rétractation, FAQ, contact, à propos.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">3. Catalogue automatisé</strong><br>Les 20 produits Black Friday ont été créés par l'<strong style="color:var(--g3);">API GraphQL Admin de Shopify</strong> : photos importées depuis le fournisseur, variantes, descriptions, référencement, et l'identifiant du produit chez CJ Dropshipping enregistré dans chaque fiche pour passer les commandes. Une collection « Black Friday » se remplit toute seule grâce à une étiquette.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">4. Publicités vidéo avec l'IA</strong><br><strong style="color:var(--g3);">15 vidéos</strong> au format TikTok : 10 vidéos produits, puis 5 publicités de 14 secondes au niveau des pubs de marque. Les images de départ sont générées avec Nano Banana à partir des photos réelles des produits, animées avec MiniMax, puis montées par un programme que j'ai écrit : accroche animée, zooms, arguments qui apparaissent un par un et carte de fin avec le prix. Le rendu image par image est encodé en MP4 directement dans le navigateur (WebCodecs), pour une durée exacte.</p>
+        <p style="margin-top:12px;"><strong style="color:var(--g3);">5. Canaux de vente et cadre légal</strong><br>Applications Google et YouTube, TikTok, Facebook et Instagram installées pour vendre et faire de la publicité sur ces réseaux. Côté légal : déclaration en <strong style="color:var(--g3);">micro-entreprise</strong> sur le guichet unique de l'INPI (SIREN obtenu, en attente de validation), pages obligatoires et prix de référence honnêtes pour le Black Friday.</p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>ÉTAT D'AVANCEMENT</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:16px;">
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">ÉTUDE</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ MARCHÉ</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Meilleures ventes analysées</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">BOUTIQUE</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ EN LIGNE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Thème, pages, collections</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">CATALOGUE</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ 27 PRODUITS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Dont 20 Black Friday</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g3);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">PUBLICITÉ</div>
+            <div style="font-size:.8rem;color:var(--g3);">✓ 15 VIDÉOS</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">5 pubs pro de 14 s</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LÉGAL</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ SIREN</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">En attente de validation</div>
+          </div>
+          <div class="card" style="padding:16px;border-left:3px solid var(--g7);">
+            <div style="font-family:var(--fm);font-size:.5rem;letter-spacing:2px;color:var(--g6);margin-bottom:8px;">LANCEMENT</div>
+            <div style="font-size:.8rem;color:#ffcc44;">⟳ PUBS EN LIGNE</div>
+            <div style="font-size:.72rem;color:var(--g7);margin-top:6px;">Comptes TikTok et Meta, domaine</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>COMPÉTENCES MOBILISÉES</h3>
+        <p>
+          ▸ Étude de marché à partir de données de ventes<br>▸ Administration d'une boutique Shopify et référencement<br>▸ Automatisation par une API GraphQL (création de produits, médias, collections)<br>▸ Production vidéo publicitaire assistée par l'IA<br>▸ Programmation du rendu et de l'encodage vidéo dans le navigateur (Canvas, WebCodecs, format MP4)<br>▸ Conformité légale du commerce en ligne et création d'une micro-entreprise
+        </p>
+      </div>
+
+      <div class="pj-section rv">
+        <h3>DOCUMENTS &amp; LIVRABLES</h3>
+        <div class="doc-list">
+
+          <div class="card doc-item">
+            <span class="doc-icon">📝</span>
+            <span class="doc-name">Compte rendu — Skybazaar, boutique e-commerce</span>
+            <span class="doc-size">~60 Ko</span>
+            <button class="doc-link"
+              onclick="openPDF('../assets/docs/projet-9/compte-rendu.pdf','Compte rendu Skybazaar')"
+              style="cursor:none;">OUVRIR</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-top:40px;" class="rv">
+        <a href="projets.html" class="btn btn-g">← RETOUR AUX PROJETS</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="f-brand">YK_PORTFOLIO</div>
+      <div class="f-copy">© 2025 BTS SIO</div>
+      <div class="f-live">
+        <div class="ldot"></div>DISPONIBLE
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
