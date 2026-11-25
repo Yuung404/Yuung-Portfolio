@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-24T23:03:42+00:00",
+ "genere_le": "2026-11-25T05:28:04+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 183,
   "ia": 49,
-  "kev": 39,
+  "kev": 37,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,25 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 39,
+   "nb": 37,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "Cyber Insurers See New Divide: AI Defense 'Haves' & 'Have Nots'",
+   "lien": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-25T15:00:00+00:00",
+   "resume": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
    "lien": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
@@ -2306,19 +2319,6 @@
    "cve": []
   },
   {
-   "titre": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
-   "lien": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-10T20:41:45+00:00",
-   "resume": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
    "titre": "Scality devient autorité de numérotation CVE sous l’égide de l’ENISA",
    "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/scality-devient-autorite-de-numerotation-cve-sous-",
    "source": "Le Monde Informatique",
@@ -2824,30 +2824,6 @@
    "rancongiciel": false,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497"
-  },
-  {
-   "cve": "CVE-2026-109618",
-   "editeur": "PHP Group",
-   "produit": "PHP",
-   "nom": "PHP Memory Corruption Vulnerability",
-   "date": "2026-10-26T00:00:00+00:00",
-   "echeance": "2026-10-29",
-   "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618"
-  },
-  {
-   "cve": "CVE-2026-109619",
-   "editeur": "PHP Group",
-   "produit": "PHP",
-   "nom": "PHP Stale Internal Request-State Vulnerability",
-   "date": "2026-10-26T00:00:00+00:00",
-   "echeance": "2026-10-29",
-   "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619"
   }
  ]
 }
