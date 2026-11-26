@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-26T01:48:49+00:00",
+ "genere_le": "2026-11-26T10:59:45+00:00",
  "fenetre_jours": 30,
  "compteurs": {
-  "articles": 187,
-  "ia": 49,
+  "articles": 190,
+  "ia": 50,
   "kev": 45,
   "kev_ia": 0
  },
@@ -54,7 +54,7 @@
    "site": "https://www.lemondeinformatique.fr",
    "cat": "actu",
    "ok": true,
-   "nb": 19,
+   "nb": 22,
    "erreur": "",
    "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml"
   },
@@ -110,6 +110,122 @@
   }
  ],
  "articles": [
+  {
+   "titre": "1Password victime d'une intrusion via GitHub",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/1password-victime-d-une-intrusion-via-github",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-26T10:28:36+00:00",
+   "resume": "Le gestionnaire de mots de passe a subi une compromission de ses systèmes internes à la suite du piratage d'un compte GitHub d'entreprise. Si les coffres-forts chiffrés n'ont pas été affectés, des informations personnelles et des données techniques ont été exfiltrées, exposant les utilisateurs à…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting",
+   "lien": "https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-26T09:12:26+00:00",
+   "resume": "Drupal warns that its previous installer patch left some websites vulnerable to takeover, with attackers already exploiting the gap. The post Drupal Installer Patch Left a Gap Attackers Are Already Exploiting appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "1Password Breach Exposes Customer Data, Internal Source Code",
+   "lien": "https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-26T08:32:10+00:00",
+   "resume": "A hacker used a compromised employee GitHub account to push malicious code and steal customer records, but vaults were not accessed. The post 1Password Breach Exposes Customer Data, Internal Source Code appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "De faux tests de recrutement ciblent les développeurs .NET via NuGet",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/de-faux-tests-de-recrutement-ciblent-les-developpeurs-net-via-nuget",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-26T08:15:00+00:00",
+   "resume": "Une campagne malveillante cible les développeurs .NET en diffusant de faux exercices techniques de recrutement contenant des dépendances NuGet compromises. Dans un rapport publié le 23 novembre 2026, Socket indique avoir identifié 13 paquets suspects, déclinés en 28 versions et associés à quatre…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Cyprus Becomes Espionage Target for Iranian Hackers",
+   "lien": "https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-26T08:00:00+00:00",
+   "resume": "A previously undocumented Iranian threat group called \"Volant Manticore\" is targeting Cypriot organizations as part of an intelligence-gathering effort for Tehran.",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Artex : les cyberattaquants intensifient l'utilisation d'agents IA offensifs",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/artex-les-cyberattaquants-intensifient-l-utilisation-d-agents-ia-offensifs",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-26T07:30:00+00:00",
+   "resume": "L’utilisation d’Artex, un framework de tests d’intrusion piloté par des agents d’intelligence artificielle, progresse dans les campagnes malveillantes. Selon Microsoft Threat Intelligence, plusieurs groupes liés à des États et des acteurs cybercriminels l’exploitent pour automatiser la…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+   "lien": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-26T07:02:34+00:00",
+   "resume": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to…",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-136716"
+   ]
+  },
+  {
+   "titre": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+   "lien": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-26T06:44:46+00:00",
+   "resume": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week. The Mitel MiCollab vulnerabilities are listed below -…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+   "lien": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-26T04:20:22+00:00",
+   "resume": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. \"While we took immediate steps…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+   "lien": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-26T03:48:52+00:00",
+   "resume": "Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment. \"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls,\" Socket security researcher…",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
    "lien": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
@@ -633,17 +749,6 @@
    "cve": []
   },
   {
-   "titre": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
-   "lien": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-24T22:41:58+00:00",
-   "resume": "It was not clear what specific information was compromised or who was responsible. The post An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Satellites Have a Ground-Level Cybersecurity Problem",
    "lien": "https://www.darkreading.com/cyber-risk/satellites-ground-level-cybersecurity-problem",
    "source": "Dark Reading",
@@ -728,17 +833,6 @@
    "langue": "en",
    "date": "2026-11-24T16:54:07+00:00",
    "resume": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "VMware Updates Patch Critical ESX, vCenter Vulnerabilities",
-   "lien": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-24T16:32:56+00:00",
-   "resume": "The critical bugs include an authentication bypass in vCenter and flaws that could allow code execution on ESX hosts. The post VMware Updates Patch Critical ESX, vCenter Vulnerabilities appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -1858,28 +1952,6 @@
    ]
   },
   {
-   "titre": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
-   "lien": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-19T15:11:06+00:00",
-   "resume": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
-   "lien": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-19T14:33:06+00:00",
-   "resume": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as…",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Why Holiday Security Can't Wait for Black Friday",
    "lien": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
    "source": "Dark Reading",
@@ -1887,33 +1959,6 @@
    "langue": "en",
    "date": "2026-11-19T14:00:00+00:00",
    "resume": "Bot-driven fraud and holiday social engineering attacks stretch across many weeks, straining security teams and small businesses alike.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Everything Is a Web Application, Including Your Firewall",
-   "lien": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-19T11:52:23+00:00",
-   "resume": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-109618",
-    "CVE-2026-109619"
-   ]
-  },
-  {
-   "titre": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
-   "lien": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-19T09:31:26+00:00",
-   "resume": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to…",
    "tags": [],
    "cve": []
   },
@@ -2355,17 +2400,6 @@
    "langue": "en",
    "date": "2026-11-11T22:14:44+00:00",
    "resume": "この対策パッケージには、官民合同のサイバー対応チーム、経済省が主導するAI専門チーム、および政府の新たな能動的サイバー防衛権限の行使に関する裁量の拡大が含まれている。",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
-   "lien": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-11T21:44:04+00:00",
-   "resume": "Researchers dubbed an attack chain \"Greeter\" after discovering that attackers deliberately covered their trail by leaving \"hello\" messages in logs.",
    "tags": [],
    "cve": []
   },
