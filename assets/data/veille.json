@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-26T20:13:35+00:00",
+ "genere_le": "2026-11-27T02:56:08+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 193,
-  "ia": 49,
-  "kev": 45,
+  "ia": 50,
+  "kev": 43,
   "kev_ia": 0
  },
  "sources": [
@@ -104,12 +104,25 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 45,
+   "nb": 43,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
  ],
  "articles": [
+  {
+   "titre": "OpenAI warns GPT-6.2 Astra will hit usage limits 40% faster because it fixed a bug",
+   "lien": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-26T21:06:22+00:00",
+   "resume": "OpenAI confirmed that it fixed a 'bug' that incorrectly discounted GPT-6.2 usage, which means you'll now hit GPT usage limits 40% faster than before. [...]",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
   {
    "titre": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
    "lien": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
@@ -970,17 +983,6 @@
    "langue": "en",
    "date": "2026-11-24T21:48:06+00:00",
    "resume": "The China-aligned espionage group rebuilt the open source VPN software from source, stripping out the artifacts that would normally expose it to defenders.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Rackspace shuts down Spot cloud platform after security breach",
-   "lien": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-24T21:37:30+00:00",
-   "resume": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
    "tags": [],
    "cve": []
   },
@@ -3010,30 +3012,6 @@
    "rancongiciel": false,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
-  },
-  {
-   "cve": "CVE-2026-41709",
-   "editeur": "Broadcom",
-   "produit": "VMware ESX",
-   "nom": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
-   "date": "2026-10-28T00:00:00+00:00",
-   "echeance": "2026-11-11",
-   "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709"
-  },
-  {
-   "cve": "CVE-2026-46300",
-   "editeur": "Linux",
-   "produit": "Kernel",
-   "nom": "Linux Kernel Missing Initialization of a Variable Vulnerability",
-   "date": "2026-10-28T00:00:00+00:00",
-   "echeance": "2026-10-31",
-   "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells…",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300"
   }
  ]
 }
