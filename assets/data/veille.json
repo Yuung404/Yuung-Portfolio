@@ -1,9 +1,9 @@
 {
- "genere_le": "2026-11-27T02:56:08+00:00",
+ "genere_le": "2026-11-27T12:38:56+00:00",
  "fenetre_jours": 30,
  "compteurs": {
-  "articles": 193,
-  "ia": 50,
+  "articles": 198,
+  "ia": 54,
   "kev": 43,
   "kev_ia": 0
  },
@@ -54,7 +54,7 @@
    "site": "https://www.lemondeinformatique.fr",
    "cat": "actu",
    "ok": true,
-   "nb": 25,
+   "nb": 30,
    "erreur": "",
    "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml"
   },
@@ -110,6 +110,216 @@
   }
  ],
  "articles": [
+  {
+   "titre": "Microsoft removes WSUS server role in Windows Server 2028",
+   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wsus-server-role-in-windows-server-2028/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-27T11:18:36+00:00",
+   "resume": "Microsoft will remove the WSUS server role from Windows Server 2028, the next major release of its server operating system. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities",
+   "lien": "https://www.securityweek.com/in-other-news-tanker-cyberattacks-eu-quantum-act-new-virustotal-capabilities/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-27T11:00:00+00:00",
+   "resume": "Noteworthy stories that might have slipped under the radar: RansomwareHelp accused of profiting from ransom payments, USDA payment systems breach, cybersecurity firm Radware hacked. The post In Other News: Tanker Cyberattacks, EU Quantum Act, New VirusTotal Capabilities appeared first on…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Binance rétablit les retraits après le piratage de 6,3 Md$ de crypto-actifs",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/binance-retablit-les-retraits-apres-le-piratage-de-6-3-md-de-crypto-actifs",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-27T10:32:24+00:00",
+   "resume": "Près d’un mois après le vol de crypto-actifs survenu le 29 octobre, Binance annonce avoir achevé la remise en service des retraits sur sa plateforme. L’exchange avait suspendu cette fonctionnalité pour contenir l’incident et sécuriser ses infrastructures, après la compromission de plusieurs…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+   "lien": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-27T10:32:18+00:00",
+   "resume": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Drupal warns of new site takeover flaw exploited in attacks",
+   "lien": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-27T10:10:15+00:00",
+   "resume": "The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Cybersécurité : les agents IA prennent le contrôle du cloud plus vite que les entreprises ne sécurisent leurs accès",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cybersecurite-les-agents-ia-prennent-le-controle-du-cloud-plus-vite-que-les-entreprises-ne-securisent-leurs-acces",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-27T09:56:54+00:00",
+   "resume": "99 % des entreprises utilisent des agents IA dans leurs chaînes de développement. Mais leur capacité à modifier du codeet à intervenir en production progresse plus vite que les dispositifs de sécurité, selon une étude de Palo Alto Networks.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "SAP confirms security incident after suspicious GitHub activity",
+   "lien": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-27T09:56:36+00:00",
+   "resume": "SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "100,000 Potentially Impacted by Colorado Data Breach",
+   "lien": "https://www.securityweek.com/100000-potentially-impacted-by-colorado-data-breach/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-27T09:30:54+00:00",
+   "resume": "Hackers breached the digital identification and document storage application myColorado and accessed user-uploaded data. The post 100,000 Potentially Impacted by Colorado Data Breach appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+   "lien": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-27T09:29:30+00:00",
+   "resume": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website. \"Evidence indicates that malicious files were generated not only when users downloaded the programs…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+   "lien": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-27T09:08:16+00:00",
+   "resume": "Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update (KB5131077). [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Cyberattaque chez SAP : des soupçons d'accès au code source sur GitHub",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cyberattaque-chez-sap-des-soupcons-d-acces-au-code-source-sur-github",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-27T09:08:03+00:00",
+   "resume": "SAP a confirmé, le 27 novembre 2026, avoir détecté des activités suspectes dans son environnement informatique. Selon plusieurs médias allemands, des attaquants auraient utilisé des jetons d'authentification dérobés à des employés pour accéder à du code source sur GitHub. L'incident, désigné en…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Cyberattaque contre l'AFP : la plateforme AFP Forum mise hors ligne",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/cyberattaque-contre-l-afp-la-plateforme-afp-forum-mise-hors-ligne",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-27T08:27:48+00:00",
+   "resume": "L'Agence France-Presse (AFP) a été victime d'une cyberattaque dans la nuit du 25 au 26 novembre 2026. L'intrusion a conduit l'agence à suspendre temporairement l'accès à AFP Forum, une plateforme utilisée par ses clients pour consulter et télécharger ses contenus. Des solutions de secours ont été…",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+   "lien": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-27T08:06:58+00:00",
+   "resume": "​A 12-year-old critical vulnerability in the Linux kernel's Network File System (NFS) server, tracked as CVE-2026-99362, allows remote attackers to gain root privileges. [...]",
+   "tags": [
+    "faille"
+   ],
+   "cve": [
+    "CVE-2026-99362"
+   ]
+  },
+  {
+   "titre": "MiniMax visé par des soupçons d'exposition de données, Apple retire Talkie de l'App Store",
+   "lien": "https://www.lemondeinformatique.fr/cybersecurite-conformite/minimax-vise-par-des-soupcons-d-exposition-de-donnees-apple-retire-talkie-de-l-app-store",
+   "source": "Le Monde Informatique",
+   "source_id": "lmi",
+   "langue": "fr",
+   "date": "2026-11-27T08:00:00+00:00",
+   "resume": "Le groupe chinois MiniMax fait face à deux affaires distinctes. Selon une enquête de Dragos révélée par Reuters le 26 novembre 2026, des liens confidentiels transmis à ses modèles d'intelligence artificielle auraient été consultés par des parties non identifiées, malgré des demandes de…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Hex Package Manager Warns of Potential Data Breach",
+   "lien": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-27T07:44:49+00:00",
+   "resume": "A vulnerability in hex.pm allowed hackers to run commands on web servers. No evidence of data modification was found, but database reads are not logged. The post Hex Package Manager Warns of Potential Data Breach appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "SAP Confirms Cyberattack, Source Code Reportedly Compromised",
+   "lien": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+   "source": "SecurityWeek",
+   "source_id": "securityweek",
+   "langue": "en",
+   "date": "2026-11-27T07:36:14+00:00",
+   "resume": "SAP has detected suspicious activity on GitHub, where hackers reportedly used stolen employee tokens to copy and alter source code. The post SAP Confirms Cyberattack, Source Code Reportedly Compromised appeared first on SecurityWeek .",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+   "lien": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-27T06:04:20+00:00",
+   "resume": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. Three of the attacks targeted critical infrastructure operators, and two of those succeeded,…",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+   "lien": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-27T05:48:20+00:00",
+   "resume": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT. \"I…",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "OpenAI warns GPT-6.2 Astra will hit usage limits 40% faster because it fixed a bug",
    "lien": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
@@ -198,7 +408,7 @@
    "source_id": "thn",
    "langue": "en",
    "date": "2026-11-26T15:13:41+00:00",
-   "resume": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published…",
+   "resume": "The threat actors behind the PolinRider campaign have compromised over 7,600 GitHub repositories, in some cases planting a Python loader capable of delivering next-stage payloads, as evidence emerges that the activity may have started as far back as February 2025. \"These are real developers, not…",
    "tags": [],
    "cve": []
   },
@@ -589,17 +799,6 @@
    "cve": []
   },
   {
-   "titre": "InfraTrust warns of exploited supply chain flaws in network appliances",
-   "lien": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-25T15:00:00+00:00",
-   "resume": "Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Cyber Insurers See New Divide: AI Defense 'Haves' & 'Have Nots'",
    "lien": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
    "source": "Dark Reading",
@@ -613,17 +812,6 @@
    "cve": []
   },
   {
-   "titre": "ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties",
-   "lien": "https://www.securityweek.com/shinyhunters-claims-comeback-new-inception-group-rejects-alleged-ties/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-25T14:15:25+00:00",
-   "resume": "An account tied to ShinyHunters announced the group’s return, as Okta spots possible links between Inception and ShinyHunters hackers. The post ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Latin America Sees Cyberattacks on Ports, Pipelines & Manufacturing",
    "lien": "https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing",
    "source": "Dark Reading",
@@ -631,28 +819,6 @@
    "langue": "en",
    "date": "2026-11-25T14:00:00+00:00",
    "resume": "From the Port of Santos in Brazil to a pipeline in Argentina, cyberattacks are increasingly affecting industrial systems throughout the region.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "US Treasury’s FinCEN Disconnects Systems Following Cyber Incident",
-   "lien": "https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-25T13:39:21+00:00",
-   "resume": "FinCEN has extended deadlines for filers affected by the disruptions while it is investigating the incident. The post US Treasury’s FinCEN Disconnects Systems Following Cyber Incident appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget",
-   "lien": "https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-25T13:30:00+00:00",
-   "resume": "Matthew Martin is Chief Information Security and Privacy Officer at Western Carolina University. The post Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget appeared first on SecurityWeek .",
    "tags": [],
    "cve": []
   },
@@ -710,17 +876,6 @@
    ]
   },
   {
-   "titre": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-25T11:16:32+00:00",
-   "resume": "Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
    "lien": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
    "source": "The Hacker News",
@@ -734,28 +889,6 @@
    "cve": []
   },
   {
-   "titre": "Plagiarism Checker Turnitin Investigating Cyberattack",
-   "lien": "https://www.securityweek.com/plagiarism-checker-turnitin-investigating-cyberattack/",
-   "source": "SecurityWeek",
-   "source_id": "securityweek",
-   "langue": "en",
-   "date": "2026-11-25T10:40:07+00:00",
-   "resume": "The edtech company says the systems are fully operational and safe to use while it investigates the incident. The post Plagiarism Checker Turnitin Investigating Cyberattack appeared first on SecurityWeek .",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
-   "lien": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-25T10:10:20+00:00",
-   "resume": "The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
    "lien": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
    "source": "The Hacker News",
@@ -763,28 +896,6 @@
    "langue": "en",
    "date": "2026-11-25T09:06:59+00:00",
    "resume": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from. The flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Microsoft confirms authentication issues after November updates",
-   "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-25T09:02:57+00:00",
-   "resume": "Microsoft has confirmed that customers may experience authentication issues after installing November security updates that address a high-severity remote code execution vulnerability. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Hackers reportedly breached CIA intelligence analysis system",
-   "lien": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-25T07:45:03+00:00",
-   "resume": "Unknown attackers have reportedly breached an open-source intelligence analysis system at the US Central Intelligence Agency (CIA) [...]",
    "tags": [],
    "cve": []
   },
@@ -1776,58 +1887,6 @@
    "tags": [
     "ia"
    ],
-   "cve": []
-  },
-  {
-   "titre": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
-   "lien": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-20T10:32:50+00:00",
-   "resume": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-76466"
-   ]
-  },
-  {
-   "titre": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-   "lien": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-20T09:38:15+00:00",
-   "resume": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-123890"
-   ]
-  },
-  {
-   "titre": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
-   "lien": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-20T07:11:39+00:00",
-   "resume": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through…",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
-   "lien": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-20T05:30:01+00:00",
-   "resume": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher…",
-   "tags": [],
    "cve": []
   },
   {
