@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-28T13:10:44+00:00",
+ "genere_le": "2026-11-28T20:59:45+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 200,
@@ -110,6 +110,28 @@
   }
  ],
  "articles": [
+  {
+   "titre": "College Board confirms data breach after unauthorized password changes",
+   "lien": "https://www.bleepingcomputer.com/news/security/college-board-confirms-data-breach-after-unauthorized-password-changes/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-28T17:45:59+00:00",
+   "resume": "College Board has confirmed it suffered a data breach after students reported unexpected password changes on Thanksgiving, and the organization said threat actors gained access to its account registration and financial aid application systems. [...]",
+   "tags": [],
+   "cve": []
+  },
+  {
+   "titre": "Q-Dir and DesktopOK Windows utilities compromised to push Python RAT",
+   "lien": "https://www.bleepingcomputer.com/news/security/q-dir-and-desktopok-windows-utilities-compromised-to-push-python-rat/",
+   "source": "BleepingComputer",
+   "source_id": "bleeping",
+   "langue": "en",
+   "date": "2026-11-28T15:32:49+00:00",
+   "resume": "Official distribution channels for the Q-Dir and DesktopOK Windows utilities were compromised to deliver trojanized installers containing Python-based remote access malware. [...]",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
    "lien": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html",
@@ -650,17 +672,6 @@
    "cve": []
   },
   {
-   "titre": "Fake paid expert interviews impersonate brands to steal Google logins",
-   "lien": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-26T17:15:27+00:00",
-   "resume": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars. [...]",
-   "tags": [],
-   "cve": []
-  },
-  {
    "titre": "FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’",
    "lien": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/",
    "source": "SecurityWeek",
@@ -679,17 +690,6 @@
    "langue": "fr",
    "date": "2026-11-26T16:18:59+00:00",
    "resume": "Deux associations néerlandaises demandent à la justice de suspendre la commercialisation des lunettes connectées de Meta et Ray-Ban. Elles dénoncent un dispositif qui permet de filmer des personnes à leur insu, en contradiction avec les règles européennes sur la protection de la vie privée.",
-   "tags": [],
-   "cve": []
-  },
-  {
-   "titre": "Remus malware steals Gmail messages via fake Google Sheets extension",
-   "lien": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
-   "source": "BleepingComputer",
-   "source_id": "bleeping",
-   "langue": "en",
-   "date": "2026-11-26T15:23:28+00:00",
-   "resume": "The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service. [...]",
    "tags": [],
    "cve": []
   },
@@ -1028,6 +1028,19 @@
    "langue": "en",
    "date": "2026-11-25T15:00:00+00:00",
    "resume": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable.",
+   "tags": [
+    "ia"
+   ],
+   "cve": []
+  },
+  {
+   "titre": "AI Is Exposing Problems Security Has Lived With for Years",
+   "lien": "https://www.darkreading.com/cyber-risk/ai-is-exposing-problems-security-has-lived-with-for-years",
+   "source": "Dark Reading",
+   "source_id": "darkreading",
+   "langue": "en",
+   "date": "2026-11-25T14:06:06+00:00",
+   "resume": "At Cyber Week 2026, conversations centered on how AI is cutting the time security teams have to respond to threats and exposing gaps in how organizations detect and fix risks.",
    "tags": [
     "ia"
    ],
@@ -2491,19 +2504,6 @@
    "langue": "en",
    "date": "2026-11-12T01:00:00+00:00",
    "resume": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.",
-   "tags": [
-    "ia"
-   ],
-   "cve": []
-  },
-  {
-   "titre": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
-   "lien": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
-   "source": "Dark Reading",
-   "source_id": "darkreading",
-   "langue": "en",
-   "date": "2026-11-12T00:00:00+00:00",
-   "resume": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
    "tags": [
     "ia"
    ],
