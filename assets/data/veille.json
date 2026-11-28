@@ -1,10 +1,10 @@
 {
- "genere_le": "2026-11-27T22:03:47+00:00",
+ "genere_le": "2026-11-28T03:58:00+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 200,
   "ia": 53,
-  "kev": 43,
+  "kev": 44,
   "kev_ia": 0
  },
  "sources": [
@@ -104,7 +104,7 @@
    "site": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
    "cat": "kev",
    "ok": true,
-   "nb": 43,
+   "nb": 44,
    "erreur": "",
    "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json"
   }
@@ -2577,6 +2577,42 @@
  ],
  "kev": [
   {
+   "cve": "CVE-2026-120705",
+   "editeur": "OSGeo",
+   "produit": "GeoServer",
+   "nom": "OSGeo GeoServer XML Injection Vulnerability",
+   "date": "2026-11-27T00:00:00+00:00",
+   "echeance": "2026-11-30",
+   "description": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP or HTTPS URLs via a crafted ID parameter in the WFS 2.0 GetFeatureById stored query. This vulnerability can be chained with CVE-2026-129244, CVE-2026-129243, CVE-2026-129245, and…",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-120705"
+  },
+  {
+   "cve": "CVE-2026-129243",
+   "editeur": "OSGeo",
+   "produit": "GeoServer",
+   "nom": "OSGeo GeoServer Incorrect Authorization Vulnerability",
+   "date": "2026-11-27T00:00:00+00:00",
+   "echeance": "2026-11-30",
+   "description": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service parameter. This vulnerability can be chained with CVE-2026-129244, CVE-2026-120705, CVE-2026-129245, and CVE-2026-129242 to achieve unauthenticated remote code…",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-129243"
+  },
+  {
+   "cve": "CVE-2026-136716",
+   "editeur": "Drupal",
+   "produit": "Core",
+   "nom": "Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+   "date": "2026-11-27T00:00:00+00:00",
+   "echeance": "2026-11-30",
+   "description": "Drupal Core contains an improper check for unusual or exceptional conditions vulnerability that allows an unauthenticated remote attacker to take over a site via the exposed Drupal installer when the site is in one of the affected unusual or incomplete installation states.",
+   "rancongiciel": false,
+   "ia": false,
+   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716"
+  },
+  {
    "cve": "CVE-2026-103406",
    "editeur": "Hewlett Packard Enterprise (HPE)",
    "produit": "Juniper Session Smart Conductor and Session Smart Router",
@@ -3067,30 +3103,6 @@
    "rancongiciel": false,
    "ia": false,
    "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357"
-  },
-  {
-   "cve": "CVE-2026-97229",
-   "editeur": "GitLab",
-   "produit": "Community Edition and Enterprise Edition",
-   "nom": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-   "date": "2026-10-29T00:00:00+00:00",
-   "echeance": "2026-11-01",
-   "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229"
-  },
-  {
-   "cve": "CVE-2026-76418",
-   "editeur": "Cisco",
-   "produit": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-   "nom": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-   "date": "2026-10-29T00:00:00+00:00",
-   "echeance": "2026-11-01",
-   "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
-   "rancongiciel": false,
-   "ia": false,
-   "lien": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418"
   }
  ]
 }
