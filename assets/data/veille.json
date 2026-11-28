@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-28T03:58:00+00:00",
+ "genere_le": "2026-11-28T13:10:44+00:00",
  "fenetre_jours": 30,
  "compteurs": {
   "articles": 200,
@@ -110,6 +110,17 @@
   }
  ],
  "articles": [
+  {
+   "titre": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
+   "lien": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html",
+   "source": "The Hacker News",
+   "source_id": "thn",
+   "langue": "en",
+   "date": "2026-11-28T08:08:11+00:00",
+   "resume": "Cross-platform password manager pCloud Pass has confirmed it was targeted by a cyber attack after users reported seeing unknown devices being connected to their accounts. \"A cyber attack targeting pCloud Pass occurred, which was promptly contained by the pCloud team,\" the Swiss company said in…",
+   "tags": [],
+   "cve": []
+  },
   {
    "titre": "pCloud confirms password manager hack after suspicious login alerts",
    "lien": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
@@ -2008,21 +2019,6 @@
     "ia"
    ],
    "cve": []
-  },
-  {
-   "titre": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
-   "lien": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-   "source": "The Hacker News",
-   "source_id": "thn",
-   "langue": "en",
-   "date": "2026-11-20T12:20:00+00:00",
-   "resume": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean. On a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312,…",
-   "tags": [
-    "faille"
-   ],
-   "cve": [
-    "CVE-2026-99312"
-   ]
   },
   {
    "titre": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
